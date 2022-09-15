@@ -1,0 +1,21 @@
+.tree-link:focus,
+.tree-link.active,
+.tree-group-link:focus {
+  color: white;
+  font-size: large;
+}
+
+.tree-link:hover,
+.tree-group-link:hover {
+  color: white;
+  font-size: large;
+}
+
+.no-transition{
+  transition: none !important;
+}
+
+.tree-link, .tree-icon, .tree-group-link {
+    color: white;
+    font-size: large;
+}

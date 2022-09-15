@@ -17,7 +17,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     
     <?php // Feuille de style ?>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="static/css/style.css">
 
     <?php // Titre de l'onget de la page ?>
     <title>Jaynerro</title>
@@ -29,40 +29,40 @@
     <?php //Inclusion de la barre de navigation ?>
     <?php require_once('header.php'); ?>
     
-    <div class="container" style="margin-top: 110px;">
+    <div class="container" style="margin-top: 80px;">
       <div class="row justify-content-center">
-        <div class="col-sm-8">
-          <p> 
+        <div class="col-sm-9">
+          <h1> 
             Qu’est ce que Jaynerro ? 
-          </p>
-          <p> 
+          </h1>
+          <p style="margin-top: 30px;"> 
             Jaynerro c’est d’abord mon pseudonyme mais c’est aussi ma Knowledge Base mise sous forme de ce site web. 
           </p>
         </div>
       </div>
-      <div class="row justify-content-center" style="margin-top: 70px;">
-        <div class="col-sm-8">
-          <p>
+      <div class="row justify-content-center" style="margin-top: 65px;">
+        <div class="col-sm-9">
+          <p style="font-size: xx-large";>
             Le but
           </p>
-          <p>
+          <p style="margin-top: 20px;">
             Progresser sur le sujet de la Cybersécurité et plus précisément sur la sécurité offensive / Ethical Hacking.
           </p>
         </div>
       </div>
-      <div class="row justify-content-center" style="margin-top: 70px;">
-        <div class="col-sm-8">
-          <p>
+      <div class="row justify-content-center" style="margin-top: 80px;">
+        <div class="col-sm-9">
+          <p style="font-size: xx-large";>
             Le plan
           </p>
-          <p>
+          <p style="margin-top: 20px;">
             Apprendre, conserver une trace de mon apprentissage et rendre cela disponible pour tout le monde.
           </p>
         </div>
       </div>
-      <div class="row justify-content-center" style="margin-top: 70px; margin-bottom : 100px">
+      <div class="row justify-content-center" style="margin-top: 80px; margin-bottom : 120px">
         <div class="col-sm-7">
-          <p style="font-size: x-small";>
+          <p style="font-size: small";>
             Disclaimer
           </p>
           <p style="font-size: x-small";>
