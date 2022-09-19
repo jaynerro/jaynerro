@@ -30,3 +30,24 @@ h1 {
     align-items: center; 
     justify-content: center;
 }
+
+a {
+    color: white;
+}
+
+.marge {
+    margin-left: 9em;
+}
+
+h3 {
+    color: white;
+    text-align: justify;
+    font-size: large;
+}
+
+h6 {
+    color: white;
+    text-align: justify;
+    font-size: medium;
+    font-style: italic;
+}

@@ -51,6 +51,10 @@
                       <a>Modèle OSI</a>
                       <ul>
 
+                        <li id="liOSIModelDefinition">
+                          <a href="/memory-aids/basics/network/osi-model/definition.php">Qu'est-ce que c'est ?</a>
+                        </li>
+
                         <li id="liLayer1">
                           <a href="#">Couche 1</a>
                         </li>
@@ -166,12 +170,74 @@
                   <a>Système</a>
                   <ul>
 
-                    <li id="li4">
-                      <a href="#">Link 4</a>
+                    <li id="liBIOS">
+                      <a href="#">BIOS, Firmware</a>
                     </li>
 
-                    <li id="li5">
-                      <a href="#">Link 5</a>
+                    <li id="liOS">
+                      <a>OS</a>
+                      <ul>
+
+                        <li id="liOSIntroduction">
+                          <a href="#">Introduction</a>
+                        </li>
+
+                        <li id="liKernelUser">
+                          <a href="#">Kernel mode vs User mode</a>
+                        </li>
+
+                        <li id="liSystemCall">
+                          <a href="#">System call</a>
+                        </li>
+
+                        <li id="liLibrariesDrivers">
+                          <a href="#">Libraries & Drivers</a>
+                        </li>
+
+                        <li id="liDaemonsServices">
+                          <a href="#">Daemons / Services</a>
+                        </li>
+
+                        <li id="liFileSystem">
+                          <a href="#">Système de fichiers</a>
+                        </li>
+                      
+                      </ul>
+                    </li>
+
+                    <li id="liClientServerModel">
+                      <a>Modèle Client-Serveur</a>
+                      <ul>
+
+                        <li id="liClientServerModelDefinition">
+                          <a href="#">Définition</a>
+                        </li>
+
+                        <li id="liAD">
+                          <a href="#">Active Directory</a>
+                        </li>
+
+                        <li id="liWebServer">
+                          <a href="#">Serveur web</a>
+                        </li>
+
+                        <li id="liFTPServer">
+                          <a href="#">Serveur FTP</a>
+                        </li>
+                      
+                      </ul>
+                    </li>
+
+                    <li id="liVirtualization">
+                      <a href="#">Virtualisation</a>
+                    </li>
+
+                    <li id="liContainer">
+                      <a href="#">Conteneur</a>
+                    </li>
+
+                    <li id="liTools">
+                      <a href="#">Quelques outils à savoir utiliser</a>
                     </li>
 
                   </ul>
@@ -180,12 +246,86 @@
                   <a>Développement</a>
                   <ul>
 
-                    <li id="li6">
-                      <a href="#">Link 6</a>
+                  <li id="liComputerProgramming">
+                      <a>La programmation informatique</a>
+                      <ul>
+
+                        <li id="liComputerProgrammingDefinition">
+                          <a href="#">Qu'est-ce que c'est ?</a>
+                        </li>
+
+                        <li id="liProgrammingParadigms">
+                          <a href="#">Les différents paradigmes</a>
+                        </li>
+
+                        <li id="liAlgorithm">
+                          <a href="#">L'algorithme</a>
+                        </li>
+
+                        <li id="liVariablesTypes">
+                          <a href="#">Les variables et leurs types</a>
+                        </li>
+
+                        <li id="liDataStructure">
+                          <a href="#">Les structures de données</a>
+                        </li>
+
+                        <li id="liClassesObjectsFonctions">
+                          <a href="#">Les classes, les objets et les fonctions</a>
+                        </li>
+
+                        <li id="liOperators">
+                          <a href="#">Les opérateurs</a>
+                        </li>
+
+                        <li id="liConditionalIterativeStatements">
+                          <a href="#">Les instructions conditionnelles et itératives</a>
+                        </li>
+
+                        <li id="liLibrairies">
+                          <a href="#">Les librairies</a>
+                        </li>
+
+                        <li id="liFrameworks">
+                          <a href="#">Les frameworks</a>
+                        </li>
+
+                        <li id="liProgramLifecyclePhases">
+                          <a href="#">Les différentes phases de cycle de vie de la programmation</a>
+                        </li>
+
+                        <li id="liIDE">
+                          <a href="#">IDE</a>
+                        </li>
+                      
+                      </ul>
                     </li>
 
-                    <li id="li7">
-                      <a href="#">Link 7</a>
+                    <li id="liProgrammingLanguages">
+                      <a>Langages de programmation</a>
+                      <ul>
+
+                        <li id="liHTMLCSS">
+                          <a href="#">HTLM / CSS</a>
+                        </li>
+
+                        <li id="liPHPSQL">
+                          <a href="#">PHP / SQL</a>
+                        </li>
+
+                        <li id="liJS">
+                          <a href="#">Javascript</a>
+                        </li>
+
+                        <li id="liPython">
+                          <a href="#">Python</a>
+                        </li>
+
+                        <li id="liC">
+                          <a href="#">C</a>
+                        </li>
+                      
+                      </ul>
                     </li>
 
                   </ul>
@@ -194,12 +334,84 @@
                   <a>Hardware</a>
                   <ul>
 
-                    <li id="li8">
-                      <a href="#">Link 8</a>
+                    <li id="liBinary">
+                      <a href="#">Système binaire</a>
                     </li>
 
-                    <li id="li9">
-                      <a href="#">Link 9</a>
+                    <li id="liMemory">
+                      <a>Les mémoires</a>
+                      <ul>
+
+                        <li id="liRAM">
+                          <a href="#">Mémoire vive</a>
+                        </li>
+
+                        <li id="liROM">
+                          <a href="#">Mémoire morte</a>
+                        </li>
+
+                        <li id="liCache">
+                          <a href="#">Mémoire cache</a>
+                        </li>
+                      
+                      </ul>
+                    </li>
+
+                    <li id="liCPU">
+                      <a>Les processeurs</a>
+                      <ul>
+
+                        <li id="liCoreThread">
+                          <a href="#">Coeurs, Threads & Hyper Threading</a>
+                        </li>
+
+                        <li id="liInstructionSetArchitecture">
+                          <a href="#">Différentes architectures et jeu d'instructions</a>
+                        </li>
+
+                        <li id="liAssembly">
+                          <a href="#">Assembleur</a>
+                        </li>
+                      
+                      </ul>
+                    </li>
+
+                    <li id="liGPU">
+                      <a>Les processeurs graphiques</a>
+                      <ul>
+
+                        <li id="liGPUOperation">
+                          <a href="#">Fonctionnement</a>
+                        </li>
+
+                        <li id="liGPUForms">
+                          <a href="#">Différents types de processeurs</a>
+                        </li>
+                      
+                      </ul>
+                    </li>
+
+                    <li id="liInterfaces">
+                      <a>Les interfaces</a>
+                      <ul>
+
+                        <li id="liDataTransfer">
+                          <a href="#">Interfaces de transfert de données</a>
+                        </li>
+
+                        <li id="liNetworkInterface">
+                          <a href="#">Interfaces réseau</a>
+                        </li>
+
+                        <li id="liStorageConnectivity">
+                          <a href="#">Connectique de stockage</a>
+                        </li>
+
+                        <li id="liNetworkConnectivity">
+                          <a href="#">Connectique réseau</a>
+                        </li>
+                      
+                      </ul>
                     </li>
 
                   </ul>
