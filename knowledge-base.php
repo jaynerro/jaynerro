@@ -56,7 +56,7 @@
                         </li>
 
                         <li id="liLayer1">
-                          <a href="#">Couche 1</a>
+                          <a href="/memory-aids/basics/network/osi-model/layer1.php">Couche 1</a>
                         </li>
 
                         <li id="liLayer2">

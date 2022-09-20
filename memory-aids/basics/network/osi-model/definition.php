@@ -77,7 +77,13 @@
             Tout va s'accélérer alors avec la création des premiers navigateurs capables d'afficher des images, et la libération de l'utilisation des noms de domaine. Nous pouvons voir sur la figure suivante la progression phénoménale d'Internet dans les années 1990-2000.
           </p>
 
-          <img src="../../../../images/internet-users.png" class="img-fluid float-left" style="max-width: 50%; margin-left: 25%; margin-top: 30px;"/>
+          <img src="../../../../images/internet-users.png" class="img-fluid mx-auto d-block" style="max-width: 50%; margin-top: 30px;"/>
+
+          <img src="../../../../images/internet-map.jpeg" class="img-fluid mx-auto d-block" style="max-width: 50%; margin-top: 30px;"/>
+          <p style="margin-top: 20px; font-size: small;">
+            Visualisation des multiples chemins à travers une portion d'Internet en 2003 - OPTE Project
+          </p>
+          
 
           <p style="margin-top: 40px;">
             Pour communiquer via le moyen de communication de la parole, nous avons besoin :
@@ -108,7 +114,10 @@
             Le modèle OSI est une norme qui préconise comment les ordinateurs devraient communiquer entre eux. Le modèle OSI est un modèle en couches. Cela veut dire qu'il est découpé en plusieurs morceaux appelés couches, qui ont chacune un rôle défini, comme vous le montre le schéma de la figure suivante. 
           </p>
 
-          <img src="../../../../images/osi-model.png" class="img-fluid float-left" style="max-width: 40%; margin-left: 30%; margin-top: 30px;"/>
+          <img src="../../../../images/osi-model.png" class="img-fluid mx-auto d-block" style="max-width: 40%; margin-top: 30px;"/>
+          <p style="margin-top: 20px; font-size: small;">
+            Modèle OSI
+          </p>
 
           <p style="margin-top: 40px;">
             Pourquoi 7 ? Nous avons vu que pour mettre en place une communication, il nous faudrait mettre en œuvre un certain nombre d'éléments, comme l'émetteur, le récepteur, le langage, etc. Les chercheurs ont imaginé combien d'éléments principaux il faudrait mettre en place pour communiquer. Et ils en ont trouvé 7 ! </br></br>
@@ -140,8 +149,8 @@
             Par contre, la couche 7 existe bien car c'est pour elle que nous mettons tout cela en place, il s'agit de la couche Application. </br></br>
           </p>
 
-          <img src="../../../../images/tcp-ip-model.png" class="img-fluid float-left" style="max-width: 60%; margin-left: 20%; margin-top: 10px;"/>
-          <p style="margin-top: 20px;">
+          <img src="../../../../images/tcp-ip-model.png" class="img-fluid mx-auto d-block" style="max-width: 60%; margin-top: 10px;"/>
+          <p style="margin-top: 20px; font-size: small;">
             Modèle OSI vs Modèle TCP/IP
           </p>
 
@@ -184,7 +193,7 @@
             Lors d'un envoi, nous parcourons donc les couches du modèle OSI de haut en bas, de la couche 7 à la couche 1, ainsi que vous pouvez le voir sur la figure suivante.</br>
           </p>
 
-          <img src="../../../../images/osi-model-2.png" class="img-fluid float-left" style="max-width: 50%; margin-left: 25%; margin-top: 30px;"/>
+          <img src="../../../../images/osi-model-2.png" class="img-fluid mx-auto d-block" style="max-width: 50%; margin-top: 30px;"/>
 
           <p style="margin-top: 40px; ">
             Ainsi, grâce à la seconde règle du modèle OSI, nous garantissons que lors de l'envoi d'informations, toutes les couches du modèle OSI vont être parcourues.</br></br>
@@ -197,8 +206,12 @@
             Références
           </h3>
 
-          <h6 style="margin-top: 30px; margin-bottom: 200px;">
+          <h6 style="margin-top: 30px;">
             "Apprenez le fonctionnement des réseaux TCP/IP" de Eric Lalitte - Collection OpenClassrooms
+          </h6>
+
+          <h6 style="margin-top: 30px; margin-bottom: 200px;">
+            <a href="https://www.opte.org/" target="_blank">https://www.opte.org/</a>
           </h6>
         </div>
       </div>
