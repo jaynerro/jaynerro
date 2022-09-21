@@ -47,20 +47,24 @@
                 <li id="liNetwork">
                   <a>Réseaux</a>
                   <ul>
+                    <li id="liNetworkArchitecture">
+                      <a href="/knowledge-base/basics/network/network-architecture.php">L'architecture réseau</a>
+                    </li>
+
                     <li id="liOSI">
                       <a>Modèle OSI</a>
                       <ul>
 
                         <li id="liOSIModelDefinition">
-                          <a href="/memory-aids/basics/network/osi-model/definition.php">Qu'est-ce que c'est ?</a>
+                          <a href="/knowledge-base/basics/network/osi-model/definition.php">Qu'est-ce que c'est ?</a>
                         </li>
 
                         <li id="liLayer1">
-                          <a href="/memory-aids/basics/network/osi-model/layer1.php">Couche 1</a>
+                          <a href="/knowledge-base/basics/network/osi-model/layer1.php">Couche 1</a>
                         </li>
 
                         <li id="liLayer2">
-                          <a href="#">Couche 2</a>
+                          <a href="/knowledge-base/basics/network/osi-model/layer2.php">Couche 2</a>
                         </li>
 
                         <li id="liLayer3">
@@ -140,11 +144,11 @@
                         </li>
                       </ul>
                     </li>
-                    <li id="liNetworkEquipments">
+                    <li id="liNetworkingHardware">
                       <a>Équipements réseau</a>
                       <ul>
                         <li id="liSwitch">
-                          <a href="#">Switch</a>
+                          <a href="/knowledge-base/basics/network/networking-hardware/switch.php">Switch</a>
                         </li>
 
                         <li id="liRouteur">
@@ -466,7 +470,7 @@
               </ul>
             </li>
             <li id="li5" data-value="li5" style="margin-top: 20px;">
-              <a href="#">
+              <a href="/knowledge-base/glossary.php">
                 Glossaire
               </a>
             </li>

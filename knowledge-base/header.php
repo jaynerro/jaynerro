@@ -8,10 +8,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" href="/knowledge-base.php">Knowledge Base</a>
+                    <a class="nav-link active" href="../knowledge-base.php">Knowledge Base</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="/intelligence-gathering.php">Veille informationnelle</a>
+                    <a class="nav-link active" href="../intelligence-gathering.php">Veille informationnelle</a>
                 </li>
             </ul>
         </div>

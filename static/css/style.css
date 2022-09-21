@@ -39,6 +39,13 @@ a {
     margin-left: 9em;
 }
 
+h2 {
+    color: white;
+    text-align: justify;
+    font-size: xx-large;
+    font-style: italic;
+}
+
 h3 {
     color: white;
     text-align: justify;
