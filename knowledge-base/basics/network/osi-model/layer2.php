@@ -27,7 +27,7 @@
   <body class="dark">
 
     <?php //Inclusion de la barre de navigation ?>
-    <?php require_once('header.php'); ?>
+    <?php require_once('../../../../header.php'); ?>
     
     <div class="container" style="margin-top: 30px;">
     <?php // Mise en place d'un fil d'Arianne ?>
@@ -64,8 +64,13 @@
                 <p style="margin-top: 30px;"> 
                     En réseau, la plupart du temps on veut parler à une machine en particulier. Et pour pouvoir parler à une machine en particulier, il va bien falloir être capable de l'identifier. Les chercheurs ont donc créé un identifiant particulier à la couche 2 qui permettrait de distinguer les machines entre elles : l'adresse MAC (Media Access Control). </br></br>
                     L’adresse MAC n’est pas exactement l’adresse d’une machine, il s’agit de l'adresse d'une carte réseau. </br></br>
-                    L’adresse MAC s’écrit en hexadécimal (exemple : 00:23:5e:bf:45:6a). Elle est codée sur 6 octets. Ainsi, chaque adresse MAC va être unique au monde. 
+                    L’adresse MAC s’écrit en hexadécimal (exemple : 00:23:5e:bf:45:6a). Elle est codée sur 6 octets. Ainsi, chaque adresse MAC va être unique au monde. </br>
+                    Une adresse MAC est composée de 2 parties :
                 </p>
+                <ul style="font-size: large; text-align: justify; color: white;">
+                    <li>La première moitié (les 3 premiers octets) identifie le fabricant de la carte réseau.</li>
+                    <li>La deuxième moitié identifie la carte réseau elle-même.</li>
+                </ul>
                 <p style="margin-top: 30px;"> 
                     Parmi les adresses MAC, il y en a une particulière, c'est l'adresse dans laquelle tous les bits sont à 1, ce qui donne ff:ff:ff:ff:ff:ff : il s’agit de l'adresse de broadcast. </br>
                     L'adresse de broadcast est une adresse universelle qui identifie n'importe quelle carte réseau. </br>
@@ -142,7 +147,7 @@
                 <p style="margin-top: 40px; justify-content: start;"> 
                     On obtient ainsi notre trame Ethernet complète :
                 </p>
-                <img src="../../../../images/ethernet_type_2_frame_format.png" class="img-fluid mx-auto d-block" style="max-width: 100%; margin-top: 30px;"/>
+                <img src="../../../../images/ethernet-type-2-frame-format.png" class="img-fluid mx-auto d-block" style="max-width: 100%; margin-top: 30px;"/>
                 <p style="margin-top: 80px; justify-content: start;"> 
                     Une trame Ethernet a-t-elle besoin d'une taille minimale ? Et d'une taille maximale ?
                 </p>
@@ -176,5 +181,5 @@
 
     </body>
     <?php //Inclusion du pied de page ?>
-    <?php require_once('footer.php'); ?>
+    <?php require_once('../../../../footer.php'); ?>
 </html>

@@ -27,7 +27,7 @@
   <body class="dark">
 
     <?php //Inclusion de la barre de navigation ?>
-    <?php require_once('header.php'); ?>
+    <?php require_once('../../../../header.php'); ?>
     
     <div class="container" style="margin-top: 30px;">
     <?php // Mise en place d'un fil d'Arianne ?>
@@ -306,5 +306,5 @@
 
     </body>
     <?php //Inclusion du pied de page ?>
-    <?php require_once('footer.php'); ?>
+    <?php require_once('../../../../footer.php'); ?>
 </html>
