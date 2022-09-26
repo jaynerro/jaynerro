@@ -68,7 +68,7 @@
                         </li>
 
                         <li id="liLayer3">
-                          <a href="#">Couche 3</a>
+                          <a href="/knowledge-base/basics/network/osi-model/layer3.php">Couche 3</a>
                         </li>
 
                         <li id="liLayer4">

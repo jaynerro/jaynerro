@@ -293,7 +293,35 @@
                     Ce n'est pas impossible, mais presque, cela a déjà été fait : ça s'appelle du VLAN hopping.</br>
                     Malheureusement pour nous, les failles de conception qui le permettaient ont été corrigées et le VLAN hopping n'est plus d'actualité.
                 </p>
-
+                <p style="margin-top: 80px;">
+                    <b>Cas pratique</b>
+                </p>
+                <img src="../../../../images/switch-example-4.png" class="img-fluid mx-auto d-block" style="max-width: 90%; margin-top: 30px;"/>
+                <p style="margin-top: 30px;">
+                    Il y a trois switchs connectés entre eux, et quelques machines branchées sur chaque switch.</br>
+                    Problème : la semaine dernière, le switch 2, qui est au milieu, est tombé en panne et les machines des switch 1 et 3 ne pouvaient alors plus se parler !</br>
+                    On vous demande donc de trouver une solution pour que le réseau puisse continuer de fonctionner, même si l'un des switchs tombe en panne.</br>
+                    Ni une ni deux, vous vous dites qu'il faudrait relier les switchs 1 et 3, comme ça si n'importe lequel des switchs tombe en panne, les deux autres seront toujours reliés...</br>
+                    Et patatras...</br></br>
+                    Une heure à peine après que vous ayez relié les switchs, le réseau ne marche plus, plus personne n'a accès à Internet et on n'arrive même plus à communiquer avec les machines sur le réseau local.</br>
+                    Que se passe-t-il ?</br></br>
+                    Vous venez de créer ce que l'on appelle une boucle de commutation et ceci est très grave !</br>
+                    Cette boucle est grave, car elle offre deux chemins possibles pour atteindre une destination.</br>
+                    Dans le cas de l'envoi d'une trame vers une machine, le switch empruntera ces deux chemins et la trame arrivera à destination deux fois. Pas si grave, vous direz.</br>
+                    Néanmoins, cela devient très gênant dans le cas d'un broadcast !</br>
+                    En effet, notre broadcast va être envoyé sur les deux chemins puis, arrivé au prochain switch, il va être renvoyé par les deux chemins possibles puis, arrivé au prochain switch, renvoyé par les deux chemins possibles, etc.</br>
+                    Et ainsi de suite jusqu'à ce que les switchs aient trop de broadcasts à traiter en même temps et soient complètement saturés.</br></br>
+                    Ce phénomène s'appelle une tempête de broadcasts (ou broadcasts storm en anglais).</br></br>
+                    Il est extrêmement puissant et peut faire écrouler les plus grands réseaux. Un réseau de 15 000 machines peut s'écrouler pendant plusieurs jours à cause d'un problème de ce genre.</br>
+                    Et il suffit de créer une simple petite boucle... Il suffit de relier les deux extrémités d'un câble à un même switch...</br>
+                    OK, mais alors comment répondre au problème initial ?</br>
+                    Il n'y a pas de solution... Du moins pas dans l'état actuel de nos connaissances.</br>
+                    Pour ceux qui veulent aller plus loin, vous pourrez vous renseigner sur le web à propos des technologies de spanning tree, fast spanning tree et 802.1d.</br>
+                    Ce qu'il faut en retenir : ne jamais faire de boucles sur, ou entre, des switchs !
+                </p>
+                <p style="margin-top: 60px;">
+                    Dernière chose : Vous entendrez parfois parler de pont ou bridge en anglais. Un pont n'est rien d'autre qu'un switch avec seulement deux ports. Donc si vous connaissez le switch, vous connaissez le pont !
+                </p>
 
             </div>
         </div>

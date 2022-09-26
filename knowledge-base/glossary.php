@@ -89,6 +89,33 @@
 
 
           <h2 style="margin-top: 60px; font-size: 300%;">
+            S
+          </h2>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/networking-hardware/switch.php">SFP</a>
+          </h3>
+
+
+          <h2 style="margin-top: 60px; font-size: 300%;">
+            T
+          </h2>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/networking-hardware/switch.php">TTL</a>
+          </h3>
+
+
+          <h2 style="margin-top: 60px; font-size: 300%;">
+            V
+          </h2>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/networking-hardware/switch.php">VLAN</a>
+          </h3>
+
+
+          <h2 style="margin-top: 60px; font-size: 300%;">
             W
           </h2>
 
