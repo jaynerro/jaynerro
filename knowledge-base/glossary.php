@@ -49,11 +49,24 @@
           </h3>
 
           <h3 style="margin-top: 35px;">
+            <a href="./basics/network/osi-model/layer3.php">CIDR</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
             <a href="./basics/network/osi-model/layer2.php">CRC</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
             <a href="./basics/network/osi-model/layer1.php">CSMA/CD</a>
+          </h3>
+
+
+          <h2 style="margin-top: 60px; font-size: 300%;">
+            I
+          </h2>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/osi-model/layer3.php">IP</a>
           </h3>
 
 
@@ -87,6 +100,14 @@
             <a href="./basics/network/osi-model/definition.php">OSI</a>
           </h3>
 
+
+          <h2 style="margin-top: 60px; font-size: 300%;">
+            R
+          </h2>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/osi-model/layer3.php">RFC</a>
+          </h3>
 
           <h2 style="margin-top: 60px; font-size: 300%;">
             S
