@@ -73,11 +73,12 @@
                     <b>Une adresse multifonction</b>
                 </p>
                 <p style="margin-top: 30px;">
-                    L'adresse IP (Internet Protocol) est l'adresse du réseau et de la machine. Plus exactement, une partie de l'adresse représentera l'adresse du réseau, et l'autre partie l'adresse de la machine. Une adresse IP est codée sur 32 bits (soit 4 octets).</br></br>
+                    L'adresse IP est l'adresse du réseau et de la machine. Plus exactement, une partie de l'adresse représentera l'adresse du réseau, et l'autre partie l'adresse de la machine. Une adresse IP est codée sur 32 bits (soit 4 octets).</br></br>
                     Afin de simplifier la lecture et l'écriture d'adresses IP pour les humains, nous avons choisi d'écrire les adresses avec la notation en décimal pointée. Cette dernière sépare les 4 octets sous forme de 4 chiffres décimaux allant de 0 à 255.</br>
                     Cela donne par exemple : 192.168.0.1</br></br>
                     On en déduit que la plus petite adresse IP est: 0.0.0.0 (quand tous les bits de l'adresse sont à 0) alors que la plus grande vaut : 255.255.255.255 (quand tous les bits sont à 1).</br></br>
-                    Au niveau des ordinateurs et des différents matériels réseau manipulant les adresses IP, ces dernières sont manipulées en binaire (base 2).</br>
+                    Au niveau des ordinateurs et des différents matériels réseau manipulant les adresses IP, ces dernières sont manipulées en binaire (base 2).</br></br>
+                    L’adresse IP permet d’identifier la localisation géographique des machines, ou au moins de savoir à quel réseau elles appartiennent, contrairement à l’adresse MAC. Grâce à elle, on peut souvent localiser les émetteurs et récepteurs des messages qui transitent dans un réseau.
                 </p>
                 <p style="margin-top: 50px;"> 
                     <b>Le masque de sous-réseau</b>
@@ -378,9 +379,116 @@
                 <p style="margin-top: 50px; margin-left: 20px; justify-content: start;">
                     Étape 1 - Calcul de la plage d'origine
                 </p>
+                <ol style="font-size: large; text-align: justify; color: white;">
+                    <li>Le nombre significatif vaut: 256 - 224 = 32.</li>
+                    <li>L'octet significatif de l'adresse vaut 160, qui est un multiple de 32 ! Ce sera donc la première adresse, la dernière étant 160 + 32 - 1 = 191.</li>
+                    <li>La première adresse est 192.168.160.0 et la dernière est 192.168.191.255.</li>
+                </ol>
+                <p style="margin-top: 50px; margin-left: 20px; justify-content: start;">
+                    Étape 2 - Calcul des masques
+                </p>
+                <p style="margin-top: 10px;">
+                    La seule information que nous avons est le nombre de personnes de chaque population. Ça tombe bien, car nous savons que la taille d'une plage dépend de son masque. 
+                    Donc si on connaît le nombre d'adresses nécessaires, nous pouvons en déduire le masque.
+                </p>
+                <p>
+                    Rappel : nombre d'adresses dans un réseau = 2<sup>Nombrede0danslemasque</sup>.
+                </p>
+                <p style="margin-top: 10px;">
+                    Pour les techniciens, qui sont 550, le réseau devra contenir 1024 adresses (la puissance de 2 supérieure) soit 2^10.</br>
+                    Le masque contiendra donc 10 bits à 0, soit : 11111111.11111111.11111100.00000000.</br>
+                    Soit en décimal : 255.255.252.0.</br></br>
+
+                    Nous pouvons faire pareil pour les commerciaux : 130 < 2^8.</br>
+                    Le masque est donc : 255.255.255.0.</br></br>
+
+                    Et pour les directeurs, nous trouvons : 10 < 2^4.</br>
+                    Le masque est donc : 255.255.255.240.</br>
+                </p>
+                <p style="margin-top: 50px; margin-left: 20px; justify-content: start;">
+                    Étape 3 - Calcul des plages
+                </p>
+                <p style="margin-top: 10px;">
+                    Nous allons commencer par les techniciens. Notre plage de départ démarre en 192.168.160.0. Eh bien nous allons commencer la plage des techniciens à cette adresse, et allons trouver l'adresse de fin grâce au masque.</br></br>
+
+                    Calculons le nombre significatif : 256 - 252 = 4.</br>
+                    Le prochain multiple de 4 après 160 est 164 - 1 = 163.</br>
+                    La dernière adresse pour les techniciens est donc 192.168.163.255.</br></br>
+
+                    Pour les commerciaux, nous allons donc démarrer à l'adresse juste après pour ne pas empiéter sur la plage des techniciens, soit 192.168.164.0.</br>
+                    Nous allons nous passer du nombre significatif pour les commerciaux, car la coupure se fait parfaitement entre deux octets sur le masque. L'adresse de fin est donc facilement calculée à 192.168.164.255.</br></br>
+
+                    Nous démarrons après pour les directeurs, à l'adresse 192.168.165.0. Le nombre significatif vaut 256 - 240 = 16</br>
+                    La dernière adresse est donc 192.168.165.15 !
+                </p>
+                <p style="margin-top: 50px; margin-left: 20px; justify-content: start;">
+                    Pour aller plus loin
+                </p>
+                <p style="margin-top: 10px;">
+                    Imaginons que nous ayons 120 secrétaires qui débarquent sur notre réseau.
+                    Nous voulons leur créer une nouvelle plage, mais sans toucher aux réseaux existants. Si nous prenons la même méthode que précédemment, nous allons nous planter. Voyons pourquoi.</br></br>
+                    Nous avions fini la plage des directeurs à l'adresse 192.168.165.15, nous allons donc démarrer celle des secrétaires à l'adresse suivante, soit 192.168.165.16.</br>
+                    Le masque pour les secrétaires sera : 120 < 2^7; soit 255.255.255.128.</br>
+                    Le nombre significatif vaut 256 - 128 = 128. La plage des secrétaires va donc finir au prochain multiple de 128 moins 1, soit 127.</br></br>
+
+                    Nous avons donc défini la plage des secrétaires allant de 192.168.165.16 à 192.168.165.127...</br></br>
+
+                    Mais cela ne marche pas ! D'abord, car il n'y a pas assez d'adresses. De 16 à 127, nous n'avons que 112 adresses, pas assez pour nos 120 secrétaires. Ensuite, et c'est le plus grave, notre plage n'est pas celle que nous pensons... 
+                    En effet, si nous reprenons la méthode significatif à 0, cela nous donne le calcul suivant :</br>
+                    le nombre significatif est 128 ; les multiples de 128 sont 0, 128 et 256 ; notre plage va donc aller de 0 à 127, et non de 16 à 127 !</br></br>
+                    Nous empiétons donc sur les adresses des directeurs !</br></br>
+                    Pour résoudre ce problème, il suffit de prendre le multiple du nombre significatif suivant !</br>
+                    Nous allons commencer notre plage non pas en 192.168.165.16, mais en 192.168.165.128, et donc finir en 192.168.165.255.</br></br>
+
+                    Et là, nous avons bien défini un réseau d'au moins 120 adresses et qui n'empiète pas sur le réseau des directeurs !</br>
+                    Cependant, nous avons laissé un trou... Les adresses de 16 à 127 ne sont pas utilisées. C'est normal, et ce n'est pas grave de toute façon. Nous pourrons utiliser ces adresses pour des petits réseaux par la suite si nous le souhaitons.
+                </p>
+                <p style="margin-top: 60px;">
+                    <b>Un protocole : IP</b>
+                </p>
+                <p style="margin-top: 10px;">
+                    Pour rappel, un protocole est un langage. Il permet aux machines qui dialoguent ensemble de se comprendre.</br>
+                    Pour la couche 3 du modèle OSI, c'est le protocole IP, ou Internet Protocol.</br>
+                    Comme pour la couche 2, nous allons devoir définir de quelles informations nous allons avoir besoin, et dans quel ordre les placer.</br></br>
+                    Déjà, nous pouvons nous douter que nous allons avoir l'adresse IP de l'émetteur ainsi que celle du récepteur. Néanmoins, il va y avoir beaucoup d'autres informations.
+                    Dans un premier temps, nous n'allons voir que celles qui nous intéressent, et nous ajouterons petit à petit les autres éléments de l'en-tête IP.</br>
+                    Nous avons donc :
+                </p>
+                <ul style="font-size: large; text-align: justify; color: white;">
+                    <li>adresse IP émetteur ;</li>
+                    <li>adresse IP destinataire.</li>
+                </ul>
+                <p style="margin-top: 10px;">
+                    Jusqu'ici rien d'étonnant, il est normal d'avoir les informations identifiant les participants à la communication.</br></br>
+
+                    Toutefois, nous avons dit que l'adresse IP devait toujours être accompagnée du masque ; va-t-on avoir le masque aussi dans l'en-tête IP ?</br></br>
+
+                    La question à laquelle il va falloir répondre est surtout : est-il nécessaire de connaître le masque d'une machine pour lui envoyer un message ?</br>
+                    Pour y répondre, mettons-nous dans la peau d'une machine qui veut envoyer un message à une autre.</br>
+
+                    Nous sommes la machine A qui a pour adresse 192.168.0.1/24 et nous souhaitons envoyer un message à une machine B d'adresse 192.168.1.1/24.
+                    Ce qui est important pour moi, en tant que machine A, c'est de savoir si la machine B est sur mon réseau. En effet, si elle est sur mon réseau, je lui parlerai grâce à la couche 2. Si elle est sur un autre réseau, il faudra que je fasse appel à la couche 3.</br></br>
+
+                    De quoi ai-je besoin pour savoir si la machine B est sur mon réseau ?</br></br>
+
+                    Pour savoir si la machine B est sur mon réseau, c'est facile !
+                    Je regarde la plage d'adresses de mon réseau, et je n'ai plus qu'à regarder si l'adresse de la machine B appartient à cette plage.</br></br>
+
+                    Dans notre cas, ma plage d'adresses va de 192.168.0.0 à 192.168.0.255. Elle ne contient donc pas l'adresse de la machine B (192.168.1.1).
+                    J'en déduis donc que B n'est pas sur mon réseau et qu'il va falloir utiliser la couche 3 pour communiquer avec elle.</br></br>
+
+                    Nous remarquons au passage que nous n'avons pas eu besoin du masque de la machine B pour savoir si elle appartenait à notre réseau. Il ne sera donc pas utile d'indiquer le masque dans l'en-tête IP. L'adresse IP suffira.</br></br>
+
+                    Comme pour la trame de couche 2, un format de message est défini par le protocole. Pour le protocole IP, le message s'appelle un datagramme ou un paquet.
+                </p>
+                <p style="margin-top: 30px; justify-content: start;">
+                    <b>Le datagramme / paquet</b>
+                </p>
                 
-
-
+                <p style="margin-top: 40px;"> 
+                    Le matériel de couche 3 est le &nbsp; <a href="/knowledge-base/basics/network/networking-hardware/router.php"> routeur </a> .
+                </p>
+                
             </div>
         </div>
       
@@ -391,8 +499,12 @@
                     Références
                 </h3>
 
-                <h6 style="margin-top: 30px; margin-bottom: 140px;">
+                <h6 style="margin-top: 30px;">
                     "Apprenez le fonctionnement des réseaux TCP/IP" de Eric Lalitte - Collection OpenClassrooms
+                </h6>
+
+                <h6 style="margin-top: 30px; margin-bottom: 140px;">
+                    <a href="https://openclassrooms.com/fr/courses/6944606-concevez-votre-reseau-tcp-ip" target="_blank">Concevez votre réseau TCP/IP - OpenClassrooms</a>
                 </h6>
 
             </div>

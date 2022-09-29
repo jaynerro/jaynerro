@@ -66,7 +66,7 @@
                         <li id="liLayer2">
                           <a href="/knowledge-base/basics/network/osi-model/layer2.php">Couche 2</a>
                         </li>
-
+                        
                         <li id="liLayer3">
                           <a href="/knowledge-base/basics/network/osi-model/layer3.php">Couche 3</a>
                         </li>
@@ -152,7 +152,7 @@
                         </li>
 
                         <li id="liRouteur">
-                          <a href="#">Router</a>
+                          <a href="/knowledge-base/basics/network/networking-hardware/router.php">Routeur</a>
                         </li>
 
                         <li id="liFirewall">
