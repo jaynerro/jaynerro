@@ -484,7 +484,44 @@
                 <p style="margin-top: 30px; justify-content: start;">
                     <b>Le datagramme / paquet</b>
                 </p>
-                
+                <p style="margin-top: 10px; justify-content: start">
+                    Comme pour la couche 2, le datagramme IP va être une suite de 0 et de 1 organisés.</br>
+                    Voici la forme qu'il va prendre :
+                </p>
+                <img src="../../../../images/packet-ip-format.png" class="img-fluid mx-auto d-block" style="max-width: 100%; margin-top: 30px;"/>
+                <p style="margin-top: 20px; font-size: small;">
+                    Datagramme / paquet IP
+                </p>
+                <p style="margin-top: 10px; justify-content: start">
+                    Nous voyons ici que le format général est proche de celui de la trame Ethernet, mais que les informations contenues sont différentes et dans un ordre différent.
+                    L'adresse IP de destination est en fin d'en-tête. Et pourtant, nous avions vu en couche 2 qu'il était important que l'adresse MAC de destination soit en début d'en-tête pour que la machine qui reçoit la trame sache immédiatement si celle-ci lui est destinée. Pourquoi cela serait différent pour IP ?</br>
+                    Pour le comprendre, nous allons devoir aborder d'autres notions.
+                </p>
+                <p style="margin-top: 30px; justify-content: start;">
+                    <b>L'encapsulation</b>
+                </p>
+                <p style="margin-top: 10px; justify-content: start">
+                    Qu'est-ce qui circule sur le réseau ? Des trames ? Des datagrammes ? Les deux ? Pour répondre à cette question, nous allons devoir nous replonger dans le modèle OSI.
+                </p>
+                <img src="../../../../images/osi-model-2.png" class="img-fluid mx-auto d-block" style="max-width: 50%; margin-top: 30px;"/>
+                <p style="margin-top: 30px;">
+                    Comme nous le voyons, un message est envoyé depuis la couche 7 du modèle OSI, et il traverse toutes les couches jusqu'à arriver à la couche 1 pour être envoyé sur le réseau. </br></br>
+                    Que devient notre message d'origine, ainsi que les en-têtes de chaque couche ? </br></br>
+                    Un en-tête va être ajouté à chaque passage par une couche. On va ainsi accumuler les en-têtes des différentes couches (voir la figure suivante).
+                </p>
+                <img src="../../../../images/osi-model-3.png" class="img-fluid mx-auto d-block" style="max-width: 75%; margin-top: 30px;"/>
+                <p style="margin-top: 30px;">
+                    Au passage par la couche 4, on ajoutera l'en-tête de couche 4, puis celui de couche 3 en passant par la couche 3, et ainsi de suite.</br></br>
+                    Ce mécanisme s'appelle l'encapsulation, car on encapsule un message dans un autre.</br></br>
+
+                    Nous voyons clairement qu'au final, ce qui va circuler sur le réseau est une trame de couche 2, qui contient le datagramme de couche 3 (qui lui-même contiendra l'élément de couche 4).</br>
+                    Ainsi, je vous ai plus ou moins menti quand je vous ai donné le format d'une trame Ethernet.
+                </p>
+                <img src="../../../../images/ethernet-frame.png" class="img-fluid mx-auto d-block" style="max-width: 100%; margin-top: 30px;"/>
+                <p style="margin-top: 30px;">
+                    Je ne vous ai pas dit que dans les données à envoyer, il y avait en fait l'en-tête de couche 3, l'en-tête de couche 4, puis enfin, les données à envoyer.
+                </p>
+                <img src="../../../../images/ethernet-frame-2.png" class="img-fluid mx-auto d-block" style="max-width: 100%; margin-top: 30px;"/>
                 <p style="margin-top: 40px;"> 
                     Le matériel de couche 3 est le &nbsp; <a href="/knowledge-base/basics/network/networking-hardware/router.php"> routeur </a> .
                 </p>
