@@ -39,6 +39,15 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-sm-8" style="margin-left: 5%;">
+          
+          <h2 style="margin-top: 60px; font-size: 300%;">
+            A
+          </h2>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/osi-model/layer3/ARP-ICMP.php">ARP</a>
+          </h3>
+
 
           <h2 style="margin-top: 60px; font-size: 300%;">
             C
@@ -49,7 +58,7 @@
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer3.php">CIDR</a>
+            <a href="./basics/network/osi-model/layer3/IP-address-assignment.php">CIDR</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
@@ -66,7 +75,7 @@
           </h2>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer3.php">IP</a>
+            <a href="./basics/network/osi-model/layer3/layer3.php">IP</a>
           </h3>
 
 
@@ -106,7 +115,7 @@
           </h2>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer3.php">RFC</a>
+            <a href="./basics/network/osi-model/layer3/layer3.php">RFC</a>
           </h3>
 
           <h2 style="margin-top: 60px; font-size: 300%;">

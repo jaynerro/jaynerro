@@ -68,7 +68,21 @@
                         </li>
                         
                         <li id="liLayer3">
-                          <a href="/knowledge-base/basics/network/osi-model/layer3.php">Couche 3</a>
+                          <a>Couche 3</a>
+                          <ul>
+
+                            <li id="liLayer3AndIPProtocol">
+                              <a href="/knowledge-base/basics/network/osi-model/layer3/layer3.php">Couche 3 et Protocole IP</a>
+                            </li>
+
+                            <li id="liIPAddressAssignment">
+                              <a href="/knowledge-base/basics/network/osi-model/layer3/IP-address-assignment.php">Découpage de plages d'adresses</a>
+                            </li>
+
+                            <li id="liARPAndICMP">
+                              <a href="/knowledge-base/basics/network/osi-model/layer3/ARP-ICMP.php">Autres protocoles : ARP & ICMP</a>
+                            </li>
+                          </ul>
                         </li>
 
                         <li id="liLayer4">
