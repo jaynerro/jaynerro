@@ -59,7 +59,8 @@
                     <b>Les LAN (Local Area Network)</b>
                 </p>
                 <p style="margin-top: 20px;"> 
-                    Les LAN sont des réseaux à échelle locale, tels que les réseaux domestiques de votre domicile, ou les réseaux à l’échelle d’une entreprise.
+                    Les LAN sont des réseaux à échelle locale, tels que les réseaux domestiques de votre domicile, ou les réseaux à l’échelle d’une entreprise.</br>
+                    Dans le cas d'un réseau d'entreprise, on utilise aussi le sigle RLE pour réseau local d'entreprise.
                 </p>
                 <p style="margin-top: 40px; justify-content: start;">
                     <b>Les MAN (Metropolitan Area Network)</b>

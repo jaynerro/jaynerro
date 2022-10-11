@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="../../../../../static/css/style.css">
 
     <?php // Titre de l'onget de la page ?>
-    <title>Modèle OSI - Couche 3 : La couche Réseau</title>
+    <title>Modèle OSI - Couche 4 : La couche Transport</title>
   </head>
 
   <?php // Corps de la page ?>
@@ -40,8 +40,8 @@
                             <li class="breadcrumb-item"><p style="font-size: medium;">Cybersécurité : les bases</p></li>
                             <li class="breadcrumb-item"><p style="font-size: medium;">Réseaux</p></li>
                             <li class="breadcrumb-item"><p style="font-size: medium;">Modèle OSI</p></li>
-                            <li class="breadcrumb-item"><p style="font-size: medium;">Couche 3</p></li>
-                            <li class="breadcrumb-item active" aria-current="page">La couche Réseau</li>
+                            <li class="breadcrumb-item"><p style="font-size: medium;">Couche 4</p></li>
+                            <li class="breadcrumb-item active" aria-current="page">La couche Transport</li>
                         </ol>
                     </nav>
                 </div> 
@@ -50,7 +50,7 @@
         <div class="row justify-content-center">
             <div class="col-sm-8">
                 <h1> 
-                    Couche 3 : La couche Réseau
+                    Couche 4 : La couche Transport
                 </h1>
                 <p style="margin-top: 30px;">
                     <b>Son rôle</b>

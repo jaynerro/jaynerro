@@ -1,0 +1,6 @@
+root@Debian01:~# ping 192.168.0.3
+PING 192.168.0.3 (192.168.0.3): 56 data bytes
+^C
+--- 192.168.0.3 ping statistics ---
+2 packets transmitted, 0 received, 100.0% packet loss
+round-trip min/avg/max/stddev = 1.443/2.085/2.726/0.641 ms

@@ -75,6 +75,10 @@
           </h2>
 
           <h3 style="margin-top: 35px;">
+            <a href="./basics/network/osi-model/layer3/ARP-ICMP.php">ICMP</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
             <a href="./basics/network/osi-model/layer3/layer3.php">IP</a>
           </h3>
 
@@ -116,6 +120,10 @@
 
           <h3 style="margin-top: 35px;">
             <a href="./basics/network/osi-model/layer3/layer3.php">RFC</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/network-architecture.php">RLE</a>
           </h3>
 
           <h2 style="margin-top: 60px; font-size: 300%;">

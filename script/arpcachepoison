@@ -1,0 +1,3 @@
+root@Debian02:~# ./arpcachepoison.py
+WARNING: No route found for IPv6 destination :: (no default route ?)
+Usage: arp_poison.py HOST_TO_ATTACK HOST_TO_IMPERSONATE
