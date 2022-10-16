@@ -52,271 +52,255 @@
                 <h1> 
                     Couche 4 : La couche Transport
                 </h1>
+                <p style="margin-top: 30px;"> 
+                    Nous avons vu jusqu'à maintenant, que nous sommes capables de faire dialoguer ensemble des machines d'un bout à l'autre d'Internet.
+                    Mais ce que nous voulons c'est pouvoir faire dialoguer une application cliente avec une application serveur. C'est là où la couche 4 entre en jeu, en ajoutant la notion d'application au réseau. C'est elle qui va faire le lien entre la couche applicative et les couches réseau.
+                </p>
                 <p style="margin-top: 30px;">
                     <b>Son rôle</b>
                 </p>
-                <p style="margin-top: 30px;"> 
-                    Le rôle de la couche 3 est donc d'interconnecter les réseaux. Cela va nous permettre d'envoyer un message d'un réseau à un autre.</br></br>
-                    Mais comment envoyer un message à un réseau auquel nous ne sommes pas directement reliés et qui peut parfois être à l'autre bout du monde ?</br>
-                    Les réseaux sont tous reliés entre eux, comme une chaîne. Internet est comme un énorme ensemble de réseaux collés les uns aux autres. Pour aller de mon réseau au réseau du site jaynerro.com, je passe par plusieurs réseaux intermédiaires, comme indiqué sur la figure suivante.
-                </p>
-                <img src="../../../../../images/layer3-network-1.png" class="img-fluid mx-auto d-block" style="max-width: 45%; margin-top: 30px;"/>
                 <p style="margin-top: 30px;">
-                    On voit bien qu'il y a potentiellement plusieurs chemins possibles pour aller de mon réseau à celui du site jaynerro.com.</br>
-                    La couche 3 va donc me permettre de joindre n'importe quel réseau sur Internet, en passant à travers d'autres réseaux. Ma connexion à une machine sur un autre réseau se fera à travers des réseaux, de proche en proche.</br></br>
-                    Nous pouvons très bien illustrer ceci en utilisant la commande traceroute sous Linux (ou tracer sous Windows).
-                    La commande traceroute permet d'indiquer par quelles machines nous passons pour aller d'un point à un autre sur Internet.
+                    Le rôle de la couche 4 est de gérer les connexions applicatives, c'est-à-dire de faire dialoguer ensemble des applications. 
                 </p>
                 <p style="margin-top: 50px;">
-                    <b>Son identifiant : l'adresse IP</b>
-                </p>
-                <p style="margin-top: 30px; justify-content: start;"> 
-                    <b>Une adresse multifonction</b>
+                    <b>Son identifiant : le port</b>
                 </p>
                 <p style="margin-top: 30px;">
-                    L'adresse IP est l'adresse du réseau et de la machine. Plus exactement, une partie de l'adresse représentera l'adresse du réseau, et l'autre partie l'adresse de la machine. Une adresse IP est codée sur 32 bits (soit 4 octets).</br></br>
-                    Afin de simplifier la lecture et l'écriture d'adresses IP pour les humains, nous avons choisi d'écrire les adresses avec la notation en décimal pointée. Cette dernière sépare les 4 octets sous forme de 4 chiffres décimaux allant de 0 à 255.</br>
-                    Cela donne par exemple : 192.168.0.1</br></br>
-                    On en déduit que la plus petite adresse IP est: 0.0.0.0 (quand tous les bits de l'adresse sont à 0) alors que la plus grande vaut : 255.255.255.255 (quand tous les bits sont à 1).</br></br>
-                    Au niveau des ordinateurs et des différents matériels réseau manipulant les adresses IP, ces dernières sont manipulées en binaire (base 2).</br></br>
-                    L’adresse IP permet d’identifier la localisation géographique des machines, ou au moins de savoir à quel réseau elles appartiennent, contrairement à l’adresse MAC. Grâce à elle, on peut souvent localiser les émetteurs et récepteurs des messages qui transitent dans un réseau.
+                    En couches 2 et 3, nous avions vu qu'il fallait une adresse pour identifier les éléments nécessaires à l'identification des moyens de communication. L'adresse MAC identifie la carte réseau en couche 2, et l'adresse IP identifie l'adresse de notre machine au sein d'un réseau, en couche 3.</br>
+                    En couche 4, l'adresse utilisée est le port. Le port est une adresse, c'est même l'adresse d'une application sur une machine.</br></br>
+                    Ainsi, nous pourrons identifier toute application qui tourne sur notre machine et qui a besoin de dialoguer sur le réseau.</br></br>
+                    Si vous vous rappelez, dans la partie modèle client-serveur, j'avais montré que mon serveur MySQL était en écoute sur le numéro 3306.
                 </p>
-                <p style="margin-top: 50px;"> 
-                    <b>Le masque de sous-réseau</b>
+                <img src="../../../../../images/client-server-model-2.png" class="img-fluid mx-auto d-block" style="max-width: 100%; margin-top: 30px;"/>
+                <p style="margin-top: 30px;">
+                    Nous savons maintenant que ce numéro est en fait le port d'écoute de l'application MySQL. Si je reçois une requête MySQL sur l'adresse IP 127.0.0.1 et sur le port 3306, le service MySQL va pouvoir répondre.</br></br>
+                    Exemple de port en écoute</br>
+                </p>
+                <img src="../../../../../images/listening-port.png" class="img-fluid mx-auto d-block" style="max-width: 100%; margin-top: 30px;"/>
+                <p style="margin-top: 30px;">
+                    Nous voyons ici que le port 80 est en écoute à la ligne 5, et que c'est l'application apache2 qui est un serveur web.
+                    Le port 80 est le port utilisé pour les serveurs web. Nous pouvons donc nous douter qu'un serveur web est en écoute sur cette machine ! Il ne nous reste plus qu'à utiliser un client web, soit un simple navigateur, pour nous connecter à cette application.</br></br>
+                    Essayez sur votre navigateur d'entrer https://163.172.38.160.</br>
+                    Nous avons entré dans l'URL l'adresse IP 163.172.38.160, et nous avons été redirigés vers mon site www.lalitte.com.
+                    C'est normal, car cette adresse est celle de la machine qui héberge mon site.</br></br>
+                    Un point important à remarquer est que nous n'avons pas indiqué que nous voulions atteindre le port 80, seule l'adresse IP a été indiquée.
+                    C'est normal, car notre navigateur, qui est un client web, fait toujours ses requêtes sur le port 80 si un port n'est pas spécifié.
+                    Toutefois, nous pouvons explicitement spécifier un port dans notre URL, par exemple le port 22 qui était en écoute aussi sur la machine. Dans ce cas, nous allons taper 163.172.38.160:22 dans l'URL pour préciser le port voulu.</br></br>
+                    Firefox peut bloquer votre requête, car il considère que c'est une faille de sécurité que d'interroger un autre port que le port 80. Pour désactiver la protection, tapez about:config dans l'URL. 
+                    Puis faites un clic droit dans la barre en haut sur la caseNom de l'option. Ajoutez une nouvelle chaîne de caractères network.security.ports.banned.override puis donnez-lui la valeur 1-65535. Vous pourrez maintenant indiquer le port que vous voudrez dans l'URL.</br></br>
+                    Notez que cela ne fonctionnera pas sous Chrome. Vous avez donc le droit de changer de navigateur !
+                    Nous voyons que nous tombons sur un serveur ssh. Ça tombe bien, car le port 22 est le port normalement réservé pour un serveur ssh.
                 </p>
                 <p style="margin-top: 30px;">
-                    Nous allons ajouter une information supplémentaire à l'adresse IP : le masque de sous-réseau. Ces deux informations, adresse IP et masque, sont inséparables car c'est le masque qui indique quelle est la partie réseau de l'adresse, et quelle est la partie machine.
+                    Quelles adresses pour les ports ?</br></br>
+                    Les ports sont codés en décimal sur deux octets.</br>
+                    Ils peuvent donc prendre 2^16  valeurs, soit 65536 valeurs.</br></br>
+                    Vu que l'on commence l'adressage des ports à 0, nous pourrons avoir des valeurs de ports de 0 à 65535.
+                    Donc nous pourrons faire tourner au maximum 65536 applications en réseau sur une machine. Cela devrait aller... mais on peut quand même parfois arriver à saturation, en cas d'attaque, quand quelqu'un envoie des tonnes de paquets sur nos différents ports pour nous saturer.</br></br>
+                    Nous avons vu qu'un serveur web devait être sur le port 80. Y a-t-il d'autres ports réservés ?
+                    Oui, il y a quasiment autant de ports réservés que d'applications réseau qui existent.
                 </p>
-                <p style="margin-top: 30px; justify-content: start;"> 
-                    <b>Définition : Les bits à 1 dans le masque représentent la partie réseau de l'adresse IP.</b>
-                </p>
+                <img src="../../../../../images/common-ports.png" class="img-fluid mx-auto d-block" style="max-width: 80%; margin-top: 30px;"/>
                 <p style="margin-top: 30px;">
-                    On en déduit que les bits à 0 représentent la partie machine de l'adresse.
-                    Prenons un exemple : on associe l'adresse IP 192.168.0.1 au masque 255.255.0.0.</br>
-                    Écrivons maintenant ces deux adresses en binaire pour y voir plus clair :</br></br>
-                    192.168.0.1 -> 11000000.10101000.00000000.00000001</br>
-                    255.255.0.0 -> 11111111.11111111.00000000.00000000</br></br>
-
-                    L'exercice que nous venons de faire était très facile, car la coupure entre les deux parties de l'adresse se faisait entre deux octets. Or, il arrive très souvent que la coupure se fasse en plein milieu d'un octet. 
-                    Par exemple, si nous reprenons l'exemple précédent en utilisant le masque 255.255.240.0, qu'est-ce que cela donne au niveau de l'adresse ?</br></br>
-                    192.168.0.1 -> 11000000.10101000.00000000.00000001</br>
-                    255.255.240.0 -> 11111111.11111111.11110000.00000000</br></br>
-                    On ne peut pas repasser en décimal étant donné que la coupure se fait au milieu d'un octet. En effet, on ne peut malheureusement pas écrire un demi-octet ou une partie d'un octet seulement. On ne peut parler qu'en binaire. </br>
-                    La partie réseau de l'adresse est 11000000.10101000.0000 et la partie machine est 0000.00000001.
-                </p>
-                <p style="margin-top: 50px; justify-content: start;"> 
-                    <b>La contiguïté des bits</b>
-                </p>
-                <p style="margin-top: 30px;">
-                    Dans un masque en binaire, il doit y avoir les 1 à gauche et les 0 à droite. On ne peut pas mélanger les 1 et les 0.</br></br>
-                    Ainsi, on retrouvera toujours les mêmes valeurs pour les octets d'un masque, qui sont les suivantes :</br>
-                    00000000 -> 0</br>
-                    10000000 -> 128</br>
-                    11000000 -> 192</br>
-                    11100000 -> 224</br>
-                    11110000 -> 240</br>
-                    11111000 -> 248</br>
-                    11111100 -> 252</br>
-                    11111110 -> 254</br>
-                    11111111 -> 255</br></br>
-                    Il nous faut maintenant le mettre en pratique pour trouver les plages d'adresses associées à tel ou tel masque.
-                    Une plage d'adresse est l'ensemble des adresses définies par l'association d'une adresse et d'un masque, de la plus petite adresse à la plus grande.
-                </p>
-                <p style="margin-top: 50px; justify-content: start;"> 
-                    <b>Calcul de plages d'adresses</b>
-                </p>
-                <p style="margin-top: 30px; justify-content: start;">
-                    <b>Calcul de la première et de la dernière adresse d'une plage</b>
-                </p>
-                <p style="margin-top: 10px;">
-                    La première adresse du réseau est celle dont tous les bits de la partie machine sont à 0 et la dernière adresse du réseau est celle dont tous les bits de la partie machine sont à 1.</br></br>
-                    Exemple : l'adresse 192.168.0.1 associée au masque 255.255.240.0.</br>
-                    Trouvons la première et la dernière adresse du réseau auquel appartient cette adresse.</br>
-                    Nous avons le masque et l'adresse :</br>
-                    255.255.240.0 -> 11111111.11111111.11110000.00000000</br>
-                    192.168.0.1 -> 11000000.10101000.00000000.00000001</br>
-                    Première adresse : 11000000.10101000.00000000.00000000 = 192.168.0.0</br>
-                    Dernière adresse : 11000000.10101000.00001111.11111111 = 192.168.15.255</br>
-                </p>
-                <p style="margin-top: 30px; justify-content: start;">
-                    <b>Nombre d'adresses dans un réseau</b>
-                </p>
-                <p style="margin-top: 10px;">
-                    Si jamais nous n'avions qu'un seul bit pour la partie machine, nous aurions deux possibilités sur ce bit, 0 ou 1. Si nous en avions deux, il y aurait 2 x 2 adresses possibles, soit 4 adresses (00, 01, 10, 11) et ainsi de suite.</br>
-                    Donc pour trouver le nombre d'adresses dans un réseau, il suffit de connaître le nombre de bits de la partie machine.
-                    Or, vu que la partie machine est définie par le masque, le nombre de machines disponibles dans un réseau est directement dépendant du masque.
-                </p>
-                <p style="justify-content: start;">
-                    La relation est même encore plus explicite : nombre d'adresses dans un réseau = 2<sup>Nombrede0danslemasque</sup>.
-                </p>
-                <p style="margin-top: 50px; justify-content: start;">
-                    <b>Adresse de réseau, adresse de broadcast</b>
-                </p>
-                <p style="margin-top: 10px;">
-                    Parmi la plage d'adresses définie par une adresse IP et un masque, deux adresses sont particulières, la première et la dernière.</br></br>
-                    La première adresse d'une plage est l'adresse du réseau lui-même.
-                    Cette adresse ne pourra donc pas être utilisée pour une machine.</br></br>
-                    La dernière adresse d'une plage est une adresse spéciale, l'adresse de broadcast.</br>
-                    Quand nous envoyons un message à l'adresse de broadcast, ce message va être reçu par toutes les machines de notre réseau.
-                </p>
-                <p style="margin-top: 70px;">
-                    NB : Une adresse qui finit en 255 n'est pas obligatoirement une adresse de broadcast et une adresse qui finit en 0 n'est pas obligatoirement une adresse de réseau.</br></br>
-                    Exemple : </br>
-                    10.8.65.31/255.255.255.224 => Réseau allant de 10.8.65.0 à 10.8.65.31 = Adresse de broadcast !</br>
-                    192.168.1.0/255.255.254.0 => Réseau allant de 192.168.0.0 à 192.168.1.255 = Adresse de machine !</br></br>
-                    Par contre, une adresse de broadcast est toujours impaire ; une adresse de réseau est toujours paire.
+                    Il y a donc 65535 ports réservés pour les applications ?</br>
+                    Non, seule une partie d'entre eux sont réservés. D'ailleurs, historiquement, ce n'était que les ports inférieurs à 1024 qui étaient réservés. Mais aujourd'hui, beaucoup d'applications qui sortent utilisent des ports au-delà de 1024.</br></br>
+                    À quoi peuvent bien servir les ports au-dessus de 1024 alors ?</br>
+                    Nous avons dit que le port était l'adresse d'une application. Et nous avons vu que les ports étaient notamment utilisés pour les applications serveur, les services.</br></br>
+                    Mais qu'en est-il des applications clientes ? Ont-elles aussi une adresse avec un port ?</br>
+                    Les applications clientes ont des ports, elles aussi, mais ils ne sont pas réservés.
+                    Les ports attribués aux applications clientes sont donnés aléatoirement, au-dessus de 1024, par le système d'exploitation.
+                    Ce n'est pas gênant. Pour un serveur, vu qu'il est en écoute en permanence, il est important que l'on connaisse le port auquel on doit s'adresser. Pour un client, l'application ne va être en écoute que le temps de son fonctionnement. Ainsi, il peut être choisi au hasard tant que le système d'exploitation sait quelle application se trouve derrière quel port.
                 </p>
                 <p style="margin-top: 50px;">
-                    <b>Des adresses particulières</b>
-                </p>
-                <p style="margin-top: 10px; justify-content: start;">
-                    <b>Les RFC</b>
+                    <b>Deux protocoles, TCP et UDP</b>
                 </p>
                 <p style="margin-top: 30px;">
-                    Nous venons de voir les adresses et les masques et nous avons découvert que nous formons des réseaux en les associant.
-                    Cependant, toutes les adresses n'ont pas la même signification, notamment, certaines adresses ont été réservées pour ne pas pouvoir être utilisées sur Internet. 
-                    Ces adresses sont définies dans la RFC 1918.</br></br>
-                    Une RFC (Request for comments) est un document qui propose et présente une technologie que l'on souhaite voir utiliser sur Internet.</br></br>
-                    Par exemple, si je veux créer un nouveau protocole qui va révolutionner Internet, je vais le présenter dans une RFC qui pourra être lue, puis soumise à proposition, et enfin acceptée comme standard d'Internet.</br>
-                    Ainsi, depuis la nuit des temps, les RFC précisent le fonctionnement détaillé d'à peu près tout ce qui se trouve sur Internet.
-                    Par exemple, il y a une RFC qui présente le protocole IP, la RFC 791.
-                </p>
-                <p style="margin-top: 30px; justify-content: start;">
-                    <b>La RFC 1918</b>
-                </p>
-                <p style="margin-top: 10px;">
-                    Cette RFC précise des plages d'adresses, soit des réseaux, qui ont une utilité particulière.
-                    En effet, ces plages d'adresses sont réservées pour une utilisation privée. Cela veut dire que si vous faites un réseau chez vous, ou dans une entreprise, il vous faudra obligatoirement utiliser ces adresses.</br></br>
-                    Il y a une raison à cela : imaginons que j'installe mon réseau chez moi et que je n'ai pas connaissance de la RFC 1918.
-                    Je choisis donc un réseau au hasard, par exemple le réseau 92.243.25.0/255.255.255.0.
-                    Mais malheureusement, cette plage réseau appartient à quelqu'un sur Internet. On pourrait penser que ce n'est pas grave, car de toute façon, mon réseau est privé et ne dérangera personne sur Internet. En fait, je vais avoir des problèmes...</br></br>
-                    Par exemple, j'essaye d'aller sur mon site préféré, jaynerro.com. Et badaboum, cela ne marche pas !
-                    En effet, l'adresse du site jaynerro.com est 92.243.25.239, qui est une adresse qui appartient à la plage réseau que j'ai choisie.
-                    Ainsi, quand ma machine essaye de joindre cette adresse, elle pense que la machine se situe sur son propre réseau, d'après son adresse, et donc elle n'arrive pas à la joindre. Je ne pourrai donc jamais aller sur le site jaynerro.com.
-                </p>
-                <p style="margin-top: 30px; justify-content: start;">
-                    Comment bien choisir son adresse alors ?
-                </p>
-                <p style="margin-top: 30px; justify-content: start;">
-                    C'est simple, il suffit de choisir sa plage d'adresses dans les plages réservées à cet effet dans la RFC 1918.</br>
-                    Les plages définies sont :
+                    Pourquoi la couche 4 aurait-elle besoin de deux protocoles ?
+                    En fait, les personne qui ont créé les réseaux se sont rendu compte qu'il pouvait y avoir deux besoins différents pour le transport des données des applications :
                 </p>
                 <ul style="font-size: large; text-align: justify; color: white;">
-                    <li>10.0.0.0/255.0.0.0</li>
-                    <li>172.16.0.0/255.240.0.0</li>
-                    <li>192.168.0.0/255.255.0.0</li>
+                    <li>des applications qui nécessitent un transport fiable des données, mais qui n'ont pas de besoin particulier en ce qui concerne la vitesse de transmission ;</li>
+                    <li>des applications qui nécessitent un transport immédiat des informations, mais qui peuvent se permettre de perdre quelques informations.</li>
                 </ul>
                 <p style="margin-top: 30px;">
-                    Ces adresses n'appartiennent à personne sur Internet, je serai sûr de pouvoir joindre n'importe quel site sur Internet.
-                    C'est aussi pour cela que, très souvent, les adresses qui sont données par les opérateurs sont dans ces plages. 
-                </p>
-                <p style="margin-top: 60px;">
-                    <b>Un protocole : IP</b>
-                </p>
-                <p style="margin-top: 10px;">
-                    Pour rappel, un protocole est un langage. Il permet aux machines qui dialoguent ensemble de se comprendre.</br>
-                    Pour la couche 3 du modèle OSI, c'est le protocole IP, ou Internet Protocol.</br>
-                    Comme pour la couche 2, nous allons devoir définir de quelles informations nous allons avoir besoin, et dans quel ordre les placer.</br></br>
-                    Déjà, nous pouvons nous douter que nous allons avoir l'adresse IP de l'émetteur ainsi que celle du récepteur. Néanmoins, il va y avoir beaucoup d'autres informations.
-                    Dans un premier temps, nous n'allons voir que celles qui nous intéressent, et nous ajouterons petit à petit les autres éléments de l'en-tête IP.</br>
-                    Nous avons donc :
+                    La première catégorie regroupe une très grande majorité des applications d'Internet, car bon nombre d'entre elles ont besoin que chaque paquet émis soit reçu coûte que coûte !
+                    Ce sont notamment les applications comme le web, la messagerie, le ssh, beaucoup de jeux en ligne, etc.
+                    Si un paquet est perdu, une page web ne pourra pas s'afficher correctement, ce sera pareil pour un mail, etc.</br></br>
+                    La seconde catégorie regroupe moins d'applications, mais vous comprendrez vite pourquoi ces applications ont besoin d'être instantanées et peuvent se permettre qu'un paquet ne soit pas reçu. Il s'agit notamment des applications de streaming, comme la radio ou la télé sur Internet.
+                    Pour une radio en ligne, il est essentiel que les informations soient envoyées en temps réel, le plus rapidement possible. Par contre, si un ou plusieurs paquets sont perdus, on ne va pas arrêter la radio pour autant. L'utilisateur aura des coupures de connexion, mais la radio continuera d'émettre.</br>
+                    On identifie donc ainsi deux besoins bien distincts l'un de l'autre :
                 </p>
                 <ul style="font-size: large; text-align: justify; color: white;">
-                    <li>adresse IP émetteur ;</li>
-                    <li>adresse IP destinataire.</li>
+                    <li>un protocole fiable mais sans nécessité de rapidité ;</li>
+                    <li>un protocole rapide sans nécessité de fiabilité.</li>
                 </ul>
-                <p style="margin-top: 10px;">
-                    Jusqu'ici rien d'étonnant, il est normal d'avoir les informations identifiant les participants à la communication.</br></br>
+                <p style="margin-top: 30px;">
+                    C'est pour cela que nous avons deux protocoles pour la couche 4 : le protocole TCP et le protocole UDP.</br></br>
+                    TCP est de la première catégorie, c'est un protocole extrêmement fiable.</br>
+                    Chaque paquet envoyé doit être acquitté par le receveur, qui en réémettra un autre s'il ne reçoit pas d'accusé de réception. On dit alors que c'est un protocole connecté.
+                    Avec le protocole TCP, pour chaque information envoyée, on vérifiera que la machine en face l'a bien reçue.</br></br>
 
-                    Toutefois, nous avons dit que l'adresse IP devait toujours être accompagnée du masque ; va-t-on avoir le masque aussi dans l'en-tête IP ?</br></br>
-
-                    La question à laquelle il va falloir répondre est surtout : est-il nécessaire de connaître le masque d'une machine pour lui envoyer un message ?</br>
-                    Pour y répondre, mettons-nous dans la peau d'une machine qui veut envoyer un message à une autre.</br>
-
-                    Nous sommes la machine A qui a pour adresse 192.168.0.1/24 et nous souhaitons envoyer un message à une machine B d'adresse 192.168.1.1/24.
-                    Ce qui est important pour moi, en tant que machine A, c'est de savoir si la machine B est sur mon réseau. En effet, si elle est sur mon réseau, je lui parlerai grâce à la couche 2. Si elle est sur un autre réseau, il faudra que je fasse appel à la couche 3.</br></br>
-
-                    De quoi ai-je besoin pour savoir si la machine B est sur mon réseau ?</br></br>
-
-                    Pour savoir si la machine B est sur mon réseau, c'est facile !
-                    Je regarde la plage d'adresses de mon réseau, et je n'ai plus qu'à regarder si l'adresse de la machine B appartient à cette plage.</br></br>
-
-                    Dans notre cas, ma plage d'adresses va de 192.168.0.0 à 192.168.0.255. Elle ne contient donc pas l'adresse de la machine B (192.168.1.1).
-                    J'en déduis donc que B n'est pas sur mon réseau et qu'il va falloir utiliser la couche 3 pour communiquer avec elle.</br></br>
-
-                    Nous remarquons au passage que nous n'avons pas eu besoin du masque de la machine B pour savoir si elle appartenait à notre réseau. Il ne sera donc pas utile d'indiquer le masque dans l'en-tête IP. L'adresse IP suffira.</br></br>
-
-                    Comme pour la trame de couche 2, un format de message est défini par le protocole. Pour le protocole IP, le message s'appelle un datagramme ou un paquet.
+                    UDP, lui, est un protocole rapide, mais peu fiable. Les paquets sont envoyés dès que possible, mais on se fiche de savoir s'ils ont été reçus ou pas. On dit qu'UDP est un protocole non-connecté.
+                    Avec le protocole UDP, on envoie des informations, et ensuite, on prie très fort pour que celles-ci arrivent, mais on n'en sait rien.
                 </p>
-                <p style="margin-top: 30px; justify-content: start;">
-                    <b>Le datagramme / paquet</b>
+                <p style="margin-top: 50px; justify-content: start">
+                    <b>Le protocole UDP</b>
                 </p>
-                <p style="margin-top: 10px; justify-content: start">
-                    Comme pour la couche 2, le datagramme IP va être une suite de 0 et de 1 organisés.</br>
-                    Voici la forme qu'il va prendre :
+                <p style="margin-top: 30px;">
+                    UDP (User Datagram Protocol) est le protocole le plus simple auquel vous aurez affaire en réseau. Étant donné que les objectifs associés à sa mise en œuvre sont la rapidité et la non-nécessité de savoir si une information est bien reçue, le format des messages envoyés sera très simple !</br></br>
+                    Le datagramme UDP</br>
+                    On dit datagramme comme pour le message de couche 3 du protocole IP. C'est normal, car datagramme veut dire, en gros, message envoyé dont on ne sait rien sur la bonne transmission ou réception. Voici le contenu d'un datagramme UDP :
                 </p>
-                <img src="../../../../../images/packet-ip-format.png" class="img-fluid mx-auto d-block" style="max-width: 100%; margin-top: 30px;"/>
+                <img src="../../../../../images/udp-datagram.png" class="img-fluid mx-auto d-block" style="max-width: 100%; margin-top: 30px;"/>
                 <p style="margin-top: 20px; font-size: small;">
-                    Datagramme / paquet IP
-                </p>
-                <p style="margin-top: 10px; justify-content: start">
-                    Nous voyons ici que le format général est proche de celui de la trame Ethernet, mais que les informations contenues sont différentes et dans un ordre différent.
-                    L'adresse IP de destination est en fin d'en-tête. Et pourtant, nous avions vu en couche 2 qu'il était important que l'adresse MAC de destination soit en début d'en-tête pour que la machine qui reçoit la trame sache immédiatement si celle-ci lui est destinée. Pourquoi cela serait différent pour IP ?</br>
-                    Pour le comprendre, nous allons devoir aborder d'autres notions.
-                </p>
-                <p style="margin-top: 30px; justify-content: start;">
-                    <b>L'encapsulation</b>
-                </p>
-                <p style="margin-top: 10px; justify-content: start">
-                    Qu'est-ce qui circule sur le réseau ? Des trames ? Des datagrammes ? Les deux ? Pour répondre à cette question, nous allons devoir nous replonger dans le modèle OSI.
-                </p>
-                <img src="../../../../../images/osi-model-2.png" class="img-fluid mx-auto d-block" style="max-width: 50%; margin-top: 30px;"/>
-                <p style="margin-top: 30px;">
-                    Comme nous le voyons, un message est envoyé depuis la couche 7 du modèle OSI, et il traverse toutes les couches jusqu'à arriver à la couche 1 pour être envoyé sur le réseau. </br></br>
-                    Que devient notre message d'origine, ainsi que les en-têtes de chaque couche ? </br></br>
-                    Un en-tête va être ajouté à chaque passage par une couche. On va ainsi accumuler les en-têtes des différentes couches (voir la figure suivante).
-                </p>
-                <img src="../../../../../images/osi-model-3.png" class="img-fluid mx-auto d-block" style="max-width: 75%; margin-top: 30px;"/>
-                <p style="margin-top: 30px;">
-                    Au passage par la couche 4, on ajoutera l'en-tête de couche 4, puis celui de couche 3 en passant par la couche 3, et ainsi de suite.</br></br>
-                    Ce mécanisme s'appelle l'encapsulation, car on encapsule un message dans un autre.</br></br>
-
-                    Nous voyons clairement qu'au final, ce qui va circuler sur le réseau est une trame de couche 2, qui contient le datagramme de couche 3 (qui lui-même contiendra l'élément de couche 4).</br>
-                    Ainsi, je vous ai plus ou moins menti quand je vous ai donné le format d'une trame Ethernet.
-                </p>
-                <img src="../../../../../images/ethernet-frame.png" class="img-fluid mx-auto d-block" style="max-width: 100%; margin-top: 30px;"/>
-                <p style="margin-top: 30px;">
-                    Je ne vous ai pas dit que dans les données à envoyer, il y avait en fait l'en-tête de couche 3, l'en-tête de couche 4, puis enfin, les données à envoyer.
-                </p>
-                <img src="../../../../../images/ethernet-frame-2.png" class="img-fluid mx-auto d-block" style="max-width: 100%; margin-top: 30px;"/>
-                <p style="margin-top: 30px;">
-                    Ceci dit, j'ai eu raison de vous le présenter ainsi, car la couche 2 est incapable de lire les informations de couche 3 ou de couche 4, de même qu'elle ne comprend pas les données à envoyer. Pour elle, tout cela est une suite de 0 et de 1 qu'elle est incapable de comprendre, elle ne voit ça que comme des données.</br>
-                    Maintenant, vous, vous savez que parmi ces données il y a aussi les en-têtes des couches supérieures.
-                </p>
-                <p style="margin-top: 50px; justify-content: start;">
-                    <b>Exemple réel</b>
+                    Datagramme UDP
                 </p>
                 <p style="margin-top: 30px;">
-                    En utilisant le logiciel wireshark, nous pouvons voir les trames qui passent sur notre réseau. Wireshark est un sniffer. Un sniffer est un programme qui écoute sur le réseau, intercepte toutes les trames reçues par votre carte réseau, et les affiche à l'écran.</br>
-                    Si l'on se plonge dans le contenu d'une trame en cliquant sur l'une d'entre elles, nous pouvons voir que Wireshark sépare les éléments de chacune des couches du modèle OSI.</br></br>
-                    Nous pouvons voir les éléments vus par la couche 1 (Frame...), puis la couche 2 Ethernet, puis la couche 3 IP, Internet Protocol, la couche 4 que nous ne connaissons pas encore et les données applicatives qui sont ici du web HTTP.
-                </p>
-                <p style="margin-top: 60px;">
-                    Pour revenir à pourquoi l'adresse IP de destination n'est pas en début d'en-tête IP ?</br></br>
-                    Quand un message arrive sur une machine, il remonte les couches du modèle OSI de la couche 1 à la couche 7. Il passe donc par la couche 2 qui lit l'adresse MAC de destination :
+                    Nous avons ici seulement 4 informations pour l'en-tête UDP. Chacune faisant 2 octets, cela nous fait un en-tête de seulement 8 octets !
+                    C'est le plus petit en-tête que nous ayons vu, et que nous verrons.</br></br>
+                    Étudions ces champs un par un.
                 </p>
                 <ul style="font-size: large; text-align: justify; color: white;">
-                    <li>si c'est bien celle de la carte réseau, il lit le reste de la trame, puis transmet les données (le paquet/datagramme) à la couche 3 ;</li>
-                    <li>si ce n'est pas celle de la carte réseau, il jette la trame.</li>
+                    <li>Pour le port source, c'est simple, c'est l'adresse de l'application qui envoie l'information.</li>
+                    <li>Pour le port destination, c'est l'adresse de l'application destinataire.</li>
+                    <li>Ensuite, il y a un champ de 2 octets qui représente la taille d'un datagramme, ce qui veut dire que la taille maximum d'un datagramme sera de 2^16 soit 65536 octets. Cependant, dans la réalité, il est très rare de voir des datagrammes UDP de plus de 512 octets. Ceci est notamment dû au fait que perdre un petit datagramme est acceptable, mais en perdre un gros est plus gênant, vu qu'UDP n'a pas de gestion des paquets perdus.</li>
+                    <li>Pour le checksum, ou CRC, le principe est le même que pour la couche 2 : s'assurer que les données reçues sont bien les mêmes que celles qui ont été transmises.</li>
                 </ul>
                 <p style="margin-top: 30px;">
-                    Donc si le message arrive à la couche 3, cela veut obligatoirement dire que la machine sait déjà que le message lui est destiné, puisque l'adresse MAC de destination est la sienne. Elle n'a donc pas la nécessité de savoir immédiatement si l'adresse IP de destination est la sienne, puisqu'elle sait déjà que le paquet est pour elle.</br>
-                    Le choix de mettre l'adresse IP en fin d'en-tête n'est pas anodin et sert surtout à mettre les informations importantes de couche 3 proches des informations importantes de couche 4 que nous verrons plus tard.
+                    Pourquoi avoir un CRC pour le protocole UDP alors qu'il y en a déjà un pour la couche 2 avec le protocole Ethernet ?</br></br>
+                    En effet, si vous avez bien compris le principe d'encapsulation, vous savez que le datagramme UDP est à l'intérieur de la trame Ethernet, et donc que le CRC de la trame vérifie les données de la couche 4 du protocole UDP.</br></br>
+                    Pourquoi alors, faire ce CRC deux fois ?</br></br>
+                    La réponse se trouve dans le modèle OSI.
+                    Si vous vous souvenez bien, une des règles associées au modèle OSI est que chaque couche est indépendante. Ainsi, ce n'est pas parce que la couche 2 avec le protocole Ethernet fait un CRC, que la couche 4 ne doit pas en faire, de même que la couche 3.
+                    Étant donné que chacune des couches n'est pas censée savoir qu'une autre couche fait un CRC, chacune implémente son propre CRC.</br></br>
+                    D'ailleurs, Richard Stevens, l'auteur de la bible des réseaux, TCP/IP illustré, volume 1, a montré qu'il arrive parfois qu'un datagramme arrive en couche 4 avec des erreurs qui ont été produites entre le passage de la couche 3 à la couche 4. Comme quoi, cet acharnement de CRC n'est pas toujours inutile !</br></br>
+                    Les applications qui utilisent UDP</br>
+                    Comme prévu, les applications de streaming vont, en énorme majorité, utiliser UDP, comme la radio sur Internet, la télé sur Internet, etc.
+                    On l'utilise aussi pour la téléphonie sur Internet, plus connue sous le nom de VoIP (Voice Over Internet Protocol) ou ToIP (Telephony Over IP).
+                    Mais on utilise aussi UDP pour transporter deux protocoles majeurs d'Internet que sont le DNS et le SNMP. Vous savez dès maintenant que ce sont deux exceptions qui utilisent UDP parmi la multitude d'applications qui utilisent TCP.
                 </p>
-                <p style="margin-top: 40px;"> 
-                    Le matériel de couche 3 permettant de relier plusieurs réseaux est le &thinsp; <a href="/knowledge-base/basics/network/networking-hardware/router.php"> routeur </a>.
+                <p style="margin-top: 50px; justify-content: start">
+                    <b>Le protocole TCP</b>
                 </p>
-                
+                <p style="margin-top: 30px;">
+                    Le principe de TCP (Transmission Control Protocol, protocole de contrôle de transmissions en français) est d'acquitter chaque octet d'information reçue.
+                    À l'inverse d'UDP, il y aura beaucoup d'informations dans l'en-tête TCP pour parvenir à suivre une connexion correctement.
+                    Mais nous n'allons pas tout de suite nous pencher dessus. Nous allons d'abord voir les principes de base de TCP.</br></br>
+                    Avant de communiquer, on assure la communication.</br>
+                    Prenons une conversation téléphonique. Avant de raconter son histoire, l'interlocuteur va d'abord s'assurer que son partenaire est bien présent au bout du fil. Cela donne:
+                </p>
+                <ul style="font-size: large; text-align: justify; color: white;">
+                    <li>Alice appelle : Tut... tut...</li>
+                    <li>Bob répond : Allo ?</li>
+                    <li>Alice commence sa conversation : Allo, salut c'est Alice !</li>
+                </ul>
+                <p style="margin-top: 30px;">
+                    On voit très clairement ici qu'il faut établir la communication avant de parler du sujet. Il en sera de même en TCP.</br>
+                    Les trois premiers paquets envoyés ne serviront qu'à établir la communication. Comme le allo, ce seront des paquets vides qui ne sont là que pour s'assurer que l'autre veut bien parler avec nous.</br></br>
+                    TCP va utiliser des informations dans son en-tête pour dire si un paquet correspond à une demande de connexion ou si c'est un paquet normal.</br></br></br>
+                    Les drapeaux / flags</br></br>
+                    Étant donné que les paquets qui vont être envoyés pour initialiser la connexion seront vides (ils ne contiendront pas de données) il faudra une information présente dans l'en-tête pour indiquer si c'est une demande de connexion, une réponse ou un acquittement (un acquittement sera une réponse vide qui servira simplement à dire à la machine en face que l'on a bien reçu ses informations, comme quand on dit "han han..." au téléphone pour bien spécifier que l'on écoute ce que dit notre interlocuteur).</br>
+                    Pour cela, il va y avoir ce que l'on appelle des drapeaux (ou flags en anglais) dans l'en-tête TCP. Les drapeaux ne sont rien d'autre que des bits qui peuvent prendre la valeur 0 ou 1. Ainsi, il y aura dans l'en-tête TCP des bits qui vont indiquer quel est le type du message TCP envoyé.</br></br></br>
+                    Établissement de la connexion</br></br>
+                    Le premier paquet sera une demande de synchronisation, comme le allo au téléphone, le flag correspondant est le flag SYN (SYN pour synchronized / synchronisation). Tous les flags sont connus sous leur forme courte, de trois lettres seulement.
+                    Ainsi, si je veux me connecter à une application serveur qui fonctionne avec TCP, je vais envoyer un paquet avec le flag SYN positionné pour lui indiquer que je veux dialoguer avec elle, c'est l'équivalent d'un "Tu veux bien dialoguer avec moi ?".</br>
+                    Un serveur recevant une demande SYN doit normalement répondre qu'il est d'accord pour communiquer avec le client. Pour cela il va envoyer un ACK en réponse (ACK comme acquittement, ou acknowledgement en anglais).
+                    MAIS, il va, à son tour, demander si le client veut bien communiquer avec lui et positionner aussi le flag SYN dans sa réponse. Il y aura donc les flags SYN ET ACK positionnés dans sa réponse.</br></br>
+                    Si le client a demandé à communiquer avec le serveur, pourquoi le serveur lui demande s'il veut bien communiquer avec lui ?</br></br>
+                    La réponse à cette question est primordiale pour comprendre TCP.</br>
+                    Quand on veut communiquer en TCP, on n'établit pas une, mais deux connexions.
+                    Car TCP considère qu'il va y avoir une communication dans un sens, et une communication dans l'autre sens. Il établit donc une connexion pour chaque sens de communication.
+                    Ainsi, quand le serveur répond à la requête SYN, il acquitte la demande avec le ACK, et fait une demande de connexion pour l'autre sens de communication, du serveur vers le client, en positionnant le flag SYN. La réponse a donc les flags SYN ET ACK positionnés.
+                    Toutefois, notre connexion n'est pas encore établie... Il faut encore que le client accepte la demande de connexion faite par le serveur. Le client va donc renvoyer un paquet avec un flag ACK.</br>
+                    Cela donne le résultat que vous pouvez voir en figure suivante.
+                </p>
+                <img src="../../../../../images/3-way-handshake.png" class="img-fluid mx-auto d-block" style="max-width: 50%; margin-top: 30px;"/>
+                <p style="margin-top: 20px; font-size: small;">
+                    Three Way Handshake
+                </p>
+                <p style="margin-top: 30px;">
+                    Nous voyons bien ici la différence entre la communication bleue de A vers B et la communication rouge de B vers A.</br>
+                    On voit d'ailleurs les couleurs des flags associés : en bleu, le premier SYN pour la demande de connexion de A vers B et le ACK dans la réponse pour acquitter la demande de connexion de A vers B ; en rouge le SYN pour la demande de connexion de B vers A et l'acquittement ACK dans le dernier paquet.</br>
+                    L'établissement de la connexion TCP s'est donc fait par l'échange de trois paquets. C'est pour cela qu'on l'appelle Three Way Handshake ou poignée de main tripartite en français (mais tous les spécialistes utilisent le terme anglais, comme souvent en réseau).
+                </p>
+                <p style="margin-top: 50px;">
+                    Continuation de la connexion</br></br>
+                    Maintenant que la communication est établie, les applications peuvent s'échanger des paquets autant qu'elles le veulent !</br>
+                    Le principe au niveau des flags est simplement d'avoir positionné le flag ACK. Donc tout paquet échangé après l'établissement de la connexion n'aura que le flag ACK de positionné. Presque, car nous n'avons vu que deux flags pour l'instant...</br>
+                    Néanmoins, ce qui est sûr, c'est que le flag ACK sera positionné sur tous les paquets, pour acquitter la réception des paquets précédents.</br>
+                    Voyez en figure suivante le schéma de la continuité d'une connexion.
+                </p>
+                <img src="../../../../../images/connection-continuity.png" class="img-fluid mx-auto d-block" style="max-width: 50%; margin-top: 30px;"/>
+                <p style="margin-top: 20px; font-size: small;">
+                    Continuité de la connexion
+                </p>
+                <p style="margin-top: 50px;">
+                    Fin de la connexion</br></br>
+                    Une fois que les applications ont terminé leur communication, il faut encore fermer la connexion.</br>
+                    On ne va pas laisser la connexion indéfiniment ouverte ! Si nous ne les libérions jamais, nos ports seraient rapidement tous utilisés.
+                    Donc, de la même façon que l'on a utilisé des paquets vides et des flags pour établir une connexion, nous allons faire de même pour la clôturer.
+                    Le flag que l'on va utiliser alors, à l'opposé de SYN, est le flag FIN (Finish).
+                    Imaginons que le client veuille fermer la connexion, il envoie donc un paquet avec le flag FIN positionné.
+                    Dès lors qu'une connexion est établie, tout paquet contiendra un flag ACK pour acquitter le paquet précédent. Donc lorsque l'on demandera la fermeture de la connexion avec le flag FIN, on en profitera pour acquitter le paquet précédent reçu en ajoutant aussi le flag ACK. La demande de fermeture contiendra donc les flags FIN et ACK.
+                    Le serveur pourra ensuite, lui aussi, demander la fermeture de la communication dans l'autre sens, et acquitter la réception de la demande de fin. Il placera donc, lui aussi, les flags FIN et ACK.</br>
+                    Le serveur a demandé la fermeture de la communication dans le sens serveur -> client, mais le client ne lui a pas encore acquitté cette demande. Si jamais ce paquet était perdu, le serveur et le client continueraient à avoir leur connexion ouverte. Il faut donc que le client réponde au serveur qu'il a bien reçu sa demande de fermeture en envoyant un dernier paquet ACK. C'est seulement à ce moment que la connexion est fermée complètement et que les ressources des machines sont libérées (voir la figure suivante).
+                </p>
+                <img src="../../../../../images/connection-continuity.png" class="img-fluid mx-auto d-block" style="max-width: 50%; margin-top: 30px;"/>
+                <p style="margin-top: 20px; font-size: small;">
+                    Terminaison de la connexion
+                </p>
+                <p style="margin-top: 30px;">
+                    Nous venons donc de voir comment se déroulait une connexion TCP : l'établissement à l'aide du three way handshake, la continuation et la fermeture. Il nous reste à voir les détails de l'en-tête TCP et notamment les flags dont nous avons parlé.
+                </p>
+                <p style="margin-top: 50px;">
+                    Le segment TCP</br></br>
+                    Voici un nouveau terme pour nous : le segment TCP.</br>
+                    Nous avions la trame Ethernet, le datagramme IP, le datagramme UDP, et nous avons maintenant le segment TCP.
+                    Nous n'allons pas encore représenter en détail toutes les informations de l'en-tête du segment TCP mais nous allons nous concentrer sur les éléments qui nous intéressent. Nous verrons par la suite le détail de celui-ci.
+                    Voici donc la bête:
+                </p>
+                <img src="../../../../../images/tcp-segment.png" class="img-fluid mx-auto d-block" style="max-width: 100%; margin-top: 30px;"/>
+                <p style="margin-top: 20px; font-size: small;">
+                    Segment TCP
+                </p>
+                <p style="margin-top: 30px;">
+                    Nous pouvons voir qu'il reste encore quelques points d'interrogation, mais ne vous inquiétez pas, nous les détaillerons par la suite.
+                    L'en-tête fait 20 octets, comme celui de la couche 3.</br>
+                    Faisons le détail de ce que nous pouvons voir.
+                </p>
+                <ul style="font-size: large; text-align: justify; color: white;">
+                    <li>port source et port destination ;</li>
+                    <li>les flags, ils sont au nombre de 6 et nous en connaissons déjà 3 ;
+                        <ul>
+                            <li>SYN</li>
+                            <li>ACK</li>
+                            <li>FIN</li>
+                            <li>RST</li>
+                            <li>PSH</li>
+                            <li>URG</li>
+                        </ul>
+                    </li>
+                    <li>enfin, le checksum que nous connaissons aussi.</li>
+                </ul>
+                <p style="margin-top: 30px;">
+                    Il nous reste trois flags à expliciter, sachant que RST a une importance plus forte que les deux autres.</br>
+                    En TCP chaque octet de données envoyé doit être acquitté. Si jamais il y a une incohérence entre les données envoyées et les données reçues, la connexion est considérée comme anormale et la machine qui s'en rend compte doit prévenir l'autre pour arrêter la connexion et en mettre en place une nouvelle.
+                    Cela se fait grâce au flag RST (Reset).</br></br>
+                    Si deux machines A et B ont établi une connexion TCP et qu'après quelques échanges la machine A se rend compte qu'il y a une incohérence dans la connexion, elle va envoyer un paquet contenant le flag RST pour indiquer l'incohérence et demander à la machine B de clore la connexion.
+                    Donc pour une fois, la connexion ne sera pas terminée par la séquence FIN+ACK, FIN+ACK, ACK.</br>
+                    De la même façon, si j'envoie un paquet SYN sur le port d'une machine qui est fermé, celle-ci doit me répondre RST pour me signifier que le port demandé n'est pas en écoute.</br></br>
+                    Cette notion de réponse par RST pour un port fermé est importante, car nous nous en servirons quand nous voudrons scanner les ports ouverts sur une machine.</br></br>
+                    Les flags PSH et URG peuvent être positionnés pour indiquer que le paquet doit être traité en priorité par la machine destinataire, mais nous ne détaillerons pas plus leur utilisation, car elle n'est pas nécessaire pour comprendre le fonctionnement des réseaux. Si vous souhaitez en savoir plus, je vous invite à jeter un coup d’œil au lien suivant : 
+                </p>
+                <p>
+                    <a href="https://packetlife.net/blog/2011/mar/2/tcp-flags-psh-and-urg/" target="_blank">TCP Flags : PSH and URG</a>
+                </p>
+                <p style="margin-top: 30px;">
+                    Si vous faites des captures de paquets avec des outils de sniffers, type Wireshark, vous pouvez remarquer différents types de paquets échangés entre le client et le serveur du site. Ils peuvent être applicatifs, mais il y a aussi des paquets qui ne contiennent pas de données applicatives.
+                    On appelle ces paquets des paquets de signalisation.
+                    Ils servent à maintenir proprement la connexion entre les deux machines en indiquant en permanence à l'autre machine où nous en sommes de la connexion. C'est ce qui permet de garantir qu'aucune information ne sera perdue lors des échanges.
+                </p>
+
             </div>
         </div>
       
@@ -332,7 +316,7 @@
                 </h6>
 
                 <h6 style="margin-top: 30px; margin-bottom: 140px;">
-                    <a href="https://openclassrooms.com/fr/courses/6944606-concevez-votre-reseau-tcp-ip" target="_blank">Concevez votre réseau TCP/IP - OpenClassrooms</a>
+                    <a href="https://packetlife.net/media/library/23/common_ports.pdf" target="_blank">(Cheat Sheet - Common Ports) - PacketLife.net</a>
                 </h6>
 
             </div>

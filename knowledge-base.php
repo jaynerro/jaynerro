@@ -97,6 +97,10 @@
                               <a href="/knowledge-base/basics/network/osi-model/layer4/layer4.php">La couche Transport</a>
                             </li>
 
+                            <li id="liLayer4">
+                              <a href="/knowledge-base/basics/network/osi-model/layer4/nat-and-port-forwarding.php">NAT et port forwarding</a>
+                            </li>
+
                           </ul>
                         </li>
 

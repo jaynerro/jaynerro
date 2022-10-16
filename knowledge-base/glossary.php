@@ -45,6 +45,10 @@
           </h2>
 
           <h3 style="margin-top: 35px;">
+            <a href="./basics/network/osi-model/layer4/layer4.php">ACK</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
             <a href="./basics/network/osi-model/layer3/ARP-ICMP.php">ARP</a>
           </h3>
 
@@ -71,6 +75,22 @@
 
 
           <h2 style="margin-top: 60px; font-size: 300%;">
+            D
+          </h2>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/osi-model/layer4/nat-and-port-forwarding.php">DNAT</a>
+          </h3>
+
+          <h2 style="margin-top: 60px; font-size: 300%;">
+            F
+          </h2>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/osi-model/layer4/layer4.php">FIN</a>
+          </h3>
+
+          <h2 style="margin-top: 60px; font-size: 300%;">
             I
           </h2>
 
@@ -80,6 +100,10 @@
 
           <h3 style="margin-top: 35px;">
             <a href="./basics/network/osi-model/layer3/layer3.php">IP</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/osi-model/layer4/nat-and-port-forwarding.php">ISR</a>
           </h3>
 
 
@@ -106,11 +130,28 @@
 
 
           <h2 style="margin-top: 60px; font-size: 300%;">
+            N
+          </h2>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/osi-model/layer4/nat-and-port-forwarding.php">NAT</a>
+          </h3>
+
+          <h2 style="margin-top: 60px; font-size: 300%;">
             O
           </h2>
 
           <h3 style="margin-top: 35px;">
             <a href="./basics/network/osi-model/definition.php">OSI</a>
+          </h3>
+
+
+          <h2 style="margin-top: 60px; font-size: 300%;">
+            P
+          </h2>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/osi-model/layer4/nat-and-port-forwarding.php">PAT</a>
           </h3>
 
 
@@ -126,6 +167,10 @@
             <a href="./basics/network/network-architecture.php">RLE</a>
           </h3>
 
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/osi-model/layer4/layer4.php">RST</a>
+          </h3>
+
           <h2 style="margin-top: 60px; font-size: 300%;">
             S
           </h2>
@@ -134,13 +179,38 @@
             <a href="./basics/network/networking-hardware/switch.php">SFP</a>
           </h3>
 
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/osi-model/layer4/nat-and-port-forwarding.php">SNAT</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/osi-model/layer4/layer4.php">SYN</a>
+          </h3>
+
 
           <h2 style="margin-top: 60px; font-size: 300%;">
             T
           </h2>
 
           <h3 style="margin-top: 35px;">
+            <a href="./basics/network/osi-model/layer4/layer4.php">TCP</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/osi-model/layer4/layer4.php">ToIP</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
             <a href="./basics/network/networking-hardware/switch.php">TTL</a>
+          </h3>
+
+
+          <h2 style="margin-top: 60px; font-size: 300%;">
+            U
+          </h2>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/osi-model/layer4/layer4.php">UDP</a>
           </h3>
 
 
@@ -152,6 +222,10 @@
             <a href="./basics/network/networking-hardware/switch.php">VLAN</a>
           </h3>
 
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/osi-model/layer4/layer4.php">VoIP</a>
+          </h3>
+          
 
           <h2 style="margin-top: 60px; font-size: 300%;">
             W

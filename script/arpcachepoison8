@@ -1,0 +1,8 @@
+root@Debian01:~# ping 192.168.0.3
+PING 192.168.0.3 (192.168.0.3): 56 data bytes
+64 bytes from 192.168.0.3: icmp_seq=0 ttl=255 time=1.443 ms
+64 bytes from 192.168.0.3: icmp_seq=1 ttl=255 time=2.726 ms
+^C
+--- 192.168.0.3 ping statistics ---
+2 packets transmitted, 2 received, 0.0% packet loss
+round-trip min/avg/max/stddev = 1.443/2.085/2.726/0.641 ms
