@@ -201,7 +201,6 @@
                     Voici le contenu du script :
                 </p>
                 <pre class="line-numbers"><code class="language-python"><?php require_once'../../../../../script/arpcachepoison.py'?></code></pre>
-                <script src="../../../../../static/js/prism.js" type="text/javascript"></script>
                 <p style="margin-top: 30px;">
                     Si vous voulez des explications sur ce script, vous n'en aurez pas ici. Notre objectif est de l'utiliser, pas de faire un cours de Python, vous pourrez aller lire l'aide-mémoire sur Python pour mieux le comprendre, mais ce n'est en rien nécessaire.
                 </p>
@@ -402,7 +401,7 @@
                 </p>
                 
 
-
+                <script src="../../../../../static/js/prism.js" type="text/javascript"></script>
             </div>
         </div>
       

@@ -1,0 +1,5 @@
+zone "reseau.fr" {
+    type slave;
+    file "/var/cache/bind/db.reseau.fr";
+    masters { 192.168.0.1; };
+};

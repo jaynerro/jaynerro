@@ -1,0 +1,2 @@
+cp /etc/bind/db.local /etc/bind/db.reseau.fr
+vim /etc/bind/db.reseau.fr

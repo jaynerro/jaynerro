@@ -1,0 +1,4 @@
+# host -t a ns1.reseau.fr
+ns1.reseau.fr has address 192.168.0.1
+# host -t a ns2.reseau.fr
+ns2.reseau.fr has address 192.168.0.2

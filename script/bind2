@@ -1,0 +1,5 @@
+zone "reseau.fr" {
+        type master;
+        file "/etc/bind/db.reseau.fr";
+        allow-transfer { 192.168.0.2; };
+};

@@ -1,0 +1,3 @@
+# host -t ns reseau.fr
+reseau.fr name server ns1.reseau.fr.
+reseau.fr name server ns2.reseau.fr.

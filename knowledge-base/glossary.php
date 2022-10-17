@@ -79,7 +79,15 @@
           </h2>
 
           <h3 style="margin-top: 35px;">
+            <a href="./basics/network/osi-model/layer5to7/dhcp.php">DHCP</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
             <a href="./basics/network/osi-model/layer4/nat-and-port-forwarding.php">DNAT</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/osi-model/layer5to7/dns.php">DNS</a>
           </h3>
 
           <h2 style="margin-top: 60px; font-size: 300%;">
@@ -90,9 +98,17 @@
             <a href="./basics/network/osi-model/layer4/layer4.php">FIN</a>
           </h3>
 
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/osi-model/layer5to7/dns.php">FQDN</a>
+          </h3>
+
           <h2 style="margin-top: 60px; font-size: 300%;">
             I
           </h2>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/osi-model/layer5to7/dns.php">ICANN</a>
+          </h3>
 
           <h3 style="margin-top: 35px;">
             <a href="./basics/network/osi-model/layer3/ARP-ICMP.php">ICMP</a>
@@ -194,6 +210,10 @@
 
           <h3 style="margin-top: 35px;">
             <a href="./basics/network/osi-model/layer4/layer4.php">TCP</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/osi-model/layer5to7/dns.php">TLD</a>
           </h3>
 
           <h3 style="margin-top: 35px;">

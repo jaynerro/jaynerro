@@ -1,0 +1,21 @@
+$TTL 604800     ; 1 semaine
+$ORIGIN reseau.fr.
+@       IN SOA  ns1.reseau.fr. admin.reseau.fr. (
+                                2013020905 ;serial
+                                3600       ; refresh (1 hour)
+                                3000       ; retry (50 minutes)
+                                4619200    ; expire (7 weeks 4 days 11 hours 6 minutes 40 seconds)
+                                604800     ; minimum (1 week)
+                                )
+
+@               IN      NS      ns1.reseau.fr.
+@               IN      NS      ns2
+@               IN      MX      10 mx1
+@               IN      MX      20 mx2
+ns1             IN      A       192.168.0.1
+ns2             IN      A       192.168.0.2
+mx1             IN      A       192.168.0.3
+mx2             IN      A       192.168.0.4
+tuto            IN      A       192.168.0.5
+www             IN      A       192.168.0.6
+blog            IN      CNAME   www

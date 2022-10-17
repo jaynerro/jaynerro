@@ -109,11 +109,11 @@
                           <ul>
 
                             <li id="liDHCP">
-                              <a href="#">DHCP</a>
+                              <a href="/knowledge-base/basics/network/osi-model/layer5to7/dhcp.php">DHCP</a>
                             </li>
 
                             <li id="liDNS">
-                              <a href="#">DNS</a>
+                              <a href="/knowledge-base/basics/network/osi-model/layer5to7/dns.php">DNS</a>
                             </li>
 
                             <li id="liHTTP">
