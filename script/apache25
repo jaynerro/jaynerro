@@ -1,0 +1,5 @@
+# ls -la /var/www/
+total 2
+drwxr-xr-x  6 root root     4096 15 oct.  18:47 .
+drwxr-xr-x 14 root root     4096 16 mars   2011 ..
+-rw-r--r--  1 root root      517 16 mars   2011 index.html

@@ -1,0 +1,3 @@
+# cd /etc/apache2/sites-available/
+# cp default www.toto.com
+# cp default www.tutu.com

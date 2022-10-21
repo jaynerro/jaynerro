@@ -1,0 +1,2 @@
+$ gzip -d httpd-NN.tar.gz
+$ tar xvf httpd-NN.tar

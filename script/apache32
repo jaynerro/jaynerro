@@ -1,0 +1,10 @@
+# cd /var/www/
+# ln -s /home/user/ masoeur
+# ls -la
+total 2
+drwxr-xr-x  6 root root     4096 15 oct.  18:47 .
+drwxr-xr-x 14 root root     4096 16 mars   2011 ..
+-rw-r--r--  1 root root      117 25 sept. 17:16 index.tutu
+lrwxrwxrwx  1 root root       28 11 avril  2012 masoeur -> /home/user/
+drwxr-xr-x  1 root root     4096 25 sept. 17:16 toto.com
+drwxr-xr-x  1 root root     4096 25 sept. 17:16 tutu.com

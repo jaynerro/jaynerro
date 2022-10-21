@@ -1,0 +1,32 @@
+# ls -la
+total 2
+drwxr-xr-x 2 root root 1024 21 mars  19:26 .
+drwxr-xr-x 7 root root 1024 21 mars  19:24 ..
+lrwxrwxrwx 1 root root   28 21 mars  19:24 alias.conf -> ../mods-available/alias.conf
+lrwxrwxrwx 1 root root   28 21 mars  19:24 alias.load -> ../mods-available/alias.load
+lrwxrwxrwx 1 root root   33 21 mars  19:24 auth_basic.load -> ../mods-available/auth_basic.load
+lrwxrwxrwx 1 root root   33 21 mars  19:24 authn_file.load -> ../mods-available/authn_file.load
+lrwxrwxrwx 1 root root   36 21 mars  19:24 authz_default.load -> ../mods-available/authz_default.load
+lrwxrwxrwx 1 root root   38 21 mars  19:24 authz_groupfile.load -> ../mods-available/authz_groupfile.load
+lrwxrwxrwx 1 root root   33 21 mars  19:24 authz_host.load -> ../mods-available/authz_host.load
+lrwxrwxrwx 1 root root   33 21 mars  19:24 authz_user.load -> ../mods-available/authz_user.load
+lrwxrwxrwx 1 root root   32 21 mars  19:24 autoindex.conf -> ../mods-available/autoindex.conf
+lrwxrwxrwx 1 root root   32 21 mars  19:24 autoindex.load -> ../mods-available/autoindex.load
+lrwxrwxrwx 1 root root   26 21 mars  19:26 cgi.load -> ../mods-available/cgi.load
+lrwxrwxrwx 1 root root   30 21 mars  19:24 deflate.conf -> ../mods-available/deflate.conf
+lrwxrwxrwx 1 root root   30 21 mars  19:24 deflate.load -> ../mods-available/deflate.load
+lrwxrwxrwx 1 root root   26 21 mars  19:24 dir.conf -> ../mods-available/dir.conf
+lrwxrwxrwx 1 root root   26 21 mars  19:24 dir.load -> ../mods-available/dir.load
+lrwxrwxrwx 1 root root   26 21 mars  19:24 env.load -> ../mods-available/env.load
+lrwxrwxrwx 1 root root   27 21 mars  19:24 mime.conf -> ../mods-available/mime.conf
+lrwxrwxrwx 1 root root   27 21 mars  19:24 mime.load -> ../mods-available/mime.load
+lrwxrwxrwx 1 root root   34 21 mars  19:24 negotiation.conf -> ../mods-available/negotiation.conf
+lrwxrwxrwx 1 root root   34 21 mars  19:24 negotiation.load -> ../mods-available/negotiation.load
+lrwxrwxrwx 1 root root   27 21 mars  19:26 php5.conf -> ../mods-available/php5.conf
+lrwxrwxrwx 1 root root   27 21 mars  19:26 php5.load -> ../mods-available/php5.load
+lrwxrwxrwx 1 root root   33 21 mars  19:24 reqtimeout.conf -> ../mods-available/reqtimeout.conf
+lrwxrwxrwx 1 root root   33 21 mars  19:24 reqtimeout.load -> ../mods-available/reqtimeout.load
+lrwxrwxrwx 1 root root   31 21 mars  19:24 setenvif.conf -> ../mods-available/setenvif.conf
+lrwxrwxrwx 1 root root   31 21 mars  19:24 setenvif.load -> ../mods-available/setenvif.load
+lrwxrwxrwx 1 root root   29 21 mars  19:24 status.conf -> ../mods-available/status.conf
+lrwxrwxrwx 1 root root   29 21 mars  19:24 status.load -> ../mods-available/status.load

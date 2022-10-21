@@ -117,31 +117,11 @@
                             </li>
 
                             <li id="liHTTP">
-                              <a href="#">HTTP/S</a>
+                              <a href="/knowledge-base/basics/network/osi-model/layer5to7/http.php">HTTP</a>
                             </li>
 
                             <li id="liSSH">
                               <a href="#">SSH</a>
-                            </li>
-
-                            <li id="liFTP">
-                              <a href="#">FTP</a>
-                            </li>
-
-                            <li id="liSNMP">
-                              <a href="#">SNMP</a>
-                            </li>
-
-                            <li id="liSMB">
-                              <a href="#">SMB</a>
-                            </li>
-
-                            <li id="liRDP">
-                              <a href="#">RDP</a>
-                            </li>
-
-                            <li id="liTelnet">
-                              <a href="#">Telnet</a>
                             </li>
 
                           </ul>
@@ -251,7 +231,7 @@
                         </li>
 
                         <li id="liWebServer">
-                          <a href="#">Serveur web</a>
+                          <a href="/knowledge-base/basics/system/client-server-model/web-server.php">Serveur web</a>
                         </li>
 
                         <li id="liFTPServer">

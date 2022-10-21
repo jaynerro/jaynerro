@@ -67,7 +67,7 @@
                     Une arborescence ordonnée</br></br>
                     Le système DNS, vous l'utilisez tous les jours quand vous naviguez sur Internet. Lorsque vous voulez accéder à jaynerro.com, le système DNS se charge de convertir (on parle de résolution) le nom du site web demandé en adresse IP.</br></br>
                     Un nom de domaine se décompose en plusieurs parties. Prenons l'exemple suivant : www.google.fr</br></br>
-                    Chaque partie est séparée par un point. On trouve l'extension en premier (en premier, mais en partant de la droite) ; on parle de Top Level Domain (TLD). Il existe des TLD nationaux (fr, it, de, es, etc.) et les TLD génériques (com, org, net, biz, etc.).</br></br>
+                    Chaque partie est séparée par un point. On trouve l'extension en premier (en premier, mais en partant de la droite) ; on parle de Top Level Domain (TLD). Il existe des TLD nationaux, les ccTLD (country code TLD)  : fr, it, de, es, etc. et les TLD génériques (gTLD) : com, org, net, biz, etc.</br></br>
                     Ici, on a le découpage suivant :</br>
                     www.google.fr</br>
                     Il existe une infinité de possibilités pour la deuxième partie. Cela correspond à tous les sites qui existent : google.fr, jaynerro.com, ovh.net, twitter.com, etc.
@@ -88,10 +88,15 @@
                     Dans l'architecture du service DNS, chaque label est responsable du niveau directement en dessous et uniquement de celui-ci. La racine est responsable du domaine .com, le .com de google.com et google.com de www.google.com, etc. Bien entendu, Google veut gérer lui-même le domaine google.com. L'organisme qui gère le domaine .com délègue donc la gestion de ce nom de domaine à Google.</br>
                     Ainsi, chaque personne qui veut posséder un domaine sur Internet peut l'acheter, mais devra ensuite gérer un serveur DNS pour publier ses adresses.
                     Cependant, la plupart des entreprises qui vendent des noms de domaine (qu'on appelle registrar) proposent de gérer elles-mêmes vos enregistrements DNS.</br></br>
+                    Le domaine wikipedia.org. est un sous-domaine de .org. Cette délégation est accomplie en indiquant la liste des serveurs DNS associée au sous-domaine dans le domaine de niveau supérieur.</br>
+                    Tous les sous-domaines ne sont pas nécessairement délégués. Les délégations créent des zones, c'est-à-dire des ensembles de domaines et leurs sous-domaines non délégués qui sont configurés sur un serveur déterminé. Les zones sont souvent confondues avec les domaines.</br></br>
                     Nous savons donc que le DNS est organisé sous forme d'une grosse arborescence, et que chaque partie de l'arborescence peut être gérée par la personne qui la possède.</br></br>
                     Mais comment fait-on pour savoir qui possède telle où telle partie et où sont stockées les informations que l'on recherche ?</br></br></br>
                     La résolution</br></br>
-                    Vous êtes connectés à votre réseau, votre serveur DHCP vous a donné une adresse IP, un masque de sous-réseau et probablement une passerelle par défaut, ainsi qu'un serveur DNS.
+                    Les hôtes n'ont qu'une connaissance limitée du système des noms de domaine. Quand ils doivent résoudre un nom, ils s'adressent à un ou plusieurs serveurs de noms dits récursifs (ou résolveur) ou dans les caches, comme ceux des navigateurs ou bien ceux des résolveurs eux mêmes.</br></br>
+                    Il y a deux types de serveurs DNS: les résolveurs et les serveurs faisant autorité</br></br>
+                    Ces serveurs vont parcourir la hiérarchie DNS et faire suivre la requête à un ou plusieurs autres serveurs de noms pour fournir une réponse. Les adresses IP de ces serveurs récursifs sont souvent obtenues via DHCP ou encore configurés en dur sur la machine hôte. Les fournisseurs d'accès à Internet (FAI) mettent à disposition de leurs clients ces serveurs récursifs. Il existe également des serveurs récursifs publics comme ceux de Cloudflare, Yandex.DNS, Google Public DNS, OpenNIC ou FDN.</br></br>
+                    Reprenons, vous êtes connectés à votre réseau, votre serveur DHCP vous a donné une adresse IP, un masque de sous-réseau et probablement une passerelle par défaut, ainsi qu'un serveur DNS.
                     Imaginez que vous entrez www.jaynerro.com dans votre navigateur. Lorsque vous entrez ce nom, votre machine doit commencer par le résoudre en une adresse IP.
                     Vous allez donc demander une résolution au serveur DNS que vous avez reçu par le DHCP. Celui-ci a deux moyens pour vous fournir la réponse :
                 </p>
@@ -113,9 +118,15 @@
                 <p style="margin-top: 30px;">
                     Maintenant, vous avez l'adresse IP de www.jaynerro.com !</br></br>
                     On dit qu'un serveur fournissant la résolution d'un nom de domaine sans avoir eu à demander l'information à quelqu'un d'autre fait autorité. Les serveurs DNS utilisent un système de cache pour ne pas avoir à redemander une information de façon répétitive, mais ils ne font pas autorité pour autant, car l'information stockée en cache peut ne plus être valide après un certain temps.</br></br>
+                    Les serveurs récursifs fournissent des réponses qui ne sont pas nécessairement à jour, à cause du cache mis en place. On parle alors de réponse ne faisant pas autorité (non-authoritative answer).</br></br>
                     Existe-t-il aussi un protocole pour convertir une adresse IP en nom de domaine ?
-                    Non, c'est inutile. Le DNS sait faire cela, on parle alors de reverse DNS et de résolution inverse.
-                    Cependant, c'est relativement peu utilisé, sauf parfois pour des raisons de sécurité.
+                    Non, c'est inutile. Le DNS sait faire cela, on parle alors de reverse DNS et de résolution inverse.</br></br>
+                    Pour trouver le nom de domaine associé à une adresse IP, on utilise un principe semblable. Dans un nom de domaine, la partie la plus générale est à droite : org dans fr.wikipedia.org, le mécanisme de résolution parcourt donc le nom de domaine de droite à gauche. Dans une adresse IP V4, c'est le contraire : 213 est la partie la plus générale de 213.228.0.42. Pour conserver une logique cohérente, on inverse l'ordre des quatre termes de l'adresse et on la concatène au pseudo domaine in-addr.arpa. Ainsi, par exemple, pour trouver le nom de domaine de l'adresse IP 91.198.174.2, on résout 2.174.198.91.in-addr.arpa.</br></br>
+                    La résolution inverse est importante dans le cadre de la réalisation de diagnostics réseaux car c'est elle qui permet de rendre les résultats de la commande traceroute humainement exploitables.</br></br>
+                    Une adresse IP peut être associée à différents noms de domaine via l'enregistrement de plusieurs entrées PTR dans le sous-domaine .arpa consacré à cette adresse (in-addr.arpa. pour IPv4 et ip6.arpa. pour IPv6). L'utilisation d'enregistrements PTR multiples pour une même adresse IP est éventuellement présente dans le cadre de l'hébergement virtuel de multiples domaines web derrière la même adresse IP mais n'est pas recommandée dans la mesure où le nombre des champs PTR à renvoyer peut faire dépasser à la réponse la taille des paquets UDP de réponse et entraîner l'utilisation du protocole TCP (plus coûteux en ressources) pour envoyer la réponse à la requête DNS.
+                </p>
+                <p style="margin-top: 30px;">
+                    En plus des adresses IP, des informations complémentaires peuvent être associées aux noms de domaines comme des enregistrements dans le contexte de la lutte contre le spam (SPF), RRSIG pour la sécurité des informations du DNS (DNSSEC) ou NAPTR pour associer des numéros de téléphone à des adresses e-mail (ENUM).
                 </p>
                 <p style="margin-top: 50px;">
                     La gestion internationale des noms de domaine</br></br>
@@ -248,7 +259,11 @@
                 <pre><code class="language-markup"><?php require_once'../../../../../script/bind7'?></code></pre>
                 <p style="margin-top: 30px;">
                     Comme pour les autres enregistrements, "tuto" ou "tuto.reseau.fr." revient au même. N'oubliez pas le point si vous optez pour le FQDN.</br></br>
-                    Le type CNAME est aussi simple à comprendre. On fait correspondre un nom d'hôte à un autre nom d'hôte. Bien sûr, si "blog" pointe sur "www", l'enregistrement www doit exister.</br>
+                    Le type CNAME est aussi simple à comprendre. On fait correspondre un nom d'hôte à un autre nom d'hôte. Bien sûr, si "blog" pointe sur "www", l'enregistrement www doit exister.</br></br>
+                    Résolution inverse CIDR</br>
+                    Les délégations des zones inverses se font sur une frontière d'octet, ce qui fonctionne quand les blocs d'adresses sont distribués de façon classful mais pose des problèmes quand les blocs assignés sont de taille quelconque.
+                    Par exemple, si deux clients A et B disposent chacun des blocs 192.168.0.0/25 et 192.168.0.128/25, il n'est pas possible de déléguer 0.168.192.in-addr.arpa. au premier pour qu'il puisse définir les PTR correspondant à ses hôtes, car cela empêcherait le second de faire de même.
+                    La RFC 2317 a défini une approche pour traiter ce problème, elle consiste à faire usage de domaines intermédiaires et de CNAME.</br></br>
                     Je le répète encore une fois : si vous choisissez le FQDN, n'oubliez pas le point, c'est une des premières causes d'erreurs dans les configurations DNS.</br></br>
                     Voilà, notre zone est maintenant configurée sur notre serveur master. Vous devez redémarrer BIND pour que les changements soient pris en compte :
                 </p>
@@ -331,6 +346,32 @@
                     <li># host -t a www.siteduzero.com 8.8.8.8</li>
                     <li># host -t ns lalitte.com 8.8.8.8</li>
                 </ul>
+                <p style="margin-top: 50px;">
+                    Sécurité du DNS</br>
+                    Le protocole DNS a été conçu avec un souci minimum de la sécurité. Plusieurs failles de sécurité du protocole DNS ont été identifiées depuis. Les principales failles du DNS ont été décrites dans le RFC 3833 publié en août 2004.</br></br>
+                    Interception des paquets</br>
+                    Une des failles mises en avant est la possibilité d'intercepter les paquets transmis. Les serveurs DNS communiquent au moyen de paquets uniques et non signés. Ces deux spécificités rendent l'interception très aisée. L'interception peut se concrétiser de différentes manières, notamment via une attaque de type « man in the middle », de l'écoute des données transférées et de l'envoi de réponse falsifiée (voir paragraphe ci-dessous).</br></br>
+                    Fabrication d'une réponse</br>
+                    Les paquets des serveurs DNS étant faiblement sécurisés, authentifiés par un numéro de requête, il est possible de fabriquer de faux paquets. Par exemple, un utilisateur qui souhaite accéder au site http://mabanque.example.com fait une demande au site DNS. Il suffit, à ce moment, qu'un pirate informatique réponde à la requête de l'utilisateur avant le serveur DNS pour que l'utilisateur se retrouve sur un site d'hameçonnage.</br></br>
+                    Corruption des données</br>
+                    La trahison par un serveur, ou corruption de données, est, techniquement, identique à une interception des paquets. La seule différence venant du fait que l'utilisateur envoie volontairement sa requête au serveur. Cette situation peut arriver lorsque, par exemple, l'opérateur du serveur DNS souhaite mettre en avant un partenaire commercial.</br></br>
+                    Empoisonnement du cache DNS</br>
+                    L'empoisonnement du cache DNS ou pollution de cache DNS (en anglais, DNS cache poisoning) est une technique permettant de leurrer les serveurs DNS afin de leur faire croire qu'ils reçoivent une requête valide tandis qu'elle est frauduleuse.</br></br>
+                    Déni de service</br>
+                    Une attaque par déni de service (ou attaque par saturation; en anglais, Denial of Service attack ou DoS attack) est une attaque sur un serveur informatique qui résulte en l'incapacité pour le serveur de répondre aux requêtes de ses clients.</br></br>
+                    DNSSEC</br>
+                    Pour contrer ces vulnérabilités (corruption des données, empoisonnement de cache DNS, etc), le protocole DNSSEC (RFC 4033, RFC 4034, RFC 4035) a été développé. Il utilise les principes de cryptographie asymétrique et de signature numérique pour garantir l'intégrité des données, ainsi qu'une preuve de non-existence si l'enregistrement demandé n'existe pas. La zone racine du DNS a été signée le 15 juillet 2010, et le déploiement de DNSSEC sur les domaines de premier niveau (TLD : Top Level Domain) continue, une liste des domaines couverts étant disponible.</br></br>
+                    Chiffrement</br>
+                    Depuis 2015, l'IETF travaille à la sécurité du canal de communication du DNS (là où DNSSEC protège les données). Cela a débouché sur la publication de plusieurs RFC permettant l'utilisation de TLS afin de chiffrer la communication entre les clients DNS et les résolveurs. Il s'agit principalement de : DNS sur TLS (RFC 7858, utilisant le port 853) et DNS sur HTTPS (RFC 8484, requête DNS encapsulée dans une requête HTTP, et traitée par un serveur Web).</br></br>
+                    Il n'y a pas, en 2018, de possibilités de chiffrer – via TLS – les communications entre un résolveur et un serveur faisant autorité.</br></br>
+                    Détails du protocole</br>
+                    DNS utilise en général UDP et le port 53. La taille maximale des paquets utilisée est de 512 octets. Si une réponse dépasse cette taille, la norme prévoit que la requête doit être renvoyée sur le port TCP 53. Ce cas est cependant rare et évité, et les firewalls bloquent souvent le port TCP 53.</br></br>
+                    L'extension EDNS0 (RFC 2671) permet d'utiliser une taille de paquets plus élevée, sa prise en charge est recommandée pour IPv6 comme pour DNSSEC.</br></br>
+                    La norme prévoit qu'il existe une classe associée aux requêtes. Les classes IN (Internet), CH (Chaos) et HS (Hesiod) sont définies, seule la classe IN étant réellement utilisée en pratique. La classe chaos est utilisée par BIND pour révéler le numéro de version.</br></br></br>
+                    Exemples de consultation DNS</br>
+                    Pour vérifier l'association entre un nom et une adresse IP, plusieurs commandes sont disponibles suivant les systèmes d'exploitation utilisés.</br>
+                    Par exemple sur Windows la commande nslookup est disponible via l'invite de commande ou encore dig sur les systèmes compatibles avec UNIX. </br>
+                </p>
 
                 <script src="../../../../../static/js/prism.js" type="text/javascript"></script>
             </div>
@@ -343,8 +384,12 @@
                     Références
                 </h3>
 
-                <h6 style="margin-top: 30px; margin-bottom: 140px;">
+                <h6 style="margin-top: 30px;">
                     "Apprenez le fonctionnement des réseaux TCP/IP" de Eric Lalitte - Collection OpenClassrooms
+                </h6>
+
+                <h6 style="margin-top: 30px; margin-bottom: 140px;">
+                    <a href="https://fr.wikipedia.org/wiki/Domain_Name_System" target="_blank">Wikipedia - DNS</a>
                 </h6>
 
             </div>

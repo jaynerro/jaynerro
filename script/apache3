@@ -1,0 +1,4 @@
+$ cd httpd-2_x_NN
+$ ./configure --enable-so
+$ make
+$ make install

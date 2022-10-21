@@ -1,0 +1,15 @@
+# cd /etc/apache2
+# ls -la
+total 76
+drwxr-xr-x  7 root root  4096 Aug 30  2012 .
+drwxr-xr-x 88 root root  4096 Mar 19 23:19 ..
+-rw-r--r--  1 root root  7994 Jan  1  2011 apache2.conf
+drwxr-xr-x  2 root root  4096 Mar 16  2011 conf.d
+-rw-r--r--  1 root root  1169 Jan  1  2011 envvars
+-rw-r--r--  1 root root     0 Mar 16  2011 httpd.conf
+-rw-r--r--  1 root root 31063 Jan  1  2011 magic
+drwxr-xr-x  2 root root  4096 Mar 16  2011 mods-available
+drwxr-xr-x  2 root root  4096 Mar 16  2011 mods-enabled
+-rw-r--r--  1 root root   750 Jan  1  2011 ports.conf
+drwxr-xr-x  2 root root  4096 Sep 26 15:09 sites-available
+drwxr-xr-x  2 root root  4096 Sep  4  2012 sites-enabled

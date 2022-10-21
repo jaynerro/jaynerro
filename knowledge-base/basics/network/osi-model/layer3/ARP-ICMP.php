@@ -272,7 +272,7 @@
                 <p style="margin-top: 30px;">
                     Une des première conséquence que nous avons observée est que si l'on n'active pas le routage sur la machine qui fait l'attaque, les paquets sont jetés et cela coupe donc toute possibilité de communication.</br>
                     On appelle cela un DOS (Denial of service <=> Déni de service), car on empêche une machine d'accéder ou de fournir un service réseau.</br>
-                    Une fois le routage activé, nous pouvons aussi observer le dialogue entre 192.168.0.1 et 192.168.0.3.
+                    Une fois le routage activé, nous pouvons aussi observer le dialogue entre 192.168.0.1 et 192.168.0.3 : Attaque de l'homme au milieu / Man-in-the-middle (MITM)
                 </p>
                 <pre><code class="language-markup"><?php require_once'../../../../../script/arpcachepoison10'?></code></pre>
                 <p style="margin-top: 30px; justify-content: start">

@@ -1,0 +1,5 @@
+# ls -la sites-enabled/
+total 2
+drwxr-xr-x 2 root root 4096  4 sept.  2012 .
+drwxr-xr-x 7 root root 4096 22 mars  15:50 ..
+lrwxrwxrwx 1 root root   26 16 mars   2011 000-default -> ../sites-available/default

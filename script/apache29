@@ -1,0 +1,3 @@
+# cd /etc/apache2/sites-enabled/
+# ln -s ../sites-available/www.toto.com .
+# ln -s ../sites-available/www.tutu.com .

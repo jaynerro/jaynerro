@@ -1,0 +1,2 @@
+# netstat -antp | grep apache2
+tcp6       0      0 :::80                   :::*                    LISTEN      381/apache2

@@ -1,0 +1,2 @@
+# touch /home/user/index.html
+# echo "<html><body><h1>La jolie page de ma sœur !</h1></body></html>" > /home/user/index.html

@@ -1,0 +1,41 @@
+&lt;VirtualHost *:80&gt;
+        ServerAdmin webmaster@localhost
+        
+        DocumentRoot /var/www/
+        &lt;Directory /&gt;
+                Options FollowSymLinks
+                AllowOverride all 
+        &lt;/Directory&gt;
+        &lt;Directory /var/www/&gt;
+                Options Indexes FollowSymLinks MultiViews
+                AllowOverride all 
+                Order allow,deny
+                allow from all
+        &lt;/Directory&gt;
+
+        ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
+        &lt;Directory "/usr/lib/cgi-bin"&gt;
+                AllowOverride None
+                Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+                Order allow,deny
+                Allow from all
+        &lt;/Directory&gt;
+
+        ErrorLog /var/log/apache2/error.log
+
+        # Possible values include: debug, info, notice, warn, error, crit,
+        # alert, emerg.
+        LogLevel warn
+
+        CustomLog /var/log/apache2/access.log combined
+
+    Alias /doc/ "/usr/share/doc/"
+    &lt;Directory "/usr/share/doc/"&gt;
+        Options Indexes MultiViews FollowSymLinks
+        AllowOverride None
+        Order deny,allow
+        Deny from all
+        Allow from 127.0.0.0/255.0.0.0 ::1/128
+    &lt;/Directory&gt;
+
+&lt;/VirtualHost&gt;

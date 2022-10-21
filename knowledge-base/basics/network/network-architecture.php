@@ -51,7 +51,7 @@
                     L'architecture réseau
                 </h1>
                 <p style="margin-top: 30px;"> 
-                    Les réseaux ont pour but de permettre la transmission d’informations. À l’époque des tout premiers ordinateurs, le seul moyen de transmission était la disquette, qui était transportée d’un ordinateur à un autre : assez peu pratique... :/ </br></br>
+                    Les réseaux ont pour but de permettre la transmission d’informations. À l’époque des tout premiers ordinateurs, le seul moyen de transmission était la disquette, qui était transportée d’un ordinateur à un autre : assez peu pratique... </br></br>
                     Depuis, nous avons à disposition un réseau mondial appelé Internet. Ce réseau est composé de millions de réseaux plus petits. </br></br>
                     Il existe différents types de réseaux informatiques : 
                 </p>
@@ -78,7 +78,13 @@
                     À moins de travailler pour un opérateur de télécommunication, vous interviendrez essentiellement sur des LAN, en tant que technicien informatique. 
                     Eh oui, le LAN reste le type de réseau le plus courant, et il est fréquemment déployé à l'échelle d’une entreprise. Il est également la brique élémentaire des réseaux de plus grande taille.
                 </p>
-
+                <p style="margin-top: 40px; justify-content: start;">
+                    <b>Bonus : DMZ</b>
+                </p>
+                <p style="margin-top: 20px;"> 
+                    Une DMZ (Demilitarized Zone) est souvent un réseau dans lequel on place les serveurs qui ont besoin d’être joints par Internet. Ainsi, les accès de l’extérieur ne se font généralement que vers la DMZ et non vers le réseau local.
+                    Cela nous apporte un peu plus de sécurité de ne pas avoir les machines des utilisateurs sur un réseau directement joignable depuis Internet.
+                </p>
                 <img src="../../../images/network-architecture-example.png" class="img-fluid mx-auto d-block" style="max-width: 80%; margin-top: 50px;"/>
                 <p style="margin-top: 20px; font-size: small;">
                     Schéma logique d'une architecture réseau

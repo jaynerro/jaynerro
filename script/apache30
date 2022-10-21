@@ -1,0 +1,6 @@
+# mkdir /var/www/toto.com/
+# touch /var/www/toto.com/index.html
+# echo "<html><body><h1>Bienvenus sur toto.com !</h1></body></html>" > /var/www/toto.com/index.html
+# mkdir /var/www/tutu.com/
+# touch /var/www/tutu.com/index.html
+# echo "<html><body><h1>Bienvenus sur tutu.com !</h1></body></html>" > /var/www/tutu.com/index.html

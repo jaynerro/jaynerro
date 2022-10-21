@@ -62,7 +62,15 @@
           </h3>
 
           <h3 style="margin-top: 35px;">
+            <a href="./basics/network/osi-model/layer5to7/dns.php">ccTLD</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
             <a href="./basics/network/osi-model/layer3/IP-address-assignment.php">CIDR</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/osi-model/layer5to7/dns.php">CNAME</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
@@ -83,6 +91,10 @@
           </h3>
 
           <h3 style="margin-top: 35px;">
+            <a href="./basics/network/network-architecture.php">DMZ</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
             <a href="./basics/network/osi-model/layer4/nat-and-port-forwarding.php">DNAT</a>
           </h3>
 
@@ -90,9 +102,18 @@
             <a href="./basics/network/osi-model/layer5to7/dns.php">DNS</a>
           </h3>
 
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/osi-model/layer3/ARP-ICMP.php">DOS</a>
+          </h3>
+          
+
           <h2 style="margin-top: 60px; font-size: 300%;">
             F
           </h2>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/osi-model/layer5to7/dns.php">FAI</a>
+          </h3>
 
           <h3 style="margin-top: 35px;">
             <a href="./basics/network/osi-model/layer4/layer4.php">FIN</a>
@@ -102,13 +123,18 @@
             <a href="./basics/network/osi-model/layer5to7/dns.php">FQDN</a>
           </h3>
 
+
           <h2 style="margin-top: 60px; font-size: 300%;">
-            I
+            G
           </h2>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer5to7/dns.php">ICANN</a>
+            <a href="./basics/network/osi-model/layer5to7/dns.php">gTLD</a>
           </h3>
+
+          <h2 style="margin-top: 60px; font-size: 300%;">
+            I
+          </h2>
 
           <h3 style="margin-top: 35px;">
             <a href="./basics/network/osi-model/layer3/ARP-ICMP.php">ICMP</a>
@@ -144,6 +170,14 @@
             <a href="./basics/network/network-architecture.php">MAN</a>
           </h3>
 
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/osi-model/layer3/ARP-ICMP.php">MITM</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/osi-model/layer5to7/dns.php">MX</a>
+          </h3>
+
 
           <h2 style="margin-top: 60px; font-size: 300%;">
             N
@@ -151,6 +185,10 @@
 
           <h3 style="margin-top: 35px;">
             <a href="./basics/network/osi-model/layer4/nat-and-port-forwarding.php">NAT</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/osi-model/layer5to7/dns.php">NS</a>
           </h3>
 
           <h2 style="margin-top: 60px; font-size: 300%;">
@@ -168,6 +206,10 @@
 
           <h3 style="margin-top: 35px;">
             <a href="./basics/network/osi-model/layer4/nat-and-port-forwarding.php">PAT</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/osi-model/layer5to7/dns.php">PTR</a>
           </h3>
 
 
@@ -197,6 +239,10 @@
 
           <h3 style="margin-top: 35px;">
             <a href="./basics/network/osi-model/layer4/nat-and-port-forwarding.php">SNAT</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/osi-model/layer5to7/dns.php">SOA</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
