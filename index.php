@@ -32,8 +32,8 @@
     <div class="container" style="margin-top: 80px;">
       <div class="row justify-content-center">
         <div class="col-sm-9">
-          <h1> 
-            Qu’est ce que Jaynerro ? 
+          <h1 style="font-family: bit"> 
+            Jaynerro
           </h1>
           <p style="margin-top: 30px;"> 
             Jaynerro c’est d’abord mon pseudonyme mais c’est aussi ma Knowledge Base mise sous forme de ce site web. 
@@ -42,7 +42,7 @@
       </div>
       <div class="row justify-content-center" style="margin-top: 65px;">
         <div class="col-sm-9">
-          <p style="font-size: xx-large";>
+          <p style="font-size: xx-large; font-family: bit";>
             Le but
           </p>
           <p style="margin-top: 20px;">
@@ -52,7 +52,7 @@
       </div>
       <div class="row justify-content-center" style="margin-top: 80px;">
         <div class="col-sm-9">
-          <p style="font-size: xx-large";>
+          <p style="font-size: xx-large; font-family: bit";>
             Le plan
           </p>
           <p style="margin-top: 20px;">
@@ -62,7 +62,7 @@
       </div>
       <div class="row justify-content-center" style="margin-top: 80px; margin-bottom : 120px">
         <div class="col-sm-7">
-          <p style="font-size: small";>
+          <p style="font-size: small; font-family: bit";>
             Disclaimer
           </p>
           <p style="font-size: x-small";>

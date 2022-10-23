@@ -15,10 +15,10 @@
                     <img class="image" src='/images/uncolored-github-icon.png' onmouseover="this.src='/images/colored-github-icon.png'" onmouseout="this.src='/images/uncolored-github-icon.png'" width="40" height="40">
                 </a>
             </div>
-            <div class="col" style="margin: auto; font-size: small">
+            <div class="col" style="margin: auto; font-size: x-small; font-family: bit">
                 Jaynerro </br> Work In Progress
             </div>
-            <div class="col" style="margin: auto; font-size: x-small">
+            <div class="col" style="margin: auto; font-size: x-small;">
                 
                 <?php //Copyright ?>
                     Copyright © <?php echo date("Y");?> Jaynerro

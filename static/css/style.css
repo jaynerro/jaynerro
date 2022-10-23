@@ -58,3 +58,10 @@ h6 {
     font-size: medium;
     font-style: italic;
 }
+
+@font-face {
+    font-family: "bit";
+    src: url('8-BIT WONDER.TTF') format('truetype');
+         font-weight:normal;
+         font-style:normal;
+}
