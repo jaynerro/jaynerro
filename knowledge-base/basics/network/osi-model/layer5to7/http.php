@@ -22,7 +22,9 @@
 
 
     <?php // Titre de l'onget de la page ?>
-    <title>Modèle OSI - Couche 5 à 7 : Le service web (HTTP)</title>
+    <title>Modèle OSI - Couche 5 à 7 : HTTP</title>
+    <link rel="icon" type="image/png" href="../../../../../images/jaynerro-icon.png">
+
   </head>
 
   <?php // Corps de la page ?>
@@ -43,7 +45,7 @@
                             <li class="breadcrumb-item"><p style="font-size: medium;">Réseaux</p></li>
                             <li class="breadcrumb-item"><p style="font-size: medium;">Modèle OSI</p></li>
                             <li class="breadcrumb-item"><p style="font-size: medium;">Couche 5 à 7</p></li>
-                            <li class="breadcrumb-item active" aria-current="page">Le service web (HTTP)</li>
+                            <li class="breadcrumb-item active" aria-current="page">HTTP</li>
                         </ol>
                     </nav>
                 </div> 
@@ -52,303 +54,178 @@
         <div class="row justify-content-center">
             <div class="col-sm-8">
                 <h1> 
-                    Le service web (HTTP)
+                    HTTP
                 </h1>
                 <p style="margin-top: 30px;">
-                    Le service que nous allons voir maintenant n'est pas indispensable au fonctionnement des réseaux, mais il est aujourd'hui le fondement même d'Internet : le web.
-                    Nous allons voir dans ce chapitre comment mettre en place un serveur web et le configurer.</br></br>
-                    Principe du web</br>
-                    Le fonctionnement du web s'appuie sur le protocole applicatif HTTP.
-                    Comme les autres protocoles que nous avons étudiés, HTTP a un mode de fonctionnement bien spécifique.
-                    Ce qui nous intéresse aujourd'hui, c'est surtout de savoir utiliser la navigation, mais pas de la comprendre en détail, du moins pas pour l'instant.</br></br>
-                    Le protocole HTTP</br>
-                    Plutôt que d'essayer de comprendre en détail le protocole HTTP, nous allons voir ce qu'il permet de faire.
-                    Vous savez qu'une page web est composée de balises HTML.
-                    Le principe du protocole HTTP est de transporter ces pages HTML, et potentiellement quelques informations supplémentaires.
-                    Le serveur web met donc à disposition les pages web qu'il héberge, et le protocole HTTP les transporte sur le réseau pour les amener au client.</br>
-                    Nous allons donc mettre en œuvre un serveur web qui permettra de mettre à disposition des internautes nos pages web !</br></br>
-                    Les différents serveurs web</br>
-                    Il existe de nombreux serveurs web sur le marché.
-                    Le plus connu est Apache et il est utilisé par une majorité de sites sur Internet.
-                    Voici l'utilisation des différents serveurs à travers le monde :
+                    L’Hypertext Transfer Protocol, généralement abrégé HTTP, littéralement « protocole de transfert hypertexte », est un protocole de communication client-serveur développé pour le World Wide Web. HTTPS (avec S pour secure, soit « sécurisé ») est la variante sécurisée par le chiffrement et l'authentification.</br></br>
+                    HTTP est un protocole de la couche application dans le modèle OSI. Il peut fonctionner sur n'importe quelle connexion fiable. Dans les faits on utilise le protocole TCP comme couche de transport. Un serveur HTTP utilise alors par défaut le port 80 (443 pour HTTPS).</br></br>
+                    Les clients HTTP les plus connus sont les navigateurs Web.</br></br>
+                    HTTP a été inventé par Tim Berners-Lee avec les adresses Web et le langage HTML pour créer le World Wide Web.
+                    À cette époque, le File Transfer Protocol (FTP) était déjà disponible pour transférer des fichiers, mais il ne supportait pas la notion de format de données telle qu'introduite par Multipurpose Internet Mail Extensions (MIME). 
+                    La première version de HTTP était très élémentaire, mais prévoyait déjà le support d'en-têtes MIME pour décrire les données transmises.</br>
+                    Cette première version reste encore partiellement utilisable de nos jours, connue sous le nom de HTTP/0.9.
                 </p>
-                <img src="../../../../../images/various-web-servers.png" class="img-fluid mx-auto d-block" style="max-width: 50%; margin-top: 30px;"/>
-                <p style="margin-top: 20px; font-size: small;">
-                    Serveurs web les plus utilisés (source: W3techs.com)
+                <p style="margin-top: 50px; justify-content: start">
+                    <b>Implémentation</b>
                 </p>
                 <p style="margin-top: 30px;">
-                    Toutefois, si l'on regarde plus précisément les évolutions des serveurs, on se rend compte que la tendance n'est pas à la progression pour Apache :
+                    Méthodes</br></br>
+                    Dans le protocole HTTP, une méthode est une commande spécifiant un type de requête, c'est-à-dire qu'elle demande au serveur d'effectuer une action. En général l'action concerne une ressource identifiée par l'URL (Uniform Resource Locator) qui suit le nom de la méthode.</br>
+                    Dans l'illustration ci-dessous, une requête GET est envoyée pour récupérer la page d'accueil wikipedia :
                 </p>
-                <img src="../../../../../images/web-server-developers.png" class="img-fluid mx-auto d-block" style="max-width: 80%; margin-top: 30px;"/>
-                <p style="margin-top: 20px; font-size: small;">
-                    Graph représentant l'utilisation des serveurs web (source: netcraft)
-                </p>
+                <img src="../../../../../images/http-request.png" class="img-fluid mx-auto d-block" style="max-width: 90%; margin-top: 30px;"/>
+                <pre style="margin-top: 30px;"><code class="language-markup"><?php require_once'../../../../../script/http'?></code></pre>
                 <p style="margin-top: 30px;">
-                    Le serveur nginx a notamment vécu une très belle progression, car il offre des performances souvent meilleures qu'Apache.</br>
-                    Cependant, pour notre mise en place, nous allons opter pour Apache qui reste le serveur numéro un. Vous pourrez si vous le souhaitez essayer un autre serveur, comme nginx, mais la configuration est souvent très différente d'un serveur à l'autre.
-                </p>
-                <p style="margin-top: 50px;">
-                    <b>Mise en place et configuration</b>
-                </p>
-                <p style="margin-top: 30px; justify-content: start;">
-                    Installation et configuration d'Apache</br></br>
-                    Installation d'Apache</br></br>
-                    1. Sous Ubuntu/Debian, téléchargez le serveur HTTP Apache depuis le site ci-dessus et décompressez-le :
-                </p>
-                <pre><code class="language-markup"><?php require_once'../../../../../script/apache1'?></code></pre>
-                <p style="margin-top: 30px; justify-content: start;">
-                    2. De la même façon, téléchargez et décompressez les sources de PHP :
-                </p>
-                <pre><code class="language-markup"><?php require_once'../../../../../script/apache2'?></code></pre>
-                <p style="margin-top: 30px; justify-content: start;">
-                    'NN' devra être remplacé par la version spécifique à utiliser.</br></br>        
-                    3. Compilez et installez Apache. Consultez la documentation sur l'installation d'Apache pour plus de détails quant à la compilation de ce logiciel.
-                </p>
-                <pre><code class="language-markup"><?php require_once'../../../../../script/apache3'?></code></pre>
-                <p style="margin-top: 30px;">
-                    4. Maintenant que vous avez Apache 2.x.NN de disponible sous /usr/local/apache2, configurez-le avec le support pour le chargement de modules, ainsi que le MPM prefork standard. Pour tester votre installation, utilisez la procédure normale pour démarrer le serveur Apache, i.e. :
-                </p>
-                <pre><code class="language-markup"><?php require_once'../../../../../script/apache4'?></code></pre>
-                <p style="margin-top: 30px; justify-content: start;">
-                    et arrêtez-le pour continuer dans la configuration de PHP :
-                </p>
-                <pre><code class="language-markup"><?php require_once'../../../../../script/apache5'?></code></pre>
-                <p style="margin-top: 30px;">
-                    5. Maintenant, configurez et compilez PHP. Ce sera à ce moment-là où vous pourrez personnaliser PHP avec les diverses options disponibles, comme la liste des extensions à activer. Dans notre exemple, nous effectuerons une configuration simple, avec Apache 2 et le support MySQL.</br></br>
-                    Si vous avez construis Apache depuis les sources, tel que décrit ci-dessus, l'exemple suivant devrait être correct concernant les chemins vers les apxs, mais si vous avez installé Apache d'une autre façon, vous devrez prendre en compte vos spécificités et ajustez les chemins apxs en conséquent. Notez que suivants les distributions, vous pourriez être amené à renommer apxs en apxs2.
-                </p>
-                <pre><code class="language-markup"><?php require_once'../../../../../script/apache6'?></code></pre>
-                <p style="margin-top: 30px;">
-                    Si vous décidez de modifier les options de configuration après l'installation, vous devrez exécuter de nouveau les étapes "configure", "make" et "make install". Vous n'aurez alors qu'à redémarrer Apache pour que le nouveau module prenne effet. Une re-compilation d'Apache n'est pas nécessaire.
-                    Notez que, sauf indications contraires, l'étape "make install" installera également PEAR, mais aussi divers outils PHP comme phpsize, PHP CLI et bien plus encore.</br></br>
-                    6. Setup your php.ini
-                </p>
-                <pre><code class="language-markup"><?php require_once'../../../../../script/apache7'?></code></pre>
-                <p style="margin-top: 30px;">
-                    Vous devez éditer le fichier .ini pour définir les options PHP. Si vous préférez placer ce fichier dans un autre répertoire, utilisez l'option --with-config-file-path=/some/path à l'étape 5.</br>
-                    Si vous choisissez le fichier php.ini-production, assurez-vous de lire la liste des modifications correspondante car il peut affecter considérablement la façon dont PHP fonctionnera.</br></br>
-                    7. Éditez le fichier httpd.conf pour charger le module PHP. Le chemin spécifié à droite de la chaîne LoadModule, doit correspondre au chemin système du module PHP. L'étape "make install" ci-dessus devrait avoir réalisé cette opération à votre place, mais une simple vérification permettra de s'en assurer.</br></br>
-                    Pour PHP 8:
-                </p>
-                <pre><code class="language-markup"><?php require_once'../../../../../script/apache8'?></code></pre>
-                <p style="margin-top: 30px; justify-content: start;">
-                    Pour PHP 7:
-                </p>
-                <pre><code class="language-markup"><?php require_once'../../../../../script/apache9'?></code></pre>
-                <p style="margin-top: 30px;">
-                    8. Dites à Apache d'analyser certaines extensions comme étant des scripts PHP. Par exemple, laissez Apache passer à PHP les fichiers dont l'extension est .php. Au lieu d'utiliser seulement la directive AddType d'Apache, nous souhaitons éviter tout risque potentiellement dangereux, lors d'un téléchargement de de la création de fichier comme exploit.php.jpg, d'exécution PHP. En utilisant cette exemple, vous pouvez avoir n'importe quelle extension d'analyser par PHP. Nous avons ajouté .php pour l'exemple.
-                </p>
-                <pre><code class="language-markup"><?php require_once'../../../../../script/apache10'?></code></pre>
-                <p style="margin-top: 30px; justify-content: start;">
-                    9. Utilisez la procédure normale pour démarrer le serveur Apache, i.e. :
-                </p>
-                <pre><code class="language-markup"><?php require_once'../../../../../script/apache11'?></code></pre>
-                <p style="margin-top: 30px; justify-content: start;">
-                    Ou
-                </p>
-                <pre><code class="language-markup"><?php require_once'../../../../../script/apache12'?></code></pre>
-                <p style="margin-top: 30px;">
-                    Si vous avez suivi les étapes précédentes, vous avez maintenant un serveur web Apache2 fonctionnel avec le support PHP comme module SAPI. Bien-sûr, il y a une multitude d'autres options de configuration de disponibles avec Apache et PHP. Pour plus d'informations, entrez la commande ./configure --help dans l'arbre source correspondant.</br></br>
-                    Vous pourrez, par la suite, installer un serveur de bases de données mysql si vous le souhaitez. Il faudra alors aussi installer les modules nécessaires pour que PHP5 et mysql puissent dialoguer ensemble.</br></br>
-                    Notre serveur étant installé, nous allons vérifier qu'il est bien en écoute :
-                </p>
-                <pre><code class="language-markup"><?php require_once'../../../../../script/apache13'?></code></pre>
-                <p style="margin-top: 30px;">
-                    Le service est bien en écoute, nous pouvons tester pour voir ce qui est présenté. Pour cela, nous allons simplement faire pointer notre navigateur sur l'adresse IP de notre machine virtuelle :
-                </p>
-                <img src="../../../../../images/apache-default-page.png" class="img-fluid mx-auto d-block" style="max-width: 80%; margin-top: 30px;"/>
-                <p style="margin-top: 20px; font-size: small;">
-                    Page d'Apache par défaut
-                </p>
-                <p style="margin-top: 30px;">
-                    Nous voyons bien la page par défaut du serveur Apache, ça marche !</br>
-                    Nous allons maintenant regarder comment configurer notre serveur pour pouvoir afficher nos propres sites web.</br></br>
-                    Configuration d'Apache2</br>
-                    Comme habituellement sous Unix, les fichiers de configuration se trouvent dans le répertoire /etc. Pour Apache2, ils sont dans le répertoire apache2.</br>
-                    Regardons le contenu de ce répertoire :
-                </p>
-                <pre><code class="language-markup"><?php require_once'../../../../../script/apache14'?></code></pre>
-                <p style="margin-top: 30px;">
-                    Nous voyons ici différents fichiers et répertoires plus ou moins importants. Nous allons les parcourir.</br></br>
-                    Tout d'abord, il faut savoir qu'avant Apache2 il y avait Apache et qu'à peu près toutes les informations de configuration étaient dans un seul et unique fichier, httpd.conf.</br>
-                    Cela posait quelques problèmes, car ce fichier devenait un peu un fourre-tout dans lequel il était difficile de savoir où certaines informations étaient situées et s'il n'y avait pas des informations redondantes.</br></br>
-                    Pour Apache2, ce fichier de configuration a été séparé en plusieurs parties.</br>
-                    Le point de départ est le fichier apache2.conf.</br></br>
-                    Ce fichier contient un certain nombre de directives importantes, ainsi que les inclusions (Includes) des autres fichiers de configuration.</br>
-                    Cependant, il n'y a pas de directives qui nous intéressent dans ce fichier. Si vous souhaitez vous spécialiser dans l'utilisation d'Apache et comprendre chacun des directives, la documentation officielle vous tend les bras.</br></br>
-                    Par contre, les includes en fin de fichier nous donnent une idée des parties de la configuration qui sont en dehors de apache2.conf, et qui vont pouvoir nous intéresser :
-                </p>
-                <pre><code class="language-markup"><?php require_once'../../../../../script/apache15'?></code></pre>
-                <p style="margin-top: 30px;">
-                    Nous voyons d'abord l'inclusion de modules.</br>
-                    En effet, Apache est un service modulaire. Cela veut dire que l'on peut lui ajouter des modules qui viennent lui ajouter des fonctionnalités particulières.</br>
-                    Par exemple, Apache peut jouer le rôle de proxy. Pour cela, il faut lui ajouter le module mod_proxy.</br></br>
-                    On peut ainsi ajouter toutes sortes de fonctionnalités à Apache.</br></br>
-                    Nous avons deux lignes includes pour les modules :
-                </p>
-                <pre><code class="language-markup"><?php require_once'../../../../../script/apache16'?></code></pre>
-                <p style="margin-top: 30px;">
-                    Ceci nous indique qu'Apache va prendre en compte les fichiers .load et .conf situés dans le répertoire mods-enabled (qui est lui-même dans /etc/apache2, puisque c'est notre répertoire de travail).</br></br>
-                    Allons donc voir ce qui est contenu dans le répertoire mods-enabled :
-                </p>
-                <pre><code class="language-markup"><?php require_once'../../../../../script/apache17'?></code></pre>
-                <p style="margin-top: 30px;">
-                    Les plus avertis d'entre vous auront remarqué que tous ces fichiers ne sont que des liens vers d'autres fichiers qui sont situés dans ../mods-available/.</br></br>
-                    Pour les utilisateurs habitués de Windows, les liens sous Unix sont comme les raccourcis sous Windows.</br></br>
-                    En fait, le répertoire mods-enabled ne contient que des liens. Ces liens pointent vers les vrais fichiers qui sont contenus dans mods-available.</br></br>
-                    Nous venons de découvrir le fonctionnement modulaire d'Apache2.
+                    Il existe de nombreuses méthodes, les plus courantes étant GET, HEAD et POST :</br></br>
+                    GET</br>
+                    C'est la méthode la plus courante pour demander une ressource. Une requête GET est sans effet sur la ressource, il doit être possible de répéter la requête sans effet.</br></br>
+                    HEAD</br>
+                    Cette méthode ne demande que des informations sur la ressource, sans demander la ressource elle-même.</br></br>
+                    POST</br>
+                    Cette méthode est utilisée pour transmettre des données en vue d'un traitement à une ressource (le plus souvent depuis un formulaire HTML). L'URI fourni est l'URI d'une ressource à laquelle s'appliqueront les données envoyées. Le résultat peut être la création de nouvelles ressources ou la modification de ressources existantes. À cause de la mauvaise implémentation des méthodes HTTP (pour Ajax) par certains navigateurs (et la norme HTML qui ne supporte que les méthodes GET et POST pour les formulaires), cette méthode est souvent utilisée en remplacement de la requête PUT, qui devrait être utilisée pour la mise à jour de ressources. (Définition de L'URI à la fin de la page)
+                    OPTIONS</br>
+                    Cette méthode permet d'obtenir les options de communication d'une ressource ou du serveur en général.</br></br>
+                    CONNECT</br>
+                    Cette méthode permet d'utiliser un proxy comme un tunnel de communication.</br></br>
+                    TRACE</br>
+                    Cette méthode demande au serveur de retourner ce qu'il a reçu, dans le but de tester et effectuer un diagnostic sur la connexion.</br></br>
+                    PUT</br>
+                    Cette méthode permet de remplacer ou d'ajouter une ressource sur le serveur. L'URI fourni est celui de la ressource en question.</br></br>
+                    PATCH</br>
+                    Cette méthode permet, contrairement à PUT, de faire une modification partielle d'une ressource.</br></br>
+                    DELETE</br>
+                    Cette méthode permet de supprimer une ressource du serveur.</br></br>
+                    Ces 3 dernières méthodes nécessitent généralement un accès privilégié.</br></br>
+                    Du client au serveur</br>
+                    La liaison entre le client et le serveur n'est pas toujours directe, il peut exister des machines intermédiaires servant de relais :
                 </p>
                 <ul style="font-size: large; text-align: justify; color: white;">
-                    <li>Tous les modules sont installés dans mods-available.</li>
-                    <li>On crée des liens vers ces fichiers dans mods-enabled.</li>
-                    <li>Seul le répertoire mods-enabled est lu par la configuration d'Apache.</li>
+                    <li>Un proxy (ou serveur mandataire) peut modifier les réponses et requêtes qu'il reçoit et peut gérer un cache des ressources demandées.</li>
+                    <li>Une passerelle (ou gateway) est un intermédiaire modifiant le protocole utilisé.</li>
+                    <li>Un tunnel transmet les requêtes et les réponses sans aucune modification, ni mise en cache.</li> 
                 </ul>
+                <p style="margin-top: 50px; justify-content: start">
+                    <b>Versions</b>
+                </p>
                 <p style="margin-top: 30px;">
-                    Ce mode de fonctionnement nous permettra très facilement de désactiver ou d'activer un module pour Apache2. Il suffira de créer un lien vers le module ou au contraire de l'effacer.</br></br>
-                    Vous pouvez faire cela à la main, ou utiliser la commande a2enmod.</br></br>
-                    Donc, pour installer un module, vous avez deux choix :
+                    HTTP 0.9</br>
+                    Au début du World Wide Web, il était prévu d'ajouter au protocole HTTP des capacités de négociation de contenu, en s'inspirant notamment de MIME. En attendant, le protocole HTTP 0.9 était extrêmement simple.
                 </p>
-                <ul style="font-size: large; text-align: justify; color: white;">
-                    <li>l'installer avec la commande apt-get install nom_module ;</li>
-                    <li>récupérer les fichiers .conf et .load et les mettre dans le répertoire mods-available, puis créer des liens vers ces fichiers dans mods-enabled.</li>
-                </ul>
-                <p style="margin-top: 30px; justify-content: start;">
-                    Vous savez donc maintenant installer, désactiver ou activer un module.</br></br>
-                    Nous allons passer à la suite des includes de notre fichier apache2.conf.
-                </p>
-                <pre><code class="language-markup"><?php require_once'../../../../../script/apache18'?></code></pre>
-                <p style="margin-top: 30px;">
-                    Là, il s'agit simplement de conserver ce qui pouvait exister historiquement, mais ce fichier est vide par défaut.
-                </p>
-                <pre><code class="language-markup"><?php require_once'../../../../../script/apache19'?></code></pre>
-                <p style="margin-top: 30px;">
-                    Ce fichier va indiquer sur quel port notre serveur doit écouter. Par défaut, il s'agit du port 80, mais cela peut être modifié si vous le souhaitez (mais vous ne voudriez pas outrepasser une norme, n'est-ce pas ?)</br></br>
-                    Il y a ensuite quelques informations sur le format des logs du service et le répertoire conf.d qui peut comprendre des attributs de configuration particuliers, mais cela ne nous intéresse pas ici.</br></br>
-                    Et enfin une dernière partie très importante qui concerne les virtualhosts :
-                </p>
-                <pre><code class="language-markup"><?php require_once'../../../../../script/apache20'?></code></pre>
-                <p style="margin-top: 30px;">
-                    Le virtualhost est une notion très importante dans Apache2. C'est ce qui nous permet de faire tourner plusieurs sites sur le même serveur Apache2.
-                    Vous pouvez avoir un serveur web qui présente plusieurs sites web, comme www.lalitte.com et www.mailforkids.net qui sont deux sites différents, mais hébergés sur le même serveur Apache2.</br></br>
-                    Nous allons donc regarder ce qui est contenu dans le répertoire sites-enabled.
-                </p>
-                <pre><code class="language-markup"><?php require_once'../../../../../script/apache21'?></code></pre>
-                <p style="margin-top: 30px;">
-                    Un seul fichier ici ! Enfin, un lien plus exactement, mais nous connaissons le principe maintenant, qui est le même que pour les modules avec un répertoire sites-available qui contient les fichiers et le répertoire sites-enabled qui contient les liens vers les fichiers dans sites-available.</br>
-                    Ce fichier est le fichier de configuration par défaut de nos virtualhosts. C'est lui qui sera utilisé par défaut pour toute requête web arrivant à notre serveur.</br>
-                    Regardons son contenu :
-                </p>
-                <pre><code class="language-markup"><?php require_once'../../../../../script/apache22'?></code></pre>
-                <p style="margin-top: 30px; justify-content: start;">
-                    Nous n'avons besoin de comprendre que quelques éléments pour l'instant.
-                </p>
-                <pre><code class="language-markup"><?php require_once'../../../../../script/apache23'?></code></pre>
-                <p style="margin-top: 30px;">
-                    Ceci indique le début d'une directive de configuration Apache et notamment le début d'un virtualhost qui sera en écoute sur le port 80.
-                </p>
-                <pre><code class="language-markup"><?php require_once'../../../../../script/apache24'?></code></pre>
-                <p style="margin-top: 30px;">
-                    Le DocumentRoot est très important. C'est ce qui va indiquer au serveur Apache2 où vont se situer les pages de notre site web. Dans notre cas, comme dans la majorité des cas, la racine de notre site web se situera dans /var/www/.</br>
-                    D'ailleurs, nous pouvons aller voir le contenu de ce répertoire :
-                </p>
-                <pre><code class="language-markup"><?php require_once'../../../../../script/apache25'?></code></pre>
-                <p style="margin-top: 30px; justify-content: start;">
-                    Il ne contient qu'un fichier index.html. Allons voir son contenu :
-                </p>
-                <pre><code class="language-markup"><?php require_once'../../../../../script/apache26'?></code></pre>
-                <p style="margin-top: 30px;">
-                    Cela correspond bien à ce que nous avons vu tout à l'heure sur la page web !</br>
-                    Nous pouvons essayer de faire une modification et de voir le résultat.
-                    Éditez le fichier index.html et mettez-y ce que vous voulez !</br></br>
-                    Utilisation des virtualhosts</br>
-                    Nous allons essayer de présenter deux sites différents sur notre serveur.</br></br>
-                    Mais comment Apache saura différencier ces deux sites et saura lequel présenter lors d'une requête sur le port 80 ?</br></br>
-                    En fait, il y a plusieurs façons de faire des virtualhosts, mais nous allons nous baser sur la plus répandue en utilisant des noms de domaine différents pour nos sites.</br></br>
-                    Nous allons créer les sites toto.com et tutu.com.</br>
-                    Ainsi, quand une requête arrivera, Apache2 pourra savoir si la demande est pour toto.com ou tutu.com.</br></br>
-                    Configuration du DNS</br>
-                    Dans la vraie vie, vous devez acheter un domaine pour qu'il devienne accessible sur Internet.</br>
-                    Dans notre cas, je ne vais pas vous faire dépenser de l'argent pour un exemple. Nous allons plutôt utiliser une petite astuce qui pourra vous être utile pour beaucoup d'autres choses.</br></br>
-                    Nous allons utiliser une fonctionnalité qui permet de court-circuiter le fonctionnement normal du DNS grâce au fichier hosts.</br></br>
-                    Le fichier hosts est un fichier présent sur tous les systèmes, qui permet d'indiquer des associations entre nom de machine et adresse IP qui seront prioritaires par rapport au DNS.</br></br>
-                    Par exemple, si j'écris:</br>
-                    192.168.0.1   www.google.fr</br></br>
-                    La prochaine fois que j'essaierai d'aller vers www.google.fr, ma machine pensera que le serveur de Google se trouve à l'adresse 192.168.0.1 et enverra la requête à cette adresse.</br></br>
-                    Nous allons donc modifier notre fichier hosts pour y ajouter des associations pour www.toto.com et www.tutu.com.</br></br>
-                </p>
-                <ul style="font-size: large; text-align: justify; color: white;">
-                    <li>Sous Unix, le fichier hosts se trouve dans /etc.</li>
-                    <li>Sous Windows, il se trouve dans C:\Windows\System32\drivers\etc\.</li>
-                </ul>
-                <p style="margin-top: 30px;">
-                    Donc sur notre Debian, nous allons éditer le fichier hosts et ajouter deux lignes en haut du fichier :</br>
-                    192.168.0.1   www.toto.com</br>
-                    192.168.0.1   www.tutu.com</br></br>
-                    Désormais, dès lors que notre machine voudra accéder à un de ces deux sites, elle accédera à... elle-même.</br></br>
-                    Configuration des virtualhosts.</br>
-                    Comme on l'a vu précédemment, les virtualhosts se configurent dans sites-available/.</br>
-                    Nous allons donc créer deux nouveaux fichiers pour nos deux virtualhosts. Pour cela, nous allons simplement copier le fichier default, et modifier le contenu des fichiers copiés.
-                </p>
-                <pre><code class="language-markup"><?php require_once'../../../../../script/apache27'?></code></pre>
+                <ol style="font-size: large; text-align: justify; color: white;">
+                    <li>connexion du client HTTP</li>
+                    <li>envoi d'une requête de méthode GET</li>
+                    <li>réponse du serveur HTTP</li>
+                    <li>le serveur ferme la connexion pour signaler la fin de la réponse.</li>
+                </ol>
                 <p style="margin-top: 30px; justify-content: start">
-                    Ensuite, nous allons simplement modifier trois choses et ajouter :
+                    Requête :
                 </p>
-                <ul style="font-size: large; text-align: justify; color: white;">
-                    <li>une directive ServerName pour indiquer le nom de notre virtualhost ;</li>
-                    <li>le DocumentRoot qui précise où se situent nos pages ;</li>
-                    <li>et enfin la balise Directory pour y indiquer notre nouveau chemin.</li>
-                </ul>
-                <pre><code class="language-markup"><?php require_once'../../../../../script/apache28'?></code></pre>
-                <p style="margin-top: 30px; justify-content: start">
-                    Nous faisons de même pour tutu.com.</br>
-                    Il nous reste encore à activer ces virtualhosts dans sites-enabled/.
-                </p>
-                <pre><code class="language-markup"><?php require_once'../../../../../script/apache29'?></code></pre>
+                <pre style="margin-top: 30px;"><code class="language-markup"><?php require_once'../../../../../script/http1'?></code></pre>
                 <p style="margin-top: 30px;">
-                    Le . indique le répertoire courant. Donc ici, nous allons créer un lien dans le répertoire courant qui pointera vers le fichier toto.com. Notre lien s'appellera donc sites-enabled/toto.com.</br></br>
-                    Nos virtualhosts sont prêts, il ne nous reste plus qu'à créer les répertoires et pages de nos sites :
+                    La méthode GET est la seule possible. Le serveur reconnaît qu'il a affaire à une requête HTTP 0.9 au fait que la version n'est pas précisée à la suite de l'URI.</br></br>
+                    Réponse :
                 </p>
-                <pre><code class="language-markup"><?php require_once'../../../../../script/apache30'?></code></pre>
-                <p style="margin-top: 30px; justify-content: start">
-                    Nos virtualhosts sont maintenant effectifs.</br></br>
-                    Nous avons donc réussi à présenter deux sites différents sur un seul et même serveur Apache2.</br></br>
-                    Nous allons maintenant voir deux cas différents de configuration qui permettent de placer les pages de vos sites en dehors de /var/www/.</br></br>
-                    Un répertoire venu d'ailleurs</br>
-                    Imaginons que vous avez mis en place votre propre serveur web et que vous avez réalisé une page web présentant votre famille sur le nom de domaine que vous avez acheté www.mafamille.com.
-                    Votre petite sœur vient vous voir et aimerait bien mettre en place un site pour elle pour présenter ses hobbies.</br>
-                    Maintenant que vous savez faire des virtualhosts, vous pourriez tout à fait créer le nom de domaine petitesoeur.mafamille.com et faire un virtualhost pour ce site.
-                    Cependant, vous trouvez plus intéressant de faire un site du type www.mafamille.com/masoeur.</br>
-                    Ainsi, vous pourriez faire pareil pour tous les membres de la famille.</br></br>
-                    Cependant, si vous faites comme cela, vous devrez donner accès au répertoire /var/www/ à votre sœur, ce qui ne vous emballe pas trop si elle y fait des bêtises.</br></br>
-                    Il existe une solution simple. Vous pouvez tout à fait laisser un accès complet à un répertoire pour votre sœur, et faire un raccourci de ce répertoire dans /var/www/.</br></br>
-                    Essayez par exemple de créer une page web dans /home/user/ :
-                </p>
-                <pre><code class="language-markup"><?php require_once'../../../../../script/apache31'?></code></pre>
-                <p style="margin-top: 30px; justify-content: start">
-                    Vous pouvez alors créer un lien de ce répertoire dans /var/www :
-                </p>
-                <pre><code class="language-markup"><?php require_once'../../../../../script/apache32'?></code></pre>
-                <p style="margin-top: 30px; justify-content: start">
-                    Désormais, si vous allez sur le site www.mafamille.com/masoeur/ vous allez tomber sur la page de votre petite sœur !
-                    Et ceci, sans qu'elle mette à mal toutes les pages que vous avez mis du temps à créer.
+                <pre style="margin-top: 30px;"><code class="language-markup"><?php require_once'../../../../../script/http2'?></code></pre>
+                <p style="margin-top: 30px;">
+                    Pour répondre à une requête HTTP 0.9, le serveur envoie directement le contenu de la réponse, sans métadonnées. Il ne doit jamais se comporter ainsi pour les requêtes HTTP de version supérieure.
+                    Inutile de chercher les versions inférieures à 0.9 du protocole HTTP : elles n'existent pas, car HTTP 0.9 n'avait initialement pas de numéro de version. Il a fallu lui en attribuer un quand HTTP 1.0 est arrivé.
                 </p>
                 <p style="margin-top: 30px;">
-                    Votre site a prospéré et vous hébergez maintenant une bonne dizaine de virtualhosts, pour votre voisin, votre école, votre club de bridge, etc.</br>
-                    Vous avez même créé une page qui donne des statistiques sur l'utilisation générale de votre serveur Apache2 : le nombre de pages lues, le nombre de sites, etc.</br>
-                    Vous aimeriez maintenant que cette page puisse être accessible sur chacun des différents virtualhosts que vous possédez.</br></br>
-                    Une façon de faire serait de dupliquer la page sur chacun des virtualhosts, mais ce serait lourd et devrait être répété à chaque nouveau site créé. Il y a cependant une solution simple, grâce aux alias.</br></br>
-                    Un alias permet de faire correspondre une partie de l'URL à un chemin particulier dans l'arborescence.</br></br>
-                    Par exemple, je peux dire que si j'indique dans mon URL messtats/, qui n'est pas un répertoire dans /var/www/, le navigateur sera redirigé vers le répertoire /home/messtats/.</br>
-                    Ainsi, www.toto.com/messtats/ ou www.tutu.com/messtats/ pointeront vers la même page.</br></br>
-                    Les alias peuvent se configurer grâce au module alias.</br></br>
-                    Nous allons tester cela en modifiant le fichier /etc/apache2/mods-available/alias.conf pour ajouter une ligneAlias /test/ /home/user/:
+                    HTTP 1.0</br>
+                    Le protocole HTTP 1.0, décrit dans la RFC 1945, prévoit l'utilisation d'en-têtes spécifiés dans la RFC 822. La gestion de la connexion reste identique à HTTP 0.9 : le client établit la connexion, envoie une requête, le serveur répond et ferme immédiatement la connexion.</br></br>
+                    Une requête HTTP présente le format suivant :
                 </p>
-                <pre><code class="language-markup"><?php require_once'../../../../../script/apache33'?></code></pre>
+                <pre style="margin-top: 30px;"><code class="language-markup"><?php require_once'../../../../../script/http3'?></code></pre>
+                <p style="margin-top: 30px; justify-content: start">
+                    Les réponses HTTP présentent le format suivant :
+                </p>
+                <pre style="margin-top: 30px;"><code class="language-markup"><?php require_once'../../../../../script/http4'?></code></pre>
+                <p style="margin-top: 30px; justify-content: start">
+                    Requête :
+                </p>
+                <pre style="margin-top: 30px;"><code class="language-markup"><?php require_once'../../../../../script/http5'?></code></pre>
                 <p style="margin-top: 30px;">
-                    Relancez Apache2 et mettez-vous sur l'URL www.toto.com/test/.</br></br>
-                    Si tout se passe bien, vous allez vous retrouver sur la page de votre petite sœur !</br>
-                    Et de même pour www.tutu.com/test/ ou 192.168.01/test/.</br></br>
-                    Nous avons pu ainsi créer une page, ou un répertoire, accessible depuis n'importe lequel de nos virtualhosts.
+                    La version du protocole HTTP est précisée à la suite de l'URI. La requête doit être terminée par un double retour à la ligne (CRLFCRLF). HTTP 1.0 supporte aussi les méthodes HEAD et POST. On constate l'usage d'en-têtes inspirés de MIME pour transférer les métadonnées :</br></br>
+                    Host</br>
+                    Permet de préciser le site web concerné par la requête, ce qui est nécessaire pour un serveur hébergeant plusieurs sites à la même adresse IP (name based virtual host, hôte virtuel basé sur le nom). C'est le seul en-tête réellement important.</br></br>
+                    Referer</br>
+                    Indique l'URI du document qui a donné un lien sur la ressource demandée. Cet en-tête permet aux webmasters d'observer d'où viennent les visiteurs.</br></br>
+                    User-Agent</br>
+                    Indique le logiciel utilisé pour se connecter. Il s'agit généralement d'un navigateur web ou d'un robot d'indexation.</br></br>
+                    Réponse :
+                </p>
+                <pre style="margin-top: 30px;"><code class="language-markup"><?php require_once'../../../../../script/http6'?></code></pre>
+                <p style="margin-top: 30px; justify-content: start">
+                    La première ligne donne le &nbsp; <a href="https://fr.wikipedia.org/wiki/Liste_des_codes_HTTP" target="_blank"> code de statut HTTP </a> &nbsp; (200 dans ce cas).
+                </p>
+                <p style="margin-top: 30px;">
+                    Date</br>
+                    Moment auquel le message est généré.</br></br>
+                    Server</br>
+                    Indique quel modèle de serveur HTTP répond à la requête.</br></br>
+                    Content-Type</br>
+                    Indique le type MIME de la ressource.</br></br>
+                    Content-Length</br>
+                    Indique la taille en octets de la ressource.</br></br>
+                    Expires</br>
+                    Indique le moment après lequel la ressource devrait être considérée obsolète ; permet aux navigateurs Web de déterminer jusqu'à quand garder la ressource en mémoire cache.</br></br>
+                    Last-Modified</br>
+                    Indique la date de dernière modification de la ressource demandée.
+                </p>
+                <p style="margin-top: 30px;">
+                    HTTP 1.1</br>
+                    Le protocole HTTP 1.1 est décrit par le RFC 2616 qui rend le RFC 2068 obsolète. La différence avec HTTP 1.0 est une meilleure gestion du cache. L'en-tête Host devient obligatoire dans les requêtes.</br></br>
+                    Les soucis majeurs des deux premières versions du protocole HTTP sont d'une part le nombre important de connexions lors du chargement d'une page complexe (contenant beaucoup d'images ou d'animations) et d'autre part le temps d'ouverture d'une connexion entre client et serveur (l'établissement d'une connexion TCP prend un temps triple de la latence entre client et serveur). Des expérimentations de connexions persistantes ont cependant été effectuées avec HTTP 1.0 (notamment par l'emploi de l'en-tête Connection: Keep-Alive), mais cela n'a été définitivement mis au point qu'avec HTTP 1.1.</br>
+                    Par défaut, HTTP 1.1 utilise des connexions persistantes, autrement dit la connexion n'est pas immédiatement fermée après une requête, mais reste disponible pour une nouvelle requête. On appelle souvent cette fonctionnalité keep-alive. Il est aussi permis à un client HTTP d'envoyer plusieurs requêtes sur la même connexion sans attendre les réponses. On appelle cette fonctionnalité pipelining. La persistance des connexions permet d'accélérer le chargement de pages contenant plusieurs ressources, tout en diminuant la charge du réseau.</br>
+                    La gestion de la persistance d'une connexion est gérée par l'en-tête Connection.</br>
+                    HTTP 1.1 supporte la négociation de contenu. Un client HTTP 1.1 peut accompagner la requête pour une ressource d'en-têtes indiquant quels sont les langues et formats de données préférés. Il s'agit des en-têtes dont le nom commence par Accept-.</br>
+                    Les en-têtes supplémentaires supportés par HTTP 1.1 sont :</br></br>
+                    Connection</br>
+                    Cet en-tête peut être envoyé par le client ou le serveur et contient une liste de noms spécifiant les options à utiliser avec la connexion actuelle. Si une option possède des paramètres ceux-ci sont spécifiés par l'en-tête portant le même nom que l'option (Keep-Alive par exemple, pour spécifier le nombre maximum de requêtes par connexion). Le nom close est réservé pour spécifier que la connexion doit être fermée après traitement de la requête en cours.</br></br>
+                    Accept</br>
+                    Cet en-tête liste les types MIME de contenu acceptés par le client. Le caractère étoile * peut servir à spécifier tous les types / sous-types.</br></br>
+                    Accept-Charset</br>
+                    Spécifie les encodages de caractères acceptés.</br></br>
+                    Accept-Language</br>
+                    Spécifie les langues acceptées.</br></br>
+                    L'ordre de préférence de chaque option (type, encodage ou langue) est spécifié par le paramètre optionnel q contenant une valeur décimale entre 0 (inacceptable) et 1 (acceptable) inclus (3 décimales maximum après la virgule), valant 1 par défaut.</br></br>
+                    Le support des connexions persistantes doit également fonctionner dans les cas où la taille de la ressource n'est pas connue d'avance (ressource générée dynamiquement par le serveur, flux externe au serveur…).</br></br>
+                    Pour cela, l'encodage de transfert nommé chunked permet de transmettre la ressource par morceaux consécutifs en précédant chacun par une ligne de texte donnant la taille de celui-ci en hexadécimal. Le transfert se termine alors par un morceau de taille nulle, où des en-têtes finaux peuvent être envoyés.</br></br>
+                    Les en-têtes supplémentaires liés à cet encodage de transfert sont :</br></br>
+                    Transfer-Encoding</br>
+                    Spécifie l'encodage de transfert. La seule valeur définie par la spécification RFC 26163 est chunked.</br></br>
+                    Trailer</br>
+                    Liste tous les en-têtes figurant après le dernier morceau transféré.</br></br>
+                    TE</br>
+                    Envoyé par le client pour spécifier les encodages de contenu supportés (Content-Encoding, ne pas confondre avec Transfer-Encoding car chunked est obligatoirement supporté par les clients et serveurs implémentant le standard HTTP/1.1), et spécifie si le client supporte l'en-tête Trailer en ajoutant trailers à la liste.</br></br>
+                </p>
+                <p style="margin-top: 30px;">
+                    HTTP/2</br>
+                    Une nouvelle version d'HTTP, HTTP/2, a été développée au sein du groupe de travail « Hypertext Transfer Protocol Bis » (httpbis) de l'Internet Engineering Task Force, et approuvée comme RFC standard le 18 février 2015. Le développement d'HTTP/2 a débuté à la suite de la création du protocole SPDY proposé par Google afin de réduire le temps de chargement des pages Web. Le groupe de travail httpbis s'était initialement interdit de proposer une nouvelle version d'HTTP, concentrant son activité sur la clarification des spécifications d'HTTP 1.1. 
+                    Considérant l'arrivée de SPDY et son adoption rapide sur le Web, avec notamment des implémentations dans deux des principaux navigateurs Web, Google Chrome et Mozilla Firefox, Mark Nottingham, « chair » d'httpbis, a émis l'opinion qu'il était temps d'envisager HTTP/2 et proposé d'amender la charte d'httpbis en ce sens, initiant de fait le développement du nouveau protocole.</br>
+                    Après plus de 2 ans de discussions, la RFC est approuvée en février 2015 par le groupe de pilotage de l'IETF, et est publiée en mai 2015.
+                </p>
+                <p style="margin-top: 30px;">
+                    HTTP/3</br>
+                    Une nouvelle version d’HTTP, HTTP/3, est la troisième et prochaine version majeure du protocole de transfert hypertexte utilisé pour échanger des informations sur le World Wide Web. Celle-ci repose sur le protocole QUIC (Quick UDP Internet Connections), développé par Google en 2012.</br>
+                    La sémantique HTTP est cohérente d'une version à l'autre. En effet, les mêmes méthodes de requête, codes de statut et champs de message sont généralement applicables à toutes les versions.</br>
+                    Si HTTP/1 et HTTP/2 utilisent tous deux TCP comme protocole de transport, HTTP/3 quant à lui utilise le protocole QUIC, un protocole de la couche transport qui est plus adapté au Web. Le passage à QUIC vise à résoudre un problème majeur de HTTP/2 appelé "Head-of-line Blocking" grâce à une encapsulation des paquets dans UDP. En effet, avec HTTP/2 reposant sur TCP, une connexion permet d'accéder aux ressources demandées une à une (une seule à la fois). Lorsque l'envoi d’une ressource est perturbé (par exemple par une perte de paquets), la livraison globale des ressources est ralentie. Avec HTTP/3 reposant sur le protocole QUIC, on n’a plus ce problème puisque tous les flux sont indépendants étant encapsulés dans UDP, protocole de transport ne nécessitant pas de connexion.
+                </p>
+                <p style="margin-top: 60px;">
+                    Bonus : URI</br>
+                    Un URI, de l'anglais Uniform Resource Identifier, soit littéralement identifiant uniforme de ressource, est une courte chaîne de caractères identifiant une ressource sur un réseau (par exemple une ressource Web) physique ou abstraite, et dont la syntaxe respecte une norme d'Internet mise en place pour le World Wide Web (voir RFC 3986). La norme était précédemment connue sous le terme UDI.</br>
+                    L'IETF l'a d'abord défini dans la RFC 2396 en se basant sur des propositions de Tim Berners-Lee (RFC 1630). Mise à jour par la RFC 2732 puis révisée de nombreuses fois sous le titre rfc2396bis, la RFC 3986 définit les URI en janvier 2005.</br>
+                    Le sigle URI est généralement utilisé pour désigner une telle chaîne de caractères. Par exemple urn:ietf:rfc:2396 est un URI identifiant la RFC 2396.</br>
+                    Les URI sont la technologie de base du World Wide Web car tous les hyperliens du Web sont exprimés sous forme d'URI.</br></br>
+                    Principe</br>
+                    Un URI doit permettre d'identifier une ressource de manière permanente, même si la ressource est déplacée ou supprimée.</br></br>
+                    Application</br>
+                    Bien que les URI soient très largement utilisés dans le monde informatique, avec surtout les URL sur Internet, on en retrouve d'autres applications dans le monde réel. Ainsi, le code ISBN, qui est l'identifiant unique d'un livre, permet de retrouver celui-ci depuis n'importe quelle librairie ou bibliothèque, dans le monde entier. On peut considérer également les codes-barres comme une métaphore d'URI dans le monde physique : un code-barres ne localise pas un produit, mais l'identifie (bien qu'il identifie l'ensemble des exemplaires d'un produit, pas chaque exemplaire individuellement, ce qui est le travail du numéro de série, lequel n'est pas systématique, mais réservé aux produits onéreux).</br></br>
+                    Un URI peut être de type « locator » ou « name » ou les deux.</br></br>
+                    Un Uniform Resource Locator (URL) est un URI qui, outre le fait qu'il identifie une ressource sur un réseau, fournit les moyens d'agir sur une ressource ou d'obtenir une représentation de la ressource en décrivant son mode d'accès primaire ou « emplacement » réseau. Par exemple, l'URL http://www.wikipedia.org/ est un URI qui identifie une ressource (page d'accueil Wikipédia) et implique qu'une représentation de cette ressource (une page HTML en caractères encodés) peut être obtenue via le protocole HTTP depuis un réseau hôte appelé www.wikipedia.org.</br></br>
+                    Un Uniform Resource Name (URN) est un URI qui identifie une ressource par son nom dans un espace de noms. Un URN peut être employé pour parler d'une ressource sans que cela préjuge de son emplacement ou de la manière de la référencer. Par exemple, l'URN urn:isbn:0-395-36341-1 est un URI qui, étant un numéro de l'International Standard Book Number (ISBN), permet de faire référence à un livre, mais ne suggère ni où, ni comment en obtenir une copie réelle.</br></br>
+                    Relation avec les URL et URN</br>
+                    Le point de vue actuel du groupe de travail qui supervise les URI est que les termes URL et URN sont des aspects dépendant du contexte des URI, et que l'on a rarement besoin de faire la distinction entre les deux. Dans les publications techniques, spécialement les normes érigées par l'IETF et le W3C, le terme URL n'a pas été reconnu pendant longtemps, parce qu'il était rarement nécessaire de faire une distinction entre les URL et les URI. Cependant, dans des contextes non techniques et dans les logiciels du World Wide Web, le terme URL reste omniprésent. De plus, le terme adresse web, qui n'a pas de définition formelle, est souvent employé dans des publications non techniques comme synonyme d'URL ou URI, bien qu'il ne se réfère généralement qu'aux protocoles 'HTTP' et 'HTTPS'.</br>
                 </p>
 
                 <script src="../../../../../static/js/prism.js" type="text/javascript"></script>
@@ -363,18 +240,28 @@
                 </h3>
 
                 <h6 style="margin-top: 30px;">
-                    "Apprenez le fonctionnement des réseaux TCP/IP" de Eric Lalitte - Collection OpenClassrooms
+                    <a href="https://fr.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_blank">Wikipedia - HTTP</a>
+                </h6>      
+                
+                <h6 style="margin-top: 30px;">
+                    <a href="https://fr.wikipedia.org/wiki/Liste_des_codes_HTTP" target="_blank">Wikipedia - Liste des codes HTTP</a>
                 </h6>
 
                 <h6 style="margin-top: 30px;">
-                    <a href="https://httpd.apache.org/docs/2.4/install.html" target="_blank">apache.org - Compilation et installation</a>
+                    <a href="https://fr.wikipedia.org/wiki/Sch%C3%A9ma_d%27URI" target="_blank">Wikipedia - Schéma d'URI</a>
                 </h6>
 
-                <h6 style="margin-top: 30px; margin-bottom: 140px;">
-                    <a href="https://www.php.net/manual/fr/install.unix.apache2.php" target="_blank">php.net - Apache 2.x sur les systèmes Unix</a>
+                <h6 style="margin-top: 30px;">
+                    <a href="https://fr.wikipedia.org/wiki/SPDY" target="_blank">Wikipedia - SPDY</a>
                 </h6>
-
                 
+                <h6 style="margin-top: 30px;">
+                    <a href="https://fr.wikipedia.org/wiki/QUIC" target="_blank">Wikipedia - QUIC</a>
+                </h6>
+                
+                <h6 style="margin-top: 30px; margin-bottom: 140px;">
+                    <a href="https://fr.wikipedia.org/wiki/Ossification_des_protocoles" target="_blank">Wikipedia - Ossification_des_protocoles</a>
+                </h6>
 
             </div>
         </div>

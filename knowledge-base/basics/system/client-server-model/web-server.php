@@ -23,6 +23,8 @@
 
     <?php // Titre de l'onget de la page ?>
     <title>Modèle OSI - Couche 5 à 7 : Le service web</title>
+    <link rel="icon" type="image/png" href="../../../../images/jaynerro-icon.png">
+
   </head>
 
   <?php // Corps de la page ?>
@@ -73,7 +75,7 @@
                 </p>
                 <img src="../../../../images/various-web-servers.png" class="img-fluid mx-auto d-block" style="max-width: 50%; margin-top: 30px;"/>
                 <p style="margin-top: 20px; font-size: small;">
-                    Serveurs web les plus utilisés (source: W3techs.com)
+                    Serveurs web / HTTP les plus utilisés (source: W3techs.com)
                 </p>
                 <p style="margin-top: 30px;">
                     Toutefois, si l'on regarde plus précisément les évolutions des serveurs, on se rend compte que la tendance n'est pas à la progression pour Apache :

@@ -21,6 +21,7 @@
 
     <?php // Titre de l'onget de la page ?>
     <title>Glossaire</title>
+    <link rel="icon" type="image/png" href="../images/jaynerro-icon.png">
   </head>
 
   <?php // Corps de la page ?>
@@ -132,6 +133,15 @@
             <a href="./basics/network/osi-model/layer5to7/dns.php">gTLD</a>
           </h3>
 
+
+          <h2 style="margin-top: 60px; font-size: 300%;">
+            H
+          </h2>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/osi-model/layer5to7/http.php">HTTP</a>
+          </h3>
+
           <h2 style="margin-top: 60px; font-size: 300%;">
             I
           </h2>
@@ -214,6 +224,15 @@
 
 
           <h2 style="margin-top: 60px; font-size: 300%;">
+            Q
+          </h2>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/osi-model/layer5to7/http.php">QUIC</a>
+          </h3>
+
+
+          <h2 style="margin-top: 60px; font-size: 300%;">
             R
           </h2>
 
@@ -243,6 +262,10 @@
 
           <h3 style="margin-top: 35px;">
             <a href="./basics/network/osi-model/layer5to7/dns.php">SOA</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/osi-model/layer5to7/http.php">SPDY</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
@@ -277,6 +300,14 @@
 
           <h3 style="margin-top: 35px;">
             <a href="./basics/network/osi-model/layer4/layer4.php">UDP</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/osi-model/layer5to7/http.php">URI</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/osi-model/layer5to7/http.php">URL</a>
           </h3>
 
 

@@ -3,7 +3,7 @@
     <div class="container">
         
         <a class="navbar-brand" href="/index.php">
-            <img src="/images/jaynerrotest.png" alt="logo" width="40">
+            <img src="/images/jaynerro.png" alt="logo" width="40">
         </a>
         <a class="navbar-brand" href="/index.php" style="font-size : 80%; font-family: bit;">Jaynerro</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

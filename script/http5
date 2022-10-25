@@ -1,0 +1,4 @@
+GET /page.html HTTP/1.0
+Host: example.com
+Referer: http://example.com/
+User-Agent: CERN-LineMode/2.15 libwww/2.17b3

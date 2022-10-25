@@ -21,6 +21,8 @@
 
     <?php // Titre de l'onget de la page ?>
     <title>Modèle OSI - Couche 3 : La couche Réseau</title>
+    <link rel="icon" type="image/png" href="../../../../../images/jaynerro-icon.png">
+
   </head>
 
   <?php // Corps de la page ?>

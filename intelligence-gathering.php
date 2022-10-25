@@ -21,6 +21,7 @@
 
     <?php // Titre de l'onget de la page ?>
     <title>Veille informationnelle</title>
+    <link rel="icon" type="image/png" href="/images/jaynerro-icon.png">
   </head>
 
   <?php // Corps de la page ?>

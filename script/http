@@ -1,0 +1,2 @@
+GET /wiki/Main_Page http/1.1
+Host: en.wikipedia.org

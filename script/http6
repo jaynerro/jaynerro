@@ -1,0 +1,10 @@
+HTTP/1.0 200 OK
+Date: Fri, 31 Dec 1999 23:59:59 GMT
+Server: Apache/0.8.4
+Content-Type: text/html
+Content-Length: 59
+Expires: Sat, 01 Jan 2000 00:59:59 GMT
+Last-modified: Fri, 09 Aug 1996 14:21:40 GMT
+
+&lt;TITLE&gt;Exemple&lt;/TITLE&gt;
+&lt;P&gt;Ceci est une page d'exemple.&lt;/P&gt;
