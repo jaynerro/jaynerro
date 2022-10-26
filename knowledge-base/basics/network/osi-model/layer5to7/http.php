@@ -211,6 +211,12 @@
                     La sémantique HTTP est cohérente d'une version à l'autre. En effet, les mêmes méthodes de requête, codes de statut et champs de message sont généralement applicables à toutes les versions.</br>
                     Si HTTP/1 et HTTP/2 utilisent tous deux TCP comme protocole de transport, HTTP/3 quant à lui utilise le protocole QUIC, un protocole de la couche transport qui est plus adapté au Web. Le passage à QUIC vise à résoudre un problème majeur de HTTP/2 appelé "Head-of-line Blocking" grâce à une encapsulation des paquets dans UDP. En effet, avec HTTP/2 reposant sur TCP, une connexion permet d'accéder aux ressources demandées une à une (une seule à la fois). Lorsque l'envoi d’une ressource est perturbé (par exemple par une perte de paquets), la livraison globale des ressources est ralentie. Avec HTTP/3 reposant sur le protocole QUIC, on n’a plus ce problème puisque tous les flux sont indépendants étant encapsulés dans UDP, protocole de transport ne nécessitant pas de connexion.
                 </p>
+                <p style="margin-top: 50px;">
+                    cURL</br>
+                    Pour intérroger un serveur HTTP sur windows on peut utiliser la commande curl (cURL : abréviation de client URL request library : « bibliothèque de requêtes aux URL pour les clients » ou see URL : « voir URL ») destinée à récupérer le contenu d'une ressource accessible par un réseau informatique.
+                    La ressource est désignée à l'aide d'une URL et doit être d'un type supporté par le logiciel ($ curl -I www.example.org). Le logiciel permet également de créer ou modifier une ressource (contrairement à wget).
+                </p>
+
                 <p style="margin-top: 60px;">
                     Bonus : URI</br>
                     Un URI, de l'anglais Uniform Resource Identifier, soit littéralement identifiant uniforme de ressource, est une courte chaîne de caractères identifiant une ressource sur un réseau (par exemple une ressource Web) physique ou abstraite, et dont la syntaxe respecte une norme d'Internet mise en place pour le World Wide Web (voir RFC 3986). La norme était précédemment connue sous le terme UDI.</br>

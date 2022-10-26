@@ -122,7 +122,7 @@
                             </li>
 
                             <li id="liSSH">
-                              <a href="#">SSH</a>
+                              <a href="/knowledge-base/basics/network/osi-model/layer5to7/ssh.php">SSH</a>
                             </li>
 
                           </ul>
