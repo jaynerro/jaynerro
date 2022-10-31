@@ -166,7 +166,7 @@
                         </li>
 
                         <li id="liFirewall">
-                          <a href="#">Firewall</a>
+                          <a href="/knowledge-base/basics/network/networking-hardware/firewall.php">Firewall</a>
                         </li>
 
                         <li id="liAP">

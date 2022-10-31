@@ -211,7 +211,7 @@
                 <p style="margin-top: 30px; justify-content: start">
                     jaynerro.com va répondre à cette requête, et il va envoyer un paquet à notre box :
                 </p>
-                <img src="../../../../../images/ethernet-frame-nat-example-4.png" class="img-fluid mx-auto d-block" style="max-width: 100%; margin-top: 30px;"/>
+                <img src="../../../../../images/ethernet-frame-nat-example-6.png" class="img-fluid mx-auto d-block" style="max-width: 100%; margin-top: 30px;"/>
                 <p style="margin-top: 20px; font-size: small;">
                     Trame Ethernet en sortie de jaynerro.com
                 </p>

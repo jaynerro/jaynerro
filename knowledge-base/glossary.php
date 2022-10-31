@@ -50,6 +50,10 @@
           </h3>
 
           <h3 style="margin-top: 35px;">
+            <a href="./basics/network/networking-hardware/firewall.php">ACL</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
             <a href="./basics/network/osi-model/layer5to7/ssh.php">AES</a>
           </h3>
 
@@ -128,6 +132,10 @@
             <a href="./basics/network/osi-model/layer5to7/dns.php">FQDN</a>
           </h3>
 
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/networking-hardware/firewall.php">FW</a>
+          </h3>
+
 
           <h2 style="margin-top: 60px; font-size: 300%;">
             G
@@ -199,6 +207,10 @@
 
           <h3 style="margin-top: 35px;">
             <a href="./basics/network/osi-model/layer4/nat-and-port-forwarding.php">NAT</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/networking-hardware/firewall.php">NGFW</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
@@ -316,6 +328,10 @@
 
           <h3 style="margin-top: 35px;">
             <a href="./basics/network/osi-model/layer5to7/http.php">URL</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/networking-hardware/firewall.php">UTM</a>
           </h3>
 
 
