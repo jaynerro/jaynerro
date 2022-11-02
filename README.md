@@ -9,6 +9,7 @@
 * [The goal](#the-goal)
 * [The plan](#the-plan)
 * [Disclaimer](#disclaimer)
+* [About me](#about-me)
 
 ## General info
 Jaynerro is first of all my pseudonym but it is also this project : my Knowledge Base put in the form of a web site.
@@ -32,3 +33,8 @@ Learn, centralize the acquired knowledge and make it available to everyone.
 
 ## Disclaimer
 In the Knowledge Base part, these are reminders created while learning certain notions, it is in no way an absolute reference of the topics I cover. In the same way for the Information Watch part, where it is only news facts that have marked me and that I found interesting to share, it is not the reference of the cyber news.
+
+## About me
+As a recently graduated cybersecurity engineer, I learn about cybersecurity on a daily basis, both in my job and through self-study. My goal is to centralize my acquired knowledge in one place so that I can find it whenever I want and keep track of my learning.
+
+This is why I created Jaynerro : to gather some concepts of Cybersecurity and more precisely on the offensive security / Ethical Hacking for those who are interested.
