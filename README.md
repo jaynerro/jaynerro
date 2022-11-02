@@ -23,6 +23,6 @@ Project is created with
 I am using MAMP to interact with the web page. Go to https://www.mamp.info/en/downloads/ if you want to download it. Then you need to clone the projet in MAMP/htdocs and run Apache to display the web page.
 
 ## About me
-As a recently graduated cybersecurity engineer, I learn about cybersecurity on a daily basis, both in my job and through self-study. My goal is to centralize my acquired knowledge in one place so that I can find it whenever I want and keep track of my learning.
+As a recently graduated cybersecurity engineer, I learn about cybersecurity on a daily basis, both in my job and through self-study. My goal is to centralize my acquired knowledge in one place so that I can find it whenever I want and keep track of my learning, while making it available to everyone.
 
 This is why I created Jaynerro : to gather some concepts of Cybersecurity and more precisely on the offensive security / Ethical Hacking for those who are interested.
