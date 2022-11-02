@@ -170,7 +170,7 @@
                         </li>
 
                         <li id="liAP">
-                          <a href="#">AP</a>
+                          <a href="/knowledge-base/basics/network/networking-hardware/ap.php">AP</a>
                         </li>
 
                         <li id="liModem">
