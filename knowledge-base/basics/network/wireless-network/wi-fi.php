@@ -109,7 +109,7 @@
                 </p>
                 <img src="../../../../images/wifi-5.png" class="img-fluid mx-auto d-block" style="max-width: 100%; margin-top: 30px;"/>
                 <p style="margin-top: 45px;"> 
-                    En 2007, puis en 20124, 2016 et 20205 la plupart des amendements à la norme 802.11 (a, b, d, e, g, h, i, j puis r, y, w et n) ont été intégrés dans la norme par le groupe IEEE 802.11 et sont disponibles sous la forme d'un document unique.</br></br>
+                    En 2007, puis en 2012, 2016 et 2020 la plupart des amendements à la norme 802.11 (a, b, d, e, g, h, i, j puis r, y, w et n) ont été intégrés dans la norme par le groupe IEEE 802.11 et sont disponibles sous la forme d'un document unique.</br></br>
                     802.11ac</br></br>
                     IEEE 802.11ac (ou Wi-Fi 5) est le standard IEEE 802.11 publié en décembre 2013. Il permet un débit plus élevé dans la bande des 5 GHz. Cette spécification permet un débit global multistations de plusieurs gigabits par seconde et un débit crête typique pour une seule liaison d'au moins 430 mégabits par seconde (avec 4 canaux agrégés), en utilisant des bandes de fréquence radio plus larges, le MIMO (Multiple-Input Multiple-Output) et une modulation plus sophistiquée.</br></br>
                     802.11ax</br></br>
@@ -249,7 +249,7 @@
                     <li>802.1X : Cette authentification est basée sur le protocole IEEE 802.1X. Ici l'authentificator (PA) va simplement servir de relais entre la STA et un serveur d'authentification (AS) en utilisant par exemple le protocole RADIUS (également appelé AAA). L'implémentation de cette authentification est appelée WPA-Entreprise par la Wi-Fi Alliance.</li>
                 </ul>
                 <p style="margin-top: 35px;">
-                    Dans les deux cas, l'authentification se fait au moyen du protocole EAP. À l'issue de l'authentification, si cette dernière est un succès (c'est-à-dire qu'elle termine par un EAP-SUCCESS) la STA et l'AP sont tous deux en possession d'une clef appelée PMK (Pairwise Master Key). Cette PMK est soit la PSK (dans le cas d'une authentification basée sur PSK) soit les 256 premiers bits de la clef AAA (dans le cas d'une authentification basée sur 802.1X). La phase suivant l'authentification est appelée le 4-Way Handshake, elle consiste à la dérivation et à l'échange des clefs unicast/multicast à partir de la clef PMK. Le 4-Way Handshake permet également de sélectionner le protocole de chiffrement qui sera utilisé pour sécuriser les communications entre la STA et l'AP.
+                    Dans les deux cas, l'authentification se fait au moyen du protocole EAP (Extensible Authentication Protocol). À l'issue de l'authentification, si cette dernière est un succès (c'est-à-dire qu'elle termine par un EAP-SUCCESS) la STA et l'AP sont tous deux en possession d'une clef appelée PMK (Pairwise Master Key). Cette PMK est soit la PSK (dans le cas d'une authentification basée sur PSK) soit les 256 premiers bits de la clef AAA (dans le cas d'une authentification basée sur 802.1X). La phase suivant l'authentification est appelée le 4-Way Handshake, elle consiste à la dérivation et à l'échange des clefs unicast/multicast à partir de la clef PMK. Le 4-Way Handshake permet également de sélectionner le protocole de chiffrement qui sera utilisé pour sécuriser les communications entre la STA et l'AP.
                 </p>
                 <p style="margin-top: 30px; justify-content: start">
                     Chiffrement

@@ -122,6 +122,14 @@
           <h3 style="margin-top: 35px;">
             <a href="./basics/network/osi-model/layer3/ARP-ICMP.php">DOS</a>
           </h3>
+
+          <h2 style="margin-top: 60px; font-size: 300%;">
+            E
+          </h2>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/wireless-network/wi-fi.php">EAP</a>
+          </h3>
           
 
           <h2 style="margin-top: 60px; font-size: 300%;">
@@ -282,6 +290,10 @@
 
           <h3 style="margin-top: 35px;">
             <a href="./basics/network/network-architecture.php">RLE</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/wireless-network/wi-fi.php">RSN</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
