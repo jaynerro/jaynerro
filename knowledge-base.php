@@ -134,7 +134,7 @@
                       <a>Réseaux sans fil</a>
                       <ul>
                         <li id="liWiFi">
-                          <a href="#">Wi-fi</a>
+                          <a href="/knowledge-base/basics/network/wireless-network/wi-fi.php">Wi-fi</a>
                         </li>
 
                         <li id="li4G">

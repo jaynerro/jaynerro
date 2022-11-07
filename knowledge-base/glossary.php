@@ -171,6 +171,10 @@
           </h3>
 
           <h3 style="margin-top: 35px;">
+            <a href="./basics/network/wireless-network/wi-fi.php">IEEE</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
             <a href="./basics/network/osi-model/layer3/layer3.php">IP</a>
           </h3>
 
@@ -185,6 +189,10 @@
 
           <h3 style="margin-top: 35px;">
             <a href="./basics/network/network-architecture.php">LAN</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/wireless-network/wi-fi.php">LLC</a>
           </h3>
 
 
@@ -247,6 +255,10 @@
           </h3>
 
           <h3 style="margin-top: 35px;">
+            <a href="./basics/network/wireless-network/wi-fi.php">PSK</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
             <a href="./basics/network/osi-model/layer5to7/dns.php">PTR</a>
           </h3>
 
@@ -289,6 +301,10 @@
           </h3>
 
           <h3 style="margin-top: 35px;">
+            <a href="./basics/network/wireless-network/wi-fi.php">SSID</a>
+          </h3>
+          
+          <h3 style="margin-top: 35px;">
             <a href="./basics/network/osi-model/layer4/nat-and-port-forwarding.php">SNAT</a>
           </h3>
 
@@ -311,6 +327,10 @@
 
           <h3 style="margin-top: 35px;">
             <a href="./basics/network/osi-model/layer4/layer4.php">TCP</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/wireless-network/wi-fi.php">TKIP</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
@@ -368,6 +388,21 @@
             <a href="./basics/network/network-architecture.php">WAN</a>
           </h3>
 
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/wireless-network/wi-fi.php">WEP</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/wireless-network/wi-fi.php">Wi-Fi</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/wireless-network/wi-fi.php">WLAN</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/wireless-network/wi-fi.php">WPA</a>
+          </h3>
           
         </div>
       </div>
