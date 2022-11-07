@@ -263,6 +263,10 @@
           </h3>
 
           <h3 style="margin-top: 35px;">
+            <a href="./basics/network/wireless-network/wi-fi.php">PMK</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
             <a href="./basics/network/wireless-network/wi-fi.php">PSK</a>
           </h3>
 
@@ -326,6 +330,10 @@
 
           <h3 style="margin-top: 35px;">
             <a href="./basics/network/osi-model/layer5to7/http.php">SPDY</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/wireless-network/wi-fi.php">STA</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
@@ -396,7 +404,7 @@
             W
           </h2>
 
-          <h3 style="margin-top: 35px; margin-bottom: 200px;">
+          <h3 style="margin-top: 35px;">
             <a href="./basics/network/network-architecture.php">WAN</a>
           </h3>
 
@@ -412,7 +420,7 @@
             <a href="./basics/network/wireless-network/wi-fi.php">WLAN</a>
           </h3>
 
-          <h3 style="margin-top: 35px;">
+          <h3 style="margin-top: 35px; margin-bottom: 200px;">
             <a href="./basics/network/wireless-network/wi-fi.php">WPA</a>
           </h3>
           

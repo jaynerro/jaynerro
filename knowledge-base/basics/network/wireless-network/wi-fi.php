@@ -123,7 +123,7 @@
                     <b>Technique</b>
                 </p>
                 <p style="margin-top: 35px;"> 
-                    Structure (couches du protocole)
+                    Structure (couches du protocole)</br></br>
                     Les normes 802.11 s’attachent à définir les couches basses du modèle OSI pour une liaison sans fil utilisant des ondes électromagnétiques, c’est-à-dire :
                 </p>
                 <ul style="font-size: large; text-align: justify; color: white;">
@@ -289,7 +289,7 @@
                 </h6>
 
                 <h6 style="margin-top: 30px;">
-                    <a href="https://www.kaspersky.fr/resource-center/definitions/wep-vs-wpa" target="_blank">Kespersky - WEP, WPA, WPA2 et WPA3 : Différences et explication</a>
+                    <a href="https://www.kaspersky.fr/resource-center/definitions/wep-vs-wpa" target="_blank">Kaspersky - WEP, WPA, WPA2 et WPA3 : Différences et explication</a>
                 </h6>
 
                 <h6 style="margin-top: 30px; margin-bottom: 140px;">
