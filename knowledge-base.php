@@ -142,7 +142,7 @@
                         </li>
 
                         <li id="liBluetooth">
-                          <a href="#">Bluetooth</a>
+                          <a href="/knowledge-base/basics/network/wireless-network/bluetooth.php">Bluetooth</a>
                         </li>
 
                         <li id="liNFC">
