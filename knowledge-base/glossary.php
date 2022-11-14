@@ -67,6 +67,14 @@
 
 
           <h2 style="margin-top: 60px; font-size: 300%;">
+            B
+          </h2>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/network/wireless-network/bluetooth.php">BLE</a>
+          </h3>
+
+          <h2 style="margin-top: 60px; font-size: 300%;">
             C
           </h2>
 
