@@ -137,12 +137,12 @@
                           <a href="/knowledge-base/basics/network/wireless-network/wi-fi.php">Wi-fi</a>
                         </li>
 
-                        <li id="li4G">
-                          <a href="#">4G</a>
-                        </li>
-
                         <li id="liBluetooth">
                           <a href="/knowledge-base/basics/network/wireless-network/bluetooth.php">Bluetooth</a>
+                        </li>
+
+                        <li id="liCellularNetwork">
+                          <a href="/knowledge-base/basics/network/wireless-network/cellular-network.php">Réseau de téléphonie mobile</a>
                         </li>
 
                         <li id="liNFC">
