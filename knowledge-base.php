@@ -145,12 +145,12 @@
                           <a href="/knowledge-base/basics/network/wireless-network/cellular-network.php">Réseau de téléphonie mobile</a>
                         </li>
 
-                        <li id="liNFC">
-                          <a href="#">NFC</a>
+                        <li id="liRFID">
+                          <a href="/knowledge-base/basics/network/wireless-network/rfid.php">RFID</a>
                         </li>
 
-                        <li id="liRFID">
-                          <a href="#">RFID</a>
+                        <li id="liNFC">
+                          <a href="/knowledge-base/basics/network/wireless-network/nfc.php">NFC</a>
                         </li>
                       </ul>
                     </li>
