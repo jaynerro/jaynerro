@@ -313,6 +313,10 @@
           </h3>
 
           <h3 style="margin-top: 35px;">
+            <a href="./basics/network/wireless-network/rfid.php">RFID</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
             <a href="./basics/network/network-architecture.php">RLE</a>
           </h3>
 
