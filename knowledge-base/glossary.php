@@ -71,6 +71,10 @@
           </h2>
 
           <h3 style="margin-top: 35px;">
+            <a href="./basics/system/firmware-bios.php">BIOS</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
             <a href="./basics/network/wireless-network/bluetooth.php">BLE</a>
           </h3>
 
@@ -396,6 +400,10 @@
 
           <h3 style="margin-top: 35px;">
             <a href="./basics/network/osi-model/layer4/layer4.php">UDP</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/system/firmware-bios.php">UEFI</a>
           </h3>
 
           <h3 style="margin-top: 35px;">

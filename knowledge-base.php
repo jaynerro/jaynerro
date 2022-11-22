@@ -185,7 +185,7 @@
                   <ul>
 
                     <li id="liBIOS">
-                      <a href="#">BIOS, Firmware</a>
+                      <a href="/knowledge-base/basics/system/firmware-bios.php">Firmware, BIOS</a>
                     </li>
 
                     <li id="liOS">
