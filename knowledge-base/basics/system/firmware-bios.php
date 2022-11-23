@@ -210,6 +210,10 @@
                 </h6>             
 
                 <h6 style="margin-top: 30px;">
+                    <a href="https://archive.wikiwix.com/cache/index2.php?url=http%3A%2F%2Fblogs.orange-business.com%2Fsecurite%2F2008%2F05%2Ffirmwares-des-equipements-besoin-de-les-securiser.html#federation=archive.wikiwix.com&tab=url" target="_blank">Orange Business Services - Firmwares des équipements : besoin de les sécuriser ?</a>
+                </h6>
+
+                <h6 style="margin-top: 30px;">
                     <a href="https://fr.wikipedia.org/wiki/BIOS_(informatique)" target="_blank">Wikipedia - BIOS</a>
                 </h6>
 

@@ -193,7 +193,7 @@
                       <ul>
 
                         <li id="liOSIntroduction">
-                          <a href="#">Introduction</a>
+                          <a href="/knowledge-base/basics/system/os/introduction.php">Introduction</a>
                         </li>
 
                         <li id="liKernelUser">
