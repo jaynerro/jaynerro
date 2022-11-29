@@ -197,7 +197,7 @@
                         </li>
 
                         <li id="liKernelUser">
-                          <a href="#">Kernel mode vs User mode</a>
+                          <a href="/knowledge-base/basics/system/os/kernel-mode-and-user-mode.php">User mode vs Kernel mode</a>
                         </li>
 
                         <li id="liSystemCall">

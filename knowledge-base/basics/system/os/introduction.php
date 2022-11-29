@@ -50,7 +50,7 @@
         <div class="row justify-content-center">
             <div class="col-sm-8">
                 <h1> 
-                    OS - Introduction
+                    Introduction
                 </h1>
                 <p style="margin-top: 30px;"> 
                     Un système d'exploitation, ou logiciel système, ou Operating System (OS), est un logiciel qui, dans un appareil électronique, pilote les dispositifs matériels et reçoit des instructions de l'utilisateur ou d'autres logiciels (ou applications). Ces logiciels doivent être adaptés à un système d'exploitation.</br></br>
