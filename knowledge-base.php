@@ -201,7 +201,7 @@
                         </li>
 
                         <li id="liSystemCall">
-                          <a href="#">System call</a>
+                          <a href="/knowledge-base/basics/system/os/system-call.php">System call</a>
                         </li>
 
                         <li id="liLibrariesDrivers">
