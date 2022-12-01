@@ -205,7 +205,7 @@
                         </li>
 
                         <li id="liLibrariesDrivers">
-                          <a href="#">Libraries & Drivers</a>
+                          <a href="/knowledge-base/basics/system/os/libraries-and-drivers.php">Libraries & Drivers</a>
                         </li>
 
                         <li id="liDaemonsServices">
