@@ -124,6 +124,10 @@
           </h3>
 
           <h3 style="margin-top: 35px;">
+            <a href="./basics/system/os/libraries-and-drivers.php">DLL</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
             <a href="./basics/network/network-architecture.php">DMZ</a>
           </h3>
 
