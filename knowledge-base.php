@@ -213,7 +213,7 @@
                         </li>
 
                         <li id="liFileSystem">
-                          <a href="#">Système de fichiers</a>
+                          <a href="/knowledge-base/basics/system/os/file-system.php">Système de fichiers</a>
                         </li>
                       
                       </ul>
@@ -224,11 +224,26 @@
                       <ul>
 
                         <li id="liClientServerModelDefinition">
-                          <a href="#">Définition</a>
+                          <a href="/knowledge-base/basics/network/osi-model/layer4/client-server-model.php">Définition</a>
                         </li>
 
-                        <li id="liAD">
-                          <a href="#">Active Directory</a>
+                        <li id="liActiveDirectory">
+                          <a>Active Directory</a>
+                          <ul>
+
+                            <li id="liAD1">
+                              <a href="/knowledge-base/basics/system/client-server-model/active-directory/active-directory-and-domains.php">L’annuaire Active Directory et les domaines</a>
+                            </li>
+
+                            <li id="liAD2">
+                              <a href="/knowledge-base/basics/system/client-server-model/active-directory/the-heart-of-the-active-directory.php">Au cœur de l’annuaire Active Directory</a>
+                            </li>
+
+                            <li id="liAD3">
+                              <a href="/knowledge-base/basics/system/client-server-model/active-directory/active-directory-more-is-better.php">Active Directory, à plusieurs c’est mieux !</a>
+                            </li>
+
+                          </ul>
                         </li>
 
                         <li id="liWebServer">

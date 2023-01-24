@@ -54,6 +54,10 @@
           </h3>
 
           <h3 style="margin-top: 35px;">
+            <a href="./basics/system/client-server-model/active-directory/active-directory-and-domains.php">AD</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
             <a href="./basics/network/osi-model/layer5to7/ssh.php">AES</a>
           </h3>
 
@@ -120,6 +124,10 @@
           </h2>
 
           <h3 style="margin-top: 35px;">
+            <a href="./basics/system/client-server-model/active-directory/active-directory-and-domains.php">DFSR</a>
+          </h3>        
+
+          <h3 style="margin-top: 35px;">
             <a href="./basics/network/osi-model/layer5to7/dhcp.php">DHCP</a>
           </h3>
 
@@ -161,11 +169,19 @@
           </h3>
 
           <h3 style="margin-top: 35px;">
+            <a href="./basics/system/os/file-system.php">FAT</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
             <a href="./basics/network/osi-model/layer4/layer4.php">FIN</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
             <a href="./basics/network/osi-model/layer5to7/dns.php">FQDN</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/system/os/file-system.php">FS</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
@@ -176,6 +192,10 @@
           <h2 style="margin-top: 60px; font-size: 300%;">
             G
           </h2>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/system/client-server-model/active-directory/active-directory-and-domains.php">GPO</a>
+          </h3>
 
           <h3 style="margin-top: 35px;">
             <a href="./basics/network/wireless-network/cellular-network.php">GSM</a>
@@ -271,6 +291,10 @@
 
           <h3 style="margin-top: 35px;">
             <a href="./basics/network/networking-hardware/firewall.php">NGFW</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/system/client-server-model/active-directory/active-directory-and-domains.php">NTDS</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
