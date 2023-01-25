@@ -73,6 +73,10 @@
             <a href="./basics/network/osi-model/layer3/ARP-ICMP.php">ARP</a>
           </h3>
 
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/system/client-server-model/active-directory/the-heart-of-the-active-directory.php">AS</a>
+          </h3>
+
 
           <h2 style="margin-top: 60px; font-size: 300%;">
             B
@@ -103,6 +107,10 @@
           </h3>
 
           <h3 style="margin-top: 35px;">
+            <a href="./basics/system/client-server-model/active-directory/the-heart-of-the-active-directory.php">CN</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
             <a href="./basics/network/osi-model/layer5to7/dns.php">CNAME</a>
           </h3>
 
@@ -124,6 +132,10 @@
           </h2>
 
           <h3 style="margin-top: 35px;">
+            <a href="./basics/system/client-server-model/active-directory/the-heart-of-the-active-directory.php">DC</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
             <a href="./basics/system/client-server-model/active-directory/active-directory-and-domains.php">DFSR</a>
           </h3>        
 
@@ -137,6 +149,10 @@
 
           <h3 style="margin-top: 35px;">
             <a href="./basics/network/network-architecture.php">DMZ</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/system/client-server-model/active-directory/the-heart-of-the-active-directory.php">DN</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
@@ -205,6 +221,10 @@
             <a href="./basics/network/osi-model/layer5to7/dns.php">gTLD</a>
           </h3>
 
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/system/client-server-model/active-directory/the-heart-of-the-active-directory.php">GUID</a>
+          </h3>
+
 
           <h2 style="margin-top: 60px; font-size: 300%;">
             H
@@ -234,6 +254,14 @@
             <a href="./basics/network/osi-model/layer4/nat-and-port-forwarding.php">ISR</a>
           </h3>
 
+          <h2 style="margin-top: 60px; font-size: 300%;">
+            K
+          </h2>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/system/client-server-model/active-directory/the-heart-of-the-active-directory.php">KDC</a>
+          </h3>
+
 
           <h2 style="margin-top: 60px; font-size: 300%;">
             L
@@ -243,6 +271,10 @@
             <a href="./basics/network/network-architecture.php">LAN</a>
           </h3>
 
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/system/client-server-model/active-directory/the-heart-of-the-active-directory.php">LDAP</a>
+          </h3>
+          
           <h3 style="margin-top: 35px;">
             <a href="./basics/network/wireless-network/wi-fi.php">LLC</a>
           </h3>
@@ -313,6 +345,10 @@
             <a href="./basics/network/osi-model/definition.php">OSI</a>
           </h3>
 
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/system/client-server-model/active-directory/the-heart-of-the-active-directory.php">OU</a>
+          </h3>
+
 
           <h2 style="margin-top: 60px; font-size: 300%;">
             P
@@ -320,6 +356,10 @@
 
           <h3 style="margin-top: 35px;">
             <a href="./basics/network/osi-model/layer4/nat-and-port-forwarding.php">PAT</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/system/client-server-model/active-directory/the-heart-of-the-active-directory.php">PDC</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
@@ -411,6 +451,14 @@
 
           <h3 style="margin-top: 35px;">
             <a href="./basics/network/osi-model/layer4/layer4.php">TCP</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/system/client-server-model/active-directory/the-heart-of-the-active-directory.php">TGS</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/system/client-server-model/active-directory/the-heart-of-the-active-directory.php">TGT</a>
           </h3>
 
           <h3 style="margin-top: 35px;">

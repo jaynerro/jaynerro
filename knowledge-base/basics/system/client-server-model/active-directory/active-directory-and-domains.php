@@ -56,7 +56,7 @@
                 <h1> 
                     L’annuaire Active Directory et les domaines
                 </h1>
-                <img src="../../../../../images/ad.png" class="img-fluid mx-auto d-block" style="max-width: 80%; margin-top: 50px;"/>
+                <img src="../../../../../images/ad.png" class="img-fluid mx-auto d-block" style="max-width: 50%; margin-top: 50px;"/>
                 <p style="margin-top: 40px; margin-left: 10px; justify-content: start">
                     <b>I - Un annuaire Active Directory, pourquoi ?</b>
                 </p>
@@ -308,10 +308,6 @@
 
                 <h6 style="margin-top: 30px;">
                     <a href="https://fr.wikipedia.org/wiki/Active_Directory" target="_blank">Wikipedia - Active Directory</a>
-                </h6>
-
-                <h6 style="margin-top: 30px;">
-                    <a href="https://fr.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol" target="_blank">Wikipedia - Lightweight Directory Access Protocol</a>
                 </h6>
 
                 <h6 style="margin-top: 30px;">

@@ -67,7 +67,7 @@
             Disclaimer
           </p>
           <p style="font-size: x-small";>
-            Dans la partie Knowledge Base, il s’agit là d'aide-mémoires créés lors de l’apprentissage de certaines notions, ce n’est en aucun cas une référence absolue des thèmes que j’aborde. De même pour la partie Veille Informationnelle, où ce ne sont que des faits d’actualités qui m’ont marqués et auxquels je trouvais intéressant de partager, il ne s'agit pas là de la référence de l'actualités cyber. 
+            Dans la partie Knowledge Base, il s’agit là d'une concentration d'informations tirées de différentes ressources lors de mon apprentissage de certaines notions. Ma Knowledge Base n’est en aucun cas, une référence absolue des thèmes que j’aborde. De même pour la partie Veille Informationnelle, où ce ne sont que des faits d’actualités qui m’ont marqués et auxquels je trouvais intéressant de partager, il ne s'agit pas là de la référence de l'actualités cyber. 
           </p>
         </div>
       </div>
