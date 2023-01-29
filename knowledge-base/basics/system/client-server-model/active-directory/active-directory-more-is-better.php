@@ -22,7 +22,7 @@
 
 
     <?php // Titre de l'onget de la page ?>
-    <title>Active Directory - Au cœur de l’annuaire Active Directory</title>
+    <title>Active Directory - À plusieurs c’est mieux !</title>
     <link rel="icon" type="image/png" href="../../../../../images/jaynerro-icon.png">
 
   </head>
@@ -61,7 +61,7 @@
                     <b>I - Les protocoles LDAP, DNS et Kerberos</b>
                 </p>
                 <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
-                    1 - Le protocole LDAP
+                    1 - Les différents rôles : ADDS, ADFS, ADCS…
                 </p>
                 <p style="margin-top: 30px; margin-left: 50px; justify-content: start">
                     a. Qu’est-ce que le protocole LDAP ?
