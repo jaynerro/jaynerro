@@ -58,6 +58,26 @@
           </h3>
 
           <h3 style="margin-top: 35px;">
+            <a href="./basics/system/client-server-model/active-directory/active-directory-more-is-better.php">ADDS</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/system/client-server-model/active-directory/active-directory-more-is-better.php">ADCS</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/system/client-server-model/active-directory/active-directory-more-is-better.php">ADFS</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/system/client-server-model/active-directory/active-directory-more-is-better.php">ADRMS</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/system/client-server-model/active-directory/active-directory-more-is-better.php">ADLDS</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
             <a href="./basics/network/osi-model/layer5to7/ssh.php">AES</a>
           </h3>
 
@@ -141,6 +161,10 @@
 
           <h3 style="margin-top: 35px;">
             <a href="./basics/network/osi-model/layer5to7/dhcp.php">DHCP</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/system/client-server-model/active-directory/the-heart-of-the-active-directory.php">DL</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
@@ -423,6 +447,10 @@
           <h3 style="margin-top: 35px;">
             <a href="./basics/network/wireless-network/wi-fi.php">SSID</a>
           </h3>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/system/client-server-model/active-directory/active-directory-more-is-better.php">SSO</a>
+          </h3>
           
           <h3 style="margin-top: 35px;">
             <a href="./basics/network/osi-model/layer4/nat-and-port-forwarding.php">SNAT</a>
@@ -492,6 +520,10 @@
 
           <h3 style="margin-top: 35px;">
             <a href="./basics/network/wireless-network/cellular-network.php">UMTS</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/system/client-server-model/active-directory/active-directory-more-is-better.php">UPN</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
