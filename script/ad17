@@ -1,0 +1,1 @@
+runas /netonly /user:medic.ex\pixis cmd.exe

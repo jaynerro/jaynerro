@@ -1,0 +1,5 @@
+$ nslookup -type=SRV _kerberos._tcp.medic.ex
+Server:        10.10.10.2
+Address:    10.10.10.2#53
+
+_kerberos._tcp.medic.ex    service = 0 100 88 dc01.medic.ex.

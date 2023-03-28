@@ -1,0 +1,14 @@
+PS C:\> Get-ADDefaultDomainPasswordPolicy
+
+ComplexityEnabled           : True
+DistinguishedName           : DC=medic,DC=ex
+LockoutDuration             : 00:10:00
+LockoutObservationWindow    : 00:30:00
+LockoutThreshold            : 3
+MaxPasswordAge              : 90.00:00:00
+MinPasswordAge              : 1.00:00:00
+MinPasswordLength           : 7
+objectClass                 : {domainDNS}
+objectGuid                  : dae14cb7-a84e-4d1d-8490-27399d6fbad5
+PasswordHistoryCount        : 24
+ReversibleEncryptionEnabled : False

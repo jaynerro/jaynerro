@@ -1,0 +1,9 @@
+$ ldapsearch -x -H ldap://dc01.medic.ex -s base -LLL
+domainFunctionality: 7
+forestFunctionality: 7
+domainControllerFunctionality: 7
+rootDomainNamingContext: DC=medic,DC=ex
+[...]
+subschemaSubentry: CN=Aggregate,CN=Schema,CN=Configuration,DC=medic,DC=ex
+dnsHostName: DC01.medic.ex
+[...]

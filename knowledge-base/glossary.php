@@ -62,22 +62,6 @@
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/system/client-server-model/active-directory/active-directory-more-is-better.php">ADCS</a>
-          </h3>
-
-          <h3 style="margin-top: 35px;">
-            <a href="./basics/system/client-server-model/active-directory/active-directory-more-is-better.php">ADFS</a>
-          </h3>
-
-          <h3 style="margin-top: 35px;">
-            <a href="./basics/system/client-server-model/active-directory/active-directory-more-is-better.php">ADRMS</a>
-          </h3>
-
-          <h3 style="margin-top: 35px;">
-            <a href="./basics/system/client-server-model/active-directory/active-directory-more-is-better.php">ADLDS</a>
-          </h3>
-
-          <h3 style="margin-top: 35px;">
             <a href="./basics/network/osi-model/layer5to7/ssh.php">AES</a>
           </h3>
 
@@ -520,10 +504,6 @@
 
           <h3 style="margin-top: 35px;">
             <a href="./basics/network/wireless-network/cellular-network.php">UMTS</a>
-          </h3>
-
-          <h3 style="margin-top: 35px;">
-            <a href="./basics/system/client-server-model/active-directory/active-directory-more-is-better.php">UPN</a>
           </h3>
 
           <h3 style="margin-top: 35px;">

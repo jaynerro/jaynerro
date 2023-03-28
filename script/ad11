@@ -1,0 +1,6 @@
+$ nslookup medic.ex
+Server:        10.10.10.2
+Address:    10.10.10.2#53
+
+Name:    medic.ex
+Address: 10.10.10.2

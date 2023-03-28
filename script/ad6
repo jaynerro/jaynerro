@@ -1,0 +1,8 @@
+nmap -p 22 -sV 10.10.10.2
+
+Starting Nmap 7.60 ( https://nmap.org )
+Nmap scan report for 10.10.10.2
+Host is up (0.58s latency).
+
+PORT    STATE   SERVICE VERSION
+22/tcp open  ssh     OpenSSH for_Windows_8.1 (protocol 2.0)

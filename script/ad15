@@ -1,0 +1,8 @@
+PS C:\> Get-ADObject -LDAPFilter "(|(ObjectClass=user)(ObjectClass=computer))" -SearchBase "DC=MEDIC,DC=EX" -Property * |  where description -ne $null | Select Name, Description, ObjectClass
+
+Name           Description                                         ObjectClass
+----           -----------                                         -----------
+Administrateur Compte d’utilisateur d’administration               user
+Invité         Compte d’utilisateur invité                         user
+krbtgt         Compte de service du centre de distribution de clés user
+Lucie POIRIER  Mot de passe temporaire: Welcome123                 user

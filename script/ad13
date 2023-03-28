@@ -1,0 +1,1 @@
+$ cme smb 10.10.10.0/24 -u pixis -p P4ssw0rd -d medic.ex --shares

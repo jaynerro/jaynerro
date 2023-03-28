@@ -453,48 +453,31 @@
                 Ethical Hacking
               </a>
               <ul>
-                <li id="li40">
+                <li id="liActiveDirectoryEH">
                   <a>
-                    Collapse 20
+                    Active Directory
                   </a>
                   <ul>
-                    <li id="li60">
-                      <a href="#">
-                        Link 20
+                    <li id="liIdentifyWeakness">
+                      <a href="/knowledge-base/ethical-hacking/active-directory/identify-weaknesses.php">
+                        Identifiez les faiblesses et les objectifs d’attaque
                       </a>
                     </li>
-                    <li id="li70">
+                    <li id="liExploitAttackPaths">
                       <a href="#">
-                        Link 30
+                        Exploitez les chemins d’attaque
                       </a>
                     </li>
-                    <li id="li80">
-                      <a>
-                        Collapse 30
+                    <li id="liProtectAndMonitor">
+                      <a href="#">
+                        Protégez et surveillez votre environnement
                       </a>
-                      <ul>
-                        <li id="li90">
-                          <a href="#">
-                            Link 40
-                          </a>
-                        </li>
-                        <li id="li100">
-                          <a href="#">
-                            Link 50
-                          </a>
-                        </li>
-                      </ul>
                     </li>
                   </ul>
                 </li>
-                <li id="li50">
-                  <a href="#">
-                    Link 60
-                  </a>
-                </li>
               </ul>
             </li>
-            <li id="li5" data-value="li5" style="margin-top: 20px;">
+            <li id="liGlossary" data-value="liGlossary" style="margin-top: 20px;">
               <a href="/knowledge-base/glossary.php">
                 Glossaire
               </a>
