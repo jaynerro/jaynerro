@@ -1,0 +1,1 @@
+certify.exe find /vulnerable /ca:dc01.medic.ex /domain:medic.ex

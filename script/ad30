@@ -1,0 +1,1 @@
+hashcat -m 13100 ./hashes.kerberoast /home/pixis/wordlist.txt

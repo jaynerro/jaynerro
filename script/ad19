@@ -1,0 +1,1 @@
+nmap --script smb-vuln-ms17-010.nse -p445 10.10.10.0/24

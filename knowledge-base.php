@@ -464,7 +464,7 @@
                       </a>
                     </li>
                     <li id="liExploitAttackPaths">
-                      <a href="#">
+                      <a href="/knowledge-base/ethical-hacking/active-directory/exploit-attack-paths.php">
                         Exploitez les chemins d’attaque
                       </a>
                     </li>
