@@ -64,9 +64,11 @@
                     Quand vous passerez à la mise en place d’un Active Directory, lors de l’installation, vous verrez qu’il y a cinq rôles qui comprennent la notion d’Active Directory. Cependant, un seul d’entre eux est la base de tout et permet de mettre en place les services d’annuaire Active Directory.</br></br>
                     Ces cinq rôles permettent de répondre à des besoins différents, mais ils sont capables de fonctionner ensemble et de se « répartir les tâches », car ils sont conçus pour assumer un rôle bien spécifique.
                 </p>
-                <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
-                    1 - ADDS (Active Directory Domain Services)
-                </p>
+                <div id="ADDS">
+                    <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
+                        1 - ADDS (Active Directory Domain Services)
+                    </p>
+                </div>
                 <p style="margin-top: 30px;">
                     Comme son nom l’indique, ADDS permet la mise en place des services de domaine Active Directory, autrement dit la mise en œuvre d’un domaine et d’un annuaire Active Directory.</br></br>
                     Ce rôle permet de gérer au sein d’un annuaire les utilisateurs, les ordinateurs, les groupes, etc. afin de proposer l’ouverture de session via des mécanismes d’authentification et le contrôle d’accès aux ressources. Enfin, je ne vous apprends rien, car depuis le début de ce cours on parle précisément de ce rôle, mais maintenant vous savez qu’il correspond au rôle « ADDS » défini dans Windows Server.
@@ -86,7 +88,9 @@
                     3 - ADFS (Active Directory Federation Services)
                 </p>
                 <p style="margin-top: 30px;">
-                    Depuis Windows Server 2008, un rôle nommé « ADFS » est disponible. Il s’agit d’un service de fédération qui permet de simplifier l’accès à des applications, que l’on se trouve ou non sur le même réseau.</br></br>
+                    Depuis Windows Server 2008, un rôle nommé « ADFS » est disponible. Il s’agit d’un service de fédération qui permet de simplifier l’accès à des applications, que l’on se trouve ou non sur le même réseau.
+                </p>
+                <p style="margin-top: 20px;" id="SSO">
                     Principalement, ADFS permet l’intégration d’un mécanisme SSO (Single Sign-On) c’est-à-dire l’authentification unique. Je m’explique. On se connecte sur le portail ADFS avec ses identifiants, et si l’authentification réussit on obtient directement l’accès à l’application cible sans devoir se réauthentifier.</br></br>
                     Ainsi, les demandes d’authentification pour accéder aux applications sont centralisées et des jetons d’accès sont distribués aux clients, si l’accès est autorisé.
                 </p>

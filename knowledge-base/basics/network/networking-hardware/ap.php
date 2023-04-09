@@ -49,9 +49,11 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-sm-8">
-                <h1> 
-                    AP
-                </h1>
+                <div id="AP">
+                    <h1> 
+                        AP
+                    </h1>
+                </div>
                 <p style="margin-top: 30px;"> 
                     Un point d'accès réseau, (PA ou AP de l'anglais : access point), dans le domaine des réseaux de télécommunications, est un endroit équipé d'une structure dédié pour se connecter matériellement à un réseau filaire ou radio, en suivant une procédure logicielle à l'aide d'un terminal.
                 </p>
@@ -76,7 +78,7 @@
                     <li>Routeur</li>
                     <li>Commutateur réseau / Switch</li>
                     <li>Concentrateur / Hub</li>
-                    <li>Boitier Courants porteurs en ligne (CPL)</li>
+                    <li id="CPL">Boitier Courants porteurs en ligne (CPL)</li>
                 </ul>
                 <p style="margin-top: 30px;"> 
                     La plupart de ces équipements ont une autre finalité que le simple point d'accès. Par exemple, ils peuvent relier deux réseaux disjoints. Les plus fréquents sont les bornes Wi-Fi publiques, d'ailleurs plus connues sous cette dénomination ou sous celle de hotspot Wi-Fi. En général, les Fournisseurs d'accès à Internet (FAI) attribuent aussi le terme point d'accès (PA) à leur modem station d'accueil réservé à un usage privé et domestique (exemples : Livebox, Freebox, Bbox, etc.).</br></br>

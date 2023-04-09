@@ -73,14 +73,14 @@
                 </p>
                 <ul style="font-size: large; text-align: justify; color: white;">
                     <li>le nombre de ports allant de 4 à 96, permettant d’y connecter autant de machines ;</li>
-                    <li>le type de port : port RJ45 pour les câbles réseau standard, ou interface optique type SFP+ pour la fibre optique (SFP = Small Form-factor Pluggable). Ce sont les plus courants ;</li>                 
+                    <li id="SFP">le type de port : port RJ45 pour les câbles réseau standard, ou interface optique type SFP+ pour la fibre optique (SFP = Small Form-factor Pluggable). Ce sont les plus courants ;</li>                 
                     <li>le débit possible sur chaque port : de 10 Mbp à 100 Gbp ;</li>
                     <li>les fonctionnalités telles que l’interface de configuration, la compatibilité ou les modes de communication.</li>
                 </ul>
                 <p style="margin-top: 30px; justify-content:start">
                     Si tout le monde est connecté ensemble, comment le switch sait à qui envoyer la trame ?</b>
                 </p>
-                <p style="margin-top: 55px;">
+                <p style="margin-top: 55px;" id="CAM">
                     <b>L'aiguillage des trames</b>
                 </p>
                 <p style="margin-top: 30px;">
@@ -163,7 +163,7 @@
                 <p style="margin-top: 30px; justify-content:start">
                     La table CAM ne va-t-elle jamais cesser de grandir vu que l'on y ajoute en permanence des informations ?
                 </p>
-                <p style="margin-top: 55px;">
+                <p style="margin-top: 55px;" id="TTL">
                     <b>Le TTL de la table CAM</b>
                 </p>
                 <p style="margin-top: 30px;">
@@ -254,7 +254,7 @@
                 <p style="margin-top: 60px;">
                     Maintenant que nous avons vu tous les bienfaits que le switch a apportés, nous allons voir une de ses fonctionnalités avancées qui a encore permis d'améliorer les réseaux : les VLANS.
                 </p>
-                <p style="margin-top: 80px;">
+                <p style="margin-top: 80px;" id="VLAN">
                     <b>Les VLANs</b>
                 </p>
                 <p style="margin-top: 30px;">

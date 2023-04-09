@@ -114,7 +114,7 @@
                 <p style="margin-top: 10px; justify-content: start;">
                     Les BIOS présents dans les ordinateurs de type PC sont des firmwares.
                 </p>
-                <p style="margin-top: 30px; justify-content: start;">
+                <p style="margin-top: 30px; justify-content: start;" id="UEFI">
                     UEFI
                 </p>
                 <p style="margin-top: 10px;">
@@ -135,9 +135,11 @@
                     <li>Le programme gérant la couche réseau d'une imprimante</li>
                     <li>Le programme faisant fonctionner la machine à voter ESF1</li>
                 </ul>
-                <p style="margin-top: 70px; justify-content: start;">
-                    <b>BIOS (informatique)</b>
-                </p>
+                <div id="BIOS">
+                    <p style="margin-top: 70px; justify-content: start;">
+                        <b>BIOS (informatique)</b>
+                    </p>
+                </div>
                 <p style="margin-top: 30px;">
                     Le BIOS, de l'anglais Basic Input Output System (en français : « système élémentaire d'entrée/sortie ») est un ensemble de fonctions, contenu dans la mémoire morte (ROM) de la carte mère d'un ordinateur, lui permettant d'effectuer des opérations de base, lors de sa mise sous tension. Par exemple l'identification des périphériques d’entrée/sortie connectés et la lecture d'un secteur sur un disque, un CD ou une partie d'une clé USB. Par extension, le terme est souvent utilisé pour décrire l'ensemble du micrologiciel de la carte mère. C'est en quelque sorte le centre de contrôle de la carte mère. Sur les cartes récentes il est remplacé par sa version moderne l'UEFI.
                 </p>

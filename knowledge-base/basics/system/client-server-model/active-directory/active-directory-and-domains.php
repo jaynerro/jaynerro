@@ -63,11 +63,12 @@
                 <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
                     1 - L'Active Directory
                 </p>
-                <p style="margin-top: 30px;">
-                    L’Active Directory (AD) est un annuaire LDAP (Lightweight Directory Access Protocol) pour les systèmes d’exploitation Windows, le tout étant créé par Microsoft. Cet annuaire contient différents objets, de différents types (utilisateurs, ordinateurs, etc.), l’objectif étant de centraliser deux fonctionnalités essentielles : l’identification et l’authentification au sein d’un système d’information.</br></br>
-                    Depuis Windows Server 2000, le service d’annuaire Active Directory ne cesse d’évoluer et de prendre de l’importance au sein des organisations dans lesquelles il est mis en place. De ce fait, il est notamment utilisé pour le déploiement de stratégie de groupe, la distribution des logiciels ou encore l’installation des mises à jour Windows.
-                </p>
-
+                <div id="AD">
+                    <p style="margin-top: 30px;">
+                        L’Active Directory (AD) est un annuaire LDAP (Lightweight Directory Access Protocol) pour les systèmes d’exploitation Windows, le tout étant créé par Microsoft. Cet annuaire contient différents objets, de différents types (utilisateurs, ordinateurs, etc.), l’objectif étant de centraliser deux fonctionnalités essentielles : l’identification et l’authentification au sein d’un système d’information.</br></br>
+                        Depuis Windows Server 2000, le service d’annuaire Active Directory ne cesse d’évoluer et de prendre de l’importance au sein des organisations dans lesquelles il est mis en place. De ce fait, il est notamment utilisé pour le déploiement de stratégie de groupe, la distribution des logiciels ou encore l’installation des mises à jour Windows.
+                    </p>
+                </div>
                 <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
                     2 - Les intérêts d’un annuaire
                 </p>
@@ -159,14 +160,14 @@
                     Un contrôleur de domaine est indispensable au bon fonctionnement du domaine, si l’on éteint le contrôleur de domaine ou qu’il est corrompu, le domaine devient inutilisable.</br></br>
                     De plus, lorsque vous créez le premier contrôleur de domaine dans votre organisation, vous créez également le premier domaine, la première forêt, ainsi que le premier site. Nous aborderons la notion de forêt et de site dans un autre chapitre. Gardez à l’esprit qu’un contrôleur de domaine est un serveur qui contient une copie de l’annuaire Active Directory.
                 </p>
-                <p style="margin-top: 30px; margin-left: 50px; justify-content: start">
+                <p style="margin-top: 30px; margin-left: 50px; justify-content: start" id="NTDS">
                     b. Le fichier de base de données NTDS.dit
                 </p>
                 <p style="margin-top: 30px;">
                     Sur chaque contrôleur de domaine, on trouve une copie de la base de données de l’annuaire Active Directory. Cette copie est symbolisée par un fichier « NTDS.dit » (NT Directory Services) qui contient l’ensemble des données de l’annuaire.</br></br>
                     À noter qu’il est possible de réaliser des captures instantanées de ce fichier afin de le consulter en mode « hors ligne » avec des outils spécifiques.
                 </p>
-                <p style="margin-top: 30px; margin-left: 50px; justify-content: start">
+                <p style="margin-top: 30px; margin-left: 50px; justify-content: start" id="DFSR">
                     c. La réplication des contrôleurs de domaine
                 </p>
                 <p style="margin-top: 30px;">
@@ -177,7 +178,7 @@
                     Comme on peut le voir sur le schéma ci-dessous, lorsqu’il y a plusieurs contrôleurs de domaine, les requêtes sont réparties.
                 </p>
                 <img src="../../../../../images/ad-3.png" class="img-fluid mx-auto d-block" style="max-width: 65%; margin-top: 30px;"/>
-                <p style="margin-top: 30px;">
+                <p style="margin-top: 30px;" id="GPO">
                     Par ailleurs, les contrôleurs de domaine répliquent le dossier partagé « SYSVOL » qui est utilisé pour distribuer les stratégies de groupe (GPO - Group Policy) et les scripts de connexion.
                 </p>
                 <img src="../../../../../images/ad-4.png" class="img-fluid mx-auto d-block" style="max-width: 65%; margin-top: 30px;"/>

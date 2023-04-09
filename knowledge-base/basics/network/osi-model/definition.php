@@ -54,9 +54,9 @@
             Qu'est-ce que c'est ?
           </h1>
           <p style="margin-top: 30px;"> 
-            Dans les années 1950, les communications étaient « point à point », c'est-à-dire qu'on ne pouvait communiquer qu'avec une seule machine à la fois. </br>
+            Dans les années 1950, les communications étaient « point à point », c'est-à-dire qu'on ne pouvait communiquer qu'avec une seule machine à la fois.</br>
             Les chercheurs qui devaient communiquer avec plusieurs autres chercheurs à l'époque, se sont rendu compte qu'il serait intéressant de pouvoir le faire en temps réel plutôt que de passer d'un interlocuteur à l'autre successivement.
-            Ils ont donc cherché à créer un nouveau moyen de communication qui ne serait alors plus centralisé, mais maillé. </br>
+            Ils ont donc cherché à créer un nouveau moyen de communication qui ne serait alors plus centralisé, mais maillé.</br>
             Cela signifie que toute information pourrait passer par différents points, et que si certains points disparaissaient, cela n'empêcherait pas l'information de circuler. 
           </p>
 
@@ -109,7 +109,9 @@
           </ul>
 
           <p style="margin-top: 40px;">
-            Pour passer des principes de communication humains à des principes de communication pour ordinateurs, les chercheurs ont regroupé l'ensemble de leurs recherches et de leurs résultats dans une norme que devront respecter les personnes se connectant à Internet : le modèle OSI. </br></br>
+            Pour passer des principes de communication humains à des principes de communication pour ordinateurs, les chercheurs ont regroupé l'ensemble de leurs recherches et de leurs résultats dans une norme que devront respecter les personnes se connectant à Internet : le modèle OSI.
+          </p>
+          <p style="margin-top: 20px;" id="OSI">
             Le modèle OSI (Open Systems Interconnection) est né en 1984. Celui-ci est né après la naissance d'Internet. </br></br>
             La raison est simple : le modèle OSI est né quand nous avons commencé à avoir une certaine expérience des communications entre ordinateurs. Il tient donc compte des communications existantes, mais aussi des communications futures et de leurs évolutions potentielles. </br>
             Son objectif est de normaliser les communications pour garantir un maximum d'évolutivité et d'interopérabilité entre les ordinateurs. </br></br>

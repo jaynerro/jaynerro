@@ -71,7 +71,7 @@
                 <p style="margin-top: 45px;"> 
                     Un réseau de téléphonie mobile a une structure « cellulaire » qui permet de réutiliser de nombreuses fois les mêmes fréquences ; il permet aussi à ses utilisateurs en mouvement de changer de cellule (handover) sans coupure des communications en cours. Dans un même pays, aux heures d'affluence, plusieurs centaines de milliers, voire plusieurs millions d'appareils sont en service répartis (dans le cas du GSM) sur seulement 500 canaux disponibles.
                 </p>
-                <p style="margin-top: 50px; justify-content: start">
+                <p style="margin-top: 50px; justify-content: start" id="GSM">
                     <b>Réseaux GSM</b>
                 </p>
                 <p style="margin-top: 30px;"> 
@@ -99,7 +99,7 @@
                     Évolution du GSM vers le GPRS</br></br>
                     Les réseaux GSM ont évolué vers les normes GPRS et Edge, optimisées pour transférer des données (MMS, accès internet, etc.) qui nécessitent des débits plus élevés que la téléphonie (voix). Cela a été obtenu en améliorant les techniques de codage radio et par regroupement de plusieurs canaux pour permettre le transfert de données à une vitesse plus élevée. Mais les antennes et le réseau radio restent les mêmes : mêmes fréquences et mêmes damiers hexagonaux avec des cellules radio adjacentes utilisant des fréquences différentes pour éviter les interférences.
                 </p>
-                <p style="margin-top: 50px; justify-content: start">
+                <p style="margin-top: 50px; justify-content: start" id="UMTS">
                     <b>Réseaux UMTS (3G)</b>
                 </p>
                 <p style="margin-top: 30px; justify-content: start"> 
@@ -120,7 +120,7 @@
                     Dans un réseau UMTS, dans les zones de couverture homogènes (macrocells), on retrouve le même type de damiers hexagonaux que celui décrit ci-dessus pour le GSM. Les mêmes fréquences hertziennes sont généralement utilisées dans toutes les cellules (c'est obligatoire pour les opérateurs ne disposant que d'une seule bande de fréquence duplex de 2 x 5 MHz).</br></br>
                     La contrepartie est que, malgré le codage WCDMA et les « scrambling codes » permettant d’identifier une cellule, il y a des interférences dans les zones en limite de 2 cellules mitoyennes et il en résulte un débit beaucoup plus faible qu'au centre des cellules radio ; le changement de cellules d'un terminal en déplacement (handover) est également plus complexe avec des risques de micro-coupures des communications en cours, spécialement dans les variantes « haut débit » (HSDPA et HSPA+) de l’UMTS.
                 </p>
-                <p style="margin-top: 50px; justify-content: start">
+                <p style="margin-top: 50px; justify-content: start" id="LTE">
                     <b>Réseaux LTE (4G)</b>
                 </p>
                 <p style="margin-top: 30px;"> 

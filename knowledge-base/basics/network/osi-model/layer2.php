@@ -60,7 +60,7 @@
                     Le rôle de la couche 2 est de connecter des machines sur un réseau local. Plus exactement, l'objectif est de permettre à des machines connectées ensemble de communiquer. </br></br>
                     La couche 2 possède un autre rôle important qui est la détection des erreurs de transmission. Détection, et non pas correction, la différence est importante, car la couche 2 verra les erreurs, et fermera les yeux sur celles-ci.
                 </p>
-                <p style="margin-top: 50px;">
+                <p style="margin-top: 50px;" id="MAC">
                     <b>Son identifiant : l'adresse MAC</b>
                 </p>
                 <p style="margin-top: 30px;"> 
@@ -129,7 +129,7 @@
                 <p style="margin-top: 30px;"> 
                     Pour l'information, nous allons la placer juste après le protocole de couche 3. De plus, nous allons enchaîner avec le code de correction des erreurs, ou CRC.
                 </p>
-                <p style="margin-top: 40px; justify-content: start;"> 
+                <p style="margin-top: 40px; justify-content: start;" id="CRC"> 
                     Qu'est-ce que le CRC ?
                 </p>
                 <p style="margin-top: 30px;"> 

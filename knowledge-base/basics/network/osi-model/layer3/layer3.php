@@ -69,7 +69,7 @@
                     Nous pouvons très bien illustrer ceci en utilisant la commande traceroute sous Linux (ou tracer sous Windows).
                     La commande traceroute permet d'indiquer par quelles machines nous passons pour aller d'un point à un autre sur Internet.
                 </p>
-                <p style="margin-top: 50px;">
+                <p style="margin-top: 50px;" id="IP">
                     <b>Son identifiant : l'adresse IP</b>
                 </p>
                 <p style="margin-top: 30px; justify-content: start;"> 
@@ -177,7 +177,9 @@
                 <p style="margin-top: 30px;">
                     Nous venons de voir les adresses et les masques et nous avons découvert que nous formons des réseaux en les associant.
                     Cependant, toutes les adresses n'ont pas la même signification, notamment, certaines adresses ont été réservées pour ne pas pouvoir être utilisées sur Internet. 
-                    Ces adresses sont définies dans la RFC 1918.</br></br>
+                    Ces adresses sont définies dans la RFC 1918.
+                </p>
+                <p style="margin-top: 20px;" id="RFC">
                     Une RFC (Request for comments) est un document qui propose et présente une technologie que l'on souhaite voir utiliser sur Internet.</br></br>
                     Par exemple, si je veux créer un nouveau protocole qui va révolutionner Internet, je vais le présenter dans une RFC qui pourra être lue, puis soumise à proposition, et enfin acceptée comme standard d'Internet.</br>
                     Ainsi, depuis la nuit des temps, les RFC précisent le fonctionnement détaillé d'à peu près tout ce qui se trouve sur Internet.

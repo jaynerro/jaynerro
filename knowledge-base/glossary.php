@@ -46,39 +46,39 @@
           </h2>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer4/layer4.php">ACK</a>
+            <a href="./basics/network/osi-model/layer4/layer4.php#ACK">ACK</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/networking-hardware/firewall.php">ACL</a>
+            <a href="./basics/network/networking-hardware/firewall.php#ACL">ACL</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/system/client-server-model/active-directory/active-directory-and-domains.php">AD</a>
+            <a href="./basics/system/client-server-model/active-directory/active-directory-and-domains.php#AD">AD</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/system/client-server-model/active-directory/active-directory-more-is-better.php">ADDS</a>
+            <a href="./basics/system/client-server-model/active-directory/active-directory-more-is-better.php#ADDS">ADDS</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer5to7/ssh.php">AES</a>
+            <a href="./basics/network/osi-model/layer5to7/ssh.php#AES">AES</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/networking-hardware/ap.php">AP</a>
+            <a href="./basics/network/networking-hardware/ap.php#AP">AP</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/system/os/libraries-and-drivers.php">API</a>
+            <a href="./basics/system/os/libraries-and-drivers.php#API">API</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer3/ARP-ICMP.php">ARP</a>
+            <a href="./basics/network/osi-model/layer3/ARP-ICMP.php#ARP">ARP</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/system/client-server-model/active-directory/the-heart-of-the-active-directory.php">AS</a>
+            <a href="./basics/system/client-server-model/active-directory/the-heart-of-the-active-directory.php#AS">AS</a>
           </h3>
 
 
@@ -87,11 +87,11 @@
           </h2>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/system/firmware-bios.php">BIOS</a>
+            <a href="./basics/system/firmware-bios.php#BIOS">BIOS</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/wireless-network/bluetooth.php">BLE</a>
+            <a href="./basics/network/wireless-network/bluetooth.php#BLE">BLE</a>
           </h3>
 
           <h2 style="margin-top: 60px; font-size: 300%;">
@@ -99,35 +99,35 @@
           </h2>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/networking-hardware/switch.php">CAM</a>
+            <a href="./basics/network/networking-hardware/switch.php#CAM">CAM</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer5to7/dns.php">ccTLD</a>
+            <a href="./basics/network/osi-model/layer5to7/dns.php#ccTLD">ccTLD</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer3/IP-address-assignment.php">CIDR</a>
+            <a href="./basics/network/osi-model/layer3/IP-address-assignment.php#CIDR">CIDR</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/system/client-server-model/active-directory/the-heart-of-the-active-directory.php">CN</a>
+            <a href="./basics/system/client-server-model/active-directory/the-heart-of-the-active-directory.php#CN">CN</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer5to7/dns.php">CNAME</a>
+            <a href="./basics/network/osi-model/layer5to7/dns.php#CNAME">CNAME</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/networking-hardware/ap.php">CPL</a>
+            <a href="./basics/network/networking-hardware/ap.php#CPL">CPL</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer2.php">CRC</a>
+            <a href="./basics/network/osi-model/layer2.php#CRC">CRC</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer1.php">CSMA/CD</a>
+            <a href="./basics/network/osi-model/layer1.php#CSMACD">CSMA/CD</a>
           </h3>
 
 
@@ -136,43 +136,43 @@
           </h2>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/system/client-server-model/active-directory/the-heart-of-the-active-directory.php">DC</a>
+            <a href="./basics/system/client-server-model/active-directory/the-heart-of-the-active-directory.php#DC">DC</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/system/client-server-model/active-directory/active-directory-and-domains.php">DFSR</a>
+            <a href="./basics/system/client-server-model/active-directory/active-directory-and-domains.php#DFSR">DFSR</a>
           </h3>        
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer5to7/dhcp.php">DHCP</a>
+            <a href="./basics/network/osi-model/layer5to7/dhcp.php#DHCP">DHCP</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/system/client-server-model/active-directory/the-heart-of-the-active-directory.php">DL</a>
+            <a href="./basics/system/client-server-model/active-directory/the-heart-of-the-active-directory.php#DL">DL</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/system/os/libraries-and-drivers.php">DLL</a>
+            <a href="./basics/system/os/libraries-and-drivers.php#DLL">DLL</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/network-architecture.php">DMZ</a>
+            <a href="./basics/network/network-architecture.php#DMZ">DMZ</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/system/client-server-model/active-directory/the-heart-of-the-active-directory.php">DN</a>
+            <a href="./basics/system/client-server-model/active-directory/the-heart-of-the-active-directory.php#DN">DN</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer4/nat-and-port-forwarding.php">DNAT</a>
+            <a href="./basics/network/osi-model/layer4/nat-and-port-forwarding.php#DNAT">DNAT</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer5to7/dns.php">DNS</a>
+            <a href="./basics/network/osi-model/layer5to7/dns.php#DNS">DNS</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer3/ARP-ICMP.php">DOS</a>
+            <a href="./basics/network/osi-model/layer3/ARP-ICMP.php#DOS">DOS</a>
           </h3>
 
           <h2 style="margin-top: 60px; font-size: 300%;">
@@ -180,7 +180,11 @@
           </h2>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/wireless-network/wi-fi.php">EAP</a>
+            <a href="./basics/network/wireless-network/wi-fi.php#EAP">EAP</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./ethical-hacking/active-directory/protect-and-monitor.php#EDR">EDR</a>
           </h3>
           
 
@@ -189,27 +193,27 @@
           </h2>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer5to7/dns.php">FAI</a>
+            <a href="./basics/network/osi-model/layer5to7/dns.php#FAI">FAI</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/system/os/file-system.php">FAT</a>
+            <a href="./basics/system/os/file-system.php#FAT">FAT</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer4/layer4.php">FIN</a>
+            <a href="./basics/network/osi-model/layer4/layer4.php#FIN">FIN</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer5to7/dns.php">FQDN</a>
+            <a href="./basics/network/osi-model/layer5to7/dns.php#FQDN">FQDN</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/system/os/file-system.php">FS</a>
+            <a href="./basics/system/os/file-system.php#FS">FS</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/networking-hardware/firewall.php">FW</a>
+            <a href="./basics/network/networking-hardware/firewall.php#FW">FW</a>
           </h3>
 
 
@@ -218,19 +222,19 @@
           </h2>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/system/client-server-model/active-directory/active-directory-and-domains.php">GPO</a>
+            <a href="./basics/system/client-server-model/active-directory/active-directory-and-domains.php#GPO">GPO</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/wireless-network/cellular-network.php">GSM</a>
+            <a href="./basics/network/wireless-network/cellular-network.php#GSM">GSM</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer5to7/dns.php">gTLD</a>
+            <a href="./basics/network/osi-model/layer5to7/dns.php#gTLD">gTLD</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/system/client-server-model/active-directory/the-heart-of-the-active-directory.php">GUID</a>
+            <a href="./basics/system/client-server-model/active-directory/the-heart-of-the-active-directory.php#GUID">GUID</a>
           </h3>
 
 
@@ -239,7 +243,7 @@
           </h2>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer5to7/http.php">HTTP</a>
+            <a href="./basics/network/osi-model/layer5to7/http.php#HTTP">HTTP</a>
           </h3>
 
           <h2 style="margin-top: 60px; font-size: 300%;">
@@ -247,19 +251,19 @@
           </h2>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer3/ARP-ICMP.php">ICMP</a>
+            <a href="./basics/network/osi-model/layer3/ARP-ICMP.php#ICMP">ICMP</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/wireless-network/wi-fi.php">IEEE</a>
+            <a href="./basics/network/wireless-network/wi-fi.php#IEEE">IEEE</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer3/layer3.php">IP</a>
+            <a href="./basics/network/osi-model/layer3/layer3.php#IP">IP</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer4/nat-and-port-forwarding.php">ISR</a>
+            <a href="./basics/network/osi-model/layer4/nat-and-port-forwarding.php#ISR">ISR</a>
           </h3>
 
           <h2 style="margin-top: 60px; font-size: 300%;">
@@ -267,7 +271,7 @@
           </h2>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/system/client-server-model/active-directory/the-heart-of-the-active-directory.php">KDC</a>
+            <a href="./basics/system/client-server-model/active-directory/the-heart-of-the-active-directory.php#KDC">KDC</a>
           </h3>
 
 
@@ -276,19 +280,19 @@
           </h2>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/network-architecture.php">LAN</a>
+            <a href="./basics/network/network-architecture.php#LAN">LAN</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/system/client-server-model/active-directory/the-heart-of-the-active-directory.php">LDAP</a>
+            <a href="./basics/system/client-server-model/active-directory/the-heart-of-the-active-directory.php#LDAP">LDAP</a>
           </h3>
           
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/wireless-network/wi-fi.php">LLC</a>
+            <a href="./basics/network/wireless-network/wi-fi.php#LLC">LLC</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/wireless-network/cellular-network.php">LTE</a>
+            <a href="./basics/network/wireless-network/cellular-network.php#LTE">LTE</a>
           </h3>
 
 
@@ -297,23 +301,23 @@
           </h2>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer2.php">MAC</a>
+            <a href="./basics/network/osi-model/layer2.php#MAC">MAC</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/network-architecture.php">MAN</a>
+            <a href="./basics/network/network-architecture.php#MAN">MAN</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer3/ARP-ICMP.php">MITM</a>
+            <a href="./basics/network/osi-model/layer3/ARP-ICMP.php#MITM">MITM</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/networking-hardware/modem.php">MODEM</a>
+            <a href="./basics/network/networking-hardware/modem.php#MODEM">MODEM</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer5to7/dns.php">MX</a>
+            <a href="./basics/network/osi-model/layer5to7/dns.php#MX">MX</a>
           </h3>
 
 
@@ -322,23 +326,23 @@
           </h2>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer4/nat-and-port-forwarding.php">NAT</a>
+            <a href="./basics/network/osi-model/layer4/nat-and-port-forwarding.php#NAT">NAT</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/wireless-network/nfc.php">NFC</a>
+            <a href="./basics/network/wireless-network/nfc.php#NFC">NFC</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/networking-hardware/firewall.php">NGFW</a>
+            <a href="./basics/network/networking-hardware/firewall.php#NGFW">NGFW</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/system/client-server-model/active-directory/active-directory-and-domains.php">NTDS</a>
+            <a href="./basics/system/client-server-model/active-directory/active-directory-and-domains.php#NTDS">NTDS</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer5to7/dns.php">NS</a>
+            <a href="./basics/network/osi-model/layer5to7/dns.php#NS">NS</a>
           </h3>
 
           <h2 style="margin-top: 60px; font-size: 300%;">
@@ -346,15 +350,15 @@
           </h2>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/system/os/introduction.php">OS</a>
+            <a href="./basics/system/os/introduction.php#OS">OS</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/definition.php">OSI</a>
+            <a href="./basics/network/osi-model/definition.php#OSI">OSI</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/system/client-server-model/active-directory/the-heart-of-the-active-directory.php">OU</a>
+            <a href="./basics/system/client-server-model/active-directory/the-heart-of-the-active-directory.php#OU">OU</a>
           </h3>
 
 
@@ -363,23 +367,23 @@
           </h2>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer4/nat-and-port-forwarding.php">PAT</a>
+            <a href="./basics/network/osi-model/layer4/nat-and-port-forwarding.php#PAT">PAT</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/system/client-server-model/active-directory/the-heart-of-the-active-directory.php">PDC</a>
+            <a href="./basics/system/client-server-model/active-directory/the-heart-of-the-active-directory.php#PDC">PDC</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/wireless-network/wi-fi.php">PMK</a>
+            <a href="./basics/network/wireless-network/wi-fi.php#PMK">PMK</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/wireless-network/wi-fi.php">PSK</a>
+            <a href="./basics/network/wireless-network/wi-fi.php#PSK">PSK</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer5to7/dns.php">PTR</a>
+            <a href="./basics/network/osi-model/layer5to7/dns.php#PTR">PTR</a>
           </h3>
 
 
@@ -388,7 +392,7 @@
           </h2>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer5to7/http.php">QUIC</a>
+            <a href="./basics/network/osi-model/layer5to7/http.php#QUIC">QUIC</a>
           </h3>
 
 
@@ -397,23 +401,23 @@
           </h2>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer3/layer3.php">RFC</a>
+            <a href="./basics/network/osi-model/layer3/layer3.php#RFC">RFC</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/wireless-network/rfid.php">RFID</a>
+            <a href="./basics/network/wireless-network/rfid.php#RFID">RFID</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/network-architecture.php">RLE</a>
+            <a href="./basics/network/network-architecture.php#RLE">RLE</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/wireless-network/wi-fi.php">RSN</a>
+            <a href="./basics/network/wireless-network/wi-fi.php#RSN">RSN</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer4/layer4.php">RST</a>
+            <a href="./basics/network/osi-model/layer4/layer4.php#RST">RST</a>
           </h3>
 
           <h2 style="margin-top: 60px; font-size: 300%;">
@@ -421,39 +425,39 @@
           </h2>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/networking-hardware/switch.php">SFP</a>
+            <a href="./basics/network/networking-hardware/switch.php#SFP">SFP</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer5to7/ssh.php">SSH</a>
+            <a href="./basics/network/osi-model/layer5to7/ssh.php#SSH">SSH</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/wireless-network/wi-fi.php">SSID</a>
+            <a href="./basics/network/wireless-network/wi-fi.php#SSID">SSID</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/system/client-server-model/active-directory/active-directory-more-is-better.php">SSO</a>
+            <a href="./basics/system/client-server-model/active-directory/active-directory-more-is-better.php#SSO">SSO</a>
           </h3>
           
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer4/nat-and-port-forwarding.php">SNAT</a>
+            <a href="./basics/network/osi-model/layer4/nat-and-port-forwarding.php#SNAT">SNAT</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer5to7/dns.php">SOA</a>
+            <a href="./basics/network/osi-model/layer5to7/dns.php#SOA">SOA</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer5to7/http.php">SPDY</a>
+            <a href="./basics/network/osi-model/layer5to7/http.php#SPDY">SPDY</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/wireless-network/wi-fi.php">STA</a>
+            <a href="./basics/network/wireless-network/wi-fi.php#STA">STA</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer4/layer4.php">SYN</a>
+            <a href="./basics/network/osi-model/layer4/layer4.php#SYN">SYN</a>
           </h3>
 
 
@@ -462,31 +466,31 @@
           </h2>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer4/layer4.php">TCP</a>
+            <a href="./basics/network/osi-model/layer4/layer4.php#TCP">TCP</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/system/client-server-model/active-directory/the-heart-of-the-active-directory.php">TGS</a>
+            <a href="./basics/system/client-server-model/active-directory/the-heart-of-the-active-directory.php#TGS">TGS</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/system/client-server-model/active-directory/the-heart-of-the-active-directory.php">TGT</a>
+            <a href="./basics/system/client-server-model/active-directory/the-heart-of-the-active-directory.php#TGT">TGT</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/wireless-network/wi-fi.php">TKIP</a>
+            <a href="./basics/network/wireless-network/wi-fi.php#TKIP">TKIP</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer5to7/dns.php">TLD</a>
+            <a href="./basics/network/osi-model/layer5to7/dns.php#TLD">TLD</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer4/layer4.php">ToIP</a>
+            <a href="./basics/network/osi-model/layer4/layer4.php#ToIP">ToIP</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/networking-hardware/switch.php">TTL</a>
+            <a href="./basics/network/networking-hardware/switch.php#TTL">TTL</a>
           </h3>
 
 
@@ -495,27 +499,27 @@
           </h2>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer4/layer4.php">UDP</a>
+            <a href="./basics/network/osi-model/layer4/layer4.php#UDP">UDP</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/system/firmware-bios.php">UEFI</a>
+            <a href="./basics/system/firmware-bios.php#UEFI">UEFI</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/wireless-network/cellular-network.php">UMTS</a>
+            <a href="./basics/network/wireless-network/cellular-network.php#UMTS">UMTS</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer5to7/http.php">URI</a>
+            <a href="./basics/network/osi-model/layer5to7/http.php#URI">URI</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer5to7/http.php">URL</a>
+            <a href="./basics/network/osi-model/layer5to7/http.php#URL">URL</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/networking-hardware/firewall.php">UTM</a>
+            <a href="./basics/network/networking-hardware/firewall.php#UTM">UTM</a>
           </h3>
 
 
@@ -524,11 +528,11 @@
           </h2>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/networking-hardware/switch.php">VLAN</a>
+            <a href="./basics/network/networking-hardware/switch.php#VLAN">VLAN</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/osi-model/layer4/layer4.php">VoIP</a>
+            <a href="./basics/network/osi-model/layer4/layer4.php#VoIP">VoIP</a>
           </h3>
           
 
@@ -537,23 +541,23 @@
           </h2>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/network-architecture.php">WAN</a>
+            <a href="./basics/network/network-architecture.php#WAN">WAN</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/wireless-network/wi-fi.php">WEP</a>
+            <a href="./basics/network/wireless-network/wi-fi.php#WEP">WEP</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/wireless-network/wi-fi.php">Wi-Fi</a>
+            <a href="./basics/network/wireless-network/wi-fi.php#Wi-Fi">Wi-Fi</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
-            <a href="./basics/network/wireless-network/wi-fi.php">WLAN</a>
+            <a href="./basics/network/wireless-network/wi-fi.php#WLAN">WLAN</a>
           </h3>
 
           <h3 style="margin-top: 35px; margin-bottom: 200px;">
-            <a href="./basics/network/wireless-network/wi-fi.php">WPA</a>
+            <a href="./basics/network/wireless-network/wi-fi.php#WPA">WPA</a>
           </h3>
           
         </div>

@@ -60,7 +60,7 @@
                 <p style="margin-top: 40px; margin-left: 10px; justify-content: start">
                     <b>I - Les protocoles LDAP, DNS et Kerberos</b>
                 </p>
-                <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
+                <p style="margin-top: 40px; margin-left: 20px; justify-content: start" id="LDAP">
                     1 - Le protocole LDAP
                 </p>
                 <p style="margin-top: 30px; margin-left: 50px; justify-content: start">
@@ -83,15 +83,21 @@
                 </p>
                 <p style="margin-top: 30px;">
                     Un annuaire est un ensemble d’entrées, ces entrées étant elles-mêmes constituées de plusieurs attributs. De son côté, un attribut est bien spécifique et dispose d’un nom qui lui est propre, d’un type et d’une ou plusieurs valeurs.</br></br>
-                    Chaque entrée dispose d’un identifiant unique qui permet de l’identifier rapidement, de la même manière que l’on utilise les identifiants dans les bases de données pour identifier rapidement une ligne.</br></br>
-                    L’identifiant unique d’un objet est appelé GUID qui est « l’identificateur unique global ». Par ailleurs, un nom unique (DN – Distinguished Name) est attribué à chaque objet, et il se compose du nom de domaine auquel appartient l’objet ainsi que du chemin complet pour accéder à cet objet dans l’annuaire (le chemin à suivre dans l’arborescence d’unités d’organisation pour arriver jusqu’à cet objet).</br></br>
-                    Par exemple, le chemin d’accès suivant, correspondant à un objet « utilisateur » nommé « Michel », du domaine « jaynerro.local » et étant stocké dans une unité d’organisation (OU) nommée « informatique » contenant elle-même une OU nommée « system » :</br></br>
-                    jaynerro.local, informatique, system, Michel</br></br>
-                    Se traduira en chemin LDAP par :</br></br>
-                    cn=Michel,ou=system,ou=informatique,dc=jaynerro,dc=local</br></br>
-                    Ainsi, la chaîne ci-dessus correspondra au Distinguished Name (unique) de l’objet.</br></br>
-                    Dans un chemin LDAP vers un objet, on trouve toujours la présence du domaine sous la forme « dc=jaynerro,dc=local », correspondant à « jaynerro.local » dans cet exemple.
+                    Chaque entrée dispose d’un identifiant unique qui permet de l’identifier rapidement, de la même manière que l’on utilise les identifiants dans les bases de données pour identifier rapidement une ligne.
                 </p>
+                <div id="GUID">
+                    <p style="margin-top: 30px;" id="DN">
+                        L’identifiant unique d’un objet est appelé GUID qui est « l’identificateur unique global ». Par ailleurs, un nom unique (DN – Distinguished Name) est attribué à chaque objet, et il se compose du nom de domaine auquel appartient l’objet ainsi que du chemin complet pour accéder à cet objet dans l’annuaire (le chemin à suivre dans l’arborescence d’unités d’organisation pour arriver jusqu’à cet objet).
+                    </p>
+                    <p style="margin-top: 20px;" id="OU">
+                        Par exemple, le chemin d’accès suivant, correspondant à un objet « utilisateur » nommé « Michel », du domaine « jaynerro.local » et étant stocké dans une unité d’organisation (OU) nommée « informatique » contenant elle-même une OU nommée « system » :</br></br>
+                        jaynerro.local, informatique, system, Michel</br></br>
+                        Se traduira en chemin LDAP par :</br></br>
+                        cn=Michel,ou=system,ou=informatique,dc=jaynerro,dc=local</br></br>
+                        Ainsi, la chaîne ci-dessus correspondra au Distinguished Name (unique) de l’objet.</br></br>
+                        Dans un chemin LDAP vers un objet, on trouve toujours la présence du domaine sous la forme « dc=jaynerro,dc=local », correspondant à « jaynerro.local » dans cet exemple.
+                    </p>
+                </div>
                 <img src="../../../../../images/ad-11.png" class="img-fluid mx-auto d-block" style="max-width: 80%; margin-top: 30px;"/>
                 <p style="margin-top: 20px; font-size: small;">
                     Exemple de DistinguishedName
@@ -105,7 +111,7 @@
                     Le protocole DNS est utilisé pour la résolution des noms, ce qui permet aux postes clients de localiser les contrôleurs de domaine au sein de votre système d’information. De la même manière, lorsque l’on souhaite joindre un client au domaine, on utilise un nom comme « it-connect.local », ce qui implique une requête DNS pour savoir quelle est l’adresse IP correspondante à ce nom, vous serez alors redirigé vers votre contrôleur de domaine qui traitera la requête.</br></br>
                     Le serveur DNS crée une zone correspondante à votre domaine et enregistre de nombreux enregistrements. Il y a bien sûr un enregistrement (de type A) pour chaque contrôleur de domaine, mais il existe une multitude d’enregistrements annexes, indispensable au bon fonctionnement de l’Active Directory :
                 </p>
-                <ul style="font-size: large; text-align: justify; color: white;">
+                <ul style="font-size: large; text-align: justify; color: white;" id="PDC">
                     <li>Enregistrement pour localiser le « Primary Domain Controller » : correspondant au contrôleur de domaine qui dispose du rôle FSMO « Émulateur PDC ».</li>
                     <li>Enregistrement pour localiser un contrôleur de domaine qui est catalogue global.</li>
                     <li>Enregistrement pour localiser les KDC du domaine (concept abordé au point suivant de ce cours).</li>
@@ -129,18 +135,20 @@
                 <p style="margin-top: 30px; margin-left: 50px; justify-content: start">
                     a. Comment fonctionne le protocole Kerberos ?
                 </p>
-                <p style="margin-top: 30px;">
+                <p style="margin-top: 30px;" id="KDC">
                     Chaque contrôleur de domaine dispose d’un service de distribution de clés de sécurité, appelé « Centre de distribution de clés / key distribution center (KDC) » et qui réalise deux services :
                 </p>
-                <ul style="font-size: large; text-align: justify; color: white;">
-                    <li>Un service d’authentification (Authentication Service – AS)</li>
-                </ul>
-                <p style="margin-top: 30px;">
+                <div id="AS">
+                    <ul style="font-size: large; text-align: justify; color: white;">
+                        <li>Un service d’authentification (Authentication Service – AS)</li>
+                    </ul>
+                </div>
+                <p style="margin-top: 30px;" id="TGT">
                     Ce service distribue des tickets spéciaux appelés « TGT » (pour « Ticket-Granting Ticket ») qui permettent d’effectuer d’autres demandes d’accès auprès du service d’émission de tickets (TGS).</br></br>
                     Avant qu’un client puisse obtenir un accès sur un ordinateur du domaine, il doit obtenir un TGT depuis le service d’authentification du domaine cible. Une fois que le service d’authentification retourne le TGT, le client dispose de l’autorisation pour effectuer sa demande auprès du TGS.</br></br>
                     Ce TGT obtenu pourra être réutilisé jusqu’à ce qu’il expire, mais la première demande qui déclenchera la création d’un nouveau TGT requiert toujours un passage par le service d’authentification.
                 </p>
-                <ul style="font-size: large; text-align: justify; color: white;">
+                <ul style="font-size: large; text-align: justify; color: white;" id="TGS">
                     <li>Un service d’émission de tickets (Ticket-Granting Service - TGS)</li>
                 </ul>
                 <p style="margin-top: 30px;">
@@ -241,7 +249,7 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <th scope="row">cn</th>
+                                <th scope="row" id="CN">cn</th>
                                 <td>CommonName – Nom commun – Nom de l’objet final ciblé</td>
                             </tr>
                             <tr>
@@ -249,7 +257,7 @@
                                 <td>OrganizationalUnit – Unité d’organisation</td>
                             </tr>
                             <tr>
-                                <th scope="row">dc</th>
+                                <th scope="row" id="DC">dc</th>
                                 <td>Composant de domaine – Utilisé pour indiquer le domaine cible, avec un élément « dc » par partie du domaine</td>
                             </tr>
                         </tbody>
@@ -434,10 +442,10 @@
                     En résumé, ces groupes sont utilisés pour le contrôle d’accès, ce qui implique que chaque groupe de ce type dispose d’un identifiant de sécurité / Security Identifier « SID ».
                 </p>
                 <ul style="font-size: large; text-align: justify; color: white;">
-                    <li>Distribution</li>
+                    <li id="DL">Distribution</li>
                 </ul>
                 <p style="margin-top: 30px;">
-                    L’objectif de ce type de groupe n’est pas de faire du contrôle d’accès, mais plutôt des listes de distribution. Par exemple, créer une liste de distribution d’adresses e-mail en ajoutant des contacts.</br></br>
+                    L’objectif de ce type de groupe n’est pas de faire du contrôle d’accès, mais plutôt des listes de distribution (DL - Distribution List). Par exemple, créer une liste de distribution d’adresses e-mail en ajoutant des contacts.</br></br>
                     De ce fait, ces groupes sont utilisés principalement par des applications de messagerie, comme Microsoft Exchange.</br></br>
                     Comme il n’y a pas de notion de sécurité, ce type de groupe ne dispose pas d’identifiant de sécurité « SID ».
                 </p>

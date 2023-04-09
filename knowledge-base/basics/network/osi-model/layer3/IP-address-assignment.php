@@ -67,9 +67,11 @@
                     Nous allons découper la grande plage d'adresses qui nous a été fournie en plusieurs sous-réseaux plus petits. Nous pourrons alors mettre les élèves dans un sous-réseau, et les profs dans un autre.
                     Et même l'administration dans un autre réseau pour que les profs n'aillent pas modifier leur fiche de paye.
                 </p>
-                <p style="margin-top: 40px; justify-content: start;">
-                    L'écriture CIDR
-                </p>
+                <div id="CIDR">
+                    <p style="margin-top: 40px; justify-content: start;">
+                        L'écriture CIDR
+                    </p>
+                </div>
                 <p style="margin-top: 10px;">
                     Nous allons utiliser l'écriture des masques CIDR (Classless Inter-Domain Routing). Un masque s'écrit sur 32 bits. Sur ces 32 bits, nous en avons un certain nombre à 1 et le reste à 0.
                     Vu que les 1 et les 0 ne sont pas mélangés (grâce à la contiguïté des bits), il suffit de connaître le nombre de 1 dans un masque pour le connaître complètement.

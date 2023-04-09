@@ -261,7 +261,7 @@
                     Le Bluetooth utilise une des plages de fréquences qu'utilise aussi le Wi-Fi (2,4 GHz), ce qui fait qu'un réseau peut brouiller ou perturber l'autre, ou limiter son débit. Le Bluetooth consomme moins d'énergie que le WI-FI, mais il a une portée maximale plus faible, de 10 m dans de bonnes conditions, avec des fonctionnalités réduites et un plus faible nombre de périphériques connectables simultanément.</br></br>
                     Contrairement au Bluetooth, le Wi-Fi impose généralement l'utilisation d'un point d'accès, mais certains constructeurs permettent la connexion directe entre périphériques en utilisant le Wi-Fi Direct, similaire à un Bluetooth à très grande bande passante.
                 </p>
-                <p style="margin-top: 50px; justify-content: start">
+                <p style="margin-top: 50px; justify-content: start" id="BLE">
                     <b>Bluetooth à basse consommation</b>
                 </p>
                 <p style="margin-top: 30px;">

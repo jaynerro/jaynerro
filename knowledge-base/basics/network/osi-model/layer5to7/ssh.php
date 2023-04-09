@@ -53,7 +53,7 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-sm-8">
-                <h1> 
+                <h1 id="SSH"> 
                     SSH
                 </h1>
                 <p style="margin-top: 30px;"> 
@@ -119,7 +119,7 @@
                 </p>
                 <ol style="font-size: large; text-align: justify; color: white;">
                     <li>Le client et le serveur se mettent d’accord sur un très grand nombre premier, qui n’a bien sûr aucun facteur en commun. Cette valeur de nombre premier est également appelée  valeur de départ.</li>
-                    <li>Ensuite, les deux parties conviennent d’un mécanisme de chiffrement commun pour générer un autre ensemble de valeurs en manipulant les valeurs de base d’une manière algorithmique spécifique. Ces mécanismes, également appelés générateurs de chiffrement, effectuent de grandes opérations sur les valeurs de base. Un exemple d’un tel générateur est AES (Advanced Encryption Standard).</li>
+                    <li id="AES">Ensuite, les deux parties conviennent d’un mécanisme de chiffrement commun pour générer un autre ensemble de valeurs en manipulant les valeurs de base d’une manière algorithmique spécifique. Ces mécanismes, également appelés générateurs de chiffrement, effectuent de grandes opérations sur les valeurs de base. Un exemple d’un tel générateur est AES (Advanced Encryption Standard).</li>
                     <li>Les deux parties génèrent indépendamment un autre nombre premier. Celui-ci est utilisé comme clé privée secrète pour l’interaction.</li>
                     <li>Cette clé privée nouvellement générée, avec le numéro partagé et l’algorithme de chiffrement (p. Ex. AES), sert à calculer une clé publique qui est distribuée à l’autre ordinateur.</li>
                     <li>Les parties utilisent ensuite leur propre clé privée, la clé publique partagée de l’autre machine et le numéro premier d’origine pour créer une clé partagée finale. Cette clé est calculée indépendamment par les deux ordinateurs, mais créera la même clé de chiffrement des deux côtés.</li>

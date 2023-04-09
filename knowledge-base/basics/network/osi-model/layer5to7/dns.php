@@ -60,7 +60,7 @@
                     Nous avons beau être des êtres humains avec une bonne mémoire, notre cerveau n'est pas fait pour retenir des séries de chiffres comme 145.239.37.162. On aimerait mieux avoir à retenir des noms comme jaynerro.com.</br>
                     Il ne s'agit donc pas d'un problème technique, Internet fonctionne très bien avec des adresses IP, mais d'un problème de nommage pour permettre un accès simplifié à Internet pour nous tous, pauvres êtres humains. Ce système de nommage est le Domain Name System (DNS).
                 </p>
-                <p style="margin-top: 50px; justify-content: start">
+                <p style="margin-top: 50px; justify-content: start" id="DNS">
                     <b>Présentation du DNS</b>
                 </p>
                 <p style="margin-top: 30px;">
@@ -68,19 +68,25 @@
                     Un arbre avec des branches</br></br>
                     Une arborescence ordonnée</br></br>
                     Le système DNS, vous l'utilisez tous les jours quand vous naviguez sur Internet. Lorsque vous voulez accéder à jaynerro.com, le système DNS se charge de convertir (on parle de résolution) le nom du site web demandé en adresse IP.</br></br>
-                    Un nom de domaine se décompose en plusieurs parties. Prenons l'exemple suivant : www.google.fr</br></br>
-                    Chaque partie est séparée par un point. On trouve l'extension en premier (en premier, mais en partant de la droite) ; on parle de Top Level Domain (TLD). Il existe des TLD nationaux, les ccTLD (country code TLD)  : fr, it, de, es, etc. et les TLD génériques (gTLD) : com, org, net, biz, etc.</br></br>
-                    Ici, on a le découpage suivant :</br>
-                    www.google.fr</br>
-                    Il existe une infinité de possibilités pour la deuxième partie. Cela correspond à tous les sites qui existent : google.fr, jaynerro.com, ovh.net, twitter.com, etc.
-                    Comme vous le voyez, google.fr est un sous-domaine de fr. Le domaine fr englobe tous les sous-domaines finissant par fr.</br></br>
-                    La troisième partie est exactement comme la seconde. On y retrouve généralement le fameux "www", ce qui nous donne des noms de domaine comme www.google.fr. www peut soit être un sous-domaine de google.fr, mais dans ce cas il pourrait y avoir encore des machines ou des sous-domaines à ce domaine, soit être directement le nom d'une machine.
-                    Ici, www est le nom d'une machine dans le domaine google.fr.</br></br>
-                    On peut bien entendu ajouter autant de troisièmes parties que nécessaire, ce qui peut vous conduire à avoir un nom de domaine comme : www.fr.1.new.super.google.fr.</br></br>
-                    Voici une toute petite partie de l'arborescence des noms Internet :
+                    Un nom de domaine se décompose en plusieurs parties. Prenons l'exemple suivant : www.google.fr
                 </p>
+                <div id="TLD">
+                    <div id="gTLD">
+                        <p style="margin-top: 20px;" id="ccTLD">
+                            Chaque partie est séparée par un point. On trouve l'extension en premier (en premier, mais en partant de la droite) ; on parle de Top Level Domain (TLD). Il existe des TLD nationaux, les ccTLD (country code TLD)  : fr, it, de, es, etc. et les TLD génériques (gTLD) : com, org, net, biz, etc.</br></br>
+                            Ici, on a le découpage suivant :</br>
+                            www.google.fr</br>
+                            Il existe une infinité de possibilités pour la deuxième partie. Cela correspond à tous les sites qui existent : google.fr, jaynerro.com, ovh.net, twitter.com, etc.
+                            Comme vous le voyez, google.fr est un sous-domaine de fr. Le domaine fr englobe tous les sous-domaines finissant par fr.</br></br>
+                            La troisième partie est exactement comme la seconde. On y retrouve généralement le fameux "www", ce qui nous donne des noms de domaine comme www.google.fr. www peut soit être un sous-domaine de google.fr, mais dans ce cas il pourrait y avoir encore des machines ou des sous-domaines à ce domaine, soit être directement le nom d'une machine.
+                            Ici, www est le nom d'une machine dans le domaine google.fr.</br></br>
+                            On peut bien entendu ajouter autant de troisièmes parties que nécessaire, ce qui peut vous conduire à avoir un nom de domaine comme : www.fr.1.new.super.google.fr.</br></br>
+                            Voici une toute petite partie de l'arborescence des noms Internet :
+                        </p>
+                    </div>
+                </div>
                 <img src="../../../../../images/dns-domain-name.png" class="img-fluid mx-auto d-block" style="max-width: 70%; margin-top: 30px;"/>
-                <p style="margin-top: 30px;">
+                <p style="margin-top: 30px;" id="FQDN">
                     Chaque "partie" est appelée label et l'ensemble des labels constitue un FQDN : Fully Qualified Domain Name. Ce FQDN est unique. Par convention, un FQDN se finit par un point, car au-dessus des TLD il y a la racine du DNS, tout en haut de l'arbre. Ce point disparaît lorsque vous utilisez les noms de domaine avec votre navigateur, mais vous verrez qu'il deviendra très important lorsque nous configurerons notre propre serveur DNS.</br></br>
                     Au niveau DNS, www.google.fr n'est pas un FQDN, car il manque le point à la fin.</br></br>
                     Tout FQDN sur Internet doit obligatoirement se finir par un point, comme www.jaynerro.com. qui est alors bien un FQDN, car on est sûr qu'il n'y a pas de domaine au-dessus.</br></br>
@@ -96,7 +102,9 @@
                     Mais comment fait-on pour savoir qui possède telle où telle partie et où sont stockées les informations que l'on recherche ?</br></br></br>
                     La résolution</br></br>
                     Les hôtes n'ont qu'une connaissance limitée du système des noms de domaine. Quand ils doivent résoudre un nom, ils s'adressent à un ou plusieurs serveurs de noms dits récursifs (ou résolveur) ou dans les caches, comme ceux des navigateurs ou bien ceux des résolveurs eux mêmes.</br></br>
-                    Il y a deux types de serveurs DNS: les résolveurs et les serveurs faisant autorité</br></br>
+                    Il y a deux types de serveurs DNS: les résolveurs et les serveurs faisant autorité
+                </p>
+                <p style="margin-top: 20px;" id="FAI">
                     Ces serveurs vont parcourir la hiérarchie DNS et faire suivre la requête à un ou plusieurs autres serveurs de noms pour fournir une réponse. Les adresses IP de ces serveurs récursifs sont souvent obtenues via DHCP ou encore configurés en dur sur la machine hôte. Les fournisseurs d'accès à Internet (FAI) mettent à disposition de leurs clients ces serveurs récursifs. Il existe également des serveurs récursifs publics comme ceux de Cloudflare, Yandex.DNS, Google Public DNS, OpenNIC ou FDN.</br></br>
                     Reprenons, vous êtes connectés à votre réseau, votre serveur DHCP vous a donné une adresse IP, un masque de sous-réseau et probablement une passerelle par défaut, ainsi qu'un serveur DNS.
                     Imaginez que vous entrez www.jaynerro.com dans votre navigateur. Lorsque vous entrez ce nom, votre machine doit commencer par le résoudre en une adresse IP.
@@ -173,7 +181,7 @@
                     </li>
                     <li>Il existera aussi une autre machine, blog.reseau.fr, qui sera un alias de www.reseau.fr.</li>
                 </ul>
-                <p style="margin-top: 30px;">
+                <p style="margin-top: 30px;" id="MX">
                     Nous ne connaissons pas les serveurs de messagerie (MX pour Mail eXchanger), mais vous devez simplement savoir que pour chaque domaine, il doit y avoir un serveur de messagerie qui permet de recevoir des mails pour les adresses de notre domaine.<br></br>
                     Nous ne connaissons pas non plus les alias. Un alias est une association entre un nom de machine et un autre nom de machine, alors que le DNS a l'habitude de faire la liaison entre un nom de machine et une adresse IP. C'est donc une association particulière du DNS.<br></br>
                     Installation de Bind9
@@ -204,11 +212,11 @@
                 <ul style="font-size: large; text-align: justify; color: white;">
                     <li>A (ou address record) : c'est le type le plus courant, il fait correspondre un nom d'hôte à une adresse IPv4 ;</li>
                     <li>AAAA : fait correspondre un nom d'hôte à une adresse IPv6 ;</li>
-                    <li>CNAME (canonical name record) : permet de créer un alias pointant sur un autre nom d'hôte ;</li>
-                    <li>NS (name server record) : définit le ou les serveurs DNS du domaine ;</li>
+                    <li id="CNAME">CNAME (canonical name record) : permet de créer un alias pointant sur un autre nom d'hôte ;</li>
+                    <li id="NS">NS (name server record) : définit le ou les serveurs DNS du domaine ;</li>
                     <li>MX (mail exchange record) : définit le ou les serveurs de mail du domaine ;</li>
-                    <li>PTR (pointer record) : fait correspond une IP à un nom d'hôte. Il n'est utilisé que dans le cas d'une zone inverse, que nous verrons plus loin ;</li>
-                    <li>SOA (Start Of Authority record) : donne les infos de la zone, comme le serveur DNS principal, l'adresse mail de l'administrateur de la zone, le numéro de série de la zone et des durées que nous détaillerons.</li>
+                    <li id="PTR">PTR (pointer record) : fait correspond une IP à un nom d'hôte. Il n'est utilisé que dans le cas d'une zone inverse, que nous verrons plus loin ;</li>
+                    <li id="SOA">SOA (Start Of Authority record) : donne les infos de la zone, comme le serveur DNS principal, l'adresse mail de l'administrateur de la zone, le numéro de série de la zone et des durées que nous détaillerons.</li>
                 </ul>
                 <p style="margin-top: 30px; justify-content: start">
                     Il en existe d'autres mais pas forcément utiles ou intéressants pour l'instant.

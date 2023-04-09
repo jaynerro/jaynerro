@@ -53,7 +53,7 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-sm-8">
-                <h1> 
+                <h1 id="HTTP"> 
                     HTTP
                 </h1>
                 <p style="margin-top: 30px;">
@@ -68,7 +68,7 @@
                 <p style="margin-top: 50px; justify-content: start">
                     <b>Implémentation</b>
                 </p>
-                <p style="margin-top: 30px;">
+                <p style="margin-top: 30px;" id="URL">
                     Méthodes</br></br>
                     Dans le protocole HTTP, une méthode est une commande spécifiant un type de requête, c'est-à-dire qu'elle demande au serveur d'effectuer une action. En général l'action concerne une ressource identifiée par l'URL (Uniform Resource Locator) qui suit le nom de la méthode.</br>
                     Dans l'illustration ci-dessous, une requête GET est envoyée pour récupérer la page d'accueil wikipedia :
@@ -199,13 +199,13 @@
                     TE</br>
                     Envoyé par le client pour spécifier les encodages de contenu supportés (Content-Encoding, ne pas confondre avec Transfer-Encoding car chunked est obligatoirement supporté par les clients et serveurs implémentant le standard HTTP/1.1), et spécifie si le client supporte l'en-tête Trailer en ajoutant trailers à la liste.</br></br>
                 </p>
-                <p style="margin-top: 30px;">
+                <p style="margin-top: 30px;" id="SPDY">
                     HTTP/2</br>
                     Une nouvelle version d'HTTP, HTTP/2, a été développée au sein du groupe de travail « Hypertext Transfer Protocol Bis » (httpbis) de l'Internet Engineering Task Force, et approuvée comme RFC standard le 18 février 2015. Le développement d'HTTP/2 a débuté à la suite de la création du protocole SPDY proposé par Google afin de réduire le temps de chargement des pages Web. Le groupe de travail httpbis s'était initialement interdit de proposer une nouvelle version d'HTTP, concentrant son activité sur la clarification des spécifications d'HTTP 1.1. 
                     Considérant l'arrivée de SPDY et son adoption rapide sur le Web, avec notamment des implémentations dans deux des principaux navigateurs Web, Google Chrome et Mozilla Firefox, Mark Nottingham, « chair » d'httpbis, a émis l'opinion qu'il était temps d'envisager HTTP/2 et proposé d'amender la charte d'httpbis en ce sens, initiant de fait le développement du nouveau protocole.</br>
                     Après plus de 2 ans de discussions, la RFC est approuvée en février 2015 par le groupe de pilotage de l'IETF, et est publiée en mai 2015.
                 </p>
-                <p style="margin-top: 30px;">
+                <p style="margin-top: 30px;" id="QUIC">
                     HTTP/3</br>
                     Une nouvelle version d’HTTP, HTTP/3, est la troisième et prochaine version majeure du protocole de transfert hypertexte utilisé pour échanger des informations sur le World Wide Web. Celle-ci repose sur le protocole QUIC (Quick UDP Internet Connections), développé par Google en 2012.</br>
                     La sémantique HTTP est cohérente d'une version à l'autre. En effet, les mêmes méthodes de requête, codes de statut et champs de message sont généralement applicables à toutes les versions.</br>
@@ -217,7 +217,7 @@
                     La ressource est désignée à l'aide d'une URL et doit être d'un type supporté par le logiciel ($ curl -I www.example.org). Le logiciel permet également de créer ou modifier une ressource (contrairement à wget).
                 </p>
 
-                <p style="margin-top: 60px;">
+                <p style="margin-top: 60px;" id="URI">
                     Bonus : URI</br>
                     Un URI, de l'anglais Uniform Resource Identifier, soit littéralement identifiant uniforme de ressource, est une courte chaîne de caractères identifiant une ressource sur un réseau (par exemple une ressource Web) physique ou abstraite, et dont la syntaxe respecte une norme d'Internet mise en place pour le World Wide Web (voir RFC 3986). La norme était précédemment connue sous le terme UDI.</br>
                     L'IETF l'a d'abord défini dans la RFC 2396 en se basant sur des propositions de Tim Berners-Lee (RFC 1630). Mise à jour par la RFC 2732 puis révisée de nombreuses fois sous le titre rfc2396bis, la RFC 3986 définit les URI en janvier 2005.</br>

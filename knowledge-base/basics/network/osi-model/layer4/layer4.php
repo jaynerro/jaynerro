@@ -141,11 +141,10 @@
                     TCP est de la première catégorie, c'est un protocole extrêmement fiable.</br>
                     Chaque paquet envoyé doit être acquitté par le receveur, qui en réémettra un autre s'il ne reçoit pas d'accusé de réception. On dit alors que c'est un protocole connecté.
                     Avec le protocole TCP, pour chaque information envoyée, on vérifiera que la machine en face l'a bien reçue.</br></br>
-
                     UDP, lui, est un protocole rapide, mais peu fiable. Les paquets sont envoyés dès que possible, mais on se fiche de savoir s'ils ont été reçus ou pas. On dit qu'UDP est un protocole non-connecté.
                     Avec le protocole UDP, on envoie des informations, et ensuite, on prie très fort pour que celles-ci arrivent, mais on n'en sait rien.
                 </p>
-                <p style="margin-top: 50px; justify-content: start">
+                <p style="margin-top: 50px; justify-content: start" id="UDP">
                     <b>Le protocole UDP</b>
                 </p>
                 <p style="margin-top: 30px;">
@@ -175,13 +174,17 @@
                     La réponse se trouve dans le modèle OSI.
                     Si vous vous souvenez bien, une des règles associées au modèle OSI est que chaque couche est indépendante. Ainsi, ce n'est pas parce que la couche 2 avec le protocole Ethernet fait un CRC, que la couche 4 ne doit pas en faire, de même que la couche 3.
                     Étant donné que chacune des couches n'est pas censée savoir qu'une autre couche fait un CRC, chacune implémente son propre CRC.</br></br>
-                    D'ailleurs, Richard Stevens, l'auteur de la bible des réseaux, TCP/IP illustré, volume 1, a montré qu'il arrive parfois qu'un datagramme arrive en couche 4 avec des erreurs qui ont été produites entre le passage de la couche 3 à la couche 4. Comme quoi, cet acharnement de CRC n'est pas toujours inutile !</br></br>
-                    Les applications qui utilisent UDP</br>
-                    Comme prévu, les applications de streaming vont, en énorme majorité, utiliser UDP, comme la radio sur Internet, la télé sur Internet, etc.
-                    On l'utilise aussi pour la téléphonie sur Internet, plus connue sous le nom de VoIP (Voice Over Internet Protocol) ou ToIP (Telephony Over IP).
-                    Mais on utilise aussi UDP pour transporter deux protocoles majeurs d'Internet que sont le DNS et le SNMP. Vous savez dès maintenant que ce sont deux exceptions qui utilisent UDP parmi la multitude d'applications qui utilisent TCP.
+                    D'ailleurs, Richard Stevens, l'auteur de la bible des réseaux, TCP/IP illustré, volume 1, a montré qu'il arrive parfois qu'un datagramme arrive en couche 4 avec des erreurs qui ont été produites entre le passage de la couche 3 à la couche 4. Comme quoi, cet acharnement de CRC n'est pas toujours inutile !
                 </p>
-                <p style="margin-top: 50px; justify-content: start">
+                <div id="VoIP">
+                    <p style="margin-top: 20px;" id="ToIP">
+                        Les applications qui utilisent UDP</br>
+                        Comme prévu, les applications de streaming vont, en énorme majorité, utiliser UDP, comme la radio sur Internet, la télé sur Internet, etc.
+                        On l'utilise aussi pour la téléphonie sur Internet, plus connue sous le nom de VoIP (Voice Over Internet Protocol) ou ToIP (Telephony Over IP).
+                        Mais on utilise aussi UDP pour transporter deux protocoles majeurs d'Internet que sont le DNS et le SNMP. Vous savez dès maintenant que ce sont deux exceptions qui utilisent UDP parmi la multitude d'applications qui utilisent TCP.
+                    </p>
+                </div>
+                <p style="margin-top: 50px; justify-content: start" id="TCP">
                     <b>Le protocole TCP</b>
                 </p>
                 <p style="margin-top: 30px;">
@@ -199,23 +202,29 @@
                 <p style="margin-top: 30px;">
                     On voit très clairement ici qu'il faut établir la communication avant de parler du sujet. Il en sera de même en TCP.</br>
                     Les trois premiers paquets envoyés ne serviront qu'à établir la communication. Comme le allo, ce seront des paquets vides qui ne sont là que pour s'assurer que l'autre veut bien parler avec nous.</br></br>
-                    TCP va utiliser des informations dans son en-tête pour dire si un paquet correspond à une demande de connexion ou si c'est un paquet normal.</br></br></br>
+                    TCP va utiliser des informations dans son en-tête pour dire si un paquet correspond à une demande de connexion ou si c'est un paquet normal.
+                </p>
+                <p style="margin-top: 30px;">
                     Les drapeaux / flags</br></br>
                     Étant donné que les paquets qui vont être envoyés pour initialiser la connexion seront vides (ils ne contiendront pas de données) il faudra une information présente dans l'en-tête pour indiquer si c'est une demande de connexion, une réponse ou un acquittement (un acquittement sera une réponse vide qui servira simplement à dire à la machine en face que l'on a bien reçu ses informations, comme quand on dit "han han..." au téléphone pour bien spécifier que l'on écoute ce que dit notre interlocuteur).</br>
-                    Pour cela, il va y avoir ce que l'on appelle des drapeaux (ou flags en anglais) dans l'en-tête TCP. Les drapeaux ne sont rien d'autre que des bits qui peuvent prendre la valeur 0 ou 1. Ainsi, il y aura dans l'en-tête TCP des bits qui vont indiquer quel est le type du message TCP envoyé.</br></br></br>
-                    Établissement de la connexion</br></br>
-                    Le premier paquet sera une demande de synchronisation, comme le allo au téléphone, le flag correspondant est le flag SYN (SYN pour synchronized / synchronisation). Tous les flags sont connus sous leur forme courte, de trois lettres seulement.
-                    Ainsi, si je veux me connecter à une application serveur qui fonctionne avec TCP, je vais envoyer un paquet avec le flag SYN positionné pour lui indiquer que je veux dialoguer avec elle, c'est l'équivalent d'un "Tu veux bien dialoguer avec moi ?".</br>
-                    Un serveur recevant une demande SYN doit normalement répondre qu'il est d'accord pour communiquer avec le client. Pour cela il va envoyer un ACK en réponse (ACK comme acquittement, ou acknowledgement en anglais).
-                    MAIS, il va, à son tour, demander si le client veut bien communiquer avec lui et positionner aussi le flag SYN dans sa réponse. Il y aura donc les flags SYN ET ACK positionnés dans sa réponse.</br></br>
-                    Si le client a demandé à communiquer avec le serveur, pourquoi le serveur lui demande s'il veut bien communiquer avec lui ?</br></br>
-                    La réponse à cette question est primordiale pour comprendre TCP.</br>
-                    Quand on veut communiquer en TCP, on n'établit pas une, mais deux connexions.
-                    Car TCP considère qu'il va y avoir une communication dans un sens, et une communication dans l'autre sens. Il établit donc une connexion pour chaque sens de communication.
-                    Ainsi, quand le serveur répond à la requête SYN, il acquitte la demande avec le ACK, et fait une demande de connexion pour l'autre sens de communication, du serveur vers le client, en positionnant le flag SYN. La réponse a donc les flags SYN ET ACK positionnés.
-                    Toutefois, notre connexion n'est pas encore établie... Il faut encore que le client accepte la demande de connexion faite par le serveur. Le client va donc renvoyer un paquet avec un flag ACK.</br>
-                    Cela donne le résultat que vous pouvez voir en figure suivante.
+                    Pour cela, il va y avoir ce que l'on appelle des drapeaux (ou flags en anglais) dans l'en-tête TCP. Les drapeaux ne sont rien d'autre que des bits qui peuvent prendre la valeur 0 ou 1. Ainsi, il y aura dans l'en-tête TCP des bits qui vont indiquer quel est le type du message TCP envoyé.
                 </p>
+                <div id="SYN">
+                    <p style="margin-top: 30px;" id="ACK">
+                        Établissement de la connexion</br></br>
+                        Le premier paquet sera une demande de synchronisation, comme le allo au téléphone, le flag correspondant est le flag SYN (SYN pour synchronized / synchronisation). Tous les flags sont connus sous leur forme courte, de trois lettres seulement.
+                        Ainsi, si je veux me connecter à une application serveur qui fonctionne avec TCP, je vais envoyer un paquet avec le flag SYN positionné pour lui indiquer que je veux dialoguer avec elle, c'est l'équivalent d'un "Tu veux bien dialoguer avec moi ?".</br>
+                        Un serveur recevant une demande SYN doit normalement répondre qu'il est d'accord pour communiquer avec le client. Pour cela il va envoyer un ACK en réponse (ACK comme acquittement, ou acknowledgement en anglais).
+                        MAIS, il va, à son tour, demander si le client veut bien communiquer avec lui et positionner aussi le flag SYN dans sa réponse. Il y aura donc les flags SYN ET ACK positionnés dans sa réponse.</br></br>
+                        Si le client a demandé à communiquer avec le serveur, pourquoi le serveur lui demande s'il veut bien communiquer avec lui ?</br></br>
+                        La réponse à cette question est primordiale pour comprendre TCP.</br>
+                        Quand on veut communiquer en TCP, on n'établit pas une, mais deux connexions.
+                        Car TCP considère qu'il va y avoir une communication dans un sens, et une communication dans l'autre sens. Il établit donc une connexion pour chaque sens de communication.
+                        Ainsi, quand le serveur répond à la requête SYN, il acquitte la demande avec le ACK, et fait une demande de connexion pour l'autre sens de communication, du serveur vers le client, en positionnant le flag SYN. La réponse a donc les flags SYN ET ACK positionnés.
+                        Toutefois, notre connexion n'est pas encore établie... Il faut encore que le client accepte la demande de connexion faite par le serveur. Le client va donc renvoyer un paquet avec un flag ACK.</br>
+                        Cela donne le résultat que vous pouvez voir en figure suivante.
+                    </p>
+                </div>
                 <img src="../../../../../images/3-way-handshake.png" class="img-fluid mx-auto d-block" style="max-width: 50%; margin-top: 30px;"/>
                 <p style="margin-top: 20px; font-size: small;">
                     Three Way Handshake
@@ -236,7 +245,7 @@
                 <p style="margin-top: 20px; font-size: small;">
                     Continuité de la connexion
                 </p>
-                <p style="margin-top: 50px;">
+                <p style="margin-top: 50px;" id="FIN">
                     Fin de la connexion</br></br>
                     Une fois que les applications ont terminé leur communication, il faut encore fermer la connexion.</br>
                     On ne va pas laisser la connexion indéfiniment ouverte ! Si nous ne les libérions jamais, nos ports seraient rapidement tous utilisés.
@@ -284,7 +293,7 @@
                     </li>
                     <li>enfin, le checksum que nous connaissons aussi.</li>
                 </ul>
-                <p style="margin-top: 30px;">
+                <p style="margin-top: 30px;" id="RST">
                     Il nous reste trois flags à expliciter, sachant que RST a une importance plus forte que les deux autres.</br>
                     En TCP chaque octet de données envoyé doit être acquitté. Si jamais il y a une incohérence entre les données envoyées et les données reçues, la connexion est considérée comme anormale et la machine qui s'en rend compte doit prévenir l'autre pour arrêter la connexion et en mettre en place une nouvelle.
                     Cela se fait grâce au flag RST (Reset).</br></br>

@@ -1,0 +1,1 @@
+MATCH (n:User {enabled:true,hasspn:true}) RETURN DISTINCT n.name AS Name, n.serviceprincipalnames AS SPN

@@ -52,7 +52,7 @@
                 <h1> 
                     Introduction
                 </h1>
-                <p style="margin-top: 30px;"> 
+                <p style="margin-top: 30px;" id="OS"> 
                     Un système d'exploitation, ou logiciel système, ou Operating System (OS), est un logiciel qui, dans un appareil électronique, pilote les dispositifs matériels et reçoit des instructions de l'utilisateur ou d'autres logiciels (ou applications). Ces logiciels doivent être adaptés à un système d'exploitation.</br></br>
                     Dans un ordinateur, le système d'exploitation gère le ou les processeurs ainsi que la mémoire. Il fait fonctionner les périphériques (clavier, souris, surface tactile, écran, disque dur, lecteur de DVD, lecteur de cartes mémoire...). Dans un appareil photo, il fait fonctionner les différents mécanismes, gère l'affichage de l'écran et détecte les actions de l'utilisateur, etc.</br></br>
                     Les systèmes d'exploitation comportent aussi l'interface avec l'utilisateur. Dans un ordinateur, par exemple, c'est lui qui affichera les fenêtres et présentera le contenu des unités de stockage (disque dur, CD, DVD...).

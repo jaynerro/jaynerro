@@ -1,0 +1,1 @@
+MATCH (u:User)-[:MemberOf*1..]->(g:Group {admincount:true}) RETURN u.name AS Name, COLLECT(g.name) AS Group;

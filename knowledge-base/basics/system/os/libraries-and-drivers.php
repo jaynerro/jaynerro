@@ -99,9 +99,11 @@
                         <li>Gestion de structures de données utilisateur.</li>
                     </ul>
                 </ul>
-                <p style="margin-top: 30px;"> 
-                    Les interfaces de programmation (plus communément appelées API pour Application Programming Interface) sont la partie visibles d'une bibliothèque ou d'un ensemble de bibliothèques, permettant au programmeur de choisir parmi les fonctions disponibles celle qui va lui rendre le service dont il a besoin. Les APIs se présentent comme une liste des noms des fonctions ou/et classes disponibles, avec une documentation sur les paramètres à leur fournir et sur les résultats retournés.
-                </p>
+                <div id="API">
+                    <p style="margin-top: 30px;"> 
+                        Les interfaces de programmation (plus communément appelées API pour Application Programming Interface) sont la partie visibles d'une bibliothèque ou d'un ensemble de bibliothèques, permettant au programmeur de choisir parmi les fonctions disponibles celle qui va lui rendre le service dont il a besoin. Les APIs se présentent comme une liste des noms des fonctions ou/et classes disponibles, avec une documentation sur les paramètres à leur fournir et sur les résultats retournés.
+                    </p>
+                </div>
                 <p style="margin-top: 40px; justify-content: start;">
                     <b>Mise en œuvre des bibliothèques au format du système d'exploitation</b>
                 </p>
@@ -127,7 +129,7 @@
                 <p style="margin-top: 10px;"> 
                     Une bibliothèque est en principe partagée par le système d'exploitation afin de ne pas dupliquer son code dans toutes les applications y faisant appel. 
                 </p>
-                <p style="margin-top: 40px; ">
+                <p style="margin-top: 40px;" id="DLL">
                     Bibliothèques chargées dynamiquement
                 </p>
                 <p style="margin-top: 5px;">
@@ -139,7 +141,7 @@
                     <li>la réduction de la taille d'un exécutable, puisque certaines parties du logiciel se situent en dehors de lui,</li>
                     <li>et la mise à jour possible des fonctions utiles pour toutes les applications qui les utilisent. Les applications bénéficient alors automatiquement des corrections ou des améliorations fonctionnelles de la bibliothèque.</li>
                 </ul>
-                <p style="margin-top: 40px; ">
+                <p style="margin-top: 40px;">
                     Bibliothèques partagées
                 </p>
                 <p style="margin-top: 5px;">

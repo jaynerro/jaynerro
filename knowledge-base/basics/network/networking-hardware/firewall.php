@@ -110,12 +110,14 @@
                 <p style="margin-top: 30px; justify-content: start">
                     Ces règles peuvent avoir des noms très différents en fonction du pare-feu :
                 </p>
-                <ul style="font-size: large; text-align: justify; color: white;">
-                    <li>« ACL » pour Access Control List (certains pare-feux Cisco),</li>
-                    <li>politique ou policy (pare-feu Juniper/Netscreen),</li>
-                    <li>filtres,</li>
-                    <li>règles ou rules,</li>
-                </ul>
+                <div id="ACL">
+                    <ul style="font-size: large; text-align: justify; color: white;">
+                        <li>« ACL » pour Access Control List (certains pare-feux Cisco),</li>
+                        <li>politique ou policy (pare-feu Juniper/Netscreen),</li>
+                        <li>filtres,</li>
+                        <li>règles ou rules,</li>
+                    </ul>
+                </div>
                 <p style="margin-top: 30px;">
                     La configuration de ces dispositifs est souvent complexe et l'absence de prise en compte des machines à états des protocoles réseaux ne permet pas d'obtenir une finesse du filtrage très évoluée. Ces pare-feux ont donc tendance à tomber en désuétude mais restent présents sur certains routeurs ou systèmes d'exploitation.
                 </p>
@@ -166,8 +168,8 @@
                     Les portails captifs sont des pare-feux dont le but est d'intercepter les usagers d'un réseau de consultation afin de leur présenter une page web spéciale (par exemple : avertissement, charte d'utilisation, demande d'authentification, etc.) avant de les laisser accéder à Internet. Ils sont utilisés pour assurer la traçabilité des connexions et/ou limiter l'utilisation abusive des moyens d'accès. On les déploie essentiellement dans le cadre de réseaux de consultation Internet mutualisés filaires ou Wi-Fi.
                 </p>
                 <img src="../../../../images/captive-portal.png" class="img-fluid mx-auto d-block" style="max-width: 65%; margin-top: 30px;"/>
-                <p style="margin-top: 55px; justify-content: start">
-                    <b>6 - NGFW (Next-generation firewall)</b>
+                <p style="margin-top: 55px; justify-content: start" id="FW">
+                    <b id="NGFW">6 - NGFW (Next-generation firewall)</b>
                 </p>
                 <p style="margin-top: 30px;">
                     Un pare-feu traditionnel se limite à des fonctions telles que le filtrage des paquets, la traduction des adresses de réseau et de port (NAT) et les VPN. Il prend ses décisions en fonction des ports, des protocoles et des adresses IP. Aujourd'hui, il n'est plus pratique ni fiable de mettre en œuvre des politiques de sécurité d'une manière aussi inflexible et non transparente. Une nouvelle approche était nécessaire et les NGFWs fournissent cette approche en ajoutant plus de contexte aux politiques de sécurité. Les systèmes basés sur le contexte sont conçus pour utiliser intelligemment des informations telles que la localisation, l'identité, l'heure, etc... dans le but de prendre des décisions de sécurité plus efficaces.</br></br>
@@ -196,7 +198,7 @@
                     <li>Système de prévention d'intrusion (« IPS » en anglais)</li>
                 </ul>
                 <img src="../../../../images/ngfw.png" class="img-fluid mx-auto d-block" style="max-width: 90%; margin-top: 30px;"/>
-                <p style="margin-top: 55px; justify-content: start">
+                <p style="margin-top: 55px; justify-content: start" id="UTM">
                     <b>Bonus : UTM</b>
                 </p>
                 <p style="margin-top: 30px;">

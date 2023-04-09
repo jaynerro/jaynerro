@@ -49,7 +49,7 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-sm-8">
-                <h1> 
+                <h1 id="Wi-Fi"> 
                     Wi-fi
                 </h1>
                 <p style="margin-top: 30px;"> 
@@ -67,11 +67,11 @@
 
         <div class="row justify-content-center">
             <div class="col-sm-8">
-                <p style="margin-top: 45px;"> 
+                <p style="margin-top: 45px;" id="WLAN">
                     Apparues pour la première fois en 1997, les normes IEEE 802.11 (ISO/CEI 8802-11), qui sont utilisées internationalement, décrivent les caractéristiques d’un réseau local sans fil (WLAN). La marque déposée « Wi-Fi » correspond initialement au nom donné à la certification délivrée par la Wi-Fi Alliance (« Wireless Ethernet Compatibility Alliance », WECA), organisme ayant pour mission de spécifier l’interopérabilité entre les matériels conformes à la norme 802.11 et de vendre le label « Wi-Fi » aux matériels répondant à ses spécifications. Pour des raisons de facilité d’usage (et de marketing) le nom de la norme se confond aujourd’hui avec le nom de la certification (c’est le cas en France, en Espagne, au Canada, en Suisse, en Tunisie…). Ainsi, un réseau Wi-Fi est en réalité un réseau répondant à une des normes IEEE 802.11. Dans d’autres pays (Allemagne et États-Unis par exemple) de tels réseaux sont aussi nommés par le terme générique WLAN : Wireless LAN (réseau local sans fil).</br></br>
                     Grâce aux normes Wi-Fi, il est possible de créer des réseaux locaux sans fil à haut débit. En pratique, le Wi-Fi permet de relier des smartphones, ordinateurs portables, des objets connectés ou autres périphériques à une liaison haut débit. Les débits se sont accrus avec les nouvelles normes Wi-Fi. Voici les débits maximums théoriques (et réels) pour les principales normes : 11 Mbit/s (6 Mbit/s) en 802.11b (1999), 54 Mbit/s (25 Mbit/s) en 802.11a (1999) et 802.11g (2003), 600 Mbit/s en 802.11n (2009), 1,3 Gbit/s en 802.11ac (Wi-Fi 5, 2013) et 10,5 Gbit/s en 802.11ax (Wi-Fi 6, 2021).</br></br>
                 </p>
-                <p style="margin-top: 50px; justify-content: start">
+                <p style="margin-top: 50px; justify-content: start" id="IEEE">
                     <b>IEEE 802.11</b>
                 </p>
                 <p style="margin-top: 45px;"> 
@@ -130,7 +130,7 @@
                     <li>la couche physique (notée parfois couche PHY), proposant quatre types de codage de l’information ;</li>
                     <li>la couche liaison de données, constituée de deux sous-couches :</li>
                     <ul style="font-size: large; text-align: justify; color: white;">
-                        <li>le contrôle de la liaison logique (Logical Link Control, ou LLC) ;</li>
+                        <li id="LLC">le contrôle de la liaison logique (Logical Link Control, ou LLC) ;</li>
                         <li>le contrôle d’accès au support (Media Access Control, ou MAC).</li>
                     </ul>
                 </ul>
@@ -150,7 +150,7 @@
                 <p style="margin-top: 40px; justify-content: start">
                     Le mode « Infrastructure »
                 </p>
-                <p style="margin-top: 35px;">
+                <p style="margin-top: 35px;" id="SSID">
                     Mode qui permet de connecter les ordinateurs équipés d’une carte Wi-Fi entre eux via un ou plusieurs points d’accès (PA) qui agissent comme des concentrateurs (exemple : répéteur ou commutateur en réseau Ethernet). Autrefois ce mode était essentiellement utilisé en entreprise. Dans ce cas, la mise en place d’un tel réseau oblige de poser à intervalles réguliers des bornes « Point d’accès » (PA) dans la zone qui doit être couverte par le réseau. Les bornes, ainsi que les machines, doivent être configurées avec le même nom de réseau (SSID = Service Set IDentifier) afin de pouvoir communiquer. L’avantage de ce mode, en entreprise, est de garantir un passage obligé par le Point d’accès: il est donc possible de vérifier qui accède au réseau. Actuellement les FAI, les boutiques spécialisées et les grandes surfaces fournissent aux particuliers des routeurs sans fil qui fonctionnent en mode « Infrastructure », tout en étant très faciles à configurer.
                 </p>
                 <p style="margin-top: 40px; justify-content: start">
@@ -175,14 +175,16 @@
                     Moyens de protection
                 </p>
                 <p style="margin-top: 35px;">
-                    Il est possible de choisir la méthode de codage de la communication sur l'interface radio. La plus ancienne était l'utilisation d'une clé dite Wired Equivalent Privacy (WEP), communiquée uniquement aux utilisateurs autorisés du réseau. Toutefois, il a été démontré que cette clé était facile à violer, avec l'aide de programmes tels que Aircrack.</br></br>
+                    Il est possible de choisir la méthode de codage de la communication sur l'interface radio. La plus ancienne était l'utilisation d'une clé dite Wired Equivalent Privacy (WEP), communiquée uniquement aux utilisateurs autorisés du réseau. Toutefois, il a été démontré que cette clé était facile à violer, avec l'aide de programmes tels que Aircrack.
+                </p>
+                <p style="margin-top: 20px;" id="WPA">
                     Pour améliorer la confidentialité, de nouvelles méthodes ont été proposées, comme Wi-Fi Protected Access (WPA), WPA2 ou plus récemment WPA3.</br></br>
                     Depuis l'adoption du standard 802.11i, on peut raisonnablement parler d'accès réseau sans fil sécurisé. En l'absence de 802.11i, on peut utiliser un tunnel chiffré (VPN) pour se raccorder au réseau de son entreprise sans risque d'écoute ou de modification. D'autres méthodes de sécurisation existent, avec, par exemple, un serveur Radius ou Diameter chargé de gérer les accès par nom d'utilisateur et par mot de passe.
                 </p>
                 <p style="margin-top: 50px; justify-content: start">
                     <b>WEP, WPA, WPA2 et WPA3 : Différences et explication</b>
                 </p>
-                <p style="margin-top: 30px; justify-content: start">
+                <p style="margin-top: 30px; justify-content: start" id="WEP">
                     WEP
                 </p>
                 <p style="margin-top: 35px;">
@@ -190,9 +192,11 @@
                     WEP permet de chiffrer le trafic grâce à une clé de 64 ou 128 bits, avec des caractères hexadécimaux. Il s’agit d’une clé statique, ce qui signifie que tout le trafic est chiffré grâce à une seule clé, quel que soit l’appareil. Une clé WEP permet aux ordinateurs sur un réseau d’échanger des messages codés, tout en dissimulant le contenu des messages aux personnes mal intentionnées. Cette clé est utilisée pour se connecter à un réseau sans fil sécurisé.</br></br>
                     Malgré les révisions du protocole et une augmentation de la taille de clé, plusieurs failles de sécurité ont été découvertes dans le protocole au fil du temps. Comme les ordinateurs devenaient plus puissants, il était plus facile, pour les criminels, d’exploiter ces failles. En raison de ces vulnérabilités, la Wi-Fi Alliance a officiellement retiré WEP en 2004. Aujourd’hui le protocole WEP est considéré comme obsolète, même s’il est encore parfois utilisé, soit parce que les administrateurs réseau n’ont pas modifié la sécurité par défaut sur les routeurs sans fil, soit parce que les appareils sont trop vieux pour supporter des méthodes de chiffrement plus récentes comme WPA.
                 </p>
-                <p style="margin-top: 30px; justify-content: start">
-                    WPA
-                </p>
+                <div>
+                    <p style="margin-top: 30px; justify-content: start" id="TKIP">
+                        WPA
+                    </p>
+                </div>
                 <p style="margin-top: 35px;">
                     WPA ou Wi-Fi Protected Access a été présenté en 2003 par la Wi-Fi Alliance, pour remplacer le protocole WEP. Même si WPA partageait des similitudes avec WEP, il proposait des améliorations sur la gestion des clés de sécurité et l’autorisation des utilisateurs. Alors que WEP fournit à chaque système autorisé la même clé, WPA utilise le protocole d'intégrité de clé temporelle / Temporal Key Integrity Protocol (TKIP), qui modifie dynamiquement la clé utilisée par les systèmes. Cela permet d’éviter que des intrus ne créent leur propre clé de chiffrement correspondant à celle utilisée par le réseau sécurisé. Le protocole de chiffrement TKIP a été plus tard remplacé par Advanced Encryption Standard (AES).</br></br>
                     Par ailleurs, WPA comprenait des contrôles d'intégrité des messages afin de déterminer si un attaquant avait capturé ou modifié des paquets de données. Le protocole utilisait des clés de 256 bits. Une amélioration considérable par rapport aux clés de 64 et 128 bits utilisés dans le système WEP. Cependant, malgré des améliorations, des éléments du WPA ont fini par être exploités, ce qui a conduit au WPA2.</br></br>
@@ -201,7 +205,7 @@
                 <p style="margin-top: 30px; justify-content: start">
                     WPA2
                 </p>
-                <p style="margin-top: 35px;">
+                <p style="margin-top: 35px;" >
                     WPA2 a été introduit en 2004. Il s’agit d’une version mise à niveau de WPA. WPA2 est basé sur le mécanisme de réseau de sécurité robuste (RSN) et fonctionne sur deux modes :
                 </p>
                 <ul style="font-size: large; text-align: justify; color: white;">
@@ -230,7 +234,7 @@
                 <p style="margin-top: 30px; justify-content: start">
                     Description
                 </p>
-                <p style="margin-top: 35px;">
+                <p style="margin-top: 35px;" id="RSN">
                     IEEE 802.11i définit un réseau de sécurité robuste (Robust Security Network ou RSN) comportant des améliorations par rapport au mode de sécurisation WEP (Wired Equivalent Privacy) préconisé par le standard IEEE 802.11. Cet amendement a amélioré les méthodes d'authentification et de chiffrement. La norme utilise les moyens d'authentification et de chiffrement suivants :
                 </p>
                 <ul style="font-size: large; text-align: justify; color: white;">
@@ -241,16 +245,18 @@
                 <p style="margin-top: 30px; justify-content: start">
                     Authentification
                 </p>
-                <p style="margin-top: 35px;">
+                <p style="margin-top: 35px;" id="STA">
                     L'authentification est le processus permettant à un Supplicant de s'authentifier auprès d'un Authentificator afin d'avoir accès à certains services. Dans le cas du Wifi, le Supplicant est une station (STA) cherchant à obtenir un accès à l'Internet auprès d'un point d'accès (PA). 802.11i ratifie deux méthodes d'authentification :
                 </p>
-                <ul style="font-size: large; text-align: justify; color: white;">
+                <ul style="font-size: large; text-align: justify; color: white;" id="PSK">
                     <li>PSK : Cette authentification est basée sur un secret partagé entre la STA et le PA. Tous deux sont en possession d'une clé symétrique appelée PSK (Pre-Shared Key). L'implémentation de cette authentification est appelé WPA-Personnel par la WiFi alliance.</li>
                     <li>802.1X : Cette authentification est basée sur le protocole IEEE 802.1X. Ici l'authentificator (PA) va simplement servir de relais entre la STA et un serveur d'authentification (AS) en utilisant par exemple le protocole RADIUS (également appelé AAA). L'implémentation de cette authentification est appelée WPA-Entreprise par la Wi-Fi Alliance.</li>
                 </ul>
-                <p style="margin-top: 35px;">
-                    Dans les deux cas, l'authentification se fait au moyen du protocole EAP (Extensible Authentication Protocol). À l'issue de l'authentification, si cette dernière est un succès (c'est-à-dire qu'elle termine par un EAP-SUCCESS) la STA et l'AP sont tous deux en possession d'une clef appelée PMK (Pairwise Master Key). Cette PMK est soit la PSK (dans le cas d'une authentification basée sur PSK) soit les 256 premiers bits de la clef AAA (dans le cas d'une authentification basée sur 802.1X). La phase suivant l'authentification est appelée le 4-Way Handshake, elle consiste à la dérivation et à l'échange des clefs unicast/multicast à partir de la clef PMK. Le 4-Way Handshake permet également de sélectionner le protocole de chiffrement qui sera utilisé pour sécuriser les communications entre la STA et l'AP.
-                </p>
+                <div id="PMK">
+                    <p style="margin-top: 35px;" id="EAP">
+                        Dans les deux cas, l'authentification se fait au moyen du protocole EAP (Extensible Authentication Protocol). À l'issue de l'authentification, si cette dernière est un succès (c'est-à-dire qu'elle termine par un EAP-SUCCESS) la STA et l'AP sont tous deux en possession d'une clef appelée PMK (Pairwise Master Key). Cette PMK est soit la PSK (dans le cas d'une authentification basée sur PSK) soit les 256 premiers bits de la clef AAA (dans le cas d'une authentification basée sur 802.1X). La phase suivant l'authentification est appelée le 4-Way Handshake, elle consiste à la dérivation et à l'échange des clefs unicast/multicast à partir de la clef PMK. Le 4-Way Handshake permet également de sélectionner le protocole de chiffrement qui sera utilisé pour sécuriser les communications entre la STA et l'AP.
+                    </p>
+                </div>
                 <p style="margin-top: 30px; justify-content: start">
                     Chiffrement
                 </p>

@@ -56,20 +56,20 @@
                     Depuis, nous avons à disposition un réseau mondial appelé Internet. Ce réseau est composé de millions de réseaux plus petits. </br></br>
                     Il existe différents types de réseaux informatiques : 
                 </p>
-                <p style="margin-top: 20px; justify-content: start;">
-                    <b>Les LAN (Local Area Network)</b>
+                <p style="margin-top: 20px; justify-content: start;" id="LAN">
+                    <b id="RLE">Les LAN (Local Area Network)</b>
                 </p>
                 <p style="margin-top: 20px;"> 
                     Les LAN sont des réseaux à échelle locale, tels que les réseaux domestiques de votre domicile, ou les réseaux à l’échelle d’une entreprise.</br>
                     Dans le cas d'un réseau d'entreprise, on utilise aussi le sigle RLE pour réseau local d'entreprise.
                 </p>
-                <p style="margin-top: 40px; justify-content: start;">
+                <p style="margin-top: 40px; justify-content: start;" id="MAN">
                     <b>Les MAN (Metropolitan Area Network)</b>
                 </p>
                 <p style="margin-top: 20px;"> 
                     Les MAN sont déployés à l’échelle d’une ville. Il peut s’agir, par exemple, de réseaux universitaires qui connectent différentes facultés d’une même ville. Ils sont eux-mêmes constitués de LAN qui, ensemble, forment un MAN.
                 </p>
-                <p style="margin-top: 40px; justify-content: start;">
+                <p style="margin-top: 40px; justify-content: start;" id="WAN">
                     <b>Les WAN (Wide Area Network)</b>
                 </p>
                 <p style="margin-top: 20px;"> 
@@ -79,7 +79,7 @@
                     À moins de travailler pour un opérateur de télécommunication, vous interviendrez essentiellement sur des LAN, en tant que technicien informatique. 
                     Eh oui, le LAN reste le type de réseau le plus courant, et il est fréquemment déployé à l'échelle d’une entreprise. Il est également la brique élémentaire des réseaux de plus grande taille.
                 </p>
-                <p style="margin-top: 40px; justify-content: start;">
+                <p style="margin-top: 40px; justify-content: start;" id="DMZ">
                     <b>Bonus : DMZ</b>
                 </p>
                 <p style="margin-top: 20px;"> 

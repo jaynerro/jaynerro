@@ -266,7 +266,7 @@
                     Cela semble assez clair, seule la topologie en étoile possède des caractéristiques permettant d'étendre son réseau aussi bien en taille qu'en nombre de machines. Et ça tombe bien, car les réseaux en bus ou anneau sont en voie de disparition aujourd'hui.
                 </p>
 
-                <h3 style="margin-top: 70px;">    
+                <h3 style="margin-top: 70px;" id="CSMACD">    
                     Le CSMA/CD - Carrier Sense Multiple Access/Collision Detection
                 </h3>
                 <p style="margin-top: 20px;">    

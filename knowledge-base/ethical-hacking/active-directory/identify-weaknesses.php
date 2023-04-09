@@ -13,14 +13,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <?php // Bootstrap CSS ?>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="../../../static/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../static/vendor/fontawesome/all.min.css" />
+    <link rel="stylesheet" href="../../../static/css/tree.css">
+    
     <?php // Feuille de style ?>
     <link rel="stylesheet" href="../../../static/css/style.css">
     <link rel="stylesheet" type="text/css" href="../../../static/css/prism.css"/>
-
-
+    
     <?php // Titre de l'onget de la page ?>
     <title>Active Directory - Identifiez les faiblesses et les objectifs d’attaque</title>
     <link rel="icon" type="image/png" href="../../../images/jaynerro-icon.png">
@@ -55,12 +55,39 @@
                     Identifiez les faiblesses et les objectifs d’attaque
                 </h1>
                 <img src="../../../images/ad.png" class="img-fluid mx-auto d-block" style="max-width: 50%; margin-top: 50px;"/>
-                <p style="margin-top: 40px; margin-left: 10px; justify-content: start">
-                    <b>I - Réalisez votre plan d’attaque du système d’information</b>
-                </p>
-                <p style="margin-top: 30px; margin-left: 20px; justify-content: start">
-                    1 - Organisez votre prise de notes
-                </p>
+                <ul id="nav-tree">
+                    <li id="liSummary" style="margin-top: 20px;">
+                        <a><b>Sommaire</b></a>
+                        <ul>
+                            <a href="#I" style="margin-top: 5px; margin-left: 20px;">I - Réalisez votre plan d’attaque du système d’information</a>
+                                <a href="#I1" style="margin-top: 10px; margin-left: 40px;">1 - Organisez votre prise de notes</a>
+                                <a href="#I2" style="margin-top: 10px; margin-left: 40px;">2 - Appuyez-vous sur le cycle de test d’intrusion</a>
+                            <a href="#II" style="margin-top: 15px; margin-left: 20px;">II - Identifiez les serveurs et postes vulnérables</a>
+                                <a href="#II1" style="margin-top: 10px; margin-left: 40px;">1 - Identifiez les machines de l’environnement de travail</a>
+                                    <a href="#II1A" style="margin-top: 10px; margin-left: 60px;">A - Nmap</a>
+                                    <a href="#II1B" style="margin-top: 10px; margin-left: 60px;">B - NBTscan</a>
+                                <a href="#II2" style="margin-top: 10px; margin-left: 40px;">2 - Énumérez les vulnérabilités</a>
+                            <a href="#III" style="margin-top: 15px; margin-left: 20px;">III - Identifiez les points d’entrée</a>
+                                <a href="#III1" style="margin-top: 10px; margin-left: 40px;">1 - Identifiez le domaine Active Directory</a>
+                                <a href="#III2" style="margin-top: 10px; margin-left: 40px;">2 - Découvrez les serveurs clés</a>
+                                <a href="#III3" style="margin-top: 10px; margin-left: 40px;">3 - Découvrez les serveurs d’intérêt</a>
+                                <a href="#III4" style="margin-top: 10px; margin-left: 40px;">4 - Cartographiez les partages réseau</a>
+                            <a href="#IV" style="margin-top: 15px; margin-left: 20px;">IV - Identifiez les faiblesses d’Active Directory</a>
+                                <a href="#IV1" style="margin-top: 10px; margin-left: 40px;">1 - Identifiez la politique de mot de passe</a>
+                                <a href="#IV2" style="margin-top: 10px; margin-left: 40px;">2 - Cartographiez l’Active Directory</a>
+                        </ul>
+                    </li>
+                </ul>
+                <div id="I">
+                    <p style="margin-top: 40px; margin-left: 10px; justify-content: start">
+                        <b>I - Réalisez votre plan d’attaque du système d’information</b>
+                    </p>
+                </div>
+                <div id="I1">
+                    <p style="margin-top: 30px; margin-left: 20px; justify-content: start">
+                        1 - Organisez votre prise de notes
+                    </p>
+                </div>
                 <p style="margin-top: 30px;">
                     Pour attaquer un environnement Active Directory, vous aurez très probablement besoin de récolter les informations suivantes :
                 </p>
@@ -106,19 +133,25 @@
                 <p style="margin-top: 30px;">
                     Avoir les bons outils permet d’être bien plus efficace. Il existe beaucoup de logiciels facilitant la prise de notes (Evernote, Microsoft OneNote, Cherrytree, TreeNote et j’en passe), mais mon favori est l’outil Joplin. C’est un outil gratuit, open source, qui fonctionne sur tout type de plateforme (Linux, Windows, Mac, Android, iOS).
                 </p>
-                <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
-                    2 - Appuyez-vous sur le cycle de test d’intrusion
-                </p>
+                <div id="I2">
+                    <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
+                        2 - Appuyez-vous sur le cycle de test d’intrusion
+                    </p>
+                </div>
                 <img src="../../../images/eh-ad.png" class="img-fluid mx-auto d-block" style="max-width: 85%; margin-top: 30px;"/>
                 <p style="margin-top: 20px; font-size: small;">
                     Méthodologie d’attaque
                 </p>
-                <p style="margin-top: 70px; margin-left: 10px; justify-content: start">
-                    <b>II - Identifiez les serveurs et postes vulnérables</b>
-                </p>
-                <p style="margin-top: 30px; margin-left: 20px; justify-content: start">
-                    1 - Identifiez les machines de l’environnement de travail
-                </p>
+                <div id="II">
+                    <p style="margin-top: 70px; margin-left: 10px; justify-content: start">
+                        <b>II - Identifiez les serveurs et postes vulnérables</b>
+                    </p>
+                </div>
+                <div id="II1">
+                    <p style="margin-top: 30px; margin-left: 20px; justify-content: start">
+                        1 - Identifiez les machines de l’environnement de travail
+                    </p>
+                </div>
                 <p style="margin-top: 30px;">
                     Afin d’identifier les machines vulnérables, il faut d’abord les découvrir sur le réseau. Le but est de chercher où se trouvent les machines. Même si le client sait où se trouvent la plupart de ses équipements, deux points restent intéressants :
                 </p>
@@ -130,9 +163,11 @@
                     Pour les débusquer, la technique principale est le scan réseau.</br></br>
                     On se place dans un contexte où vous ne vous souciez pas des problèmes de détection. Gardez toujours en tête que des scans peuvent être bruyants sur le réseau, et peuvent être perçus comme un comportement malveillant par d’autres équipes. Dans une démarche d’amélioration de la sécurité de votre environnement, faites en sorte que toutes les équipes réseau et systèmes soient prévenues avant de faire vos tests.
                 </p>
-                <p style="margin-top: 30px; margin-left: 50px; justify-content: start">
-                    A - Nmap
-                </p>
+                <div id="II1A">
+                    <p style="margin-top: 30px; margin-left: 50px; justify-content: start">
+                        A - Nmap
+                    </p>
+                </div>
                 <p style="margin-top: 30px; justify-content: start">
                     Scan ICMP
                 </p>
@@ -166,9 +201,11 @@
                 <p style="margin-top: 20px; justify-content: start">
                     Faites attention avec les scans SYN, car vous ouvrez des connexions, mais vous ne les fermez pas. Certains systèmes risquent alors d’atteindre rapidement le nombre de connexions ouvertes autorisées, et ne répondront plus, ni à vous, ni aux utilisateurs. La plupart des systèmes récents savent gérer ce type de scan, mais de vieux systèmes peuvent être mis à mal. Un scan TCP sera alors plus adapté.
                 </p>
-                <p style="margin-top: 40px; margin-left: 50px; justify-content: start">
-                    B - NBTscan
-                </p>
+                <div id="II1B">
+                    <p style="margin-top: 40px; margin-left: 50px; justify-content: start">
+                        B - NBTscan
+                    </p>
+                </div>
                 <p style="margin-top: 25px; justify-content: start">
                     Scan NetBIOS
                 </p>
@@ -182,9 +219,11 @@
                     Comme le protocole utilisé est propre à Windows, NBTscan ne découvrira la plupart du temps que des machines Windows. Comme il est extrêmement rapide, cela permet de voir où se trouvent les machines dans un très grand réseau, pour ensuite faire des scans plus complets dans ces sous-réseaux découverts.
                     Une fois que vous avez identifié les machines présentes sur le réseau, une recherche de vulnérabilités peut vous permettre de prendre la main sur l’une d’entre elles.
                 </p>
-                <p style="margin-top: 50px; margin-left: 20px; justify-content: start">
-                    2 - Énumérez les vulnérabilités
-                </p>
+                <div id="II2">
+                    <p style="margin-top: 50px; margin-left: 20px; justify-content: start">
+                        2 - Énumérez les vulnérabilités
+                    </p>
+                </div>
                 <p style="margin-top: 20px; justify-content: start">
                     Vous savez maintenant quelles machines sont accessibles sur le réseau. L’objectif est d’aller un peu plus loin, et de découvrir les services proposés par ces machines pour peut-être en exploiter, et prendre la main sur quelques hôtes.</br></br>
                     La première étape cruciale est l’énumération de ports.</br></br>
@@ -199,15 +238,19 @@
                     Chercher des vulnérabilités pour toutes les versions de tous les services peut être assez fastidieux, c'est pourquoi il existe des solutions qui automatisent ce processus. Mais bien comprendre la démarche vous permet de comprendre comment fonctionnent ces outils. Et si un jour vous avez des besoins précis sur une machine, vous n’avez pas besoin de lancer un outil qui va remuer ciel et terre pour récupérer la seule petite information que vous cherchiez.</br></br>
                     Ces solutions automatisées sont les scanners de vulnérabilités. Ils embarquent souvent toutes les étapes dont nous avons parlé. Ils automatisent alors la découverte des hôtes sur le réseau, des services, des versions et des vulnérabilités associées. OpenVAS est un scanner de vulnérabilité gratuit et open source. Dans le monde professionnel, l’outil Nessus est très souvent utilisé (Rapid7 également).
                 </p>
-                <p style="margin-top: 70px; margin-left: 10px; justify-content: start">
-                    <b>III - Identifiez les points d’entrée</b>
-                </p>
+                <div id="III">
+                    <p style="margin-top: 70px; margin-left: 10px; justify-content: start">
+                        <b>III - Identifiez les points d’entrée</b>
+                    </p>
+                </div>
                 <p style="margin-top: 30px;">
                     Vous avez maintenant connaissance des machines présentes sur le parc informatique, des services proposés par ces différentes machines, et potentiellement des vulnérabilités que vous pourrez exploiter pour commencer votre phase de compromission. Pour compléter cette reconnaissance, il est primordial de découvrir l’environnement Active Directory.
                 </p>
-                <p style="margin-top: 30px; margin-left: 20px; justify-content: start">
-                    1 - Identifiez le domaine Active Directory
-                </p>
+                <div id="III1">
+                    <p style="margin-top: 30px; margin-left: 20px; justify-content: start">
+                        1 - Identifiez le domaine Active Directory
+                    </p>
+                </div>
                 <p style="margin-top: 30px;">
                     Active Directory évolue avec le temps, donc déterminer la version utilisée vous permet de connaître les fonctionnalités et mécanismes de sécurité présents dans la version implémentée dans l’entreprise.</br></br>
                     L’utilitaire ldapsearch permet d’effectuer des requêtes vers un serveur LDAP, et dans votre cas, il permet de demander anonymement à un contrôleur de domaine des informations sur le domaine.
@@ -226,9 +269,11 @@
                     Vous connaissez également le nom du contrôleur de domaine que vous avez sollicité grâce à l’entrée dnsHostName, DC01 dans cet exemple.</br></br>
                     Enfin, l’entrée rootDomainNamingContext vous indique le nom du domaine racine de la forêt. Il se peut qu’il soit similaire au domaine que vous auditez, ce qui signifie que vous êtes dans le domaine racine. Il y a de grandes chances pour que ce soit alors le seul domaine de la forêt.
                 </p>
-                <p style="margin-top: 30px; margin-left: 20px; justify-content: start">
-                    2 - Découvrez les serveurs clés
-                </p>
+                <div id="III2">
+                    <p style="margin-top: 30px; margin-left: 20px; justify-content: start">
+                        2 - Découvrez les serveurs clés
+                    </p>
+                </div>
                 <p style="margin-top: 30px;">
                     Toujours dans la phase de découverte d’informations, énumérer les serveurs clés vous sera très utile pour préparer vos attaques. En effet, ces serveurs sont des cibles idéales puisqu’ils contiennent des données sensibles ou confidentielles, et que leur compromission vous permettra de bien avancer dans votre attaque.</br></br>
                     Ainsi, les serveurs que vous allez tenter d’inventorier sont les contrôleurs de domaine, les autorités racine de certification ou encore les serveurs DNS.</br></br>
@@ -251,9 +296,11 @@
                 <p style="margin-top: 30px;">
                     Ces commandes permettent de répertorier ces serveurs structurant dans un Active Directory. Avoir cette liste permet de faciliter les phases d’exploitation car chercher les noms ou les adresses IP des contrôleurs de domaine à chaque fois qu’une commande doit être passée, c’est très chronophage !
                 </p>
-                <p style="margin-top: 30px; margin-left: 20px; justify-content: start">
-                    3 - Découvrez les serveurs d’intérêt
-                </p>
+                <div id="III3">
+                    <p style="margin-top: 30px; margin-left: 20px; justify-content: start">
+                        3 - Découvrez les serveurs d’intérêt
+                    </p>
+                </div>
                 <p style="margin-top: 30px;">
                     Les serveurs clés sont ceux qui permettent à un environnement Active Directory de fonctionner dans de bonnes conditions. Sur ce socle, il peut y avoir beaucoup d’autres services utilisés par les entreprises. Parmi ces services, certains vous intéressent plus particulièrement.</br></br>
                     Ceux que l’on recherche, une fois compromis, permettent très régulièrement de récolter des informations sensibles, ou de pivoter sur d’autres réseaux ou serveurs du domaine.
@@ -284,9 +331,11 @@
                 <p style="margin-top: 20px;">          
                     Enfin, les serveurs SCOM (System Center Operations Manager) permettent de surveiller la performance et les événements de systèmes Windows. Ils permettent notamment de superviser un Active Directory, des bases de données MSSQL, ou encore des serveurs Exchange. De la même manière que les solutions précédentes, un serveur SCOM doit avoir une visibilité sur les serveurs supervisés pour parvenir à ses fins. Il peut également avoir des droits privilégiés sur certains d’entre eux. Lorsque vous voyez un serveur SCOM dans un réseau d’entreprise, il peut être ajouté à votre liste de cibles privilégiées.
                 </p>
-                <p style="margin-top: 30px; margin-left: 20px; justify-content: start">
-                    4 - Cartographiez les partages réseau
-                </p>
+                <div id="III4">
+                    <p style="margin-top: 30px; margin-left: 20px; justify-content: start">
+                        4 - Cartographiez les partages réseau
+                    </p>
+                </div>
                 <p style="margin-top: 30px;">
                     Un autre élément intéressant à cartographier, ce sont les partages réseau. Ils contiennent très souvent des informations extrêmement sensibles pour l’entreprise. C’est très souvent via ces partages que l’ensemble des collaborateurs échangent des documents.</br></br>
                     Vous pouvez y trouver des secrets commerciaux, des informations personnelles, des données précises sur les projets de l’entreprise, ou encore des identifiants d’utilisateurs. Ces données vous seront très utiles pour les phases suivantes de votre plan d’attaque.</br></br>
@@ -296,12 +345,16 @@
                 <p style="margin-top: 30px;">
                     Vous recevez ainsi la liste des partages réseau ouverts, et vous savez si vous y avez accès en lecture et/ou écriture, grâce à la colonne “Permissions”.
                 </p>
-                <p style="margin-top: 70px; margin-left: 10px; justify-content: start">
-                    <b>IV - Identifiez les faiblesses d’Active Directory</b>
-                </p>
-                <p style="margin-top: 30px; margin-left: 20px; justify-content: start">
-                    1 - Identifiez la politique de mot de passe
-                </p>
+                <div id="IV">
+                    <p style="margin-top: 70px; margin-left: 10px; justify-content: start">
+                        <b>IV - Identifiez les faiblesses d’Active Directory</b>
+                    </p>
+                </div>
+                <div id="IV1">
+                    <p style="margin-top: 30px; margin-left: 20px; justify-content: start">
+                        1 - Identifiez la politique de mot de passe
+                    </p>
+                </div>
                 <p style="margin-top: 30px;">
                     Une partie des attaques consiste à voler des crédentiels pour les réutiliser sur d’autres postes ou serveurs. Il se peut que ces identifiants aient été modifiés, et que vos tentatives soient infructueuses. Vous devrez être particulièrement vigilant à la politique de mot de passe mise en place dans l’entreprise. En effet, si vous vous trompez de mot de passe pour un compte, il est possible que vous bloquiez ce compte.</br></br>
                     La politique de mot de passe mise en place dans un environnement Active Directory permet plusieurs choses ; notamment :
@@ -319,9 +372,11 @@
                 <p style="margin-top: 30px;">
                     Cette politique de mot de passe impose un mot de passe d’au moins 7 caractères (MinPasswordLength) et une complexité minimale, via le paramètreComplexityEnabled. Dans un intervalle de 30 minutes (LockoutObservationWindow), le compte sera bloqué après 3 tentatives erronées d’authentification (  LockoutThreshold  ). Il sera automatiquement débloqué après 10 minutes (LockoutDuration). Enfin, le mot de passe doit être modifié au moins tous les 90 jours (MaxPasswordAge).
                 </p>
-                <p style="margin-top: 30px; margin-left: 20px; justify-content: start">
-                    2 - Cartographiez l’Active Directory
-                </p>
+                <div id="IV2">
+                    <p style="margin-top: 30px; margin-left: 20px; justify-content: start">
+                        2 - Cartographiez l’Active Directory
+                    </p>
+                </div>
                 <p style="margin-top: 30px;">
                     La dernière étape que vous devez absolument mener dans la phase de reconnaissance est la cartographie de l’environnement Active Directory lui-même. En effet, il regroupe un très grand nombre d’objets (utilisateurs, ordinateurs, groupes, conteneurs, GPO, etc.), et chacun d’entre eux peut avoir des droits très fins sur les autres.</br></br>
                     Or, par défaut, tous les utilisateurs du domaine peuvent lire l’ensemble des informations présentes dans Active Directory. Ainsi, avec un compte sans privilèges, vous pouvez lister l’ensemble des utilisateurs du domaine, les groupes auxquels ils appartiennent, les droits de ces utilisateurs et groupes, les attributs de toutes ces entités, et bien plus encore. De par cette complexité, il existe beaucoup de données parfois sensibles accessibles à tous, ou de chemins d’attaque cachés.
@@ -422,7 +477,33 @@
             </div>
         </div>
 
+        <?php // Creation du Treeview en JS ?>
+        <script src="../../../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="../../../static/js/tree.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                window.nav = new NavTree("#nav-tree", {
+                searchable: false,
+                showEmptyGroups: true,
+
+                groupOpenIconClass: "fas",
+                groupOpenIcon: "fa-chevron-down",
+
+                groupCloseIconClass: "fas",
+                groupCloseIcon: "fa-chevron-right",
+
+                linkIconClass: "fas",
+                linkIcon: "fa-link",
+
+                iconWidth: "25px",
+
+                searchPlaceholderText: "Search",
+                });
+            });
+        </script>
+
     </body>
+    
     <?php //Inclusion du pied de page ?>
     <?php require_once('../../../footer.php'); ?>
 </html>

@@ -268,10 +268,10 @@
                     Ce n'est pas obligatoirement nécessaire de bombarder aussi fort, mais dans certains cas cela peut s'avérer utile. Plus vous envoyez les paquets vite, moins il y a de chance que la machine Debian01 mette à jour sa table ARP.</br>
                     Attention cependant à ne pas saturer le réseau et vous faire capter par l'administrateur réseau !</br>
                 </p>
-                <p style="margin-top: 40px; justify-content : start">
+                <p style="margin-top: 40px; justify-content : start" id="MITM">
                     <b>Conséquences et objectifs de l'attaque</b>
                 </p>
-                <p style="margin-top: 30px;">
+                <p style="margin-top: 30px;" id="DOS">
                     Une des première conséquence que nous avons observée est que si l'on n'active pas le routage sur la machine qui fait l'attaque, les paquets sont jetés et cela coupe donc toute possibilité de communication.</br>
                     On appelle cela un DOS (Denial of service <=> Déni de service), car on empêche une machine d'accéder ou de fournir un service réseau.</br>
                     Une fois le routage activé, nous pouvons aussi observer le dialogue entre 192.168.0.1 et 192.168.0.3 : Attaque de l'homme au milieu / Man-in-the-middle (MITM)
@@ -331,7 +331,7 @@
                     Les systèmes d'exploitation réagissent différemment. Linux ignore les réponses non sollicitées, mais, en revanche, utilise les réponses aux demandes des autres machines pour mettre à jour son cache. Solaris n'accepte les mises à jour des entrées qu'après un délai d'attente. </br>
                     Dans Microsoft Windows, le comportement du cache ARP peut être configuré par plusieurs entrées de registre sous HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters, ArpCacheLife, ArpCacheMinReferenceLife, ArpUseEtherSNAP, ArpTRSingleRoute, ArpAlwaysSourceRoute, ArpRetryCount.
                 </p>
-                <p style="margin-top: 70px;">
+                <p style="margin-top: 70px;" id="ICMP">
                     <b>Le protocole ICMP</b>
                 </p>
                 <p style="margin-top: 20px;">

@@ -51,7 +51,7 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-sm-8">
-                <h1> 
+                <h1 id="NAT"> 
                     Couche 4 : NAT et le port forwarding
                 </h1>
                 <p style="margin-top: 40px;"> 
@@ -226,16 +226,22 @@
                 <p style="margin-top: 30px;">
                     On se rend alors compte que les informations à droite dans le tableau sont parfaitement identiques.
                     Au retour d'un paquet appartenant à l'une ou l'autre des connexions, la box n'aura aucun moyen de savoir si c'est 192.168.0.1 ou 192.168.0.2 qui doit recevoir la réponse...</br>
-                    Donc le choix du port source comme élément différenciateur n'est pas suffisant. Il va encore falloir trouver une astuce.</br></br></br>
-                    La box entre en jeu : PAT (Port address translation) - SNAT</br></br>
-                    En fait, il y a un moyen simple de s'assurer que toutes les requêtes qui sortiront n'auront jamais le même port source, il suffit que ce soit la box qui le fixe.
-                    Ainsi, la box modifiera à la fois l'adresse IP source ET le port source.
-                    Par rapport à notre cas précédent, ça donnerait la table NAT suivante :
+                    Donc le choix du port source comme élément différenciateur n'est pas suffisant. Il va encore falloir trouver une astuce.
                 </p>
+                <div id="SNAT">
+                    <p style="margin-top: 30px;" id="PAT">
+                        La box entre en jeu : PAT (Port address translation) - SNAT</br></br>
+                        En fait, il y a un moyen simple de s'assurer que toutes les requêtes qui sortiront n'auront jamais le même port source, il suffit que ce soit la box qui le fixe.
+                        Ainsi, la box modifiera à la fois l'adresse IP source ET le port source.
+                        Par rapport à notre cas précédent, ça donnerait la table NAT suivante :
+                    </p>
+                </div>
                 <img src="../../../../../images/nat-table-example-3.png" class="img-fluid mx-auto d-block" style="max-width: 80%; margin-top: 30px;"/>
                 <p style="margin-top: 30px;">
                     On voit maintenant que lorsqu'un paquet reviendra avec comme port destination 2356, la box saura qu'il s'agit d'un paquet à destination de 192.168.0.1 et que, lorsqu'il reviendra avec comme port destination 2357, ce sera pour la machine 192.168.0.2.</br>
-                    Vu que c'est la box elle-même qui choisit le port source, on est sûrs qu'on n'aura jamais deux fois le même port !</br></br>
+                    Vu que c'est la box elle-même qui choisit le port source, on est sûrs qu'on n'aura jamais deux fois le même port !
+                </p>
+                <p style="margin-top: 20px;" id="ISR">
                     La fonction NAT dans un routeur de service intégré (ISR) traduit une adresse IP source interne en adresse IP globale.
                 </p>
                 <p style="margin-top: 50px;">
@@ -276,7 +282,7 @@
                     Pour notre exemple précédent, nous allons dire au routeur que tout paquet arrivant sur son port 80 devra être redirigé vers la machine d'adresse 192.168.0.1 sur le port 80.
                 </p>
                 <img src="../../../../../images/port-forwarding-table.png" class="img-fluid mx-auto d-block" style="max-width: 80%; margin-top: 30px;"/>
-                <img src="../../../../../images/port-forwarding.png" class="img-fluid mx-auto d-block" style="max-width: 60%; margin-top: 30px;"/>
+                <img src="../../../../../images/port-forwarding.png" class="img-fluid mx-auto d-block" style="max-width: 60%; margin-top: 30px;" id="DNAT"/>
                 <p style="margin-top: 20px; font-size: small;">
                     Port forwarding vers notre serveur web - DNAT
                 </p>

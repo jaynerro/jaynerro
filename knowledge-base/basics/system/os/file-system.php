@@ -53,12 +53,12 @@
                 <h1> 
                     Système de fichiers
                 </h1>
-                <p style="margin-top: 30px;"> 
+                <p style="margin-top: 30px;" id="FS"> 
                     Si jamais je branche un disque dur sur mon pc, j'ai beau le voir dans mon BIOS bien branché et bien activé, ce n'est pas pour autant que je vais pouvoir l'utiliser immédiatement. Ceci est du par le fait que le disque va avoir besoin d'une matrice pour fonctionner appellée système de fichiers. Sur du Windows ce sera NTFS. Il s'agit d'une structure qui va permettre de gérer des fichiers mais aussi des autorisations. Sur Linux, ce sera ext3, ext4.  
                 </p>
                 <img src="../../../../images/disk-management.jpeg" class="img-fluid mx-auto d-block" style="max-width: 100%; margin-top: 40px;"/>
 
-                <p style="margin-top: 30px;"> 
+                <p style="margin-top: 30px;" id="FAT"> 
                     Un autre format de système de fichier sont les : FAT32 (clé usb), exFAT (Extended File Allocation Table pour les disques dur externes). Il s'agit de systèmes de fichier simple sans gestion de droit. Sur Windows vous pouvez voir votre gestion de disque dans le Disk Management. 
                 </p>
                 <img src="../../../../images/linux-file-system.png" class="img-fluid mx-auto d-block" style="max-width: 100%; margin-top: 40px;"/>
