@@ -22,7 +22,7 @@
 
 
     <?php // Titre de l'onget de la page ?>
-    <title>Modèle OSI - Couche 5 à 7 : Le service web</title>
+    <title>Modèle Client-Serveur : Le service web</title>
     <link rel="icon" type="image/png" href="../../../../images/jaynerro-icon.png">
 
   </head>

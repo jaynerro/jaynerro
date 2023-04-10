@@ -251,7 +251,7 @@
                         </li>
 
                         <li id="liFTPServer">
-                          <a href="#">Serveur FTP</a>
+                          <a href="/knowledge-base/basics/system/client-server-model/ftp-server.php">Serveur FTP</a>
                         </li>
                       
                       </ul>
@@ -449,29 +449,19 @@
             </li>
 
             <li id="liEH" style="margin-top: 20px;">
-              <a>
-                Ethical Hacking
-              </a>
+              <a>Ethical Hacking</a>
               <ul>
                 <li id="liActiveDirectoryEH">
-                  <a>
-                    Active Directory
-                  </a>
+                  <a>Active Directory</a>
                   <ul>
                     <li id="liIdentifyWeakness">
-                      <a href="/knowledge-base/ethical-hacking/active-directory/identify-weaknesses.php">
-                        Identifiez les faiblesses et les objectifs d’attaque
-                      </a>
+                      <a href="/knowledge-base/ethical-hacking/active-directory/identify-weaknesses.php">Identifiez les faiblesses et les objectifs d’attaque</a>
                     </li>
                     <li id="liExploitAttackPaths">
-                      <a href="/knowledge-base/ethical-hacking/active-directory/exploit-attack-paths.php">
-                        Exploitez les chemins d’attaque
-                      </a>
+                      <a href="/knowledge-base/ethical-hacking/active-directory/exploit-attack-paths.php">Exploitez les chemins d’attaque</a>
                     </li>
                     <li id="liProtectAndMonitor">
-                      <a href="#">
-                        Protégez et surveillez votre environnement
-                      </a>
+                      <a href="/knowledge-base/ethical-hacking/active-directory/protect-and-monitor.php">Protégez et surveillez votre environnement</a>
                     </li>
                   </ul>
                 </li>
