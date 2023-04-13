@@ -258,11 +258,11 @@
                     </li>
 
                     <li id="liVirtualization">
-                      <a href="#">Virtualisation</a>
+                      <a href="/knowledge-base/basics/system/virtualization.php">Virtualisation</a>
                     </li>
 
                     <li id="liContainer">
-                      <a href="#">Conteneur</a>
+                      <a href="/knowledge-base/basics/system/containerization.php">Conteneurisation</a>
                     </li>
 
                     <li id="liTools">

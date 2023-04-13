@@ -55,10 +55,11 @@
                 <h1> 
                     Serveur FTP
                 </h1>
+                <img src="../../../../images/ftp.png" class="img-fluid mx-auto d-block" style="max-width: 25%; margin-top: 30px;"/>
                 <p style="margin-top: 30px;">
                     Le serveur FTP ou Hébergeur FTP (En anglais « FTP host ») est un espace de stockage. Il s’avère essentiel afin de mettre en ligne les fichiers de vos sites internet ou applications.
                 </p>
-                <p style="margin-top: 30px; justify-content: start">
+                <p style="margin-top: 30px; justify-content: start" id="FTP">
                     <b>Définition et usages du protocole FTP</b>
                 </p>
                 <p style="margin-top: 20px;">
@@ -82,9 +83,13 @@
                 <p style="margin-top: 20px;">
                     Protocole FTP</br></br>
                     Le protocole FTP est la méthode standard de transmission des données entre un client FTP et un serveur FTP. Avec lui, il est possible de réguler les accès des utilisateurs avec un identifiant et un mot de passe.</br></br>
-                    Cependant, si la connexion au serveur est sécurisée, la transmission des données, elle, ne l’est pas. En effet, les informations en transit via les standards FTP ne sont pas chiffrées. Elles peuvent donc être interceptées par des tiers malintentionnés. Cette faille explique le développement de deux nouveaux protocoles sécurisés : le FTPS et le SFTP.</br></br>
+                    Cependant, si la connexion au serveur est sécurisée, la transmission des données, elle, ne l’est pas. En effet, les informations en transit via les standards FTP ne sont pas chiffrées. Elles peuvent donc être interceptées par des tiers malintentionnés. Cette faille explique le développement de deux nouveaux protocoles sécurisés : le FTPS et le SFTP.
+                </p>
+                <p style="margin-top: 20px;" id="FTPS">
                     Protocole FTPS</br></br>
-                    Le FTPS est la déclinaison sécurisée du protocole FTP. Il apporte un niveau de sûreté supplémentaire à votre serveur FTP et donc, in fine, à votre site web. Grâce au chiffrement SSL/TLS, les données (fichiers, logs…) qui transitent entre le client et le serveur FTP sont protégées.</br></br>
+                    Le FTPS est la déclinaison sécurisée du protocole FTP. Il apporte un niveau de sûreté supplémentaire à votre serveur FTP et donc, in fine, à votre site web. Grâce au chiffrement SSL/TLS, les données (fichiers, logs…) qui transitent entre le client et le serveur FTP sont protégées.
+                </p>
+                <p style="margin-top: 20px;" id="SFTP">
                     Protocole SFTP</br></br>
                     SFTP signifie « SSH File Transfer Protocol » ou « Secure File Transfer Protocol ». Comme le FTPS, le protocole SFTP vise à sécuriser le flux de données transmis entre le client FTP et le serveur FTP. Pour cela, il s’appuie lui aussi sur un algorithme de chiffrement, le tunnel SSH sécurisé, qui protège les informations. Il est également possible de renforcer la sécurité de votre espace FTP, en mettant en place un système d’authentification avec identifiant et mot de passe : la clé SSH.</br></br>
                     Durant tout le processus de transmission des données via le tunnel SSH sécurisé et la synchronisation des dossiers, les informations restent illisibles. Quant aux clés SSH, elles empêchent tout accès frauduleux aux fichiers du ou des sites web hébergés sur le serveur FTP.</br></br>

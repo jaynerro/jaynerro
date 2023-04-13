@@ -13,8 +13,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <?php // Bootstrap CSS ?>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../../../../static/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../../../static/vendor/fontawesome/all.min.css" />
+    <link rel="stylesheet" href="../../../../../static/css/tree.css">
 
     <?php // Feuille de style ?>
     <link rel="stylesheet" href="../../../../../static/css/style.css">
@@ -57,10 +58,41 @@
                     L’annuaire Active Directory et les domaines
                 </h1>
                 <img src="../../../../../images/ad.png" class="img-fluid mx-auto d-block" style="max-width: 50%; margin-top: 50px;"/>
-                <p style="margin-top: 40px; margin-left: 10px; justify-content: start">
+                <ul id="nav-tree">
+                    <li id="liSummary" style="margin-top: 20px;">
+                        <a><b>Sommaire</b></a>
+                        <ul>
+                            <a href="#I" style="margin-top: 5px; margin-left: 20px;">I - Un annuaire Active Directory, pourquoi ?</a>
+                                <a href="#I1" style="margin-top: 10px; margin-left: 40px;">1 - L'Active Directory</a>
+                                <a href="#I2" style="margin-top: 10px; margin-left: 40px;">2 - Les intérêts d’un annuaire</a>
+                                <a href="#I3" style="margin-top: 10px; margin-left: 40px;">3 - La structure de l’Active Directory</a>
+                                    <a href="#I3a" style="margin-top: 10px; margin-left: 60px;">a. Les classes et les attributs</a>
+                                    <a href="#I3b" style="margin-top: 10px; margin-left: 60px;">b. Le schéma</a>
+                                    <a href="#I3c" style="margin-top: 10px; margin-left: 60px;">c. Les partitions d’annuaire</a>
+                            <a href="#II" style="margin-top: 15px; margin-left: 20px;">II - Contrôleur de domaine et domaine</a>
+                                <a href="#II1" style="margin-top: 10px; margin-left: 40px;">1 - Du groupe de travail au domaine</a>
+                                    <a href="#II1a" style="margin-top: 10px; margin-left: 60px;">a. Modèle « Groupe de travail »</a>
+                                    <a href="#II1b" style="margin-top: 10px; margin-left: 60px;">b. Modèle « Domaine »</a>
+                                <a href="#II2" style="margin-top: 10px; margin-left: 40px;">2 - Les contrôleurs de domaine</a>
+                                    <a href="#II2a" style="margin-top: 10px; margin-left: 60px;">a. Qu’est-ce qu’un contrôleur de domaine ?</a>
+                                    <a href="#II2b" style="margin-top: 10px; margin-left: 60px;">b. Le fichier de base de données NTDS.dit</a>
+                                    <a href="#II2c" style="margin-top: 10px; margin-left: 60px;">c. La réplication des contrôleurs de domaine</a>
+                            <a href="#III" style="margin-top: 15px; margin-left: 20px;">III - Domaine, arbre et forêt</a>
+                                <a href="#III1" style="margin-top: 10px; margin-left: 40px;">1 - Symbolisation d’un domaine</a>
+                                <a href="#III2" style="margin-top: 10px; margin-left: 40px;">2 - La notion d’arbre</a>
+                                <a href="#III3" style="margin-top: 10px; margin-left: 40px;">3 - La notion de forêt</a>
+                                <a href="#III4" style="margin-top: 10px; margin-left: 40px;">4 - Le niveau fonctionnel</a>
+                                    <a href="#III4a" style="margin-top: 10px; margin-left: 60px;">a. Un niveau fonctionnel, c’est quoi ?</a>
+                                    <a href="#III4b" style="margin-top: 10px; margin-left: 60px;">b. Pourquoi augmenter le niveau fonctionnel ?</a>
+                                    <a href="#III4c" style="margin-top: 10px; margin-left: 60px;">c. Quel est la portée d’un niveau fonctionnel ?</a>
+                                <a href="#III5" style="margin-top: 10px; margin-left: 40px;">5 - Domaine, arbre, forêt : conclusion</a>
+                        </ul>
+                    </li>
+                </ul>
+                <p style="margin-top: 40px; margin-left: 10px; justify-content: start" id="I">
                     <b>I - Un annuaire Active Directory, pourquoi ?</b>
                 </p>
-                <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
+                <p style="margin-top: 40px; margin-left: 20px; justify-content: start" id="I1">
                     1 - L'Active Directory
                 </p>
                 <div id="AD">
@@ -69,7 +101,7 @@
                         Depuis Windows Server 2000, le service d’annuaire Active Directory ne cesse d’évoluer et de prendre de l’importance au sein des organisations dans lesquelles il est mis en place. De ce fait, il est notamment utilisé pour le déploiement de stratégie de groupe, la distribution des logiciels ou encore l’installation des mises à jour Windows.
                     </p>
                 </div>
-                <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
+                <p style="margin-top: 40px; margin-left: 20px; justify-content: start" id="I2">
                     2 - Les intérêts d’un annuaire
                 </p>
                 <p style="margin-top: 30px;">
@@ -82,10 +114,10 @@
                     <li>Identifier les objets sur le réseau : chaque objet enregistré dans l’annuaire est unique, ce qui permet d’identifier facilement un objet sur le réseau et de le retrouver ensuite dans l’annuaire.</br></br></li>
                     <li>Référencer les utilisateurs et les ordinateurs : l’annuaire s’apparente à une énorme base de données qui référence les utilisateurs, les groupes et les ordinateurs d’une entreprise. On s’appuie sur cette base de données pour réaliser de nombreuses opérations : authentification, identification, stratégie de groupe, déploiement de logiciels, etc.</li>
                 </ul>      
-                <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
+                <p style="margin-top: 40px; margin-left: 20px; justify-content: start" id="I3">
                     3 - La structure de l’Active Directory
                 </p>
-                <p style="margin-top: 30px; margin-left: 50px; justify-content: start">
+                <p style="margin-top: 30px; margin-left: 50px; justify-content: start" id="I3a">
                     a. Les classes et les attributs
                 </p>
                 <p style="margin-top: 30px;">
@@ -94,7 +126,7 @@
                     Certains objets peuvent être des containers d’autres objets, ainsi, les groupes permettront de contenir plusieurs objets de types utilisateurs afin de les regrouper et de simplifier l’administration. Par ailleurs, les unités d’organisation sont des containers d’objets afin de faciliter l’organisation de l’annuaire et permettre une organisation avec plusieurs niveaux.</br></br>
                     Sans les unités d’organisations, l’annuaire ne pourrait pas être trié correctement et l’administration serait moins efficace. Comparez les unités d’organisations à des dossiers qui permettent de ranger les objets à l’intérieur, si cela est plus compréhensible pour vous.
                 </p>
-                <p style="margin-top: 30px; margin-left: 50px; justify-content: start">
+                <p style="margin-top: 30px; margin-left: 50px; justify-content: start" id="I3b">
                     b. Le schéma
                 </p>
                 <p style="margin-top: 30px;">
@@ -107,7 +139,7 @@
                 <p style="margin-top: 20px; font-size: small;">
                     Console pour gérer le schéma de l'annuaire Active Directory
                 </p>
-                <p style="margin-top: 30px; margin-left: 50px; justify-content: start">
+                <p style="margin-top: 30px; margin-left: 50px; justify-content: start" id="I3c">
                     c. Les partitions d’annuaire
                 </p>
                 <p style="margin-top: 30px;">
@@ -121,16 +153,16 @@
                 <p style="margin-top: 30px;">
                     Certaines notions évoquées ici peuvent être inconnues à vos yeux (forêts, GPO,…), rassurez-vous ce cours est là pour cela et nous aborderons ces points au sein des prochains modules et chapitres. Dans un premier temps, nous allons enchaîner sur la notion de domaine et de contrôleur de domaine.
                 </p>
-                <p style="margin-top: 60px; margin-left: 10px; justify-content: start">
+                <p style="margin-top: 60px; margin-left: 10px; justify-content: start" id="II">
                     <b>II - Contrôleur de domaine et domaine</b>
                 </p>
-                <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
+                <p style="margin-top: 40px; margin-left: 20px; justify-content: start" id="II1">
                     1 - Du groupe de travail au domaine
                 </p>
                 <p style="margin-top: 30px;">
                     Pour continuer l’apprentissage de l’Active Directory, il est intéressant de voir ce que représente le passage du mode « Groupe de travail » au mode « Domaine ». Pour rappel, toutes les machines sous Windows sont par défaut dans un groupe de travail nommé « WORKGROUP », et qui permet de mettre en relation des machines d’un même groupe de travail, notamment pour le partage de fichiers, mais il n’y a pas de notions d’annuaire, ni de centralisation avec ce mode de fonctionnement.
                 </p>
-                <p style="margin-top: 30px; margin-left: 50px; justify-content: start">
+                <p style="margin-top: 30px; margin-left: 50px; justify-content: start" id="II1a">
                     a. Modèle « Groupe de travail »
                 </p>
                 <ul style="font-size: large; text-align: justify; color: white;">
@@ -139,7 +171,7 @@
                     <li>Création des comptes utilisateurs en nombre, car chaque utilisateur doit disposer d’un compte sur chaque machine, les comptes étant propres à chaque machine.</li>
                     <li>Simplicité de mise en œuvre et ne nécessite pas de compétences particulières en comparaison à la gestion d’un annuaire Active Directory.</li>
                 </ul>
-                <p style="margin-top: 30px; margin-left: 50px; justify-content: start">
+                <p style="margin-top: 30px; margin-left: 50px; justify-content: start" id="II1b">
                     b. Modèle « Domaine »
                 </p>
                 <ul style="font-size: large; text-align: justify; color: white;">
@@ -149,10 +181,10 @@
                     <li>Chaque contrôleur de domaine contient une copie de l’annuaire, qui est maintenue à jour et qui permet d’assurer la disponibilité du service et des données qu’il contient. Les contrôleurs de domaine se répliquent entre eux pour assurer cela.</li>
                     <li>Administration et gestion de la sécurité centralisée.</li>
                 </ul>
-                <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
+                <p style="margin-top: 40px; margin-left: 20px; justify-content: start" id="II2">
                     2 - Les contrôleurs de domaine
                 </p>
-                <p style="margin-top: 30px; margin-left: 50px; justify-content: start">
+                <p style="margin-top: 30px; margin-left: 50px; justify-content: start" id="II2a">
                     a. Qu’est-ce qu’un contrôleur de domaine ?
                 </p>
                 <p style="margin-top: 30px;">
@@ -160,16 +192,20 @@
                     Un contrôleur de domaine est indispensable au bon fonctionnement du domaine, si l’on éteint le contrôleur de domaine ou qu’il est corrompu, le domaine devient inutilisable.</br></br>
                     De plus, lorsque vous créez le premier contrôleur de domaine dans votre organisation, vous créez également le premier domaine, la première forêt, ainsi que le premier site. Nous aborderons la notion de forêt et de site dans un autre chapitre. Gardez à l’esprit qu’un contrôleur de domaine est un serveur qui contient une copie de l’annuaire Active Directory.
                 </p>
-                <p style="margin-top: 30px; margin-left: 50px; justify-content: start" id="NTDS">
-                    b. Le fichier de base de données NTDS.dit
-                </p>
+                <div id="II2b">
+                    <p style="margin-top: 30px; margin-left: 50px; justify-content: start" id="NTDS">
+                        b. Le fichier de base de données NTDS.dit
+                    </p>
+                </div>
                 <p style="margin-top: 30px;">
                     Sur chaque contrôleur de domaine, on trouve une copie de la base de données de l’annuaire Active Directory. Cette copie est symbolisée par un fichier « NTDS.dit » (NT Directory Services) qui contient l’ensemble des données de l’annuaire.</br></br>
                     À noter qu’il est possible de réaliser des captures instantanées de ce fichier afin de le consulter en mode « hors ligne » avec des outils spécifiques.
                 </p>
-                <p style="margin-top: 30px; margin-left: 50px; justify-content: start" id="DFSR">
-                    c. La réplication des contrôleurs de domaine
-                </p>
+                <div id="II2c">
+                    <p style="margin-top: 30px; margin-left: 50px; justify-content: start" id="DFSR">
+                        c. La réplication des contrôleurs de domaine
+                    </p>
+                </div>
                 <p style="margin-top: 30px;">
                     De nos jours, il est inévitable d’avoir au minimum deux contrôleurs de domaine pour assurer la disponibilité et la continuité de service des services d’annuaire. De plus, cela permet d’assurer la pérennité de la base d’annuaire qui est très précieuse. À partir du moment où une entreprise crée un domaine, même si ce domaine est unique, il est important de mettre en place au minimum deux contrôleurs de domaine.</br></br>
                     Sur les anciennes versions de Windows Server, notamment Windows Server 2000 et Windows Server 2003, le mécanisme FRS (File Replication Service) était utilisé pour la réplication. Depuis Windows Server 2008, FRS est mis de côté pour laisser la place à DFSR (Distributed File System Replication), qui est plus fiable et plus performant.</br></br>
@@ -185,10 +221,10 @@
                 <p style="margin-top: 20px; font-size: small;">
                     Structure du dossier SYSVOL
                 </p>
-                <p style="margin-top: 60px; margin-left: 10px; justify-content: start">
+                <p style="margin-top: 60px; margin-left: 10px; justify-content: start" id="III">
                     <b>III - Domaine, arbre et forêt</b>
                 </p>
-                <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
+                <p style="margin-top: 40px; margin-left: 20px; justify-content: start" id="III1">
                     1 - Symbolisation d’un domaine
                 </p>
                 <p style="margin-top: 30px;">
@@ -204,7 +240,7 @@
                 <p style="margin-top: 30px;">
                     Sur le cas ci-dessus, les domaines « paris.jaynerro.local » et « londres.jaynerro.local » sont des sous-domaines du domaine racine « jaynerro.local ». On appel généralement ces domaines, « des domaines enfants ».
                 </p>
-                <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
+                <p style="margin-top: 40px; margin-left: 20px; justify-content: start" id="III2">
                     2 - La notion d’arbre
                 </p>
                 <p style="margin-top: 30px;">
@@ -216,7 +252,7 @@
                 <p style="margin-top: 30px;">
                     Les domaines d’un même arbre partagent un espace de nom contigu et hiérarchique, comme c’est le cas avec l’exemple du domaine « jaynerro.local ».
                 </p>
-                <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
+                <p style="margin-top: 40px; margin-left: 20px; justify-content: start" id="III3">
                     3 - La notion de forêt
                 </p>
                 <p style="margin-top: 30px;">
@@ -244,22 +280,22 @@
                     <li>Création de relations entre les différents domaines de la forêt</li>
                     <li>Simplification de l’administration et flexibilité. Un utilisateur du domaine « paris.jaynerro.local » pourra accéder à des ressources situées dans le domaine « paris.cyber.local » ou se connecter sur une machine du domaine « quimper.cyber.local », si les autorisations le permettent.</li>
                 </ul>
-                <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
-                    D - Le niveau fonctionnel
+                <p style="margin-top: 40px; margin-left: 20px; justify-content: start" id="III4">
+                    4 - Le niveau fonctionnel
                 </p>
                 <p style="margin-top: 30px;">
                     Le niveau fonctionnel est une notion également à connaître lors de la mise en œuvre d’une infrastructure Active Directory.</br></br>
                     À la création d’un domaine, un niveau fonctionnel est défini et il correspond généralement à la version du système d’exploitation depuis lequel on crée le domaine. Par exemple, si l’on effectue la création du domaine depuis un serveur sous Windows Server 2012, le niveau fonctionnel sera « Windows Server 2012 ».</br></br>
                     Dans un environnement existant, on est souvent amené à faire évoluer notre infrastructure, notamment les systèmes d’exploitation, ce qui implique le déclenchement d’un processus de migration. Une étape incontournable lors de la migration d’un Active Directory vers une version plus récente et le changement du niveau fonctionnel. Ainsi, il est important de savoir à quoi il correspond et les conséquences de l’augmentation du niveau.
                 </p>    
-                <p style="margin-top: 30px; margin-left: 50px; justify-content: start">
+                <p style="margin-top: 30px; margin-left: 50px; justify-content: start" id="III4a">
                     a. Un niveau fonctionnel, c’est quoi ?
                 </p>
                 <p style="margin-top: 30px;">
                     Un niveau fonctionnel détermine les fonctionnalités des services de domaine Active Directory qui sont disponibles dans un domaine ou une forêt.</br></br>
                     Le niveau fonctionnel permet de limiter les fonctionnalités de l’annuaire au niveau actuel afin d’assurer la compatibilité avec les plus anciennes versions des contrôleurs de domaine.
                 </p>    
-                <p style="margin-top: 30px; margin-left: 50px; justify-content: start">
+                <p style="margin-top: 30px; margin-left: 50px; justify-content: start" id="III4b">
                     b. Pourquoi augmenter le niveau fonctionnel ?
                 </p>
                 <p style="margin-top: 30px;">
@@ -277,14 +313,14 @@
                 <p style="margin-top: 30px;">
                     Comme note de fin, je précise qu’une fois le niveau fonctionnel défini, il est impossible de passer à un niveau inférieur. Par exemple, on peut passer du niveau « Windows Server 2003 » à « Windows Server 2008 », mais pas l’inverse. Il existe toutefois une exception, il est possible rétrograder le niveau fonctionnel de Windows Server 2008 R2 à Windows Server 2008.
                 </p>
-                <p style="margin-top: 30px; margin-left: 50px; justify-content: start">
+                <p style="margin-top: 30px; margin-left: 50px; justify-content: start" id="III4c">
                     c. Quel est la portée d’un niveau fonctionnel ?
                 </p>
                 <p style="margin-top: 30px;">       
                     Il y a deux niveaux fonctionnels différents, un qui s’applique au niveau du domaine et un autre qui s’applique au niveau de la forêt. Le plus critique étant le niveau fonctionnel de la forêt, car il doit correspondre au niveau minimum actuel sur l’ensemble des domaines de la forêt. De ce fait, il est obligatoire d’augmenter le niveau fonctionnel des domaines avant de pouvoir augmenter le niveau fonctionnel de la forêt.
                 </p>
-                <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
-                    E - Domaine, arbre, forêt : conclusion
+                <p style="margin-top: 40px; margin-left: 20px; justify-content: start" id="III5">
+                    5 - Domaine, arbre, forêt : conclusion
                 </p>
                 <p style="margin-top: 30px;">
                     Il faut garder à l’esprit qu’une forêt est un ensemble d’arbres, qu’un arbre est constitué d’une racine et potentiellement de branches qui sont représentées par des domaines et des sous-domaines.</br></br>
@@ -321,6 +357,31 @@
                 
             </div>
         </div>
+
+        <?php // Creation du Treeview en JS ?>
+        <script src="../../../../../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="../../../../../static/js/tree.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                window.nav = new NavTree("#nav-tree", {
+                searchable: false,
+                showEmptyGroups: true,
+
+                groupOpenIconClass: "fas",
+                groupOpenIcon: "fa-chevron-down",
+
+                groupCloseIconClass: "fas",
+                groupCloseIcon: "fa-chevron-right",
+
+                linkIconClass: "fas",
+                linkIcon: "fa-link",
+
+                iconWidth: "25px",
+
+                searchPlaceholderText: "Search",
+                });
+            });
+        </script>
 
     </body>
     <?php //Inclusion du pied de page ?>

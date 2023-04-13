@@ -13,8 +13,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <?php // Bootstrap CSS ?>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../../../../static/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../../../static/vendor/fontawesome/all.min.css" />
+    <link rel="stylesheet" href="../../../../../static/css/tree.css">
 
     <?php // Feuille de style ?>
     <link rel="stylesheet" href="../../../../../static/css/style.css">
@@ -57,7 +58,46 @@
                     Active Directory, à plusieurs c’est mieux !
                 </h1>
                 <img src="../../../../../images/ad.png" class="img-fluid mx-auto d-block" style="max-width: 50%; margin-top: 50px;"/>
-                <p style="margin-top: 40px; margin-left: 10px; justify-content: start">
+                <ul id="nav-tree">
+                    <li id="liSummary" style="margin-top: 20px;">
+                        <a><b>Sommaire</b></a>
+                        <ul>
+                            <a href="#I" style="margin-top: 5px; margin-left: 20px;">I - Les différents rôles : ADDS, ADFS, ADCS…</a>
+                                <a href="#I1" style="margin-top: 10px; margin-left: 40px;">1 - ADDS (Active Directory Domain Services)</a>
+                                <a href="#I2" style="margin-top: 10px; margin-left: 40px;">2 - ADCS (Active Directory Certificate Services)</a>
+                                <a href="#I3" style="margin-top: 10px; margin-left: 40px;">3 - ADFS (Active Directory Federation Services)</a>
+                                <a href="#I4" style="margin-top: 10px; margin-left: 40px;">4 - ADRMS (Active Directory Rights Management Services)</a>
+                                <a href="#I5" style="margin-top: 10px; margin-left: 40px;">5 - ADLDS (Active Directory Lightweight Directory Services)</a>
+                            <a href="#II" style="margin-top: 15px; margin-left: 20px;">II - A la découverte du Catalogue Global</a>
+                                <a href="#II1" style="margin-top: 10px; margin-left: 40px;">1 - Un catalogue global, c’est quoi ? Pour quoi ?</a>
+                                <a href="#II2" style="margin-top: 10px; margin-left: 40px;">2 - Qui est catalogue global ? Est-il tout seul ?</a>
+                                    <a href="#II2a" style="margin-top: 10px; margin-left: 50px;">a. Cas d’une forêt mono-domaine</a>
+                                    <a href="#II2b" style="margin-top: 10px; margin-left: 50px;">b. Cas d’une forêt multi-domaines</a>
+                                <a href="#II3" style="margin-top: 10px; margin-left: 40px;">3 - Les quatre fonctions clés du catalogue global</a>
+                            <a href="#III" style="margin-top: 15px; margin-left: 20px;">III - Les cinq rôles FSMO</a>
+                                <a href="#III1" style="margin-top: 10px; margin-left: 40px;">1 - Les rôles FSMO, ça sert à quoi ?</a>
+                                <a href="#III2" style="margin-top: 10px; margin-left: 40px;">2 - Rôle « Maître d’attribution des noms de domaine »</a>
+                                <a href="#III3" style="margin-top: 10px; margin-left: 40px;">3 - Rôle « Contrôleur de schéma »</a>
+                                <a href="#III4" style="margin-top: 10px; margin-left: 40px;">4 - Rôle « Maître RID »</a>
+                                <a href="#III5" style="margin-top: 10px; margin-left: 40px;">5 - Rôle « Maître d’infrastructure »</a>
+                                <a href="#III6" style="margin-top: 10px; margin-left: 40px;">6 - Rôle « Émulateur PDC »</a>
+                                <a href="#III7" style="margin-top: 10px; margin-left: 40px;">7 - La gestion des maîtres d’opération</a>
+                            <a href="#IV" style="margin-top: 15px; margin-left: 20px;">IV - Les relations d’approbations</a>
+                                <a href="#IV1" style="margin-top: 10px; margin-left: 40px;">1 - Cas d’utilisation des relations d’approbations</a>
+                                <a href="#IV2" style="margin-top: 10px; margin-left: 40px;">2 - Direction et transitivité</a>
+                                <a href="#IV3" style="margin-top: 10px; margin-left: 40px;">3 - Les approbations prédéfinies</a>
+                                <a href="#IV4" style="margin-top: 10px; margin-left: 40px;">4 - Les approbations externes</a>
+                                <a href="#IV5" style="margin-top: 10px; margin-left: 40px;">5 - Conclusion</a>
+                            <a href="#V" style="margin-top: 15px; margin-left: 20px;">V - Le partage SYSVOL et la réplication</a>
+                                <a href="#V1" style="margin-top: 10px; margin-left: 40px;">1 - Le partage SYSVOL</a>
+                                    <a href="#V1a" style="margin-top: 10px; margin-left: 60px;">a. Introduction à SYSVOL</a>
+                                    <a href="#V1b" style="margin-top: 10px; margin-left: 60px;">b. Réplication de SYSVOL</a>
+                                    <a href="#V1c" style="margin-top: 10px; margin-left: 60px;">c. La structure de SYSVOL</a>
+                                <a href="#V2" style="margin-top: 10px; margin-left: 40px;">2 - Réplication : Quoi ? Quand ? Comment ?</a>
+                        </ul>
+                    </li>
+                </ul>
+                <p style="margin-top: 40px; margin-left: 10px; justify-content: start" id="I">
                     <b>I - Les différents rôles : ADDS, ADFS, ADCS…</b>
                 </p>
                 <p style="margin-top: 30px;">
@@ -65,7 +105,7 @@
                     Ces cinq rôles permettent de répondre à des besoins différents, mais ils sont capables de fonctionner ensemble et de se « répartir les tâches », car ils sont conçus pour assumer un rôle bien spécifique.
                 </p>
                 <div id="ADDS">
-                    <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
+                    <p style="margin-top: 40px; margin-left: 20px; justify-content: start" id="I1">
                         1 - ADDS (Active Directory Domain Services)
                     </p>
                 </div>
@@ -77,14 +117,14 @@
                 <p style="margin-top: 20px; font-size: small;">
                     Console de gestion de l'Active Directory
                 </p>
-                <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
+                <p style="margin-top: 40px; margin-left: 20px; justify-content: start" id="I2">
                     2 - ADCS (Active Directory Certificate Services)
                 </p>
                 <p style="margin-top: 30px;">
                     Ce rôle apporte une couche sécurité supplémentaire au sein du système d’information puisqu’il permet de gérer et de créer des clés ainsi que des certificats. Ce rôle est compatible avec de nombreuses applications, ce qui offre un intérêt supplémentaire à l’utiliser pour augmenter la sécurité de manière générale.</br></br>
                     ADCS est composé de différents modules qui permettent d’effectuer des demandes de certificats de diverses façons : par le web, par le réseau, etc.
                 </p>
-                <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
+                <p style="margin-top: 40px; margin-left: 20px; justify-content: start" id="I3">
                     3 - ADFS (Active Directory Federation Services)
                 </p>
                 <p style="margin-top: 30px;">
@@ -101,7 +141,7 @@
                 <p style="margin-top: 30px;">
                     Bien sûr, ce rôle doit s’appuyer sur un annuaire Active Directory pour vérifier l’identité de l’utilisateur qui tente de se connecter.
                 </p>
-                <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
+                <p style="margin-top: 40px; margin-left: 20px; justify-content: start" id="I4">
                     4 - ADRMS (Active Directory Rights Management Services)
                 </p>
                 <p style="margin-top: 30px;">
@@ -109,7 +149,7 @@
                     ADRMS est une application « client – serveur », cela implique qu’ADRMS s’intègre dans les applications pour créer de l’interaction. De ce fait, les applications doivent être compatibles, ce qui est le cas des versions de Microsoft Office Entreprise, Professional Plus et Integral.</br></br>
                     Finalement, ADRMS augmente la sécurité de vos fichiers au niveau des accès, ce qui permet de mieux protéger l’information.
                 </p>
-                <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
+                <p style="margin-top: 40px; margin-left: 20px; justify-content: start" id="I5">
                     5 - ADLDS (Active Directory Lightweight Directory Services)
                 </p>
                 <p style="margin-top: 30px;">
@@ -117,10 +157,10 @@
                     L’intérêt est de pouvoir créer un annuaire autonome qui permettra de créer une base d’utilisateurs, pouvant être utilisé dans le cadre d’un processus d’authentification auprès de l’annuaire LDAP. Par contre, ces utilisateurs ne peuvent pas être utilisés pour mettre en place du contrôle d’accès, car il n’y a pas cette notion de sécurité due à l’absence de contrôleur de domaine.</br></br>
                     ADLDS peut être utilisé pour créer un magasin d’authentification avec une base d’utilisateurs (comme des clients ou des prestataires externes) pour accéder à un portail web extranet, par exemple.</br></br>
                 </p>
-                <p style="margin-top: 60px; margin-left: 10px; justify-content: start">
+                <p style="margin-top: 60px; margin-left: 10px; justify-content: start" id="II">
                     <b>II - A la découverte du Catalogue Global</b>
                 </p>
-                <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
+                <p style="margin-top: 40px; margin-left: 20px; justify-content: start" id="II1">
                     1 - Un catalogue global, c’est quoi ? Pour quoi ?
                 </p>
                 <p style="margin-top: 30px;">
@@ -148,7 +188,7 @@
                     Les attributs du schéma qui doivent être répliqués sont identifiés par la valeur « Partial Attribute Set » définie dans l’Active Directory.</br></br>
                     Microsoft définit par défaut cette politique de réplication de façon à prendre les attributs les plus utilisés dans une recherche, mais elle peut être personnalisée.
                 </p>
-                <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
+                <p style="margin-top: 40px; margin-left: 20px; justify-content: start" id="II2">
                     2 - Qui est catalogue global ? Est-il tout seul ?
                 </p>
                 <p style="margin-top: 30px;">
@@ -159,13 +199,13 @@
                 <p style="margin-top: 20px; font-size: small;">
                     Affichage de la propriété "Catalogue Global"
                 </p>
-                <p style="margin-top: 30px; margin-left: 50px; justify-content: start">
+                <p style="margin-top: 30px; margin-left: 50px; justify-content: start" id="II2a">
                     a. Cas d’une forêt mono-domaine
                 </p>
                 <p style="margin-top: 30px;">
                     Il est recommandé d’activer le rôle de catalogue global sur l’ensemble des contrôleurs de domaine du domaine. En effet, l’impact sera faible sur les performances systèmes dans ce type de configuration, mais ça permettra d’assurer la redondance du service. Le catalogue global est essentiel à la localisation des objets, et c’est encore plus vrai lorsqu’il y a plusieurs domaines, mais aussi au bon fonctionnement de certaines applications.
                 </p>
-                <p style="margin-top: 30px; margin-left: 50px; justify-content: start">
+                <p style="margin-top: 30px; margin-left: 50px; justify-content: start" id="II2b">
                     b. Cas d’une forêt multi-domaines
                 </p>
                 <p style="margin-top: 30px;">
@@ -176,7 +216,7 @@
                     Cas spécifique : certaines applications sont gourmandes et communiquent beaucoup avec le catalogue global, par exemple Microsoft Exchange. Dans ce cas-là, positionnez un catalogue global proche pour avoir de bonnes performances.</br></br>
                     En résumé, il faut positionner avec stratégie les contrôleurs de domaine « catalogue global » mais vous pouvez aussi opter pour une option simple : activer le rôle sur tous les contrôleurs de domaine de la forêt.
                 </p>
-                <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
+                <p style="margin-top: 40px; margin-left: 20px; justify-content: start" id="II3">
                     3 - Les quatre fonctions clés du catalogue global
                 </p>
                 <p style="margin-top: 30px;">
@@ -186,14 +226,14 @@
                 <p style="margin-top: 30px;">
                     Le catalogue global est un point central dans un environnement où il y a plusieurs domaines, puisqu’il doit faire le lien entre tous les objets de tous les domaines de la forêt. Lorsqu’il n’y a qu’un seul domaine dans la forêt, le catalogue global perd tout son intérêt, car les autres contrôleurs de domaine sauront « se débrouiller seul ».
                 </p>
-                <p style="margin-top: 60px; margin-left: 10px; justify-content: start">
+                <p style="margin-top: 60px; margin-left: 10px; justify-content: start" id="III">
                     <b>III - Les cinq rôles FSMO</b>
                 </p>
                 <p style="margin-top: 30px;">
                     Depuis Windows Server 2000, Microsoft a intégré la notion de rôle FSMO au sein d’un environnement Active Directory. On dénombre cinq rôles FSMO différents, ayant chacun un objectif précis.</br></br>
                     Pour votre information, FSMO signifie « Flexible Single Master Operation ».
                 </p>
-                <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
+                <p style="margin-top: 40px; margin-left: 20px; justify-content: start" id="III1">
                     1 - Les rôles FSMO, ça sert à quoi ?
                 </p>
                 <p style="margin-top: 30px;">
@@ -204,7 +244,7 @@
                     Voici les cinq rôles que nous allons étudier :
                 </p>
                 <img src="../../../../../images/ad-22.png" class="img-fluid mx-auto d-block" style="max-width: 100%; margin-top: 30px;"/>
-                <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
+                <p style="margin-top: 40px; margin-left: 20px; justify-content: start" id="III2">
                     2 - Rôle « Maître d’attribution des noms de domaine »
                 </p>
                 <p style="margin-top: 30px;">
@@ -213,14 +253,14 @@
                     Enfin, je tiens à préciser qu’il a également pour mission de renommer les noms de domaine.</br></br>
                     En résumé, il est unique au sein d’une forêt et attribue les noms de domaine.
                 </p>
-                <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
+                <p style="margin-top: 40px; margin-left: 20px; justify-content: start" id="III3">
                     3 - Rôle « Contrôleur de schéma »
                 </p>
                 <p style="margin-top: 30px;">
                     Pour rappel, le schéma désigne la structure de l’annuaire Active Directory, le schéma est donc un élément critique au sein de l’environnement Active Directory. Cela implique l’unicité au sein de la forêt de ce maître d’opération, qui sera le seul – contrôleur de domaine – à pouvoir initier des changements au niveau de la structure de l’annuaire (schéma). En fait, comme le schéma est unique, son gestionnaire est unique également.</br></br>
                     En résumé, il est unique au sein d’une forêt et gère la structure du schéma.
                 </p>
-                <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
+                <p style="margin-top: 40px; margin-left: 20px; justify-content: start" id="III4">
                     4 - Rôle « Maître RID »
                 </p>
                 <p style="margin-top: 30px;">
@@ -231,7 +271,7 @@
                     Bien sûr, tous les contrôleurs de domaine ne vont pas épuiser le pool de RID au même rythme… Un contrôleur de domaine qui atteindra un certain niveau d’épuisement de son stock de RID disponible contactera le Maître RID pour en obtenir des nouveaux. Cela implique que la création d’un objet est impossible si le Maître RID du domaine n’est pas disponible.</br></br>
                     En résumé, il est unique au sein d’un domaine et attribue des blocs de RID aux contrôleurs de domaine pour assurer que les SID des objets soient unique.
                 </p>
-                <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
+                <p style="margin-top: 40px; margin-left: 20px; justify-content: start" id="III5">
                     5 - Rôle « Maître d’infrastructure »
                 </p>
                 <p style="margin-top: 30px;">
@@ -241,7 +281,7 @@
                     De ce fait, si l’objet est modifié ou supprimé à l’avenir, le Maître d’infrastructure devra se charger de déclencher la mise à jour de l’objet fantôme auprès des autres contrôleurs de domaine. En quelque sorte, il accélère les processus de réplication et la communication entre les contrôleurs de domaine.</br></br>
                     En résumé, il est unique au sein d’un domaine et doit gérer les références d’objets au sein du domaine.
                 </p>
-                <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
+                <p style="margin-top: 40px; margin-left: 20px; justify-content: start" id="III6">
                     6 - Rôle « Émulateur PDC »
                 </p>
                 <p style="margin-top: 30px;">
@@ -257,7 +297,7 @@
                 <p style="margin-top: 30px;">
                     En résumé, il est unique au sein d’un domaine et assure diverses missions liées à la sécurité et par défaut il joue le rôle de serveur de temps pour l’ensemble du domaine.
                 </p>
-                <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
+                <p style="margin-top: 40px; margin-left: 20px; justify-content: start" id="III7">
                     7 - La gestion des maîtres d’opération
                 </p>
                 <p style="margin-top: 30px;">
@@ -265,14 +305,14 @@
                     Pour transférer un rôle d’un contrôleur de domaine vers un autre, on pourra utiliser l’interface graphique de Windows ou encore l’utilitaire « ntdsutil ».</br></br>
                     Je vais maintenant répondre à une question qui a dû vous venir à l’esprit : « Comment faire si le contrôleur de domaine qui dispose d’un ou plusieurs rôles est corrompu ? ». Rassurez-vous, tout n’est pas perdu. En effet, il faudra réaliser une opération de « seizing » qui consiste en fait à forcer la récupération d’un ou de plusieurs rôles, ce qui sera d’une utilité cruciale en cas de corruption d’un contrôleur de domaine. Là encore, on pourra procéder via l’utilitaire « ntdsutil ».</br></br>
                 </p>
-                <p style="margin-top: 60px; margin-left: 10px; justify-content: start">
+                <p style="margin-top: 60px; margin-left: 10px; justify-content: start" id="IV">
                     <b>IV - Les relations d’approbations</b>
                 </p>
                 <p style="margin-top: 30px;">
                     Une relation d’approbation est un lien de confiance (Trust Relationship) établie entre deux domaines Active Directory, voir même entre deux forêts Active Directory. Ces relations permettront de faciliter l’accès aux ressources entre les domaines concernés, ce qui permet de mutualiser les accès bien que les domaines disposent d’une base de données Active Directory différente.</br></br>
                     On crée les relations d’approbations par l’intermédiaire de la console « Domaines et approbations » intégrée à Windows Server.
                 </p>
-                <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
+                <p style="margin-top: 40px; margin-left: 20px; justify-content: start" id="IV1">
                     1 - Cas d’utilisation des relations d’approbations
                 </p>
                 <p style="margin-top: 30px; justify-content: start">
@@ -284,7 +324,7 @@
                         <li>La fusion de deux entreprises existantes, qui utilisent à la base chacune leur domaine. La relation d’approbation permettra de faciliter la fusion au niveau du système d’information (avant une éventuelle restructuration complète)</li>
                         <li>Etc.</li>
                 </ul>
-                <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
+                <p style="margin-top: 40px; margin-left: 20px; justify-content: start" id="IV2">
                     2 - Direction et transitivité
                 </p>
                 <p style="margin-top: 30px;">
@@ -298,14 +338,14 @@
                     La transitivité signifie que si un domaine A approuve un domaine B, et que ce domaine B approuve un domaine C, alors le domaine A approuvera implicitement le domaine C. Autrement dit, « comme A approuve B et que B approuve C, alors A approuve C ».</br></br>
                     Attention tout de même, cette transitivité se limite aux relations d’approbations entre les domaines, et non entre les forêts.
                 </p>
-                <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
+                <p style="margin-top: 40px; margin-left: 20px; justify-content: start" id="IV3">
                     3 - Les approbations prédéfinies
                 </p>
                 <p style="margin-top: 30px;">
                     Les approbations prédéfinies sont des relations d’approbations créées automatiquement lorsque l’on étend une forêt ou un domaine. J’entends par là le fait d’ajouter un domaine enfant à un domaine existant, par exemple.</br></br>
                     Si l’on dispose d’un domaine « it-connect.local » et que l’on ajoute le domaine enfant « paris.it-connect.local », il y aura automatiquement une relation de confiance entre ces deux domaines. Une relation d’approbation transitive et bidirectionnelle sera créée entre ces deux domaines. On parlera d’approbation « parent/enfant ».
                 </p>
-                <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
+                <p style="margin-top: 40px; margin-left: 20px; justify-content: start" id="IV4">
                     4 - Les approbations externes
                 </p>
                 <p style="margin-top: 30px;">
@@ -314,7 +354,7 @@
                     Avec une relation d’approbation externe, on donne l’accès uniquement au domaine depuis lequel la relation est établie. Voici un exemple :
                 </p>
                 <img src="../../../../../images/ad-23.png" class="img-fluid mx-auto d-block" style="max-width: 90%; margin-top: 30px;"/>
-                <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
+                <p style="margin-top: 40px; margin-left: 20px; justify-content: start" id="IV5">
                     5 - Conclusion
                 </p>
                 <p style="margin-top: 30px;">
@@ -323,16 +363,16 @@
                     Il est important de noter qu’avec les relations d’approbations, l’étendue d’un compte utilisateur est agrandie, c’est-à-dire qu’il peut être utilisé au-delà du domaine auquel il appartient. De ce fait, la sécurité doit être pointilleuse sur l’ensemble des domaines et de l’infrastructure, pour ne pas laisser une porte ouverte sur un domaine et qui permettrait d’accéder à un autre domaine.</br></br>
                     Ces relations d’approbations évitent également la nécessité de créer des comptes en doublons sur plusieurs domaines, puisqu’un seul compte utilisateur pourra être utilisé pour accéder aux ressources de plusieurs domaines. Dans un environnement multidomaine, la mutualisation devient encore plus forte grâce à ces liens de confiance interdomaines.
                 </p>
-                <p style="margin-top: 60px; margin-left: 10px; justify-content: start">
+                <p style="margin-top: 60px; margin-left: 10px; justify-content: start" id="V">
                     <b>V - Le partage SYSVOL et la réplication</b>
                 </p>
-                <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
+                <p style="margin-top: 40px; margin-left: 20px; justify-content: start" id="V1">
                     1 - Le partage SYSVOL
                 </p>
                 <p style="margin-top: 30px;">
                     Lorsqu’un contrôleur de domaine est installé, de nombreux éléments sont installés et créés sur le serveur, le partage SYSVOL en fait parti.
                 </p>
-                <p style="margin-top: 30px; margin-left: 50px; justify-content: start">
+                <p style="margin-top: 30px; margin-left: 50px; justify-content: start" id="V1a"> 
                     a. Introduction à SYSVOL
                 </p>
                 <p style="margin-top: 30px;">
@@ -345,13 +385,13 @@
                     De ce fait, si le partage SYSVOL est en erreur, vous aurez de gros problèmes ! Plus de réplication des GPOs et scripts de connexion entre les contrôleurs de domaine, plus possible pour les clients de récupérer les dernières mises à jour de GPO et les scripts… Bref, vous imaginez la galère… D’où l’intérêt de prendre connaissance de l’existence du partage SYSVOL.</br></br>
                     Attention, certaines personnes utilisent ce partage pour stocker toutes sortes de données, ce n’est pas du tout recommandé ! Non seulement, car le partage SYSVOL n’est pas fait pour ça, mais aussi, car les processus de réplication seront plus longs (plus de données à répliquer).
                 </p>
-                <p style="margin-top: 30px; margin-left: 50px; justify-content: start">
+                <p style="margin-top: 30px; margin-left: 50px; justify-content: start" id="V1b">
                     b. Réplication de SYSVOL
                 </p>
                 <p style="margin-top: 30px;">
                     Le dossier SYSVOL est répliqué entre les différents contrôleurs de domaine, pour que le contenu soit identique, et que les clients bénéficient tous des mêmes données (à jour). Sur les anciennes versions de Windows Server, notamment Windows Server 2000 et Windows Server 2003, le mécanisme FRS (File Replication Service) était utilisé pour la réplication. Depuis Windows Server 2008, FRS est mis de côté pour laisser la place à DFSR (Distributed File System Replication), qui est plus fiable et plus performant.
                 </p>
-                <p style="margin-top: 30px; margin-left: 50px; justify-content: start">
+                <p style="margin-top: 30px; margin-left: 50px; justify-content: start" id="V1c">
                     c. La structure de SYSVOL
                 </p>
                 <p style="margin-top: 30px; justify-content: start">
@@ -369,7 +409,7 @@
                     <li>scripts : ce répertoire est stocké sous « domain » et contient les différents scripts, notamment les scripts de connexion.</li>
                     <li>staging : ce répertoire est utilisé pour créer une file d’attente (queue) des données en attente de réplication à destination des autres contrôleurs de domaine.</li>
                 </ul>
-                <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
+                <p style="margin-top: 40px; margin-left: 20px; justify-content: start" id="V2">
                     2 - Réplication : Quoi ? Quand ? Comment ?
                 </p>
                 <p style="margin-top: 30px;">
@@ -441,6 +481,31 @@
                 
             </div>
         </div>
+
+        <?php // Creation du Treeview en JS ?>
+        <script src="../../../../../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="../../../../../static/js/tree.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                window.nav = new NavTree("#nav-tree", {
+                searchable: false,
+                showEmptyGroups: true,
+
+                groupOpenIconClass: "fas",
+                groupOpenIcon: "fa-chevron-down",
+
+                groupCloseIconClass: "fas",
+                groupCloseIcon: "fa-chevron-right",
+
+                linkIconClass: "fas",
+                linkIcon: "fa-link",
+
+                iconWidth: "25px",
+
+                searchPlaceholderText: "Search",
+                });
+            });
+        </script>
 
     </body>
     <?php //Inclusion du pied de page ?>

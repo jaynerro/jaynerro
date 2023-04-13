@@ -13,8 +13,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <?php // Bootstrap CSS ?>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../../../../static/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../../../static/vendor/fontawesome/all.min.css" />
+    <link rel="stylesheet" href="../../../../../static/css/tree.css">
 
     <?php // Feuille de style ?>
     <link rel="stylesheet" href="../../../../../static/css/style.css">
@@ -57,13 +58,42 @@
                     Au cœur de l’annuaire Active Directory
                 </h1>
                 <img src="../../../../../images/ad.png" class="img-fluid mx-auto d-block" style="max-width: 50%; margin-top: 50px;"/>
-                <p style="margin-top: 40px; margin-left: 10px; justify-content: start">
+                <ul id="nav-tree">
+                    <li id="liSummary" style="margin-top: 20px;">
+                        <a><b>Sommaire</b></a>
+                        <ul>
+                            <a href="#I" style="margin-top: 5px; margin-left: 20px;">I - Les protocoles LDAP, DNS et Kerberos</a>
+                                <a href="#I1" style="margin-top: 10px; margin-left: 40px;">1 - Le protocole LDAP</a>
+                                    <a href="#I1a" style="margin-top: 10px; margin-left: 60px;">a. Qu’est-ce que le protocole LDAP ?</a>
+                                    <a href="#I1b" style="margin-top: 10px; margin-left: 60px;">b. Que contient l’annuaire LDAP ?</a>
+                                    <a href="#I1c" style="margin-top: 10px; margin-left: 60px;">c. Comment est structuré l’annuaire LDAP ?</a>
+                                <a href="#I2" style="margin-top: 10px; margin-left: 40px;">2 - Le protocole DNS</a>
+                                <a href="#I3" style="margin-top: 10px; margin-left: 40px;">3 - Le protocole Kerberos</a>
+                                    <a href="#I3a" style="margin-top: 10px; margin-left: 60px;">a. Comment fonctionne le protocole Kerberos ?</a>
+                                    <a href="#I3b" style="margin-top: 10px; margin-left: 60px;">b. De quoi est composé un ticket Kerberos ?</a>
+                                <a href="#I4" style="margin-top: 10px; margin-left: 40px;">4 - LDAP, DNS et Kerberos en bref</a>
+                            <a href="#II" style="margin-top: 15px; margin-left: 20px;">II - Les principaux attributs d’objets dans l’Active Directory</a>
+                                <a href="#II1" style="margin-top: 10px; margin-left: 40px;">1 - Les principales classes</a>
+                                <a href="#II2" style="margin-top: 10px; margin-left: 40px;">2 - Les identifiants uniques : DistinguishedName et GUID</a>
+                                    <a href="#II2a" style="margin-top: 10px; margin-left: 60px;">a. Le DistinguishedName</a>
+                                    <a href="#II2b" style="margin-top: 10px; margin-left: 60px;">b. Le GUID</a>
+                                <a href="#II3" style="margin-top: 10px; margin-left: 40px;">3 - Les attributs indispensables</a>
+                            <a href="#III" style="margin-top: 15px; margin-left: 20px;">III - Les différents types de groupe de l’Active Directory</a>
+                                <a href="#III1" style="margin-top: 10px; margin-left: 40px;">1 - L’étendue du groupe</a>
+                                <a href="#III2" style="margin-top: 10px; margin-left: 40px;">2 - Le type du groupe</a>
+                                <a href="#III3" style="margin-top: 10px; margin-left: 40px;">3 - Les groupes par défaut</a>
+                        </ul>
+                    </li>
+                </ul>
+                <p style="margin-top: 40px; margin-left: 10px; justify-content: start" id="I">
                     <b>I - Les protocoles LDAP, DNS et Kerberos</b>
                 </p>
-                <p style="margin-top: 40px; margin-left: 20px; justify-content: start" id="LDAP">
-                    1 - Le protocole LDAP
-                </p>
-                <p style="margin-top: 30px; margin-left: 50px; justify-content: start">
+                <div id="I1">
+                    <p style="margin-top: 40px; margin-left: 20px; justify-content: start" id="LDAP">
+                        1 - Le protocole LDAP
+                    </p>
+                </div>
+                <p style="margin-top: 30px; margin-left: 50px; justify-content: start" id="I1a">
                     a. Qu’est-ce que le protocole LDAP ?
                 </p>
                 <p style="margin-top: 30px;">
@@ -71,14 +101,14 @@
                     Les communications LDAP s’effectuent sur le port 389, en TCP, du contrôleur de domaine cible.</br></br>
                     Il existe une déclinaison du protocole LDAP appelée LDAPS (LDAP over SSL) est qui apporte une couche de sécurité supplémentaire avec du chiffrement.
                 </p>
-                <p style="margin-top: 30px; margin-left: 50px; justify-content: start">
+                <p style="margin-top: 30px; margin-left: 50px; justify-content: start" id="I1b">
                     b. Que contient l’annuaire LDAP ?
                 </p>
                 <p style="margin-top: 30px;">
                     L’annuaire LDAP correspond directement à l’Active Directory, il contient donc un ensemble d’unités d’organisation qui forment l’arborescence générale. Ensuite, on trouve tous les différents types d’objets classiques : utilisateurs, ordinateurs, groupes, contrôleurs de domaine, voir même serveurs et imprimantes.</br></br>
                     Pour chaque classe d’objets, il stocke les attributs correspondants et les différentes valeurs de ces attributs pour chaque instance d’un objet. Par exemple, il va stocker toutes les informations relatives à un utilisateur (nom, prénom, description, mot de passe, adresse e-mail, etc.).
                 </p>
-                <p style="margin-top: 30px; margin-left: 50px; justify-content: start">
+                <p style="margin-top: 30px; margin-left: 50px; justify-content: start" id="I1c">
                     c. Comment est structuré l’annuaire LDAP ?
                 </p>
                 <p style="margin-top: 30px;">
@@ -102,7 +132,7 @@
                 <p style="margin-top: 20px; font-size: small;">
                     Exemple de DistinguishedName
                 </p>
-                <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
+                <p style="margin-top: 40px; margin-left: 20px; justify-content: start" id="I2">
                     2 - Le protocole DNS
                 </p>
                 <p style="margin-top: 30px;">
@@ -125,14 +155,14 @@
                     Le serveur DNS peut être sur le contrôleur de domaine ou sur un autre serveur DNS du système d’information. Ce serveur DNS peut être sous Windows mais aussi sous Linux en utilisant le paquet « Bind 9 » qui requiert alors une configuration particulière.</br></br>
                     Les contrôleurs de domaine doivent être capables d’écrire dans la zone DNS qui leur correspond, ceci dans le but de gérer les enregistrements dynamiquement. Lors de la création d’un domaine, tous les enregistrements nécessaires au bon fonctionnement du système seront créés automatiquement (je suis sûr que ça vous rassure).
                 </p>
-                <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
+                <p style="margin-top: 40px; margin-left: 20px; justify-content: start" id="I3">
                     3 - Le protocole Kerberos
                 </p>
                 <p style="margin-top: 30px;">
                     Le protocole Kerberos est l’acteur principal de l’authentification au sein d’un domaine, il n’intervient ni dans l’annuaire ni dans la résolution de noms.</br></br>
                     Le protocole Kerberos est un protocole mature, qui est aujourd’hui en version 5. Il assure l’authentification de manière sécurisée avec un mécanisme de distribution de clés.
                 </p>
-                <p style="margin-top: 30px; margin-left: 50px; justify-content: start">
+                <p style="margin-top: 30px; margin-left: 50px; justify-content: start" id="I3a">
                     a. Comment fonctionne le protocole Kerberos ?
                 </p>
                 <p style="margin-top: 30px;" id="KDC">
@@ -156,24 +186,24 @@
                     Les deux services décrits précédemment ont chacun des tâches et un processus précis. Ce mécanisme d’authentification est inévitable pour accéder aux ressources d’un domaine. Sans Kerberos, il n’y aura plus d’authentification, ce qui déclenchera des problèmes d’authentifications et d’accès.</br></br>
                     Si le centre de distribution de clés (KDC) est indisponible depuis le réseau, l’Active Directory sera ensuite indisponible également, et le contrôleur de domaine ne contrôlera plus longtemps le domaine.
                 </p>
-                <p style="margin-top: 30px; margin-left: 50px; justify-content: start">
+                <p style="margin-top: 30px; margin-left: 50px; justify-content: start" id="I3b">
                     b. De quoi est composé un ticket Kerberos ?
                 </p>
                 <p style="margin-top: 30px;">
                     Le ticket Kerberos distribué contient de nombreuses informations qui permettent d’identifier l’élément auquel est attribué ce ticket. Par exemple, pour un utilisateur, il sera possible de savoir son nom, son mot de passe, l’identité du poste initial ainsi que la durée de validité du ticket et sa date d’expiration.</br></br>
                     Par ailleurs, les tickets TGS et TGT contiennent une clé de session qui permet de chiffrer les communications suivantes afin de sécuriser les échanges.
                 </p>
-                <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
+                <p style="margin-top: 40px; margin-left: 20px; justify-content: start" id="I4">
                     4 - LDAP, DNS et Kerberos en bref
                 </p>
                 <p style="margin-top: 30px;">
                     En résumé, vous devez garder en tête que ces trois protocoles sont indispensables au bon fonctionnement de l’Active Directory. Ils assurent des fonctions critiques :
                 </p>
                 <img src="../../../../../images/ad-12.png" class="img-fluid mx-auto d-block" style="max-width: 80%; margin-top: 30px;"/>
-                <p style="margin-top: 60px; margin-left: 10px; justify-content: start">
+                <p style="margin-top: 60px; margin-left: 10px; justify-content: start" id="II">
                     <b>II - Les principaux attributs d’objets dans l’Active Directory</b>
                 </p>
-                <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
+                <p style="margin-top: 40px; margin-left: 20px; justify-content: start" id="II1">
                     1 - Les principales classes
                 </p>
                 <p style="margin-top: 30px;">
@@ -219,10 +249,10 @@
                     Le tableau ci-dessus regroupe les classes d’objets les plus utilisées et les plus courantes.</br></br>
                     Je tiens à préciser tout de même que par défaut l'Active Directory intègre déjà des containers (Users, Builtin, etc) et qui, à la différence des unités d'organisation natives, ne peuvent pas se voir appliquer des stratégies de groupe (GPO) et qu'il n'est pas possible de créer une délégation sur ces containers.
                 </p>
-                <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
+                <p style="margin-top: 40px; margin-left: 20px; justify-content: start" id="II2">
                     2 - Les identifiants uniques : DistinguishedName et GUID
                 </p>
-                <p style="margin-top: 30px; margin-left: 50px; justify-content: start">
+                <p style="margin-top: 30px; margin-left: 50px; justify-content: start" id="II2a">
                     a. Le DistinguishedName
                 </p>
                 <p style="margin-top: 30px;">
@@ -266,7 +296,7 @@
                 <p style="margin-top: 30px;">
                     Le DN peut être très long si l’arborescence de l’annuaire est importante et que l’objet se trouve au fin fond de cette arborescence. De plus, le DN peut changer régulièrement si l’objet est déplacé, ou si une unité d’organisation dont il dépend est renommée puisqu’il contient de manière nominative les objets.
                 </p>
-                <p style="margin-top: 30px; margin-left: 50px; justify-content: start">
+                <p style="margin-top: 30px; margin-left: 50px; justify-content: start" id="II2b">
                     b. Le GUID
                 </p>
                 <p style="margin-top: 30px;">
@@ -274,7 +304,7 @@
                     Il est attribué à l’objet dès sa création et ne change jamais, même si l’objet est déplacé ou modifié. Le GUID suit un objet de la création jusqu’à la suppression.</br></br>
                     Codé sur 128 bits, le GUID d’un objet est unique au sein d’une forêt et il est généré par un algorithme qui garantit son unicité. Des informations aléatoires, d’autres non, comme l’heure de création de l’objet.
                 </p>
-                <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
+                <p style="margin-top: 40px; margin-left: 20px; justify-content: start" id="II3">
                     3 - Les attributs indispensables
                 </p>
                 <p style="margin-top: 30px;">
@@ -357,7 +387,7 @@
                     Pour illustrer mes propos, voici une sortie PowerShell qui affiche quelques attributs et leurs valeurs, concernant l’utilisateur « Florian » :
                 </p>
                 <img src="../../../../../images/ad-11.png" class="img-fluid mx-auto d-block" style="max-width: 80%; margin-top: 30px;"/>
-                <p style="margin-top: 60px; margin-left: 10px; justify-content: start">
+                <p style="margin-top: 60px; margin-left: 10px; justify-content: start" id="III">
                     <b>III - Les différents types de groupe de l’Active Directory</b>
                 </p>
                 <p style="margin-top: 30px;">
@@ -372,7 +402,7 @@
                 <p style="margin-top: 20px; font-size: small;">
                     Assistant de création d'un groupe
                 </p>
-                <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
+                <p style="margin-top: 40px; margin-left: 20px; justify-content: start" id="III1">
                     1 - L’étendue du groupe
                 </p>
                 <p style="margin-top: 30px;">
@@ -426,7 +456,7 @@
                     Ainsi, la portée de ces groupes pourra être schématisée comme ceci au sein de la forêt :
                 </p>
                 <img src="../../../../../images/ad-14.png" class="img-fluid mx-auto d-block" style="max-width: 100%; margin-top: 30px;"/>
-                <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
+                <p style="margin-top: 40px; margin-left: 20px; justify-content: start" id="III2">
                     2 - Le type du groupe
                 </p>
                 <p style="margin-top: 30px;">
@@ -459,7 +489,7 @@
                 <p style="margin-top: 30px;">
                     Il est à noter qu’il est possible de convertir à tout moment un groupe de sécurité en groupe de distribution, et vice-versa. Cependant, le niveau fonctionnel du domaine doit être au minimum « Windows Server 2000 natif » mais de nos jours, il est quasiment « impossible » de ne pas l’être.
                 </p>
-                <p style="margin-top: 40px; margin-left: 20px; justify-content: start">
+                <p style="margin-top: 40px; margin-left: 20px; justify-content: start" id="III3">
                     3 - Les groupes par défaut
                 </p>
                 <p style="margin-top: 30px;">
@@ -515,6 +545,31 @@
                 
             </div>
         </div>
+    
+        <?php // Creation du Treeview en JS ?>
+        <script src="../../../../../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="../../../../../static/js/tree.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                window.nav = new NavTree("#nav-tree", {
+                searchable: false,
+                showEmptyGroups: true,
+
+                groupOpenIconClass: "fas",
+                groupOpenIcon: "fa-chevron-down",
+
+                groupCloseIconClass: "fas",
+                groupCloseIcon: "fa-chevron-right",
+
+                linkIconClass: "fas",
+                linkIcon: "fa-link",
+
+                iconWidth: "25px",
+
+                searchPlaceholderText: "Search",
+                });
+            });
+        </script>
 
     </body>
     <?php //Inclusion du pied de page ?>

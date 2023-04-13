@@ -213,6 +213,14 @@
           </h3>
 
           <h3 style="margin-top: 35px;">
+            <a href="./basics/system/client-server-model/ftp-server.php#FTP">FTP</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/system/client-server-model/ftp-server.php#FTPS">FTPS</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
             <a href="./basics/network/networking-hardware/firewall.php#FW">FW</a>
           </h3>
 
@@ -330,6 +338,10 @@
           </h3>
 
           <h3 style="margin-top: 35px;">
+            <a href="./basics/system/virtualization.php#NAS">NAS</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
             <a href="./basics/network/wireless-network/nfc.php#NFC">NFC</a>
           </h3>
 
@@ -425,7 +437,15 @@
           </h2>
 
           <h3 style="margin-top: 35px;">
+            <a href="./basics/system/virtualization.php#SAN">SAN</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
             <a href="./basics/network/networking-hardware/switch.php#SFP">SFP</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/system/client-server-model/ftp-server.php#SFTP">SFTP</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
