@@ -6,6 +6,9 @@
 <html lang="fr">
 
   <head>
+    <?php // Base pour les urls htaccess ?>
+    <base href="/">
+
     <?php // Type d'encodage ?>
     <meta charset="utf-8">
 

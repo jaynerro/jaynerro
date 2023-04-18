@@ -6,6 +6,9 @@
 <html lang="fr">
 
   <head>
+    <?php // Base pour les urls htaccess ?>
+    <base href="/">
+
     <?php // Type d'encodage ?>
     <meta charset="utf-8">
 
@@ -49,7 +52,7 @@
                   <a>Réseaux</a>
                   <ul>
                     <li id="liNetworkArchitecture">
-                      <a href="/knowledge-base/basics/network/network-architecture.php">L'architecture réseau</a>
+                      <a href="/kb/basics/network/network-architecture.php">L'architecture réseau</a>
                     </li>
 
                     <li id="liOSI">
@@ -57,15 +60,15 @@
                       <ul>
 
                         <li id="liOSIModelDefinition">
-                          <a href="/knowledge-base/basics/network/osi-model/definition.php">Qu'est-ce que c'est ?</a>
+                          <a href="/kb/basics/network/osi-model/definition.php">Qu'est-ce que c'est ?</a>
                         </li>
 
                         <li id="liLayer1">
-                          <a href="/knowledge-base/basics/network/osi-model/layer1.php">Couche 1</a>
+                          <a href="/kb/basics/network/osi-model/layer1.php">Couche 1</a>
                         </li>
 
                         <li id="liLayer2">
-                          <a href="/knowledge-base/basics/network/osi-model/layer2.php">Couche 2</a>
+                          <a href="/kb/basics/network/osi-model/layer2.php">Couche 2</a>
                         </li>
                         
                         <li id="liLayer3">
@@ -73,15 +76,15 @@
                           <ul>
 
                             <li id="liLayer3AndIPProtocol">
-                              <a href="/knowledge-base/basics/network/osi-model/layer3/layer3.php">La couche Réseau</a>
+                              <a href="/kb/basics/network/osi-model/layer3/layer3.php">La couche Réseau</a>
                             </li>
 
                             <li id="liIPAddressAssignment">
-                              <a href="/knowledge-base/basics/network/osi-model/layer3/IP-address-assignment.php">Découpage de plages d'adresses</a>
+                              <a href="/kb/basics/network/osi-model/layer3/IP-address-assignment.php">Découpage de plages d'adresses</a>
                             </li>
 
                             <li id="liARPAndICMP">
-                              <a href="/knowledge-base/basics/network/osi-model/layer3/ARP-ICMP.php">Autres protocoles : ARP & ICMP</a>
+                              <a href="/kb/basics/network/osi-model/layer3/ARP-ICMP.php">Autres protocoles : ARP & ICMP</a>
                             </li>
 
                           </ul>
@@ -91,15 +94,15 @@
                           <a>Couche 4</a>
                           <ul>
                             <li id="liClientServerModel">
-                              <a href="/knowledge-base/basics/network/osi-model/layer4/client-server-model.php">Modèle Client-Serveur</a>
+                              <a href="/kb/basics/network/osi-model/layer4/client-server-model.php">Modèle Client-Serveur</a>
                             </li>
 
                             <li id="liLayer4">
-                              <a href="/knowledge-base/basics/network/osi-model/layer4/layer4.php">La couche Transport</a>
+                              <a href="/kb/basics/network/osi-model/layer4/layer4.php">La couche Transport</a>
                             </li>
 
                             <li id="liLayer4">
-                              <a href="/knowledge-base/basics/network/osi-model/layer4/nat-and-port-forwarding.php">NAT et port forwarding</a>
+                              <a href="/kb/basics/network/osi-model/layer4/nat-and-port-forwarding.php">NAT et port forwarding</a>
                             </li>
 
                           </ul>
@@ -110,19 +113,19 @@
                           <ul>
 
                             <li id="liDHCP">
-                              <a href="/knowledge-base/basics/network/osi-model/layer5to7/dhcp.php">DHCP</a>
+                              <a href="/kb/basics/network/osi-model/layer5to7/dhcp.php">DHCP</a>
                             </li>
 
                             <li id="liDNS">
-                              <a href="/knowledge-base/basics/network/osi-model/layer5to7/dns.php">DNS</a>
+                              <a href="/kb/basics/network/osi-model/layer5to7/dns.php">DNS</a>
                             </li>
 
                             <li id="liHTTP">
-                              <a href="/knowledge-base/basics/network/osi-model/layer5to7/http.php">HTTP</a>
+                              <a href="/kb/basics/network/osi-model/layer5to7/http.php">HTTP</a>
                             </li>
 
                             <li id="liSSH">
-                              <a href="/knowledge-base/basics/network/osi-model/layer5to7/ssh.php">SSH</a>
+                              <a href="/kb/basics/network/osi-model/layer5to7/ssh.php">SSH</a>
                             </li>
 
                           </ul>
@@ -134,23 +137,23 @@
                       <a>Réseaux sans fil</a>
                       <ul>
                         <li id="liWiFi">
-                          <a href="/knowledge-base/basics/network/wireless-network/wi-fi.php">Wi-fi</a>
+                          <a href="/kb/basics/network/wireless-network/wi-fi.php">Wi-fi</a>
                         </li>
 
                         <li id="liBluetooth">
-                          <a href="/knowledge-base/basics/network/wireless-network/bluetooth.php">Bluetooth</a>
+                          <a href="/kb/basics/network/wireless-network/bluetooth.php">Bluetooth</a>
                         </li>
 
                         <li id="liCellularNetwork">
-                          <a href="/knowledge-base/basics/network/wireless-network/cellular-network.php">Réseau de téléphonie mobile</a>
+                          <a href="/kb/basics/network/wireless-network/cellular-network.php">Réseau de téléphonie mobile</a>
                         </li>
 
                         <li id="liRFID">
-                          <a href="/knowledge-base/basics/network/wireless-network/rfid.php">RFID</a>
+                          <a href="/kb/basics/network/wireless-network/rfid.php">RFID</a>
                         </li>
 
                         <li id="liNFC">
-                          <a href="/knowledge-base/basics/network/wireless-network/nfc.php">NFC</a>
+                          <a href="/kb/basics/network/wireless-network/nfc.php">NFC</a>
                         </li>
                       </ul>
                     </li>
@@ -158,23 +161,23 @@
                       <a>Équipements réseau</a>
                       <ul>
                         <li id="liSwitch">
-                          <a href="/knowledge-base/basics/network/networking-hardware/switch.php">Switch</a>
+                          <a href="/kb/basics/network/networking-hardware/switch.php">Switch</a>
                         </li>
 
                         <li id="liRouteur">
-                          <a href="/knowledge-base/basics/network/networking-hardware/router.php">Routeur</a>
+                          <a href="/kb/basics/network/networking-hardware/router.php">Routeur</a>
                         </li>
 
                         <li id="liFirewall">
-                          <a href="/knowledge-base/basics/network/networking-hardware/firewall.php">Firewall</a>
+                          <a href="/kb/basics/network/networking-hardware/firewall.php">Firewall</a>
                         </li>
 
                         <li id="liAP">
-                          <a href="/knowledge-base/basics/network/networking-hardware/ap.php">AP</a>
+                          <a href="/kb/basics/network/networking-hardware/ap.php">AP</a>
                         </li>
 
                         <li id="liModem">
-                          <a href="/knowledge-base/basics/network/networking-hardware/modem.php">Modem</a>
+                          <a href="/kb/basics/network/networking-hardware/modem.php">Modem</a>
                         </li>
                       </ul>
                     </li>
@@ -185,7 +188,7 @@
                   <ul>
 
                     <li id="liBIOS">
-                      <a href="/knowledge-base/basics/system/firmware-bios.php">Firmware, BIOS</a>
+                      <a href="/kb/basics/system/firmware-bios.php">Firmware, BIOS</a>
                     </li>
 
                     <li id="liOS">
@@ -193,27 +196,27 @@
                       <ul>
 
                         <li id="liOSIntroduction">
-                          <a href="/knowledge-base/basics/system/os/introduction.php">Introduction</a>
+                          <a href="/kb/basics/system/os/introduction.php">Introduction</a>
                         </li>
 
                         <li id="liKernelUser">
-                          <a href="/knowledge-base/basics/system/os/kernel-mode-and-user-mode.php">User mode vs Kernel mode</a>
+                          <a href="/kb/basics/system/os/kernel-mode-and-user-mode.php">User mode vs Kernel mode</a>
                         </li>
 
                         <li id="liSystemCall">
-                          <a href="/knowledge-base/basics/system/os/system-call.php">System call</a>
+                          <a href="/kb/basics/system/os/system-call.php">System call</a>
                         </li>
 
                         <li id="liLibrariesDrivers">
-                          <a href="/knowledge-base/basics/system/os/libraries-and-drivers.php">Libraries & Drivers</a>
+                          <a href="/kb/basics/system/os/libraries-and-drivers.php">Libraries & Drivers</a>
                         </li>
 
                         <li id="liDaemonsServices">
-                          <a href="/knowledge-base/basics/system/os/daemons-services.php">Daemons & Services</a>
+                          <a href="/kb/basics/system/os/daemons-services.php">Daemons & Services</a>
                         </li>
 
                         <li id="liFileSystem">
-                          <a href="/knowledge-base/basics/system/os/file-system.php">Système de fichiers</a>
+                          <a href="/kb/basics/system/os/file-system.php">Système de fichiers</a>
                         </li>
                       
                       </ul>
@@ -224,7 +227,7 @@
                       <ul>
 
                         <li id="liClientServerModelDefinition">
-                          <a href="/knowledge-base/basics/network/osi-model/layer4/client-server-model.php">Définition</a>
+                          <a href="/kb/basics/network/osi-model/layer4/client-server-model.php">Définition</a>
                         </li>
 
                         <li id="liActiveDirectory">
@@ -232,41 +235,41 @@
                           <ul>
 
                             <li id="liAD1">
-                              <a href="/knowledge-base/basics/system/client-server-model/active-directory/active-directory-and-domains.php">L’annuaire Active Directory et les domaines</a>
+                              <a href="/kb/basics/system/client-server-model/active-directory/active-directory-and-domains.php">L’annuaire Active Directory et les domaines</a>
                             </li>
 
                             <li id="liAD2">
-                              <a href="/knowledge-base/basics/system/client-server-model/active-directory/the-heart-of-the-active-directory.php">Au cœur de l’annuaire Active Directory</a>
+                              <a href="/kb/basics/system/client-server-model/active-directory/the-heart-of-the-active-directory.php">Au cœur de l’annuaire Active Directory</a>
                             </li>
 
                             <li id="liAD3">
-                              <a href="/knowledge-base/basics/system/client-server-model/active-directory/active-directory-more-is-better.php">Active Directory, à plusieurs c’est mieux !</a>
+                              <a href="/kb/basics/system/client-server-model/active-directory/active-directory-more-is-better.php">Active Directory, à plusieurs c’est mieux !</a>
                             </li>
 
                           </ul>
                         </li>
 
                         <li id="liWebServer">
-                          <a href="/knowledge-base/basics/system/client-server-model/web-server.php">Serveur web</a>
+                          <a href="/kb/basics/system/client-server-model/web-server.php">Serveur web</a>
                         </li>
 
                         <li id="liFTPServer">
-                          <a href="/knowledge-base/basics/system/client-server-model/ftp-server.php">Serveur FTP</a>
+                          <a href="/kb/basics/system/client-server-model/ftp-server.php">Serveur FTP</a>
                         </li>
                       
                       </ul>
                     </li>
 
                     <li id="liVirtualization">
-                      <a href="/knowledge-base/basics/system/virtualization.php">Virtualisation</a>
+                      <a href="/kb/basics/system/virtualization.php">Virtualisation</a>
                     </li>
 
                     <li id="liContainer">
-                      <a href="/knowledge-base/basics/system/containerization.php">Conteneurisation</a>
+                      <a href="/kb/basics/system/containerization.php">Conteneurisation</a>
                     </li>
 
                     <li id="liTools">
-                      <a href="#">Quelques outils à savoir utiliser</a>
+                      <a href="/kb/basics/system/tools.php">Quelques outils à savoir utiliser</a>
                     </li>
 
                   </ul>
@@ -455,20 +458,20 @@
                   <a>Active Directory</a>
                   <ul>
                     <li id="liIdentifyWeakness">
-                      <a href="/knowledge-base/ethical-hacking/active-directory/identify-weaknesses.php">Identifiez les faiblesses et les objectifs d’attaque</a>
+                      <a href="/kb/ethical-hacking/active-directory/identify-weaknesses.php">Identifiez les faiblesses et les objectifs d’attaque</a>
                     </li>
                     <li id="liExploitAttackPaths">
-                      <a href="/knowledge-base/ethical-hacking/active-directory/exploit-attack-paths.php">Exploitez les chemins d’attaque</a>
+                      <a href="/kb/ethical-hacking/active-directory/exploit-attack-paths.php">Exploitez les chemins d’attaque</a>
                     </li>
                     <li id="liProtectAndMonitor">
-                      <a href="/knowledge-base/ethical-hacking/active-directory/protect-and-monitor.php">Protégez et surveillez votre environnement</a>
+                      <a href="/kb/ethical-hacking/active-directory/protect-and-monitor.php">Protégez et surveillez votre environnement</a>
                     </li>
                   </ul>
                 </li>
               </ul>
             </li>
             <li id="liGlossary" data-value="liGlossary" style="margin-top: 20px;">
-              <a href="/knowledge-base/glossary.php">
+              <a href="/kb/glossary.php">
                 Glossaire
               </a>
             </li>
