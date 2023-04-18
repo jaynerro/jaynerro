@@ -1,0 +1,74 @@
+AddDefaultCharset "utf-8"
+
+##
+## INTERDIR L'ACCES AU FICHIER .HTACCESS
+##
+<Files .htaccess>
+    order allow,deny
+    deny from all
+</Files>
+
+
+##
+## METTRE LE SERVEUR SUR LE FUSEAU HORAIRE DE PARIS
+##
+SetEnv TZ Europe/Paris
+
+
+##
+## EMPECHER DE FOUILLER A LA RACINE
+##
+Options All -Indexes
+
+
+## 
+## METTRE PAR DEFAUT L'AFFICHAGE
+##
+<FilesMatch "\.(htm|html|css|js|php)$">
+    AddDefaultCharset UTF-8
+    DefaultLanguage fr-fr
+</FilesMatch>
+
+
+##
+## REECRIRE LE NOM DES PAGES
+##
+Options +FollowSymlinks -MultiViews
+
+RewriteEngine On
+RewriteBase /
+
+# NE PAS OUBLIER D'ENLEVER LES # POUR FORCER LE WWW (Pb en localhost)
+# Redirect non-www to www:
+# RewriteCond %{HTTP_HOST} !^www\. [NC]
+# RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+
+# Redirect http to https:
+# RewriteCond %{HTTPS} off
+# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L,NE,QSA]
+
+
+# Unless directory, remove trailing slash
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)/$ http://%{HTTP_HOST}/$1 [R=301,L]
+
+
+# Redirect external .php requests to extensionless url
+RewriteCond %{THE_REQUEST}% ^(.+)\.php([#?][^\ ]*)?\ HTTP/
+RewriteRule ^(.+)\.php$ http://%{HTTP_HOST}/$1 [R=301,L]
+
+
+# add extension if php file exists:
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
+
+### ERREURS
+### Si une erreur apparait alors on affiche la page correspondante
+ErrorDocument 401 /erreur/401
+ErrorDocument 402 /erreur/402
+ErrorDocument 403 /erreur/403
+ErrorDocument 404 /erreur/404
