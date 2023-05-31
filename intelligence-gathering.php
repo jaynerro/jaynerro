@@ -36,49 +36,460 @@
           <h1> 
             Veille informationnelle
           </h1>
-        
-          <div class="row row-cols-1 row-cols-sm-3 g-4" style="margin-top: 40px;">
-            <div class="col">
-              <div class="card h-100">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text" style="color: black">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <a href="#" class="position-absolute top-80 start-10 btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text" style="color: black">This is a short card.</p>
-                  <a href="#" class="position-absolute top-80 start-10 btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text" style="color: black">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="position-absolute top-80 start-10 btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text" style="color: black">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <a href="#" class="position-absolute top-80 start-10 btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
+
+          <div id="myBtnContainer" style="margin-top: 40px; margin-bottom: 10px;">
+            <button type="button" class="btn btn-dark active" onclick="filterSelection('all')" style="margin-left: 4px; margin-top: 8px;">Tout</button>
+            <button type="button" class="btn btn-dark" onclick="filterSelection('networkandsecurity')" style="margin-left: 4px; margin-top: 8px;">Réseaux & Sécurité</button>
+            <button type="button" class="btn btn-dark" onclick="filterSelection('personaldata')" style="margin-left: 4px; margin-top: 8px;">Données personnelles</button>
+            <button type="button" class="btn btn-dark" onclick="filterSelection('ethicalhacking')" style="margin-left: 4px; margin-top: 8px;">Ethical Hacking</button>
+            <button type="button" class="btn btn-dark" onclick="filterSelection('threatintelligence')" style="margin-left: 4px; margin-top: 8px;">Threat Intelligence</button>
+            <button type="button" class="btn btn-dark" onclick="filterSelection('awareness')" style="margin-left: 4px; margin-top: 8px;">Sensibilisation</button>
+            <button type="button" class="btn btn-dark" onclick="filterSelection('other')" style="margin-left: 4px; margin-top: 8px;">Autres</button>
           </div>
+
+          <div class="specialcontainer">
+
+            <div class="filterDiv networkandsecurity">
+              <a href="https://www.macg.co/services/2023/02/dns0eu-un-nouveau-service-de-dns-europeen-par-les-createurs-de-nextdns-134861" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/awareness8.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">dns0.eu : un nouveau service de DNS européen</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Réseaux & Sécurité</h6>
+                        <small class="text-muted">15/02/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="filterDiv personaldata">
+              <a href="https://www.cnil.fr/fr/la-cnil-publie-une-nouvelle-version-de-son-guide-de-la-securite-des-donnees-personnelles" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/cnil.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">La CNIL publie une nouvelle version de son guide de la sécurité des données personnelles</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Données personnelles</h6>
+                        <small class="text-muted">03/04/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="filterDiv ethicalhacking">
+              <a href="https://github.com/CMEPW/BypassAV" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px; ">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/colored-github-icon.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Mindmap sur le bypass AV</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Ethical Hacking</h6>
+                        <small class="text-muted">03/02/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="filterDiv awareness">
+              <a href="https://france3-regions.francetvinfo.fr/provence-alpes-cote-d-azur/bouches-du-rhone/marseille/6-conseils-pour-mieux-proteger-sa-vie-privee-et-ses-donnees-en-ligne-2768222.html" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/awareness1.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Cybersécurité : 6 conseils pour mieux protéger sa vie privée et ses données en ligne</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Sensibilisation</h6>
+                        <small class="text-muted">06/05/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="filterDiv ethicalhacking">
+              <a href="https://offsec.tools/" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/offsectools.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">offsec.tools - A vast collection of security tools for bug bounty, pentest and red teaming</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Ethical Hacking</h6>
+                        <small class="text-muted">10/12/2022</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="filterDiv other">
+              <a href="https://wiki.campuscyber.fr/Matrice_des_comp%C3%A9tences_des_m%C3%A9tiers_techniques" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/awareness3.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Campus Cyber - Matrice des compétences des métiers techniques</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Autres</h6>
+                        <small class="text-muted">08/02/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="filterDiv other">
+              <a href="https://www.radiofrance.fr/franceinter/podcasts/veille-sanitaire/veille-sanitaire-du-mardi-07-mars-2023-6034395" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/surveillance.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Meta et Google collaborent avec la police pour traquer les femmes cherchant à avorter</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Autres</h6>
+                        <small class="text-muted">07/03/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="filterDiv ethicalhacking">
+              <a href="https://github.com/Ignitetechnologies/Nmap-For-Pentester" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px; ">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/colored-github-icon.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Nmap cheatsheet</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Ethical Hacking</h6>
+                        <small class="text-muted">11/02/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="filterDiv other">
+              <a href="https://pauljerimy.com/security-certification-roadmap/" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/awareness3.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Security Certification Roadmap</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Autres</h6>
+                        <small class="text-muted">13/08/2022</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="filterDiv ethicalhacking">
+              <a href="https://github.com/Samsar4/Ethical-Hacking-Labs" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/colored-github-icon.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Ethical Hacking Labs</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Ethical Hacking</h6>
+                        <small class="text-muted">07/05/2021</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="filterDiv threatintelligence">
+              <a href="https://www.zimperium.com/blog/the-case-of-cloud9-chrome-botnet/" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/malware.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Cloud9, une extension de navigateur malveillante</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Threat Intelligence</h6>
+                        <small class="text-muted">08/11/2022</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="filterDiv ethicalhacking">
+              <a href="https://github.com/0xsyr0/OSCP" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/colored-github-icon.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">OSCP Cheat Sheet</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Ethical Hacking</h6>
+                        <small class="text-muted">24/05/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="filterDiv awareness">
+              <a href="https://www.amazon.fr/Cyberattaques-dessous-dune-menace-mondiale/dp/2019462494" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/malware.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Cyberattaques : Les dessous d'une menace mondiale</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Sensibilisation</h6>
+                        <small class="text-muted">02/10/2022</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="filterDiv other">
+              <a href="https://usbeketrica.com/fr/article/pourquoi-la-cybersecurite-n-arrive-plus-a-recruter#:~:text=Alors%20que%20les%20menaces%20et,structurelles%20au%20sein%20des%20effectifs." target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/awareness2.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Pourquoi la cybersécurité n’arrive plus à recruter</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Autres</h6>
+                        <small class="text-muted">10/06/2022</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="filterDiv threatintelligence">
+              <a href="https://www.malwarebytes.com/blog/news/2022/06/hackers-can-take-over-accounts-you-havent-even-created-yet" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/malware.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Les pirates peuvent s'emparer de comptes que vous n'avez pas encore créés</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Threat Intelligence</h6>
+                        <small class="text-muted">07/06/2022</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="filterDiv other">
+              <a href="https://www.youtube.com/watch?v=m2WLjBisiLs" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/malware.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Cyber-guerres : les secrets de ces conflits invisibles</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Autres</h6>
+                        <small class="text-muted">03/05/2022</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            
+            <div class="filterDiv threatintelligence">
+              <a href="https://www.ledevoir.com/societe/695250/recherche-et-innovation-des-failles-de-cybersecurite-dans-les-bornes-de-recharge-de-vehicules-electriques" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/malware.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Des failles de cybersécurité dans les bornes de recharge de véhicules électriques</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Threat Intelligence</h6>
+                        <small class="text-muted">04/04/2022</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="filterDiv awareness">
+              <a href="https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/rapport-activite-2022" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/awareness1.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Chiffres et tendances des cybermenaces : Cybermalveillance.gouv.fr dévoile son rapport d’activité 2022</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Sensibilisation</h6>
+                        <small class="text-muted">23/03/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="filterDiv threatintelligence">
+              <a href="https://www.cert.ssi.gouv.fr/cti/CERTFR-2023-CTI-001/" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/awareness5.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">CERT-FR : Panorama de la cybermenace 2022</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Threat Intelligence</h6>
+                        <small class="text-muted">24/01/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="filterDiv awareness">
+              <a href="https://www.cybermalveillance.gouv.fr/tous-nos-contenus/bonnes-pratiques/cyberattaque-consignes-collaborateurs" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/malware.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Que faire en cas de cyberattaque ?</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Sensibilisation</h6>
+                        <small class="text-muted">14/04/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="filterDiv awareness">
+              <a href="https://www.cybermalveillance.gouv.fr/medias/2021/09/immunite-cyber.pdf" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/awareness5.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Évaluez la sécurité numérique de votre collectivité en 10 points</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Sensibilisation</h6>
+                        <small class="text-muted">12/09/2021</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="filterDiv all networkandsecurity personaldata ethicalhacking threatintelligence awareness other" style="margin-bottom: 140px;"></div>
+
+          </div>
+          <script>
+            filterSelection("all")
+            function filterSelection(c) {
+              var x, i;
+              x = document.getElementsByClassName("filterDiv");
+              if (c == "all") c = "";
+              // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+              for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+              }
+            }
+
+            // Show filtered elements
+            function w3AddClass(element, name) {
+              var i, arr1, arr2;
+              arr1 = element.className.split(" ");
+              arr2 = name.split(" ");
+              for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                  element.className += " " + arr2[i];
+                }
+              }
+            }
+
+            // Hide elements that are not selected
+            function w3RemoveClass(element, name) {
+              var i, arr1, arr2;
+              arr1 = element.className.split(" ");
+              arr2 = name.split(" ");
+              for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                  arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+              }
+              element.className = arr1.join(" ");
+            }
+            
+          </script>
 
         </div>
       </div>
