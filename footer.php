@@ -19,9 +19,7 @@
                 Jaynerro </br> Work In Progress
             </div>
             <div class="col" style="margin: auto; font-size: x-small;">
-                
-                <?php //Copyright ?>
-                    Copyright © <?php echo date("Y");?> Jaynerro
+                2022 - <?php echo date("Y");?>
             </div>
         </div>
     </div>
