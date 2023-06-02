@@ -160,7 +160,7 @@
                     La taille maximale est de 1518 octets, pour une trame Ethernet. 
                 </p>
                 <p style="margin-top: 40px;"> 
-                    Le matériel de couche 2 est le &nbsp; <a href="/knowledge-base/basics/network/networking-hardware/switch.php"> switch </a> .
+                    Le matériel de couche 2 est le &nbsp; <a href="/kb/basics/network/networking-hardware/switch.php"> switch </a> .
                 </p>
 
 

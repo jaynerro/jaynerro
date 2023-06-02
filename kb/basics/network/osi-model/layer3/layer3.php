@@ -318,7 +318,7 @@
                     Le choix de mettre l'adresse IP en fin d'en-tête n'est pas anodin et sert surtout à mettre les informations importantes de couche 3 proches des informations importantes de couche 4 que nous verrons plus tard.
                 </p>
                 <p style="margin-top: 40px;"> 
-                    Le matériel de couche 3 permettant de relier plusieurs réseaux est le &thinsp; <a href="/knowledge-base/basics/network/networking-hardware/router.php"> routeur </a>.
+                    Le matériel de couche 3 permettant de relier plusieurs réseaux est le &thinsp; <a href="/kb/basics/network/networking-hardware/router.php"> routeur </a>.
                 </p>
                 
             </div>
