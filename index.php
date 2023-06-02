@@ -50,7 +50,7 @@
             Le but
           </p>
           <p style="margin-top: 20px;">
-            Progresser sur le sujet de la Cybersécurité et plus précisément sur la sécurité offensive / Ethical Hacking.
+            Progresser sur le vaste sujet de la Cybersécurité, aussi bien sur la partie offensive que défensive.
           </p>
         </div>
       </div>
@@ -60,7 +60,7 @@
             Le plan
           </p>
           <p style="margin-top: 20px;">
-            Apprendre, centraliser la connaissance acquise et rendre cela disponible pour tout le monde.
+            Apprendre, centraliser, structurer la connaissance acquise et rendre cela accessible à tous.
           </p>
         </div>
       </div>
@@ -70,7 +70,7 @@
             Disclaimer
           </p>
           <p style="font-size: x-small";>
-            Dans la partie Knowledge Base, il s’agit là d'une concentration d'informations tirées de différentes ressources lors de mon apprentissage de certaines notions. Ma Knowledge Base n’est en aucun cas, une référence absolue des thèmes que j’aborde. De même pour la partie Veille Informationnelle, où ce ne sont que des faits d’actualités qui m’ont marqués et auxquels je trouvais intéressant de partager, il ne s'agit pas là de la référence de l'actualités cyber. 
+            Dans la partie Knowledge Base, concernant les notions abordées, il s’agit là d'une concentration d'informations tirées de différentes ressources lors de mon apprentissage. Ma Knowledge Base n’est en aucun cas, une référence absolue des thèmes que j’aborde. De même pour la partie Veille Informationnelle, où ce ne sont que des faits d’actualités qui m’ont marqués et auxquels je trouvais intéressant de partager, il ne s'agit pas là de la référence de l'actualité cyber. 
           </p>
         </div>
       </div>
