@@ -49,6 +49,291 @@
 
           <div class="specialcontainer">
 
+            <div class="filterDiv other">
+              <a href="https://www.it-connect.fr/le-senat-autorise-lactivation-a-distance-des-micros-ou-cameras-des-smartphones/" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/surveillance.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Le Sénat autorise l’activation à distance des micros ou caméras des smartphones</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Autres</h6>
+                        <small class="text-muted">09/06/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          
+           <div class="filterDiv awareness">
+              <a href="https://www.it-connect.fr/comment-creer-une-campagne-de-phishing-avec-gophish/" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/awareness3.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Comment créer une campagne de phishing avec Gophish ?</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Sensibilisation</h6>
+                        <small class="text-muted">16/09/2021</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="filterDiv threatintelligence">
+              <a href="https://www.csoonline.com/article/3698516/chatgpt-creates-mutating-malware-that-evades-detection-by-edr.html" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/malware.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">ChatGPT creates mutating malware that evades detection by EDR</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Autres</h6>
+                        <small class="text-muted">06/06/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+           <div class="filterDiv threatintelligence">
+              <a href="https://www.orangecyberdefense.com/fr/insights/blog/lutilisation-croissante-de-lintelligence-artificielle-dans-les-cyberattaques-une-menace-grandissante-pour-la-securite-informatique?utm_source=twitter&utm_medium=Social&utm_campaign=Resources" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/awareness3.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">L’utilisation croissante de l’intelligence artificielle dans les cyberattaques : une menace grandissante pour la sécurité informatique</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Autres</h6>
+                        <small class="text-muted">30/03/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="filterDiv ethicalhacking">
+              <a href="https://github.com/Ignitetechnologies/Mindmap/blob/main/Shodan/Shodan%20UHD.png" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/colored-github-icon.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Shodan Mindmap</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Ethical Hacking</h6>
+                        <small class="text-muted">19/02/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="filterDiv awareness">
+              <a href="https://www.cio-online.com/actualites/lire-le-deepfake-voice-nouvelle-menace-sur-la-securite-des-entreprises-14948.html" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/surveillance.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Le Deepfake Voice, nouvelle menace sur la sécurité des entreprises</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Sensibilisation</h6>
+                        <small class="text-muted">23/05/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          
+            <div class="filterDiv awareness">
+              <a href="https://www.linkedin.com/posts/cybertaskforce-france_quenpensezvous-cybersaezcuritaez-cybersaezcuritaez-activity-6990946846378467328-7CWv?utm_source=share&utm_medium=member_desktop" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/awareness3.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Qu'est qu'une violence numérique ?</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Sensibilisation</h6>
+                        <small class="text-muted">06/05/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="filterDiv threatintelligence">
+              <a href="https://www.authentic8.com/blog/21-osint-research-tools-threat-intelligence-investigations" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/offsectools.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">21 OSINT research tools for threat intelligence investigations</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Threat Intelligence</h6>
+                        <small class="text-muted">29/09/2021</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="filterDiv ethicalhacking">
+              <a href="https://github.com/mxrch/GHunt" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/colored-github-icon.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">GHunt, an offensive Google framework, designed to evolve efficiently focused on OSINT</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Ethical Hacking</h6>
+                        <small class="text-muted">03/12/2022</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+           <div class="filterDiv threatintelligence">
+              <a href="https://drive.google.com/file/d/1zEHbBJEHddxVdCbdvBplgh1AaVDot9eM/view" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/awareness3.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">ChatGPT for CyberSecurity</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Autres</h6>
+                        <small class="text-muted">09/01/2022</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="filterDiv other">
+              <a href="https://www.lesechos.fr/finance-marches/banque-assurances/le-risque-cyber-va-devenir-inassurable-selon-le-patron-de-zurich-insurance-1892042" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/awareness2.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Le risque cyber va devenir « inassurable », selon le patron de Zurich Insurance</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Autres</h6>
+                        <small class="text-muted">26/12/2022</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="filterDiv threatintelligence">
+              <a href="https://www.lemondeinformatique.fr/actualites/lire-les-premiers-pas-de-chatgpt-dans-la-cyber-malveillance-89163.html" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/malware.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Les premiers pas de ChatGPT dans la cyber-malveillance</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Threat Intelligence</h6>
+                        <small class="text-muted">10/01/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          <div class="filterDiv ethicalhacking">
+              <a href="https://amr-git-dot.github.io/offensive/Priv-esc/" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px; ">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/offsectools.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Windows Privilege escalation Cheat Sheet</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Ethical Hacking</h6>
+                        <small class="text-muted">24/01/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          
+            <div class="filterDiv ethicalhacking">
+              <a href="https://github.com/Ignitetechnologies/Mindmap/tree/main/Burp%20Suite" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px; ">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/colored-github-icon.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Burp Suite Extensions Cheat Sheet</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Ethical Hacking</h6>
+                        <small class="text-muted">10/03/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="filterDiv threatintelligence">
+              <a href="https://veille-cyber.com/les-ransomwares-moins-lucratifs-les-cybercriminels-diversifient-leurs-tactiques/" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/malware.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Les ransomwares moins lucratifs, les cybercriminels diversifient leurs tactiques</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Threat Intelligence</h6>
+                        <small class="text-muted">02/03/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
             <div class="filterDiv networkandsecurity">
               <a href="https://www.macg.co/services/2023/02/dns0eu-un-nouveau-service-de-dns-europeen-par-les-createurs-de-nextdns-134861" target="_blank">
                 <div class="card text-white bg-dark" style="margin-top: 20px;">
