@@ -283,35 +283,35 @@
                       <ul>
 
                         <li id="liComputerProgrammingDefinition">
-                          <a href="#">Qu'est-ce que c'est ?</a>
+                          <a href="/kb/basics/development/computer-programming/what-is-it.php">Qu'est-ce que c'est ?</a>
                         </li>
 
                         <li id="liProgrammingParadigms">
-                          <a href="#">Les différents paradigmes</a>
+                          <a href="/kb/basics/development/computer-programming/programming-paradigm.php">Les différents paradigmes</a>
                         </li>
 
                         <li id="liAlgorithm">
-                          <a href="#">L'algorithme</a>
+                          <a href="/kb/basics/development/computer-programming/algorithm">L'algorithme</a>
                         </li>
 
                         <li id="liVariablesTypes">
-                          <a href="#">Les variables et leurs types</a>
+                          <a href="/kb/basics/development/computer-programming/variables-and-types.php">Les variables et leurs types</a>
                         </li>
 
                         <li id="liDataStructure">
-                          <a href="#">Les structures de données</a>
+                          <a href="/kb/basics/development/computer-programming/data-structure.php">Les structures de données</a>
                         </li>
 
                         <li id="liClassesObjectsFonctions">
-                          <a href="#">Les classes, les objets et les fonctions</a>
+                          <a href="/kb/basics/development/computer-programming/classes-objects-functions.php">Les classes, les objets et les fonctions</a>
                         </li>
 
                         <li id="liOperators">
-                          <a href="#">Les opérateurs</a>
+                          <a href="/kb/basics/development/computer-programming/operators.php">Les opérateurs</a>
                         </li>
 
                         <li id="liConditionalIterativeStatements">
-                          <a href="#">Les instructions conditionnelles et itératives</a>
+                          <a href="/kb/basics/development/computer-programming/conditional-iterative-statements.php">Les instructions conditionnelles et itératives</a>
                         </li>
 
                         <li id="liLibrairies">

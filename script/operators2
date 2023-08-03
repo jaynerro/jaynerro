@@ -1,0 +1,7 @@
+public int exemple (int a, int b) {
+    int c = 0 ; 
+    if (a != 0 && b != 0) {
+        c = a + b ;
+    }
+   return c ;
+}

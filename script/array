@@ -1,0 +1,5 @@
+string [] tab = new string [3] ;
+tab[0] = "toto" ; 
+tab[1] = "tata" ; 
+tab[2] = "titi" ; 
+string res = tab[1] ; //renvoie "tata"

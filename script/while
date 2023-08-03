@@ -1,0 +1,7 @@
+public void exemple (List <int> list) {
+       int result ; 
+       while (i < 10) {
+             result = i ; 
+             console.writeline(result.toString () ) ;
+       }
+}

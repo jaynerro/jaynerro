@@ -1,0 +1,7 @@
+public void exemple (List <int> list) {
+      int result ;
+      foreach (int i in list) {
+          result = i ;
+          Console.writeline(result.toString()) ;
+     }
+}

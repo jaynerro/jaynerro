@@ -1,0 +1,6 @@
+public void exemple () {
+        for (int i=0, i<=10, i++) {
+              int result = i ;
+              console.writeline(result.toString()) ;
+         }
+}
