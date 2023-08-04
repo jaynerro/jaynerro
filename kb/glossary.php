@@ -263,6 +263,10 @@
           </h3>
 
           <h3 style="margin-top: 35px;">
+            <a href="./basics/development/computer-programming/ide#IDE">IDE</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
             <a href="./basics/network/wireless-network/wi-fi#IEEE">IEEE</a>
           </h3>
 
