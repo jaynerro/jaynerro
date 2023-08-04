@@ -283,11 +283,11 @@
                       <ul>
 
                         <li id="liComputerProgrammingDefinition">
-                          <a href="/kb/basics/development/computer-programming/what-is-it.php">Qu'est-ce que c'est ?</a>
+                          <a href="/kb/basics/development/computer-programming/what-is-it">Qu'est-ce que c'est ?</a>
                         </li>
 
                         <li id="liProgrammingParadigms">
-                          <a href="/kb/basics/development/computer-programming/programming-paradigm.php">Les différents paradigmes</a>
+                          <a href="/kb/basics/development/computer-programming/programming-paradigm">Les différents paradigmes</a>
                         </li>
 
                         <li id="liAlgorithm">
@@ -295,39 +295,39 @@
                         </li>
 
                         <li id="liVariablesTypes">
-                          <a href="/kb/basics/development/computer-programming/variables-and-types.php">Les variables et leurs types</a>
+                          <a href="/kb/basics/development/computer-programming/variables-and-types">Les variables et leurs types</a>
                         </li>
 
                         <li id="liDataStructure">
-                          <a href="/kb/basics/development/computer-programming/data-structure.php">Les structures de données</a>
+                          <a href="/kb/basics/development/computer-programming/data-structure">Les structures de données</a>
                         </li>
 
                         <li id="liClassesObjectsFonctions">
-                          <a href="/kb/basics/development/computer-programming/classes-objects-functions.php">Les classes, les objets et les fonctions</a>
+                          <a href="/kb/basics/development/computer-programming/classes-objects-functions">Les classes, les objets et les fonctions</a>
                         </li>
 
                         <li id="liOperators">
-                          <a href="/kb/basics/development/computer-programming/operators.php">Les opérateurs</a>
+                          <a href="/kb/basics/development/computer-programming/operators">Les opérateurs</a>
                         </li>
 
                         <li id="liConditionalIterativeStatements">
-                          <a href="/kb/basics/development/computer-programming/conditional-iterative-statements.php">Les instructions conditionnelles et itératives</a>
+                          <a href="/kb/basics/development/computer-programming/conditional-iterative-statements">Les instructions conditionnelles et itératives</a>
                         </li>
 
                         <li id="liLibrairies">
-                          <a href="#">Les librairies</a>
+                          <a href="/kb/basics/development/computer-programming/libraries">Les librairies</a>
                         </li>
 
                         <li id="liFrameworks">
-                          <a href="#">Les frameworks</a>
+                          <a href="/kb/basics/development/computer-programming/frameworks">Les frameworks</a>
                         </li>
 
                         <li id="liProgramLifecyclePhases">
-                          <a href="#">Les différentes phases de cycle de vie de la programmation</a>
+                          <a href="/kb/basics/development/computer-programming/program-life-cycle">Les différentes phases de cycle de vie de la programmation</a>
                         </li>
 
                         <li id="liIDE">
-                          <a href="#">IDE</a>
+                          <a href="/kb/basics/development/computer-programming/ide">IDE</a>
                         </li>
                       
                       </ul>
@@ -338,7 +338,7 @@
                       <ul>
 
                         <li id="liHTMLCSS">
-                          <a href="#">HTLM / CSS</a>
+                          <a href="/kb/basics/development/programming-languages/html-css">HTLM / CSS</a>
                         </li>
 
                         <li id="liPHPSQL">
