@@ -40,7 +40,7 @@
                             <li class="breadcrumb-item"><a href="../../../../../knowledge-base">Knowledge Base</a></li>
                             <li class="breadcrumb-item"><p style="font-size: medium;">Cybersécurité : les bases</p></li>
                             <li class="breadcrumb-item"><p style="font-size: medium;">Développement</p></li>
-                            <li class="breadcrumb-item"><p style="font-size: medium;">La programmation informatique</p></li>
+                            <li class="breadcrumb-item"><p style="font-size: medium;">Langages de programmation</p></li>
                             <li class="breadcrumb-item active" aria-current="page">HTML / CSS</li>
                         </ol>
                     </nav>
@@ -54,27 +54,25 @@
                 </h1>
                 <img src="../../../../images/html-css.png" class="img-fluid mx-auto d-block" style="max-width: 85%; margin-top: 30px;"/>
                 <p style="margin-top: 30px;"> 
-                   Ne voulant pas m'attarder sur les explications des langages, voici ci-dessous des liens vers des sites détaillant l'ensemble de ce dernier :
+                   Ne voulant pas m'attarder sur les explications des langages, voici ci-dessous des liens vers des sites détaillant l'ensemble de ces derniers :
                 </p>
-
-            </div>
-        </div>
-      
-        <div class="row justify-content-center">
-            <div class="group col-sm-8">
-  
-                <h3 style="margin-top: 60px;">
-                    Références
-                </h3>
-
-                <h6 style="margin-top: 30px;">
-                    <a href="https://fr.wikipedia.org/wiki/Programmation_informatique" target="_blank">Wikipedia - Programmation informatique</a>
-                </h6>             
-
-                <h6 style="margin-top: 30px; margin-bottom: 140px;">
-                    <a href="https://www.data-transitionnumerique.com/programmation-informatique-guide-complet/" target="_blank">Data Transition Numérique - Apprendre à coder : le guide ultime de la programmation informatique</a>
-                </h6>              
-
+                <ul style="margin-top: 20px; font-size: large; text-align: justify; color: white;">
+                    <li>
+                        <h6 style="margin-top: 30px;">
+                            <a href="https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3" target="_blank">Openclassrooms - Créez votre site web avec HTML5 et CSS3</a>
+                        </h6> 
+                    </li>
+                    <li>
+                        <h6 style="margin-top: 30px;">
+                            <a href="https://www.sitedudev.com/cours/html" target="_blank">Sitedudev - Apprendre les bases HTML</a>
+                        </h6>
+                    </li>
+                    <li>
+                        <h6 style="margin-top: 30px; margin-bottom: 180px;">
+                            <a href="https://www.sitedudev.com/cours/css" target="_blank">Sitedudev - Apprendre les bases du CSS</a>
+                        </h6> 
+                    </li>
+                </ul>
             </div>
         </div>
 

@@ -342,19 +342,19 @@
                         </li>
 
                         <li id="liPHPSQL">
-                          <a href="#">PHP / SQL</a>
+                          <a href="/kb/basics/development/programming-languages/php-sql">PHP / SQL</a>
                         </li>
 
                         <li id="liJS">
-                          <a href="#">Javascript</a>
+                          <a href="/kb/basics/development/programming-languages/javascript">Javascript</a>
                         </li>
 
                         <li id="liPython">
-                          <a href="#">Python</a>
+                          <a href="/kb/basics/development/programming-languages/python">Python</a>
                         </li>
 
                         <li id="liC">
-                          <a href="#">C</a>
+                          <a href="/kb/basics/development/programming-languages/c">C</a>
                         </li>
                       
                       </ul>
