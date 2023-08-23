@@ -1,4 +1,4 @@
-![alt text](https://github.com/jaynerro/jaynerro/blob/main/images/jaynerro-icon.png?raw=true)
+![alt text](https://github.com/jaynerro/jaynerro/blob/main/images/jaynerro.png?raw=true)
 # Jaynerro
 
 ## Table of contents
