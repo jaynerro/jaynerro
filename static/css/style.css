@@ -1,3 +1,11 @@
+.filterDiv {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
 p {
     color: white;
     text-align: justify;
