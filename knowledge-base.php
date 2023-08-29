@@ -367,7 +367,7 @@
                   <ul>
 
                     <li id="liBinary">
-                      <a href="#">Système binaire</a>
+                      <a href="/kb/basics/hardware/binary-number-system">Système binaire</a>
                     </li>
 
                     <li id="liMemory">
