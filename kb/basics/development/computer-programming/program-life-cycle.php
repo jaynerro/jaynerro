@@ -1,4 +1,4 @@
-<?php //On démarre la session ?>framework
+<?php //On démarre la session ?>
 <?php //session_start(); ?>
 
 

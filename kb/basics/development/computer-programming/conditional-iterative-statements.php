@@ -62,6 +62,10 @@
                     <b>Les conditions</b>
                 </p>
                 <p style="margin-top: 30px;">
+                    Une condition permet de vérifier si une affirmation est vraie ou fausse, comme son nom l’indique. Cela sert à évaluer l’instruction qui doit être exécutée. En algorithme voici comment c’est illustré :
+                </p>
+                <img src="../../../../images/if-else.png" class="img-fluid mx-auto d-block" style="max-width: 70%; margin-top: 30px;"/>
+                <p style="margin-top: 30px;">
                     Vous voyez qu’il y a deux branches pour l’exécution du programme. Une instruction à exécuter si la condition est vraie et une autre différente si c’est le contraire. Chaque valeur de retour possède un bloc d’instructions que le programme va exécuter.</br></br>
                     Toutefois, pendant votre parcours, vous serez amené à voir une condition sans pour autant donner une instruction lorsque l’affirmation est fausse. C’est le cas de notre exemple dans la section opérateur. Mais pour une condition complète voici comme ça s’écrit :
                 </p>
@@ -69,6 +73,7 @@
                 <p style="margin-top: 30px;">
                     Vous pourriez aussi apercevoir des formes de condition imbriquées. C’est-à-dire une suite de conditions qui émettra des instructions selon leurs résultats.
                 </p>
+                <img src="../../../../images/if-else-2.png" class="img-fluid mx-auto d-block" style="max-width: 90%; margin-top: 30px;"/>
                 <p style="margin-top: 40px; margin-left: 10px; justify-content: start">
                     <b>Les boucles</b>
                 </p>
@@ -82,6 +87,7 @@
                 <p style="margin-top: 30px;">
                     C’est la boucle idéale lorsque vous souhaitez parcourir un tableau. Il va récupérer les valeurs de celui-ci selon l’ordre que vous avez indiqué dans la déclaration de la boucle. Cette boucle permet aussi d’itérer sur une instruction un nombre précis de fois. Ce que vous voyez ci-dessous est l’algorithme de base d’une boucle.
                 </p>
+                <img src="../../../../images/for.png" class="img-fluid mx-auto d-block" style="max-width: 60%; margin-top: 30px;"/>
                 <p style="margin-top: 30px;">
                     Et voici comment cela s’écrit en code. Veuillez toujours vous rappeler que c’est juste un exemple de manière de coder. La syntaxe peut changer selon les langages.
                 </p>
@@ -96,6 +102,7 @@
                     En ce qui concerne foreach, elle est plutôt utilisée sur une liste. Rien ne vous empêche toutefois de l’utiliser sur un tableau. Comme la boucle for, elle parcourt aussi le contenu de la liste.</br></br>
                     En algorithme, cela donne ce que nous voyons en bas :
                 </p>
+                <img src="../../../../images/foreach.png" class="img-fluid mx-auto d-block" style="max-width: 60%; margin-top: 30px;"/>
                 <p style="margin-top: 30px;">
                     Elle va donc parcourir la liste et à chaque valeur, exécuter des instructions. Une fois que la liste est vide, le programme se poursuit. Vous pouvez donc déduire qu’elle décrémente la liste à chaque appel. Voici un exemple de code de foreach :
                 </p>
@@ -108,6 +115,7 @@
                     Toutefois, vous pouvez également l’utiliser comme les autres boucles. C’est-à-dire au début de l’instruction.</br></br>
                     Voici comment l’algorithme se présente :
                 </p>
+                <img src="../../../../images/while.png" class="img-fluid mx-auto d-block" style="max-width: 60%; margin-top: 30px;"/>
                 <p style="margin-top: 30px; justify-content: start">
                     Et voici un exemple d’implémentation :
                 </p>
@@ -115,6 +123,7 @@
                 <p style="margin-top: 30px;">
                     Ce que nous voyons ci-dessus est un exemple où la boucle while agit comme les autres boucles. L’exemple de code ci-après illustre son implémentation lorsqu’elle est utilisée à la fin de l’instruction :
                 </p>
+                <img src="../../../../images/while2.png" class="img-fluid mx-auto d-block" style="max-width: 60%; margin-top: 30px;"/>
                 <pre><code class="language-markup"><?php require_once'../../../../script/while2'?></code></pre>
                 <p style="margin-top: 30px;">
                     Vous remarquez sans doute qu’un préfixe do s’ajoute à l’appel de la boucle. C’est lui qui ordonnera au programme d’exécuter les instructions.</br></br>
