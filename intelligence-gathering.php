@@ -48,6 +48,25 @@
           </div>
 
           <div class="specialcontainer">
+          
+          <div class="filterDiv threatintelligence">
+              <a href="https://thehackernews.com/2023/06/fake-researcher-profiles-spread-malware.html" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/malware.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Des faux comptes Github se faisant passer pour des chercheurs en cybersécurité créés pour diffuser des malwares</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Threat Intelligence</h6>
+                        <small class="text-muted">15/06/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
 
             <div class="filterDiv other">
               <a href="https://www.it-connect.fr/le-senat-autorise-lactivation-a-distance-des-micros-ou-cameras-des-smartphones/" target="_blank">

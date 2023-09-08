@@ -417,6 +417,10 @@
           </h2>
 
           <h3 style="margin-top: 35px;">
+            <a href="./basics/hardware/memory/ram#RAM">RAM</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
             <a href="./basics/network/osi-model/layer3/layer3#RFC">RFC</a>
           </h3>
 
@@ -426,6 +430,10 @@
 
           <h3 style="margin-top: 35px;">
             <a href="./basics/network/network-architecture#RLE">RLE</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/hardware/memory/rom#ROM">ROM</a>
           </h3>
 
           <h3 style="margin-top: 35px;">

@@ -375,11 +375,11 @@
                       <ul>
 
                         <li id="liRAM">
-                          <a href="#">Mémoire vive</a>
+                          <a href="/kb/basics/hardware/memory/ram">Mémoire vive</a>
                         </li>
 
                         <li id="liROM">
-                          <a href="#">Mémoire morte</a>
+                          <a href="/kb/basics/hardware/memory/rom">Mémoire morte</a>
                         </li>
 
                         <li id="liCache">
