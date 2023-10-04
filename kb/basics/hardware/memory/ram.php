@@ -93,6 +93,20 @@
                 <p style="margin-top: 10px;">
                     Le martèlement de mémoire (Row hammer) est un effet secondaire imprévu dans les mémoires dynamiques à accès directe (DRAM) qui provoque une fuite de charge électrique dans des cellules de mémoire, et en conséquence provoque une interaction électrique entre ces cellules et d'autres cellules voisines.
                 </p>
+                <p style="margin-top: 40px;">
+                    ____________________________________________
+                </p>
+                <p style="margin-top: 60px; margin-left: 40px; font-size: x-large; justify-content: start">
+                    <b>La mémoire cache</b>
+                </p>
+                <p style="margin-top: 10px;">
+                    La mémoire cache est un type de mémoire vive (RAM) à laquelle le microprocesseur peut accéder plus rapidement qu'à la mémoire RAM habituelle. Généralement, cette mémoire cache est directement intégrée dans la puce de l'unité centrale (UC) ou placée sur une puce distincte dotée d'une interconnexion par bus à l'UC.</br></br>
+                    Une mémoire cache ou antémémoire est, en informatique, une mémoire qui enregistre temporairement des copies de données provenant d'une source, afin de diminuer le temps d'un accès ultérieur (en lecture) d'un matériel informatique (en général, un processeur) à ces données. Le principe du cache est également utilisable en écriture, et existe alors en trois modes possibles : write-through, write-back et write-around</br></br>
+                    La fonction de base de la mémoire cache est de stocker les instructions de programme qui sont fréquemment re-référencées par les logiciels en cours d'exécution. L'accès rapide à ces instructions accroît la vitesse globale des logiciels.</br></br>
+                    Lorsque le microprocesseur traite des données, il cherche d'abord dans la mémoire cache ; s'il y trouve les instructions (stockées suite à une précédente lecture des données), cela lui évite d'effectuer une lecture des données plus longue dans une mémoire plus volumineuse ou sur d'autres périphériques de stockage.</br></br>
+                    La plupart des programmes utilisent très peu de ressources une fois qu'ils ont été ouverts et utilisés pendant un certain temps, principalement parce que les instructions souvent re-référencées ont tendance à être placées en mémoire cache. Cela explique pourquoi les mesures des performances système des ordinateurs équipés de processeurs plus lents mais de mémoires caches plus grandes ont tendance à être plus élevées que celles des ordinateurs plus rapides mais plus limités en espace mémoire cache.</br></br>
+                    La mise en cache multiniveau est devenue courante dans les architectures serveur et des postes de travail, les différentes couches améliorant le rendement grâce à la gestion en niveaux. En termes simples, moins l'accès à certaines données ou instructions est fréquent, plus leur niveau d'écriture dans la mémoire cache est bas.
+                </p>
                 <script src="../../../../static/js/prism.js" type="text/javascript"></script>
             </div>
         </div>

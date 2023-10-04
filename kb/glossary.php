@@ -111,6 +111,10 @@
           </h3>
 
           <h3 style="margin-top: 35px;">
+            <a href="./basics/hardware/cpu/instruction-set-architecture#CISC">CISC</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
             <a href="./basics/system/client-server-model/active-directory/the-heart-of-the-active-directory#CN">CN</a>
           </h3>
 
@@ -120,6 +124,10 @@
 
           <h3 style="margin-top: 35px;">
             <a href="./basics/network/networking-hardware/ap#CPL">CPL</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/hardware/cpu/cores-threads-and-hyper-threading#cpu">CPU</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
@@ -231,6 +239,10 @@
 
           <h3 style="margin-top: 35px;">
             <a href="./basics/system/client-server-model/active-directory/active-directory-and-domains#GPO">GPO</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/hardware/gpu/gpu-operation#gpu">GPU</a>
           </h3>
 
           <h3 style="margin-top: 35px;">
@@ -429,6 +441,10 @@
           </h3>
 
           <h3 style="margin-top: 35px;">
+            <a href="./basics/hardware/cpu/instruction-set-architecture#RISC">RISC</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
             <a href="./basics/network/network-architecture#RLE">RLE</a>
           </h3>
 
@@ -548,6 +564,10 @@
 
           <h3 style="margin-top: 35px;">
             <a href="./basics/network/osi-model/layer5to7/http#URL">URL</a>
+          </h3>
+
+          <h3 style="margin-top: 35px;">
+            <a href="./basics/hardware/interfaces/data-transfer.php#USB">USB</a>
           </h3>
 
           <h3 style="margin-top: 35px;">

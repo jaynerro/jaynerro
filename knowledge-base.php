@@ -382,10 +382,6 @@
                           <a href="/kb/basics/hardware/memory/rom">Mémoire morte</a>
                         </li>
 
-                        <li id="liCache">
-                          <a href="#">Mémoire cache</a>
-                        </li>
-                      
                       </ul>
                     </li>
 
@@ -394,17 +390,13 @@
                       <ul>
 
                         <li id="liCoreThread">
-                          <a href="#">Coeurs, Threads & Hyper Threading</a>
+                          <a href="/kb/basics/hardware/cpu/cores-threads-and-hyper-threading">Coeurs, Threads & Hyper Threading</a>
                         </li>
 
                         <li id="liInstructionSetArchitecture">
-                          <a href="#">Différentes architectures et jeu d'instructions</a>
+                          <a href="/kb/basics/hardware/cpu/instruction-set-architecture">Différentes architectures et jeu d'instructions</a>
                         </li>
 
-                        <li id="liAssembly">
-                          <a href="#">Assembleur</a>
-                        </li>
-                      
                       </ul>
                     </li>
 
@@ -413,11 +405,11 @@
                       <ul>
 
                         <li id="liGPUOperation">
-                          <a href="#">Fonctionnement</a>
+                          <a href="/kb/basics/hardware/gpu/gpu-operation">Fonctionnement</a>
                         </li>
 
                         <li id="liGPUForms">
-                          <a href="#">Différents types de processeurs</a>
+                          <a href="/kb/basics/hardware/gpu/gpu-forms">Différents types de processeurs</a>
                         </li>
                       
                       </ul>
@@ -428,19 +420,19 @@
                       <ul>
 
                         <li id="liDataTransfer">
-                          <a href="#">Interfaces de transfert de données</a>
+                          <a href="./kb/basics/hardware/interfaces/data-transfer">Interfaces de transfert de données</a>
                         </li>
 
                         <li id="liNetworkInterface">
-                          <a href="#">Interfaces réseau</a>
+                          <a href="./kb/basics/hardware/interfaces/network-interface">Interfaces réseau</a>
                         </li>
 
                         <li id="liStorageConnectivity">
-                          <a href="#">Connectique de stockage</a>
+                          <a href="./kb/basics/hardware/interfaces/storage-connectivity">Connectique de stockage</a>
                         </li>
 
                         <li id="liNetworkConnectivity">
-                          <a href="#">Connectique réseau</a>
+                          <a href="./kb/basics/hardware/interfaces/network-connectivity">Connectique réseau</a>
                         </li>
                       
                       </ul>
