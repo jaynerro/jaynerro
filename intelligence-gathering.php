@@ -48,6 +48,311 @@
           </div>
 
           <div class="specialcontainer">
+
+          
+          <div class="filterDiv awareness">
+              <a href="https://www.orangecyberdefense.com/fr/insights/blog/comment-proteger-votre-entreprise-des-cyberattaques-pendant-les-fetes-de-fin-dannee?utm_campaign=Cyber%2BLettre&utm_medium=web&utm_source=Cyber_Lettre_57" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/awareness5.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Comment protéger votre entreprise des cyberattaques pendant les fêtes de fin d’année ?</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Sensibilisation</h6>
+                        <small class="text-muted">07/12/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          <div class="filterDiv other">
+              <a href="https://www.numerama.com/cyberguerre/1574754-orange-a-fabrique-une-extension-chrome-qui-detecte-les-sites-de-phishing.html?utm_campaign=Cyber%2BLettre&utm_medium=web&utm_source=Cyber_Lettre_49" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/awareness1.png" class="img-fluid mx-auto d-block" style="max-width: 90px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Orange a créé une extension Chrome pour détecter les sites de phishing</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Autres</h6>
+                        <small class="text-muted">29/11/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          <div class="filterDiv threatintelligence">
+              <a href="https://www.it-connect.fr/cette-faille-de-securite-dans-google-agenda-permet-de-pirater-un-ordinateur-a-distance/#:~:text=Actu%20Cybers%C3%A9curit%C3%A9%20Web-,Cette%20faille%20de%20s%C3%A9curit%C3%A9%20dans%20Google%20Agenda,pirater%20un%20ordinateur%20%C3%A0%20distance%20!&text=Une%20faille%20de%20s%C3%A9curit%C3%A9%20affecte,d'un%20ordinateur%20%C3%A0%20distance." target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/malware.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Faille de sécurité critique dans Google Agenda</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Threat Intelligence</h6>
+                        <small class="text-muted">16/11/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          <div class="filterDiv awareness">
+              <a href="https://korben.info/outil-turbolehe-ameliorer-enquetes-osint-generer-rapport-holehe.html?utm_campaign=Cyber%2BLettre&utm_medium=web&utm_source=Cyber_Lettre_31" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/offsectools.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Turbolehe – Un peu d’OSINT pour trouver des emails</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Sensibilisation</h6>
+                        <small class="text-muted">31/10/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          <div class="filterDiv awareness">
+              <a href="https://www.francenum.gouv.fr/guides-et-conseils/protection-contre-les-risques/cybersecurite/une-mallette-cyber-pour-sensibiliser?utm_campaign=Cyber%2BLettre&utm_medium=web&utm_source=Cyber_Lettre_29" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/awareness3.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Une Mallette Cyber pour sensibiliser les salariés des TPE PME aux menaces en ligne</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Sensibilisation</h6>
+                        <small class="text-muted">20/10/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          <div class="filterDiv personaldata">
+              <a href="https://www.numerama.com/tech/1480552-tout-comprendre-au-dsa-la-loi-europeenne-qui-encadre-les-geants-du-web.html?utm_campaign=Cyber%2BLettre&utm_medium=web&utm_source=Cyber_Lettre_27" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/awareness8.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">DSA : la loi européenne qui encadre les géants du web</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Données personnelles</h6>
+                        <small class="text-muted">24/08/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          
+          <div class="filterDiv other">
+              <a href="https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/orange-collaboration-cybermalveillance-gouv-fr?utm_campaign=Cyber%2BLettre&utm_medium=web&utm_source=Cyber_Lettre_22" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/awareness2.png" class="img-fluid mx-auto d-block" style="max-width: 90px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Orange renforce sa collaboration avec Cybermalveillance.gouv.fr</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Autres</h6>
+                        <small class="text-muted">19/10/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          <div class="filterDiv ethicalhacking">
+              <a href="https://github.com/vxunderground/MalwareSourceCode" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/colored-github-icon.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Vxunderground : codes sources de logiciels malveillants</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Ethical Hacking</h6>
+                        <small class="text-muted">07/10/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          <div class="filterDiv networkandsecurity">
+              <a href="https://www.cybermalveillance.gouv.fr/medias/2021/09/immunite-cyber.pdf" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/awareness5.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">10 principales erreurs de configuration de cybersécurité par la NSA et la CISA</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Sensibilisation</h6>
+                        <small class="text-muted">05/10/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          <div class="filterDiv other">
+              <a href="https://www.solutions-numeriques.com/dossiers/campus-cyber-premier-bilan-avec-michel-van-den-berghe-son-president/" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/awareness2.png" class="img-fluid mx-auto d-block" style="max-width: 90px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Campus Cyber : premier bilan</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Autres</h6>
+                        <small class="text-muted">24/09/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          <div class="filterDiv awareness">
+              <a href="https://www.silicon.fr/competences-prestataire-cyber-460659.html" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/awareness1.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Les compétences à attendre d’un prestataire cyber</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Sensibilisation</h6>
+                        <small class="text-muted">16/03/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          <div class="filterDiv threatintelligence">
+              <a href="https://www.presse-citron.net/quest-ce-que-le-spearphishing-cette-menace-qui-nous-met-en-danger/" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/malware.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Qu’est-ce que le spearphishing ?</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Threat Intelligence</h6>
+                        <small class="text-muted">16/07/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          <div class="filterDiv awareness">
+              <a href="https://www.cybermalveillance.gouv.fr/tous-nos-contenus/bonnes-pratiques/sauvegardes" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/awareness1.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Bonnes pratiques : les sauvegardes</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Sensibilisation</h6>
+                        <small class="text-muted">13/11/2019</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          <div class="filterDiv awareness">
+              <a href="https://cyber.gouv.fr/actualites/publication-dun-outil-dautoevaluation-de-gestion-de-crise-cyber" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/awareness2.png" class="img-fluid mx-auto d-block" style="max-width: 90px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Outil d’autoévaluation de gestion de crise cyber</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Sensibilisation</h6>
+                        <small class="text-muted">04/07/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          <div class="filterDiv other">
+              <a href="https://www.alliancy.fr/travailler-cybersecurite-portrait-robot-expert-ideal" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/awareness3.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Travailler dans la cybersécurité : portrait-robot de l’expert idéal</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Autres</h6>
+                        <small class="text-muted">03/07/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          <div class="filterDiv other">
+              <a href="https://www.pinterest.de/pin/574138652508468001/" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/awareness3.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Infographie des différents domaines et sous-domaines de la Cybersécurité (non exhaustif)</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Autres</h6>
+                        <small class="text-muted">03/07/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
           
           <div class="filterDiv threatintelligence">
               <a href="https://thehackernews.com/2023/06/fake-researcher-profiles-spread-malware.html" target="_blank">
@@ -263,7 +568,7 @@
                 <div class="card text-white bg-dark" style="margin-top: 20px;">
                   <div class="row g-0">
                     <div class="col-md align-self-center" style="margin-left: 10px">
-                      <img src="/images/awareness2.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                      <img src="/images/awareness2.png" class="img-fluid mx-auto d-block" style="max-width: 90px;">
                     </div>
                     <div class="col-md-10">
                       <div class="card-body">
@@ -605,7 +910,7 @@
                 <div class="card text-white bg-dark" style="margin-top: 20px;">
                   <div class="row g-0">
                     <div class="col-md align-self-center" style="margin-left: 10px">
-                      <img src="/images/awareness2.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                      <img src="/images/awareness2.png" class="img-fluid mx-auto d-block" style="max-width: 90px;">
                     </div>
                     <div class="col-md-10">
                       <div class="card-body">
