@@ -1514,7 +1514,7 @@
               </a>
             </div>
 
-            <div class="filterDiv all networkandsecurity personaldata ethicalhacking threatintelligence awareness other" style="margin-bottom: 140px;"></div>
+            <div class="filterDiv all networkandsecurity personaldata ethicalhacking threatintelligence awareness other governance osint" style="margin-bottom: 140px;"></div>
 
           </div>
           <script>
