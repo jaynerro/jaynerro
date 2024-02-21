@@ -44,11 +44,468 @@
             <button type="button" class="btn btn-dark" onclick="filterSelection('ethicalhacking')" style="margin-left: 4px; margin-top: 8px;">Ethical Hacking</button>
             <button type="button" class="btn btn-dark" onclick="filterSelection('threatintelligence')" style="margin-left: 4px; margin-top: 8px;">Threat Intelligence</button>
             <button type="button" class="btn btn-dark" onclick="filterSelection('awareness')" style="margin-left: 4px; margin-top: 8px;">Sensibilisation</button>
+            <button type="button" class="btn btn-dark" onclick="filterSelection('osint')" style="margin-left: 4px; margin-top: 8px;">OSINT</button>
+            <button type="button" class="btn btn-dark" onclick="filterSelection('governance')" style="margin-left: 4px; margin-top: 8px;">Gouvernance</button>
             <button type="button" class="btn btn-dark" onclick="filterSelection('other')" style="margin-left: 4px; margin-top: 8px;">Autres</button>
           </div>
 
           <div class="specialcontainer">
 
+          <div class="filterDiv threatintelligence">
+              <a href="https://www.it-connect.fr/ransomware-lockbit-3-0-outil-de-dechiffrement-gratuit/" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/malware.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Opération Cronos – Ransomware LockBit 3.0 : un outil de déchiffrement est disponible</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Threat Intelligence</h6>
+                        <small class="text-muted">20/02/2024</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          <div class="filterDiv governance">
+              <a href="https://monespacenis2.cyber.gouv.fr/?utm_source=brevo&utm_campaign=La%20veille%20de%20la%20Cyberscurit1902&utm_medium=email" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/awareness3.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Evaluez si vous êtes concernés par la directive NIS 2</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Gouvernance</h6>
+                        <small class="text-muted">19/02/2024</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          
+          <div class="filterDiv threatintelligence">
+              <a href="https://www.ouest-france.fr/economie/budget/caf-600-000-allocataires-vises-par-un-piratge-il-est-conseille-de-changer-de-mot-de-passe-6368f7b6-cb24-11ee-a3b1-a38454b34a5c#:~:text=La%20Caisse%20d'Allocations%20Familiales,donn%C3%A9es%20de%20600%20000%20allocataires." target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/malware.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">CAF : 600 000 allocataires visés par un piratage, il est conseillé de changer de mot de passe</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Threat Intelligence</h6>
+                        <small class="text-muted">14/02/2024</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          <div class="filterDiv governance">
+              <a href="https://smartlinks.audiomeans.fr/l/le-monde-de-la-cyber-7962208c/teasing-la-cybersecurite-obligatoire-avec-nis-2-orange-cyberdefense-0b8dcc52" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/awareness3.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Se préparer à la directive NIS 2 - Orange Cyberdefense</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Gouvernance</h6>
+                        <small class="text-muted">13/02/2024</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          <div class="filterDiv other">
+              <a href="https://aqui.fr/article/chasser-lombre-de-la-cybermenace-dans-le-ciel-des-pme/" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/awareness3.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Chasser l’ombre de la cybermenace dans le ciel des PME</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Autres</h6>
+                        <small class="text-muted">11/01/2024</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          
+          <div class="filterDiv awareness">
+              <a href="https://www.orangecyberdefense.com/ar-ma/insights/blog/infection-par-cle-usb-comment-sen-proteger" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/awareness1.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Infection par clé USB : comment s'en protéger ?</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Sensibilisation</h6>
+                        <small class="text-muted">31/08/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          <div class="filterDiv other">
+              <a href="https://www.orangecyberdefense.com/fr/insights/blog/comment-communiquer-en-cas-de-cyberattaque" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/awareness3.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Comment communiquer en cas de cyberattaque ?</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Autres</h6>
+                        <small class="text-muted">24/10/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          
+          <div class="filterDiv threatintelligence">
+              <a href="https://www.usine-digitale.fr/article/4000-adresses-emails-et-mots-de-passe-d-ile-de-france-mobilites-connect-voles-par-des-hackers.N2180027" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/malware.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">4000 adresses emails et mots de passe d'Ile-de-France Mobilités Connect volés par des hackers</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Threat Intelligence</h6>
+                        <small class="text-muted">09/10/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          <div class="filterDiv other">
+              <a href="https://www.jeunes.gouv.fr/filigranefacile-un-outil-gratuit-pour-proteger-tous-vos-documents-1644" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/awareness5.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">FiligraneFacile, un outil gratuit pour protéger tous vos documents</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Autres</h6>
+                        <small class="text-muted">16/08/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          <div class="filterDiv osint">
+              <a href="https://github.com/megadose/ignorant" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/colored-github-icon.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">megadose/ignorant: ignorant permet de vérifier si un numéro de téléphone est utilisé sur un site comme Snapchat, Instagram</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">OSINT</h6>
+                        <small class="text-muted">20/07/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          <div class="filterDiv networkandsecurity">
+              <a href="https://mega.nz/folder/Bro0kIpY#5bxE_48py3JRf8NmSYsINA" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/awareness5.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Entire CCNA course with labs</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Réseaux & Sécurité</h6>
+                        <small class="text-muted">05/10/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          
+          <div class="filterDiv other">
+              <a href="https://www.linkedin.com/posts/yildizokan_oscp-notes-active-directory-activity-7084800425115164672-a8ND?utm_source=share&utm_medium=member_desktop" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/offsectools.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">OSCP Notes Active Directory</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Autres</h6>
+                        <small class="text-muted">12/07/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          <div class="filterDiv other">
+              <a href="https://www.linkedin.com/posts/yasminedouadi_les-professionnels-de-la-cybers%C3%A9curit%C3%A9-seraient-activity-7084135086765305856-cv9l?utm_source=share&utm_medium=member_desktop" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/awareness2.png" class="img-fluid mx-auto d-block" style="max-width: 90px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Les professionnels de la cybersécurité sont-ils stressants pour les dirigeants ?</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Autres</h6>
+                        <small class="text-muted">10/07/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          <div class="filterDiv other">
+              <a href="https://cdn.comparitech.com/wp-content/uploads/2020/01/CISSP-Cheat-Sheet-Domain-3.pdf" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/offsectools.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">CISSP Cheatsheet (Domain 3: Security Engineering)</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Autres</h6>
+                        <small class="text-muted">06/07/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          
+          <div class="filterDiv other">
+              <a href="https://www.zdnet.fr/actualites/cout-des-attaques-informatiques-en-france-2-milliards-d-euros-une-estimation-bienvenue-mais-a-prendre-avec-des-pincettes-39959924.htm" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/awareness2.png" class="img-fluid mx-auto d-block" style="max-width: 90px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Coût des attaques informatiques en France : 2 milliards d’euros, une estimation à prendre avec des pincettes</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Autres</h6>
+                        <small class="text-muted">27/06/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          <div class="filterDiv other">
+              <a href="https://www.it-connect.fr/darkbert-un-equivalent-de-chatgpt-entraine-avec-les-donnees-du-dark-web/" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/offsectools.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">DarkBERT, un équivalent de ChatGPT entrainé avec le dark web</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Autres</h6>
+                        <small class="text-muted">27/06/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          <div class="filterDiv governance">
+              <a href="https://www.linkedin.com/feed/update/urn:li:activity:7074627435467530240/" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/awareness3.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">La méthode EBIOS par l'approche "risque" et par l'approche "conformité"</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Gouvernance</h6>
+                        <small class="text-muted">15/06/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          <div class="filterDiv ethicalhacking">
+              <a href="https://github.com/ryh04x/CEH-Exam-Questions" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/colored-github-icon.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Offensive Bookmarks</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Ethical Hacking</h6>
+                        <small class="text-muted">15/06/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          <div class="filterDiv ethicalhacking">
+              <a href="https://docs.google.com/spreadsheets/d/1dwSMIAPIam0PuRBkCiDI88pU3yzrqqHkDtBngUHNCw8/edit?pli=1#gid=129517485" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/malware.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">OSCP Similar Boxes</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Ethical Hacking</h6>
+                        <small class="text-muted">26/05/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          <div class="filterDiv osint">
+              <a href="https://www.youtube.com/watch?v=EOfJAg95uWQ" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/surveillance.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">La face cachée de l'osint (darkweb, vie privée, complots, GAFAM)</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">OSINT</h6>
+                        <small class="text-muted">10/05/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          <div class="filterDiv osint">
+              <a href="https://cylect.io/" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/offsectools.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Cylect.io – AI OSINT Tool</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">OSINT</h6>
+                        <small class="text-muted">30/04/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          <div class="filterDiv ethicalhacking">
+              <a href="https://github.com/ryh04x/CEH-Exam-Questions" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/colored-github-icon.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">CEH Cheat Sheet</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Ethical Hacking</h6>
+                        <small class="text-muted">19/03/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          <div class="filterDiv other">
+              <a href="https://www.amazon.fr/Code-cybers%C3%A9curit%C3%A9-2024-annot%C3%A9-comment%C3%A9/dp/2247223001" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/awareness3.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Code de la Cybersécurité - Anticiper et répondre aux Cyberattaques - 2ème édition</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Autres</h6>
+                        <small class="text-muted">02/11/2023</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          <div class="filterDiv awareness">
+              <a href="https://lameleeadour.com/les-risques-internet-pour-les-enfants/" target="_blank">
+                <div class="card text-white bg-dark" style="margin-top: 20px;">
+                  <div class="row g-0">
+                    <div class="col-md align-self-center" style="margin-left: 10px">
+                      <img src="/images/awareness3.png" class="img-fluid mx-auto d-block" style="max-width: 100px;">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">Risques internet pour les enfants : que peuvent faire les parents ?</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Sensibilisation</h6>
+                        <small class="text-muted">04/10/2022</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
           
           <div class="filterDiv awareness">
               <a href="https://www.orangecyberdefense.com/fr/insights/blog/comment-proteger-votre-entreprise-des-cyberattaques-pendant-les-fetes-de-fin-dannee?utm_campaign=Cyber%2BLettre&utm_medium=web&utm_source=Cyber_Lettre_57" target="_blank">
@@ -107,7 +564,7 @@
               </a>
             </div>
 
-          <div class="filterDiv awareness">
+          <div class="filterDiv osint">
               <a href="https://korben.info/outil-turbolehe-ameliorer-enquetes-osint-generer-rapport-holehe.html?utm_campaign=Cyber%2BLettre&utm_medium=web&utm_source=Cyber_Lettre_31" target="_blank">
                 <div class="card text-white bg-dark" style="margin-top: 20px;">
                   <div class="row g-0">
@@ -117,7 +574,7 @@
                     <div class="col-md-10">
                       <div class="card-body">
                         <h5 class="card-title">Turbolehe – Un peu d’OSINT pour trouver des emails</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Sensibilisation</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">OSINT</h6>
                         <small class="text-muted">31/10/2023</small>
                       </div>
                     </div>
@@ -203,7 +660,7 @@
             </div>
 
           <div class="filterDiv networkandsecurity">
-              <a href="https://www.cybermalveillance.gouv.fr/medias/2021/09/immunite-cyber.pdf" target="_blank">
+              <a href="https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-278a" target="_blank">
                 <div class="card text-white bg-dark" style="margin-top: 20px;">
                   <div class="row g-0">
                     <div class="col-md align-self-center" style="margin-left: 10px">
@@ -212,7 +669,7 @@
                     <div class="col-md-10">
                       <div class="card-body">
                         <h5 class="card-title">10 principales erreurs de configuration de cybersécurité par la NSA et la CISA</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Sensibilisation</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">Réseaux & Sécurité</h6>
                         <small class="text-muted">05/10/2023</small>
                       </div>
                     </div>
@@ -421,7 +878,7 @@
                     <div class="col-md-10">
                       <div class="card-body">
                         <h5 class="card-title">ChatGPT creates mutating malware that evades detection by EDR</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Autres</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">Threat Intelligence</h6>
                         <small class="text-muted">06/06/2023</small>
                       </div>
                     </div>
@@ -440,7 +897,7 @@
                     <div class="col-md-10">
                       <div class="card-body">
                         <h5 class="card-title">L’utilisation croissante de l’intelligence artificielle dans les cyberattaques : une menace grandissante pour la sécurité informatique</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Autres</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">Threat Intelligence</h6>
                         <small class="text-muted">30/03/2023</small>
                       </div>
                     </div>
@@ -506,7 +963,7 @@
               </a>
             </div>
 
-            <div class="filterDiv threatintelligence">
+            <div class="filterDiv osint">
               <a href="https://www.authentic8.com/blog/21-osint-research-tools-threat-intelligence-investigations" target="_blank">
                 <div class="card text-white bg-dark" style="margin-top: 20px;">
                   <div class="row g-0">
@@ -516,7 +973,7 @@
                     <div class="col-md-10">
                       <div class="card-body">
                         <h5 class="card-title">21 OSINT research tools for threat intelligence investigations</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Threat Intelligence</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">OSINT</h6>
                         <small class="text-muted">29/09/2021</small>
                       </div>
                     </div>
@@ -544,7 +1001,7 @@
               </a>
             </div>
 
-           <div class="filterDiv threatintelligence">
+           <div class="filterDiv other">
               <a href="https://drive.google.com/file/d/1zEHbBJEHddxVdCbdvBplgh1AaVDot9eM/view" target="_blank">
                 <div class="card text-white bg-dark" style="margin-top: 20px;">
                   <div class="row g-0">
