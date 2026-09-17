@@ -13,7 +13,7 @@ Jaynerro is first of all my pseudonym but it is also this project : my Knowledge
 
 ## Technologies
 Project is created with
-* php: 8.0
+* php: 8.5
 * Bootstrap: 5.0.2
 * Vanilla Javascript
 
